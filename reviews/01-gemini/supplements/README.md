@@ -9,26 +9,18 @@ Both are **unreviewed, not installed, and not measured**. Gemini should critique
 
 `workflow/state.json.reviewer_intake` pins these files separately. Identify the complete review input as the original candidate fingerprint **plus** these supplement hashes. Integrate accepted changes through the normal stage, then freeze the resulting complete Grok candidate. Preserve this original intake and all genuine review evidence.
 
-## Three prompt-only launch instructions
+## Three complete launch prompts
 
-Use the full public repository URL. A prompt locates the project; it cannot create an authenticated connection, select a model that the app does not expose, or import files into a read-only mobile app. If direct read is unavailable, give the precise supported import requirement and stop before pretending to read. The owner has explicitly made the repository public; no private-repository access is needed for public reads. Misha handles sign-in and account approvals.
+The owner strengthened the assignments on 2026-10-24: Gemini uses practical YouTube evidence heavily; Grok complements it with original X/Twitter research and independent verification; final Codex applies the accepted settings to every actual supported consumer. Each reviewer discovers and uses its relevant available native skills and performs one evidence/coverage self-check and one adversarial consistency self-check. These finite self-checks are not extra independent reviews.
 
-### 1. Gemini — first research and critique
+Use the complete current prompt for the assigned stage:
 
-```text
-Open my public repository https://github.com/MGrinch/Lucifer on main. Use Gemini 4 Argon with High reasoning if actually available; record the displayed model/effort and any limitation. Read `start here.md`, `AGENTS.md` and `workflow/state.json`, then execute `prompts/gemini.md`. Also read every file pinned in `reviewer_intake`, beginning with `reviews/01-gemini/supplements/README.md`; preserve their hashes and actual line coverage separately from the frozen original manifest. Research practical Google/YouTube sources with timestamps and honest modality attribution. Critique the end-product behavior, first-principles character, close-but-wrong examples, fast runtime adapters and measurable tolerances. Return the complete report, sources, coverage, findings and exact patches in the repository's review-packet format, using an authorized writer when available. No invented source viewing, model setting, review, push or installation. Stop at your completed first-review handoff, not at vague recommendations. If this app cannot read the public repo directly, identify the supported import route; do not claim the URL alone imported it.
-```
+1. [Gemini — YouTube research, first review and Grok evidence handoff](../../../prompts/gemini.md).
+2. [Grok — original X evidence, independent challenge and synthesis](../../../prompts/grok.md).
+3. [Codex Sol 6.1 — accepted settings, full supported control coverage and verification](../../../prompts/codex.md).
 
-### 2. Grok — independent second critique
+These links are the single maintained prompt sources; avoid stale copied versions. Each prompt contains the public repository URL and its complete starting instructions. Read access needs no private GitHub grant; authenticated write capability is separate. Apps still need an actually supported read/import route, and a requested model or skill cannot be made available by wording alone.
 
-```text
-Open my public repository https://github.com/MGrinch/Lucifer on main. Use Grok 4.7 with High reasoning if actually exposed and record the observed runtime. Read `start here.md`, `AGENTS.md` and `workflow/state.json`, then execute `prompts/grok.md`. Verify that the real Gemini report and its accepted changes are integrated; otherwise report the exact unmet prerequisite without fabricating a second pass. Review the current complete candidate independently before comparing Gemini's conclusions. Include the live-request supplements and their integration dispositions. Use actual X/web tools and primary verification, test the near misses and measurement design, and preserve character rather than rewarding generic caution or theatrical wording. Return all required review files and exact patches through the supported authorized writer or complete return packet. Do not install or claim unobserved commits, merges, source access, model identity or behavioral results. Stop at the completed second-review handoff.
-```
+Order: actual Gemini review → verified Gemini integration → actual Grok review of that integrated candidate → verified final integration/gate → authorized Codex installation. When a reviewer is read-only, return the complete packet and exact patches for the coordinating writer. The writer must finish the intervening integration before the next dependent stage. A public URL does not remove this dependency.
 
-### 3. Codex — reviewed integration and installation
-
-```text
-Open my public repository https://github.com/MGrinch/Lucifer on main. Use gpt-6.1-sol at High effort if exposed and record the actual runtime. Read `start here.md`, `AGENTS.md` and `workflow/state.json`, then execute `prompts/codex.md`. This assigns the final installation only after both real review contributions, integrations, distinct publication receipts and current remote ancestry are verified and the exact candidate passes the gate. Include dispositions of the live-request near-miss and behavioral-delta supplements. Preserve existing identities, voice, permissions and unrelated configuration; inventory every actual relevant instruction consumer and use only supported authorized routes. Read back each change and test fresh behavior; distinguish prepared, saved, loaded, observed and heard. Keep correction/evaluation within its declared finite budget. Return actual coverage, artifacts, findings, rollback and explicit gaps. If a prerequisite is missing, finish useful preparation and report it; do not simulate the reviewers, bypass the gate, or install an unreviewed candidate.
-```
-
-These are routing prompts; the detailed stage prompts remain canonical workflow guidance. The owner sends them in the corresponding apps. No vendor conversation has been launched by the bootstrap worker.
+No vendor conversation has been launched, no external reviewer has been impersonated, and no settings have been installed by this preparation.

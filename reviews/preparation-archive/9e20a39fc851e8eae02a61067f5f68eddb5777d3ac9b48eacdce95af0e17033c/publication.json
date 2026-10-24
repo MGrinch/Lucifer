@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "status": "NOT_STARTED",
+  "repository": "MGrinch/Lucifer",
+  "private_observed": null,
+  "review_service": "Gemini",
+  "review_model_requested": "Gemini 4 Argon",
+  "review_model_observed": null,
+  "writer_identity_observed": null,
+  "write_route": null,
+  "base_commit": null,
+  "branch": null,
+  "contribution_commit": null,
+  "push": {
+    "observed": false,
+    "remote_commit": null,
+    "evidence": null,
+    "observed_at": null
+  },
+  "merge": {
+    "observed": false,
+    "commit": null,
+    "pull_request_url": null,
+    "evidence": null
+  },
+  "main_head_verified": null,
+  "contribution_is_ancestor_of_main": null,
+  "candidate_fingerprint": null,
+  "report_sha256": null,
+  "integration_sha256": null,
+  "verification": {
+    "checked_at": null,
+    "by": null,
+    "evidence": []
+  }
+}

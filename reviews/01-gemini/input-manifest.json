@@ -164,22 +164,22 @@
       "sha256": "1aae3c6a8098f3076c312b66a2945ffb546ba77418b3b7bec1c3bb71179feb6a"
     },
     {
-      "bytes": 2957,
-      "lines": 18,
+      "bytes": 4534,
+      "lines": 21,
       "path": "prompts/codex.md",
-      "sha256": "ef63e1d50f656d27d0205f0585c7409b8afd4517f29e8e548dd2fbdf92a35f61"
+      "sha256": "e1f62c8b93a1d7dbb1f841654d9f0bb4089044e340f78ce984ab5e9219f79fe0"
     },
     {
-      "bytes": 3335,
-      "lines": 20,
+      "bytes": 4234,
+      "lines": 19,
       "path": "prompts/gemini.md",
-      "sha256": "87875c820de88bd6077626290f413111fd0d316bf60dc03d3e86943bd1a5813c"
+      "sha256": "adc1b04d6109cf89e0a1a9a05b104be2a86a02bf1e532777ca21e4a8c0bdc798"
     },
     {
-      "bytes": 3087,
-      "lines": 20,
+      "bytes": 4414,
+      "lines": 21,
       "path": "prompts/grok.md",
-      "sha256": "441fe1b751189860a5b48612e5b7a7b1bf48d82b13883f32c5c4bf85d5aa657b"
+      "sha256": "b7b9cd6bb7a23ade2555d8c797ae20577b2b62a307cd5c2bf509643e9349c143"
     },
     {
       "bytes": 1648,
@@ -410,6 +410,6 @@
       "sha256": "f7224f489ab45b8d8c598fa4c2fc813ff36f7c02940c3fe5bb81ab06351a84b7"
     }
   ],
-  "fingerprint": "9e20a39fc851e8eae02a61067f5f68eddb5777d3ac9b48eacdce95af0e17033c",
+  "fingerprint": "ea19cbb47577219582541f41789480d7c782f6ffa68aaa9537f3f5e7f336ba7a",
   "schema": 1
 }

@@ -22,13 +22,61 @@
     "unit_tests_run": 33,
     "unit_tests_skipped": 1
   },
-  "candidate_fingerprint": "9e20a39fc851e8eae02a61067f5f68eddb5777d3ac9b48eacdce95af0e17033c",
+  "candidate_fingerprint": "ea19cbb47577219582541f41789480d7c782f6ffa68aaa9537f3f5e7f336ba7a",
+  "complementary_review_update": {
+    "canonical_persona_changed": false,
+    "coordinator_self_check_design": "One evidence/coverage self-check and one adversarial consistency self-check per reviewer; finite resource cap",
+    "current_fingerprint": "ea19cbb47577219582541f41789480d7c782f6ffa68aaa9537f3f5e7f336ba7a",
+    "final_codex": "Apply every actual supported relevant control after real review/integration/gate prerequisites; readback and fresh behavior/voice checks",
+    "gemini_evidence_lane": "Major practical YouTube research; actual modality/timestamps; primary verification",
+    "grok_evidence_lane": "Major original X/thread/implementation research; independent audit and explicit Gemini comparison",
+    "previous_fingerprint": "9e20a39fc851e8eae02a61067f5f68eddb5777d3ac9b48eacdce95af0e17033c",
+    "prompt_paths": [
+      "prompts/gemini.md",
+      "prompts/grok.md",
+      "prompts/codex.md"
+    ],
+    "recorded_at_utc": "2026-10-24T18:23:00.499968+00:00",
+    "skills": "Discover and apply relevant actually available native skills; do not invent capabilities",
+    "status": "PREPARED_AND_LOCALLY_CHECKED"
+  },
   "gemini": "NOT_STARTED",
   "grok": "NOT_STARTED",
   "installation": "NOT_STARTED",
   "last_transition": {
     "date": "2026-10-24",
-    "reason": "Owner explicitly requested public visibility for unauthenticated Gemini/Grok reading; active access guidance updated and prior pending review input preserved before refreezing."
+    "reason": "Owner requested complementary heavy YouTube/X research, relevant available skills, bounded self-checking and complete supported final settings application. Launch prompts updated; previous pending input preserved before refreezing."
+  },
+  "latest_test_verification": {
+    "local_wsl_ubuntu": {
+      "command": "python3 -m unittest discover -s <repository>/tests -v",
+      "elapsed_seconds": 1.009,
+      "errors": 0,
+      "failures": 0,
+      "passed": 33,
+      "python": "3.12.3",
+      "scope": "Local WSL Linux filesystem symlink behavior, not native Windows elevated behavior",
+      "skipped": 0,
+      "symlink_parent_test": "PASSED",
+      "tests_run": 33
+    },
+    "native_persona_behavior_tested": false,
+    "recorded_at_utc": "2026-10-24T18:23:00.499968+00:00",
+    "security_settings_changed": false,
+    "skip_counted_as_pass": false,
+    "windows_elevated_attempt": {
+      "elevated_test_results": null,
+      "native_error": "The operation was canceled by the user.",
+      "process_id": null,
+      "retry_policy": "No repeat after native cancellation",
+      "status": "NOT_STARTED_UAC_CANCELED"
+    },
+    "windows_standard_symlink_retry": {
+      "passed": 0,
+      "reason": "WinError 1314: required privilege not held",
+      "skipped": 1,
+      "tests_run": 1
+    }
   },
   "phase": "AWAITING_GEMINI",
   "preparation_verification": {
@@ -115,10 +163,10 @@
         "sha256": "5a10f8d001848f3c9e09e7e4677f4fd5491b494a0c585fd08b10d1883a2f2f82"
       },
       {
-        "bytes": 5523,
-        "lines": 34,
+        "bytes": 3209,
+        "lines": 26,
         "path": "reviews/01-gemini/supplements/README.md",
-        "sha256": "c04d2723a47646c7b9044d8c9dcb810aea068b391564e1eb6d4975492095f1dc"
+        "sha256": "e6282b8ab817116e72d8c3bec29620ad4880bd078dab24a2e6e62d7179f5f34d"
       },
       {
         "bytes": 13661,
@@ -135,6 +183,7 @@
       "I didn't see the close but still wrong examples being represented in the examples for target behavior",
       "with in tolerable measurable delta of detactably p value over noise"
     ],
+    "previous_pending_input_preserved_at": "reviews/preparation-archive/9e20a39fc851e8eae02a61067f5f68eddb5777d3ac9b48eacdce95af0e17033c",
     "source": "Mishas live request in the current Codex task, 2026-10-24",
     "status": "UNREVIEWED_SUPPLEMENTARY_PROPOSALS"
   },
