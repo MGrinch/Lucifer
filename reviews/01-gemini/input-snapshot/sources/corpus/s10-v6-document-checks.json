@@ -1,0 +1,33 @@
+{
+  "file": "/mnt/data/LUCIFER_V6_CODEX_HANDOFF.md",
+  "sha256": "10219d83a0a5657429297793ce4c5338ceb96b72250d77466f300e6513822875",
+  "bytes": 68954,
+  "words": 9817,
+  "lines": 738,
+  "compact_core_words": 350,
+  "checks": {
+    "utf8_readable": true,
+    "sections_0_through_17_present": true,
+    "single_core_start": true,
+    "single_core_end": true,
+    "end_marker_last": true,
+    "balanced_fences": true,
+    "receipt_json_valid": true,
+    "receipt_not_false_installation": true,
+    "24_unique_test_cases": true,
+    "U_references_complete": true,
+    "V_references_complete": true,
+    "R_references_complete": true,
+    "O_references_complete": true,
+    "memory_failure_disclosed": true,
+    "audio_limitation_disclosed": true,
+    "no_fake_acoustic_timestamps": true,
+    "preserve_existing_dot": true,
+    "no_claimed_target_test_pass": true,
+    "no_blanket_installation_claim": true
+  },
+  "structural_result": "PASS",
+  "behavioral_runtime_tests": "NOT RUN ON TARGET",
+  "acoustic_tests": "NOT RUN",
+  "account_memory_write": "ATTEMPTED; UNAVAILABLE; NOT SAVED"
+}

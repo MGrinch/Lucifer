@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "status": "pending",
+  "identity": {
+    "service_requested": "Gemini",
+    "service_observed": null,
+    "model_requested": "Gemini 4 Argon",
+    "model_observed": null,
+    "effort_requested": "high",
+    "effort_observed": null,
+    "product": null,
+    "runtime_evidence": null,
+    "accepted_substitute": null
+  },
+  "access": {
+    "route": null,
+    "write_capability_observed": false,
+    "research_tools_observed": [],
+    "research_tools_used": []
+  },
+  "attestation": {
+    "actual_review": false,
+    "input_fingerprint": null,
+    "recorded_by": null,
+    "evidence": null
+  },
+  "artifacts": {
+    "report": {
+      "path": "reviews/01-gemini/report.md",
+      "sha256": null
+    },
+    "findings": {
+      "path": "reviews/01-gemini/findings.json",
+      "sha256": null
+    },
+    "sources": {
+      "path": "reviews/01-gemini/sources.json",
+      "sha256": null
+    }
+  }
+}

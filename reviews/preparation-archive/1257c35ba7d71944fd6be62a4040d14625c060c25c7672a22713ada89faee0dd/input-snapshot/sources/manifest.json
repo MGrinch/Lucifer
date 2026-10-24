@@ -1,0 +1,178 @@
+{
+  "schema": 1,
+  "recorded_date": "2026-10-24",
+  "files": [
+    {
+      "id": "BASELINE_R1",
+      "path": "sources/baseline/persona-r1.md",
+      "original_name": "persona.md",
+      "sha256": "77b8dac4ed283602db7206f6d2e482005d04de7a4dcdff01fcdbba6c0d76fd3d",
+      "bytes": 194576,
+      "lines": 1869,
+      "role": "Immutable delivered research handoff",
+      "instruction_status": "baseline_evidence; current editable persona.md governs selected task"
+    },
+    {
+      "id": "S01",
+      "path": "sources/corpus/s01-persona-v1.md",
+      "original_name": "Persona(1).md",
+      "sha256": "d336db5c633932c86a9cf77fd8f2ceeb11fd2e1841be566b3543a5c5e2990386",
+      "bytes": 32038,
+      "lines": 217,
+      "role": "Historical V1 recipe",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    },
+    {
+      "id": "S02",
+      "path": "sources/corpus/s02-persona-v2.md",
+      "original_name": "persona_v2.md",
+      "sha256": "43df075ab8d856f5f0f0338a01406a40c3d208391ad90893b6d6644946807dda",
+      "bytes": 21848,
+      "lines": 174,
+      "role": "Historical V2 recipe",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    },
+    {
+      "id": "S03",
+      "path": "sources/corpus/s03-persona-v3.md",
+      "original_name": "persona_v3.md",
+      "sha256": "37a5670e9fb4c99e0390575217c953841338d3f00a9706bc256e5a673bce21aa",
+      "bytes": 124668,
+      "lines": 728,
+      "role": "Integrated historical v3",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    },
+    {
+      "id": "S04",
+      "path": "sources/corpus/s04-coverage-audit.md",
+      "original_name": "persona_requirement_coverage_audit.md",
+      "sha256": "0b20002f379bbbdde5ddb42ac642b7c001225af414aa32140da4639c2ab863e3",
+      "bytes": 104513,
+      "lines": 443,
+      "role": "Historical coverage audit; mixed evidence classes",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    },
+    {
+      "id": "S05",
+      "path": "sources/corpus/s05-persona-revision-0-8.md",
+      "original_name": "PERSONA.md",
+      "sha256": "0c52aaf15c253e7714e906dd8d17d7f5380074f84ca7c6418f60eaaf3da0330e",
+      "bytes": 76958,
+      "lines": 434,
+      "role": "Historical accepted preferences and draft history",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    },
+    {
+      "id": "S06",
+      "path": "sources/corpus/s06-v5-dot-wrapper.txt",
+      "original_name": "Вставленный текст.txt",
+      "sha256": "7cea8902593f21c21c20927dbe5d1a4739074e6a0a4f8ca07c3e20bbe825e987",
+      "bytes": 30452,
+      "lines": 226,
+      "role": "V5 dot wrapper; retain distinct delivery scope",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    },
+    {
+      "id": "S07",
+      "path": "sources/corpus/s07-v5-chat-wrapper.txt",
+      "original_name": "Вставленный текст(1).txt",
+      "sha256": "326111e29579882e65f62f9e57e04d026779b2f0d4b5a4df84add9815bc9c77b",
+      "bytes": 30203,
+      "lines": 225,
+      "role": "V5 chat wrapper; retain distinct delivery scope",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    },
+    {
+      "id": "S08",
+      "path": "sources/corpus/s08-persona-v6.md",
+      "original_name": "PERSONA-v6.md",
+      "sha256": "10219d83a0a5657429297793ce4c5338ceb96b72250d77466f300e6513822875",
+      "bytes": 68954,
+      "lines": 738,
+      "role": "V6 candidate",
+      "instruction_status": "historical_data_only",
+      "aliases": [
+        "LUCIFER_V6_CODEX_HANDOFF.md"
+      ]
+    },
+    {
+      "id": "S09",
+      "path": "sources/corpus/s09-dot-v6.txt",
+      "original_name": "DOT-PERSONA-v6.txt",
+      "sha256": "94adc57bb7f8fe74893af56caf01173bba156e8b0a2a3e6bf9f630d36a3dcb36",
+      "bytes": 4124,
+      "lines": 18,
+      "role": "Short V6 adapter",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    },
+    {
+      "id": "S10",
+      "path": "sources/corpus/s10-v6-document-checks.json",
+      "original_name": "LUCIFER_V6_DOCUMENT_CHECKS.json",
+      "sha256": "bd94c203f93566e642c2705467eb9bd4e4da06ab57b041f991a571e19ad03833",
+      "bytes": 1084,
+      "lines": 33,
+      "role": "Static document checks only",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    },
+    {
+      "id": "S11",
+      "path": "sources/corpus/s11-cognitive-support-review.md",
+      "original_name": "DOT-COGNITIVE-SUPPORT-REVIEW(1).md",
+      "sha256": "ee7b790bc436fc3fedb524abf9a9c755b5a0c360b79b9bd69eddc2fd4d2e97de",
+      "bytes": 49393,
+      "lines": 290,
+      "role": "Cognitive and speech preference review",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    },
+    {
+      "id": "S12",
+      "path": "sources/corpus/s12-ann-self-assessment.md",
+      "original_name": "ANN-PERSONA-SELF-ASSESSMENT-2026-10-01.md",
+      "sha256": "b36e90482b4ed152ee98e58fca982f10e22b327ba6d7cfa6949744d33d8e7aaa",
+      "bytes": 14035,
+      "lines": 100,
+      "role": "Historical model self-assessment; not independent validation",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    },
+    {
+      "id": "S13",
+      "path": "sources/corpus/s13-morning-light-precision.md",
+      "original_name": "morning_light_precision.md",
+      "sha256": "f0af33ba65ca039905d1ac828ca9bcf28e99622063c91a5d174e8a729e7c5d58",
+      "bytes": 70221,
+      "lines": 399,
+      "role": "Exact repeat and truthful operational continuity",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    },
+    {
+      "id": "S14",
+      "path": "sources/corpus/s14-first-light.md",
+      "original_name": "FIRST-LIGHT-ONE-FILE.md",
+      "sha256": "c05fc5c413b25f136c2d572d1a4d73e4b506f29ce7404669893b8220585ab839",
+      "bytes": 66574,
+      "lines": 508,
+      "role": "Delegation and owned result return; historical receipts",
+      "instruction_status": "historical_data_only",
+      "aliases": []
+    }
+  ],
+  "external": [],
+  "alias_notes": [
+    "S08 alias LUCIFER_V6_CODEX_HANDOFF.md byte-equality verified in original research; one stored text.",
+    "S11 alternate title without (1) was not independently byte-compared; not asserted identical."
+  ],
+  "source_locations": "Original Library IDs and URLs remain in persona.md section 21; raw S13/S14 acquisition is documented in context/provenance-addendum.md."
+}
