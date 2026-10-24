@@ -1,12 +1,99 @@
 {
-  "schema": 1,
-  "phase": "AWAITING_GEMINI",
-  "candidate_fingerprint": "362bf7490bb2aff6a7772eee99a5bb982d850c41b7155714de219aaab50ce60c",
+  "acoustic_validation": "NOT_RUN",
+  "bootstrap_verification": {
+    "acoustic_behavior": "NOT_RUN",
+    "build": "PASSED_32_GENERATED_FILES",
+    "candidate_fingerprint_recomputed": "9e20a39fc851e8eae02a61067f5f68eddb5777d3ac9b48eacdce95af0e17033c",
+    "github_integrity_run_at_first_readback": {
+      "id": 40117762567,
+      "status": "in_progress",
+      "url": "https://github.com/MGrinch/Lucifer/actions/runs/40117762567"
+    },
+    "installation_gate": "EXPECTED_REJECTION_NOT_READY_FOR_INSTALL",
+    "native_behavior": "NOT_RUN",
+    "original_and_frozen_manifest_match": true,
+    "personalization_installed": false,
+    "recorded_at_utc": "2026-10-24T17:48:38.175338+00:00",
+    "reviews_executed": false,
+    "skip_reason": "Windows symlink creation requires a privilege absent in this session; no elevation requested",
+    "source_bytes_and_modes": "VERIFIED_EXCEPT_INTENTIONAL_STATE_METADATA",
+    "static_checks": "PASSED",
+    "unit_tests_passed": 32,
+    "unit_tests_run": 33,
+    "unit_tests_skipped": 1
+  },
+  "candidate_fingerprint": "9e20a39fc851e8eae02a61067f5f68eddb5777d3ac9b48eacdce95af0e17033c",
   "gemini": "NOT_STARTED",
   "grok": "NOT_STARTED",
   "installation": "NOT_STARTED",
-  "runtime_validation": "NOT_RUN",
-  "acoustic_validation": "NOT_RUN",
+  "last_transition": {
+    "date": "2026-10-24",
+    "reason": "Owner explicitly requested public visibility for unauthenticated Gemini/Grok reading; active access guidance updated and prior pending review input preserved before refreezing."
+  },
+  "phase": "AWAITING_GEMINI",
+  "preparation_verification": {
+    "acoustic_behavior": "NOT_RUN",
+    "gemini_input": "FROZEN_NOT_REVIEWED",
+    "native_behavior": "NOT_RUN",
+    "repository_unit_tests": 33,
+    "review_gate_tests": 16,
+    "singlefile_transport_tests": 17,
+    "static_checks": "PASSED",
+    "status": "PASSED_STATIC_ONLY"
+  },
+  "public_access_update": {
+    "anonymous_api_status": 200,
+    "anonymous_start_here_status": 200,
+    "canonical_persona_changed": false,
+    "current_fingerprint": "9e20a39fc851e8eae02a61067f5f68eddb5777d3ac9b48eacdce95af0e17033c",
+    "guidance_verification": "LOCAL_CHECKS_PASSED",
+    "owner_request": "Make it public I need to point a Gemini and grok to it they have no access to my private repos so it needs to be public",
+    "previous_fingerprint": "362bf7490bb2aff6a7772eee99a5bb982d850c41b7155714de219aaab50ce60c",
+    "review_phase_unchanged": true,
+    "static_checks": "PASSED",
+    "status": "PUBLIC_VISIBILITY_VERIFIED",
+    "unit_tests": {
+      "passed": 32,
+      "run": 33,
+      "skipped": 1
+    },
+    "verified_at_utc": "2026-10-24T18:02:45.485301+00:00"
+  },
+  "publication": {
+    "anonymous_entry_status": 200,
+    "anonymous_metadata_status": 200,
+    "canonical_and_frozen_inputs_byte_identical": false,
+    "canonical_persona_unchanged": true,
+    "credential_pattern_findings": 0,
+    "credential_scan_limit": "Pattern scan is defense in depth, not a proof of absence",
+    "default_branch": "main",
+    "first_content_commit": "f2d3c0488f9b4b5e9a3759cc8235072f677e9c67",
+    "historical_blocker_resolved": true,
+    "intended_repository": "MGrinch/Lucifer",
+    "next_action": "Owner launches the actual Gemini review using prompts/gemini.md plus all pinned reviewer_intake supplements.",
+    "observed_private": false,
+    "observed_remote_head": "a1edd57f569713f4afc996ba18b59c8c04d652bb",
+    "original_content_changes": [
+      "Current access/entry/workflow guidance updated by explicit owner request",
+      "Pending Gemini input refrozen; original pending snapshot and metadata archived without rewriting",
+      "State and supplemental launch-prompt access wording updated; persona and source corpus unchanged"
+    ],
+    "original_package_files": 311,
+    "prepared_tree_files": 390,
+    "preserved_pending_input": "reviews/preparation-archive/362bf7490bb2aff6a7772eee99a5bb982d850c41b7155714de219aaab50ce60c",
+    "previous_pending_fingerprint": "362bf7490bb2aff6a7772eee99a5bb982d850c41b7155714de219aaab50ce60c",
+    "readback_route": "GitHub REST metadata and untruncated tree; git fetch and ls-remote; byte/mode verification against source package",
+    "receipt_note": "Original private-publication receipt is historical; current public visibility supersedes it. The updated content commit is verified after push.",
+    "remote_creation_verified": true,
+    "requested_visibility": "public",
+    "status": "VERIFIED_PUBLIC_ACCESS",
+    "supplement_files": 3,
+    "url": "https://github.com/MGrinch/Lucifer",
+    "verified_at_utc": "2026-10-24T17:48:38.175338+00:00",
+    "visibility_change_authority": "Misha's direct request in the current Codex conversation, 2026-10-24",
+    "visibility_verified_at_utc": "2026-10-24T18:02:45.485301+00:00",
+    "write_route": "GitHub MCP private repository creation; existing authenticated Git HTTPS writer"
+  },
   "required_order": [
     "gemini_review",
     "integrate_gemini_to_main",
@@ -16,99 +103,41 @@
     "authorized_codex_install",
     "actual_target_verification"
   ],
-  "last_transition": {
-    "date": "2026-10-24",
-    "reason": "Single-file Codex bootstrap adds owner delivery instructions, real Git publication receipts and explicit control-level coverage; previous unreviewed preparation freeze preserved."
-  },
-  "publication": {
-    "status": "VERIFIED_PRIVATE_PUBLICATION",
-    "intended_repository": "MGrinch/Lucifer",
-    "requested_visibility": "private",
-    "observed_private": true,
-    "remote_creation_verified": true,
-    "url": "https://github.com/MGrinch/Lucifer",
-    "default_branch": "main",
-    "first_content_commit": "f2d3c0488f9b4b5e9a3759cc8235072f677e9c67",
-    "observed_remote_head": "f2d3c0488f9b4b5e9a3759cc8235072f677e9c67",
-    "verified_at_utc": "2026-10-24T17:48:38.175338+00:00",
-    "write_route": "GitHub MCP private repository creation; existing authenticated Git HTTPS writer",
-    "readback_route": "GitHub REST metadata and untruncated tree; git fetch and ls-remote; byte/mode verification against source package",
-    "remote_tree_files": 314,
-    "original_package_files": 311,
-    "supplement_files": 3,
-    "original_content_changes": [
-      "workflow/state.json publication and reviewer-intake metadata only"
-    ],
-    "canonical_and_frozen_inputs_byte_identical": true,
-    "credential_pattern_findings": 0,
-    "credential_scan_limit": "Pattern scan is defense in depth, not a proof of absence",
-    "historical_blocker_resolved": true,
-    "receipt_note": "This record pins the independently verified content commit; the later metadata receipt commit necessarily has a different head.",
-    "next_action": "Owner launches the actual Gemini review using prompts/gemini.md plus all pinned reviewer_intake supplements."
-  },
-  "preparation_verification": {
-    "static_checks": "PASSED",
-    "repository_unit_tests": 33,
-    "gemini_input": "FROZEN_NOT_REVIEWED",
-    "native_behavior": "NOT_RUN",
-    "acoustic_behavior": "NOT_RUN",
-    "status": "PASSED_STATIC_ONLY",
-    "review_gate_tests": 16,
-    "singlefile_transport_tests": 17
-  },
   "reviewer_intake": {
-    "status": "UNREVIEWED_SUPPLEMENTARY_PROPOSALS",
-    "source": "Mishas live request in the current Codex task, 2026-10-24",
-    "canonical_candidate_unchanged": true,
-    "original_frozen_manifest_unchanged": true,
+    "canonical_candidate_unchanged": false,
+    "canonical_persona_unchanged": true,
     "coverage_enforced_by_current_gate": false,
+    "files": [
+      {
+        "bytes": 10898,
+        "lines": 116,
+        "path": "reviews/01-gemini/supplements/behavioral-delta-protocol.md",
+        "sha256": "5a10f8d001848f3c9e09e7e4677f4fd5491b494a0c585fd08b10d1883a2f2f82"
+      },
+      {
+        "bytes": 5523,
+        "lines": 34,
+        "path": "reviews/01-gemini/supplements/README.md",
+        "sha256": "c04d2723a47646c7b9044d8c9dcb810aea068b391564e1eb6d4975492095f1dc"
+      },
+      {
+        "bytes": 13661,
+        "lines": 220,
+        "path": "reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md",
+        "sha256": "1bfeb6ee2a9bc240f0f47c629b7fd5ac5e7e1e72b6497f5cda94038cd6eaafe3"
+      }
+    ],
+    "next_action": "Gemini reads and critiques these additional inputs; records hashes/ranges separately; integrator dispositions accepted changes before the fresh Grok freeze.",
+    "original_frozen_manifest_preserved_at": "reviews/preparation-archive/362bf7490bb2aff6a7772eee99a5bb982d850c41b7155714de219aaab50ce60c",
+    "original_frozen_manifest_unchanged": false,
     "owner_request_excerpts": [
       "I want a n agent to have a personality that stems from first principles going up",
       "I didn't see the close but still wrong examples being represented in the examples for target behavior",
       "with in tolerable measurable delta of detactably p value over noise"
     ],
-    "files": [
-      {
-        "path": "reviews/01-gemini/supplements/behavioral-delta-protocol.md",
-        "sha256": "5a10f8d001848f3c9e09e7e4677f4fd5491b494a0c585fd08b10d1883a2f2f82",
-        "bytes": 10898,
-        "lines": 116
-      },
-      {
-        "path": "reviews/01-gemini/supplements/README.md",
-        "sha256": "7a6cde0f3f4825b4d5f4d68ae528bbe6d5b54c99da34bbdc4b69446065b20015",
-        "bytes": 5467,
-        "lines": 34
-      },
-      {
-        "path": "reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md",
-        "sha256": "1bfeb6ee2a9bc240f0f47c629b7fd5ac5e7e1e72b6497f5cda94038cd6eaafe3",
-        "bytes": 13661,
-        "lines": 220
-      }
-    ],
-    "next_action": "Gemini reads and critiques these additional inputs; records hashes/ranges separately; integrator dispositions accepted changes before the fresh Grok freeze."
+    "source": "Mishas live request in the current Codex task, 2026-10-24",
+    "status": "UNREVIEWED_SUPPLEMENTARY_PROPOSALS"
   },
-  "bootstrap_verification": {
-    "recorded_at_utc": "2026-10-24T17:48:38.175338+00:00",
-    "build": "PASSED_32_GENERATED_FILES",
-    "static_checks": "PASSED",
-    "candidate_fingerprint_recomputed": "362bf7490bb2aff6a7772eee99a5bb982d850c41b7155714de219aaab50ce60c",
-    "original_and_frozen_manifest_match": true,
-    "unit_tests_run": 33,
-    "unit_tests_passed": 32,
-    "unit_tests_skipped": 1,
-    "skip_reason": "Windows symlink creation requires a privilege absent in this session; no elevation requested",
-    "installation_gate": "EXPECTED_REJECTION_NOT_READY_FOR_INSTALL",
-    "source_bytes_and_modes": "VERIFIED_EXCEPT_INTENTIONAL_STATE_METADATA",
-    "github_integrity_run_at_first_readback": {
-      "id": 40117762567,
-      "status": "in_progress",
-      "url": "https://github.com/MGrinch/Lucifer/actions/runs/40117762567"
-    },
-    "native_behavior": "NOT_RUN",
-    "acoustic_behavior": "NOT_RUN",
-    "reviews_executed": false,
-    "personalization_installed": false
-  }
+  "runtime_validation": "NOT_RUN",
+  "schema": 1
 }

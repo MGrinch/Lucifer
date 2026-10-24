@@ -1,10 +1,14 @@
 # 00 — Access, model and write capability
 
+## Current access decision — 2026-10-24
+
+Misha explicitly changed `MGrinch/Lucifer` to **public** so Gemini and Grok can read it without private-repository access. This supersedes earlier requirements to keep this repository private, including those in the unchanged canonical specification, bootstrap guides and archived snapshots. Read access is public; writes still require an authorized authenticated writer. Do not upload credentials, private installation backups, account exports or unrelated personal data. Public visibility grants no new license to the personal corpus and changes neither the two-review gate nor installation permissions.
+
 Read `research/cross-vendor-capabilities.md` for the dated primary sources. Recheck only facts needed for the actual run. Product documentation does not prove this account has a selected model, connection or permission.
 
 ## Gemini route
 
-The documented standard GitHub import is performed in Gemini's web app on a computer. Private access requires the GitHub account to be linked with access to this repository. After import, the chat can continue on mobile. The import does not sync later GitHub changes and cannot retrieve commit/PR metadata or write files back.
+The documented standard GitHub import is performed in Gemini's web app on a computer. This repository is now public and its raw files are anonymously readable. Use direct public reads where supported; otherwise follow the app's explicit import route. Private-repository account linking is not required merely to read these public files. After import, the chat can continue on mobile. The import does not sync later GitHub changes and cannot retrieve commit/PR metadata or write files back.
 
 Use the actual current repository/branch import, or attach a prepared review packet through an available supported file route. Record the imported input fingerprint. When the repository changes, prepare a fresh import; do not review a stale snapshot as current.
 
@@ -12,7 +16,7 @@ If the host exposes a separate authorized writer, inspect its scope. Do not conf
 
 ## Grok route
 
-Inspect the actual GitHub connector/tools and attempt a supported read of the intended private repository. The public catalog lists GitHub; it does not establish this session's exact write operations. If direct access is absent, use an authorized file import. If writing is absent, return a complete review packet for the coordinating writer.
+Inspect the actual GitHub connector/tools and attempt a supported read of the intended public repository. The public catalog lists GitHub; it does not establish this session's exact write operations. If direct access is absent, use an authorized file import. If writing is absent, return a complete review packet for the coordinating writer.
 
 ## Runtime identity
 
@@ -28,7 +32,7 @@ For read-only reviewers, use the complete `reviews/templates/return-packet.md` f
 
 ## Privacy scope
 
-The user requested these two vendors review this persona corpus. Keep uploads limited to the intended review inputs. Do not include unrelated chats, device backups, credentials, account exports or full installation logs. A private repository can still be shared with the connected review provider through an explicit import; keep that fact clear.
+The user requested these two vendors review this persona corpus. Keep uploads limited to the intended review inputs. Do not include unrelated chats, device backups, credentials, account exports or full installation logs. The existing repository corpus is public by the owner's explicit request. This does not authorize publishing new private installation logs, backups or unrelated material.
 
 ## Repository creation and real publication
 

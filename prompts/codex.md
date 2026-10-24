@@ -1,6 +1,6 @@
 # Codex installation launch prompt
 
-Open my private `MGrinch/Lucifer` repository. Use `gpt-6.1-sol` at high reasoning effort if the actual host offers it, and record the effective runtime. Read `start here.md`, `AGENTS.md`, `workflow/state.json` and `goal.md`.
+Open my public repository https://github.com/MGrinch/Lucifer. Use `gpt-6.1-sol` at high reasoning effort if the actual host offers it, and record the effective runtime. Read `start here.md`, `AGENTS.md`, `workflow/state.json` and `goal.md`.
 
 I am asking you to install the reviewed Lucifer persona now. First verify that the real Gemini and Grok critiques are preserved, their accepted changes are integrated into `main`, and the current bytes pass `python3 tools/lucifer.py gate`. If the gate fails, complete useful preparation and identify the precise unmet prerequisite; do not manufacture a review or bypass it.
 
@@ -15,4 +15,4 @@ Read back settings and test fresh sessions. Evaluate real behavior, language, ta
 Finish with the accepted commit/content fingerprint, actual changes, supported-scope coverage, observed behavior/audio results, rollback location and remaining gaps. The desired result is recognizable warm, poised, witty, independently useful female Lucifer—not a claim of universal control or a literal human identity.
 
 
-Also read `context/owner-addendum-2026-10-24.md`, `workflow/08-git-review-history.md` and `workflow/09-surface-coverage.md`. Verify two actual separately attributable review contributions, pushes, merges and current private remote main; the local gate alone does not check GitHub. Expand `install/control-catalog.json` into every actual relevant control/object/device. Treat this assigned final installation as covered by my already stated conditional instruction once those prerequisites hold; no redundant confirmation is needed for ordinary in-scope work.
+Also read `context/owner-addendum-2026-10-24.md`, `workflow/08-git-review-history.md` and `workflow/09-surface-coverage.md`. Verify two actual separately attributable review contributions, pushes, merges and current public remote main; the local gate alone does not check GitHub. Expand `install/control-catalog.json` into every actual relevant control/object/device. Treat this assigned final installation as covered by my already stated conditional instruction once those prerequisites hold; no redundant confirmation is needed for ordinary in-scope work.

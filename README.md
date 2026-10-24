@@ -1,6 +1,10 @@
 # Lucifer
 
-**A private, evidence-led path from a developed character to a tested persona installation.**
+## Current access decision — 2026-10-24
+
+Misha explicitly changed `MGrinch/Lucifer` to **public** so Gemini and Grok can read it without private-repository access. This supersedes earlier requirements to keep this repository private, including those in the unchanged canonical specification, bootstrap guides and archived snapshots. Read access is public; writes still require an authorized authenticated writer. Do not upload credentials, private installation backups, account exports or unrelated personal data. Public visibility grants no new license to the personal corpus and changes neither the two-review gate nor installation permissions.
+
+**A public, evidence-led path from a developed character to a tested persona installation.**
 
 [Start here](start%20here.md) · [Desired end state](goal.md) · [Current specification](persona.md) · [Stage status](workflow/state.json)
 
@@ -20,13 +24,13 @@ These are requested runtimes. Each run must record the model and effort actually
 
 ## Give an agent one starting instruction
 
-> Open my private `MGrinch/Lucifer` repository. Read `start here.md`. Follow the route for your assigned stage, read the required inputs completely, and leave the required artifacts. Preserve Lucifer's character while improving the evidence, instructions and attainable behavior. Do not skip the two-review gate or claim installation during review.
+> Open https://github.com/MGrinch/Lucifer on `main`. Read `start here.md`. Follow the route for your assigned stage, read the required inputs completely, and leave the required artifacts. Preserve Lucifer's character while improving the evidence, instructions and attainable behavior. Do not skip the two-review gate or claim installation during review.
 
 Ready-to-use stage prompts are in [prompts/](prompts/README.md).
 
 ## Important access detail
 
-Gemini's standard GitHub import is a snapshot and does not write changes back. Import the private repository through the supported account connection; a URL alone is insufficient. A supported writer can then commit the returned review packet. Grok's actual repository access and write tools must be checked in its connected session. The [access guide](workflow/00-access.md) gives both direct-write and report-return routes.
+Gemini's standard GitHub import is a snapshot and does not write changes back. The repository and raw files are publicly readable without GitHub authentication. An app may still require an explicit supported import; opening a URL does not prove it loaded every file. A supported writer can then commit the returned review packet. Grok's actual repository access and write tools must be checked in its connected session. The [access guide](workflow/00-access.md) gives both direct-write and report-return routes.
 
 ## Where truth lives
 
@@ -43,7 +47,7 @@ Gemini's standard GitHub import is a snapshot and does not write changes back. I
 | `install/` | Target coverage, supported installation route and rollback requirements. |
 | `tools/` | Local standard-library build, integrity and readiness checks. |
 
-This is a private working repository. No open-source license is granted to the personal corpus. Referenced public projects retain their own licenses. No third-party runtime is required for the initial native-first route.
+This is a publicly readable working repository. No open-source license is granted to the personal corpus. Referenced public projects retain their own licenses. No third-party runtime is required for the initial native-first route.
 
 ## Single-file delivery and strengthened handoff
 

@@ -4,7 +4,7 @@ Use this together with accepted `persona.md` §§10 and 13–19, `install/contro
 
 ## Entry and scope
 
-The final worker uses requested `gpt-6.1-sol`, high effort where actually available, and records the observed model/control rather than merely repeating the requested name. Before changing settings, verify both actual review publications/merges, current private remote `main`, the exact accepted candidate and the local content gate. Earlier conditional installation authorization remains effective for this assigned phase.
+The final worker uses requested `gpt-6.1-sol`, high effort where actually available, and records the observed model/control rather than merely repeating the requested name. Before changing settings, verify both actual review publications/merges, current public remote `main`, the exact accepted candidate and the local content gate. Earlier conditional installation authorization remains effective for this assigned phase.
 
 Discover actual devices, accounts, workspaces, clients, Projects, existing GPTs, dot identity, cloud tasks, local Codex hosts and delegated consumers. The research catalog names possibilities; it does not assert they all exist. A cloud shell is not the user's Windows PC. A remote device advertised by a tool can still be offline. Inspect current permission and capabilities of each tool before choosing it.
 
@@ -97,7 +97,7 @@ If a correction changes reviewed candidate bytes, retain its rationale, update a
 Maintain distinct evidence levels:
 
 1. Repository restored, source integrity verified.
-2. Private remote and two real review contributions/pushes/merges verified.
+2. Public remote and two real review contributions/pushes/merges verified.
 3. Exact adapter prepared for an actual target.
 4. Actual target value saved and read back.
 5. Effective loading supported by fresh-session behavior or host metadata, with its limits stated.

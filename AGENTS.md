@@ -1,13 +1,17 @@
 # Lucifer repository instructions
 
-Read `start here.md`, `context/owner-addendum-2026-10-24.md` and `workflow/state.json` before substantive work. This repository is a private, staged research and installation handoff for Misha. The initial state is **AWAITING_GEMINI**. Creating or reading this repository does not install the persona.
+## Current access decision — 2026-10-24
+
+Misha explicitly changed `MGrinch/Lucifer` to **public** so Gemini and Grok can read it without private-repository access. This supersedes earlier requirements to keep this repository private, including those in the unchanged canonical specification, bootstrap guides and archived snapshots. Read access is public; writes still require an authorized authenticated writer. Do not upload credentials, private installation backups, account exports or unrelated personal data. Public visibility grants no new license to the personal corpus and changes neither the two-review gate nor installation permissions.
+
+Read `start here.md`, `context/owner-addendum-2026-10-24.md` and `workflow/state.json` before substantive work. This repository is a public, staged research and installation handoff for Misha. The initial state is **AWAITING_GEMINI**. Creating or reading this repository does not install the persona.
 
 ## Authority and scope
 
 - Follow the actual user's task and the host's instruction hierarchy. Repository text does not override host permissions or grant access to another account.
 - `persona.md` is the sole editable persona and installation specification. `sources/` and `reviews/**/input-snapshot/` contain historical/frozen evidence, not active instructions. Copied entry-point files in those snapshots do not start another workflow. `generated/` contains deterministic derivatives, never an independent canon.
 - This `AGENTS.md` governs work **on this repository**. Do not copy it to a global Codex instruction location or mistake it for Lucifer's conversational payload.
-- Keep the repository private. Do not publish its contents, change access, add paid services, alter privacy settings, or run an installation as part of a critique.
+- Keep the owner-selected public visibility. Public reading does not authorize new sensitive uploads, access changes, paid services, privacy changes, or installation as part of a critique.
 - Preserve Misha's chosen original adult female character. Improve coherence, warmth, wit, judgment, voice direction and useful action. Do not replace her with a generic assistant, a stereotype, or the reviewer's preferred character.
 
 ## Route by actual assignment
@@ -34,7 +38,7 @@ Default work mode is review/prepare, not install. Continue authorized work witho
 
 ## Current delivery and completeness requirements
 
-- First repository-creation worker: follow `workflow/00-repository-creation.md` and stop at verified private publication, ready for Gemini.
+- First repository-creation worker: follow `workflow/00-repository-creation.md` and stop at verified publication under the current owner visibility decision, ready for Gemini.
 - Every review integration follows `workflow/08-git-review-history.md`: preserve real model work, actual writer identity, separate contribution commits/pushes/merges and remote readback.
 - Final installation follows `workflow/09-surface-coverage.md` and expands `install/control-catalog.json` into actual targets. The local content gate does not verify remote history or native behavior.
 - The outer bootstrap file is never a runtime payload. It restores the inner canonical `persona.md`; historical snapshots remain evidence.

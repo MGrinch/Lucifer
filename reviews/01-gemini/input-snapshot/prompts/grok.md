@@ -1,6 +1,6 @@
 # Grok launch prompt
 
-You are the second external reviewer of my private `MGrinch/Lucifer` repository. Use Grok 4.7 and high reasoning where the actual host exposes them. Verify the selected runtime and research tools instead of relying on self-identification.
+You are the second external reviewer of my public repository https://github.com/MGrinch/Lucifer. Use Grok 4.7 and high reasoning where the actual host exposes them. Verify the selected runtime and research tools instead of relying on self-identification.
 
 Start at `start here.md`. Read `AGENTS.md`, `workflow/state.json`, `context/owner-intent.md`, `goal.md`, and `workflow/04-grok-review.md`. Your input must be the candidate after Gemini's accepted changes have been integrated. If that prerequisite is missing, prepare the next step but do not pretend to perform the completed second pass.
 

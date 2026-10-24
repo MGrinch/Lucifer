@@ -1,12 +1,16 @@
 # Start here — worker entry point
 
+## Current access decision — 2026-10-24
+
+Misha explicitly changed `MGrinch/Lucifer` to **public** so Gemini and Grok can read it without private-repository access. This supersedes earlier requirements to keep this repository private, including those in the unchanged canonical specification, bootstrap guides and archived snapshots. Read access is public; writes still require an authorized authenticated writer. Do not upload credentials, private installation backups, account exports or unrelated personal data. Public visibility grants no new license to the personal corpus and changes neither the two-review gate nor installation permissions.
+
 **Owner:** Misha. **Project:** Lucifer. **Initial phase:** AWAITING_GEMINI. **Installation:** not performed.
 
 Your job is to improve and then deploy one coherent persona through the supported controls of the actual host. It is not to prove that a prompt creates a literal human or guarantees identical behavior from every model.
 
 ## 0. Bootstrap and current owner addendum
 
-If you received the outer single-file `persona.md` to create this repository, restore its payload first, then follow [repository creation](workflow/00-repository-creation.md) and [bootstrap prompt](prompts/bootstrap-codex.md). The first worker stops at verified private publication and `AWAITING_GEMINI`.
+If you received the outer single-file `persona.md` to create this repository, restore its payload first, then follow [repository creation](workflow/00-repository-creation.md) and [bootstrap prompt](prompts/bootstrap-codex.md). The first worker stops at verified publication under the current visibility decision and `AWAITING_GEMINI`.
 
 Read the [current owner addendum](context/owner-addendum-2026-10-24.md). It requires separately attributable real review contributions, commits, pushes and merges under [Git publication protocol](workflow/08-git-review-history.md), then complete per-control installation coverage under [surface protocol](workflow/09-surface-coverage.md). The original canonical character specification is unchanged by this packaging revision.
 
@@ -16,7 +20,7 @@ Read [AGENTS.md](AGENTS.md), [workflow/state.json](workflow/state.json), [owner 
 
 | Current assignment/state | Continue at | Permitted work |
 |---|---|---|
-| First Codex bootstrap / publication not verified | [creation guide](workflow/00-repository-creation.md) | Restore exact files, create private repo, commit/push/read back; stop ready for Gemini. |
+| First Codex bootstrap / publication not verified | [creation guide](workflow/00-repository-creation.md) | Restore exact files, verify the current repository visibility, commit/push/read back; stop ready for Gemini. |
 | Gemini critique / AWAITING_GEMINI | [Gemini prompt](prompts/gemini.md) → [stage 02](workflow/02-gemini-review.md) | Inspect, research, critique, propose exact patches; write review artifacts if an authorized writer exists. |
 | Gemini report available / GEMINI_REVIEWED | [stage 03](workflow/03-integrate-gemini.md) | Preserve report, validate proposals, integrate accepted changes, prepare Grok input. |
 | Grok critique / AWAITING_GROK | [Grok prompt](prompts/grok.md) → [stage 04](workflow/04-grok-review.md) | Review the updated candidate independently, then reconcile with the actual Gemini report. |
@@ -30,7 +34,7 @@ If the actual user gives a different task, follow it within its scope and update
 
 Follow [workflow/00-access.md](workflow/00-access.md). Record requested versus observed model, effort setting, tools, repository access route and source revision. Never invent those fields. A missing visible high-effort control is recorded as unavailable, not silently assumed enabled.
 
-If you cannot read the private repository, use an authorized import or supplied files. Do not infer content from the name, publish the repository, or start a substitute review of a different project.
+Try the public repository and raw file URLs first. If the app cannot fetch them, use its supported import route or supplied files. Do not infer content from the name, change access, or start a substitute review of a different project.
 
 ## 3. Freeze and read the actual inputs
 

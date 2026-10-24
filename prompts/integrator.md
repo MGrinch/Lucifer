@@ -1,6 +1,6 @@
 # Review-packet integration prompt
 
-Open my private `MGrinch/Lucifer` repository and start at `start here.md`. I am supplying the actual external review packet. Determine whether it is the Gemini first pass or Grok second pass from its recorded identity, input fingerprint and the current stage.
+Open my public repository https://github.com/MGrinch/Lucifer and start at `start here.md`. I am supplying the actual external review packet. Determine whether it is the Gemini first pass or Grok second pass from its recorded identity, input fingerprint and the current stage.
 
 Preserve the original report exactly. Verify the input revision, complete read coverage, factual sources, proposed edits and claimed tests. Do not reconstruct absent findings or attribute your own additions to the reviewer. If the return is plain Markdown, normalize it into the repository's structured records while preserving the original and marking fields that were not supplied.
 

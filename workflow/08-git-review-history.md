@@ -1,6 +1,10 @@
 # 08 — Two real review contributions, pushes and merges
 
-This is the publication requirement added by Misha's single-file handoff request. It supplements the content/read-coverage gate; it does not replace it. Both real reviews must remain independently attributable, their accepted changes must reach private `main`, and the final installer must verify the published revision.
+## Current access decision — 2026-10-24
+
+Misha explicitly changed `MGrinch/Lucifer` to **public** so Gemini and Grok can read it without private-repository access. This supersedes earlier requirements to keep this repository private, including those in the unchanged canonical specification, bootstrap guides and archived snapshots. Read access is public; writes still require an authorized authenticated writer. Do not upload credentials, private installation backups, account exports or unrelated personal data. Public visibility grants no new license to the personal corpus and changes neither the two-review gate nor installation permissions.
+
+This is the publication requirement added by Misha's single-file handoff request. It supplements the content/read-coverage gate; it does not replace it. Both real reviews must remain independently attributable, their accepted changes must reach public `main`, and the final installer must verify the published revision.
 
 ## Actors and boundaries
 
@@ -39,7 +43,7 @@ Gemini's standard GitHub import is read-only; see [access facts](../research/cro
 
 ### C. Final Codex entry
 
-The final Codex worker independently reads private remote metadata and `main` with its own supported tools. It verifies all Git completion predicates below, checks the content fingerprint and runs `tools/lucifer.py gate`. It installs only that accepted candidate. If `main` has advanced, inspect the diff; evidence-only receipts can leave the candidate unchanged, but changed reviewed content requires renewed reconciliation and checks.
+The final Codex worker independently reads public remote metadata and `main` with its own supported tools. It verifies all Git completion predicates below, checks the content fingerprint and runs `tools/lucifer.py gate`. It installs only that accepted candidate. If `main` has advanced, inspect the diff; evidence-only receipts can leave the candidate unchanged, but changed reviewed content requires renewed reconciliation and checks.
 
 ## Concrete Git route
 
@@ -88,7 +92,7 @@ Use `reviews/01-gemini/publication.json` and `reviews/02-grok/publication.json`.
   "schema": 1,
   "status": "PUBLISHED_AND_MERGED",
   "repository": "MGrinch/Lucifer",
-  "private_observed": true,
+  "private_observed": false,
   "review_service": "Gemini",
   "review_model_observed": "<observed>",
   "writer_identity_observed": "<observed>",
@@ -111,7 +115,7 @@ Receipt files are evidence outside `workflow/review-files.json`; never insert a 
 
 ## Git completion predicates — mandatory in addition to the content gate
 
-- The actual repository is private and belongs to MGrinch; expected repo metadata is freshly observed.
+- The actual repository is public and belongs to MGrinch; expected repo metadata is freshly observed.
 - Each contribution exists remotely and the actual pushed commit is recorded. An attempted command or local SHA alone does not establish this.
 - Each contribution is reachable from final `main`. With a Git checkout, fetch first and use `git merge-base --is-ancestor <contribution_sha> origin/main`; inspect its exit status for **each** review. Never pass angle-bracket placeholders literally.
 - The recorded merge and branch history matches the actual Git graph. Use a merge commit or fast-forward integration that preserves each original contribution commit as an ancestor of main. Do not squash or rebase these published review contributions under this protocol. If an actual mandatory repository policy prevents a preserving merge, finish all unaffected work and record the precise policy boundary; any alternative history protocol requires an explicit owner decision and revised receipts before installation.

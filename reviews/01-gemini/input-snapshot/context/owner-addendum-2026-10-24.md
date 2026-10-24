@@ -1,5 +1,9 @@
 # Owner addendum — single-file bootstrap and staged execution
 
+## Current access decision — 2026-10-24
+
+Misha explicitly changed `MGrinch/Lucifer` to **public** so Gemini and Grok can read it without private-repository access. This supersedes earlier requirements to keep this repository private, including those in the unchanged canonical specification, bootstrap guides and archived snapshots. Read access is public; writes still require an authorized authenticated writer. Do not upload credentials, private installation backups, account exports or unrelated personal data. Public visibility grants no new license to the personal corpus and changes neither the two-review gate nor installation permissions.
+
 Authority: Misha's direct request on 2026-10-24. This supplements the earlier owner brief. It changes delivery and execution detail, not Lucifer's established character. The source persona R1 and historical corpus remain intact.
 
 ## Requested sequence
