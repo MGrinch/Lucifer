@@ -21,16 +21,30 @@
     "reason": "Single-file Codex bootstrap adds owner delivery instructions, real Git publication receipts and explicit control-level coverage; previous unreviewed preparation freeze preserved."
   },
   "publication": {
-    "status": "PRIVATE_REMOTE_CREATED_CONTENT_NOT_PUSHED",
+    "status": "VERIFIED_PRIVATE_PUBLICATION",
     "intended_repository": "MGrinch/Lucifer",
     "requested_visibility": "private",
     "observed_private": true,
     "remote_creation_verified": true,
     "url": "https://github.com/MGrinch/Lucifer",
-    "creation_route": "GitHub MCP create_repository",
-    "privacy_readback_route": "authenticated gh api repos/MGrinch/Lucifer",
+    "default_branch": "main",
+    "first_content_commit": "f2d3c0488f9b4b5e9a3759cc8235072f677e9c67",
+    "observed_remote_head": "f2d3c0488f9b4b5e9a3759cc8235072f677e9c67",
+    "verified_at_utc": "2026-10-24T17:48:38.175338+00:00",
+    "write_route": "GitHub MCP private repository creation; existing authenticated Git HTTPS writer",
+    "readback_route": "GitHub REST metadata and untruncated tree; git fetch and ls-remote; byte/mode verification against source package",
+    "remote_tree_files": 314,
+    "original_package_files": 311,
+    "supplement_files": 3,
+    "original_content_changes": [
+      "workflow/state.json publication and reviewer-intake metadata only"
+    ],
+    "canonical_and_frozen_inputs_byte_identical": true,
+    "credential_pattern_findings": 0,
+    "credential_scan_limit": "Pattern scan is defense in depth, not a proof of absence",
     "historical_blocker_resolved": true,
-    "next_action": "Commit, push and independently verify remote content before declaring published."
+    "receipt_note": "This record pins the independently verified content commit; the later metadata receipt commit necessarily has a different head.",
+    "next_action": "Owner launches the actual Gemini review using prompts/gemini.md plus all pinned reviewer_intake supplements."
   },
   "preparation_verification": {
     "static_checks": "PASSED",
@@ -74,5 +88,27 @@
       }
     ],
     "next_action": "Gemini reads and critiques these additional inputs; records hashes/ranges separately; integrator dispositions accepted changes before the fresh Grok freeze."
+  },
+  "bootstrap_verification": {
+    "recorded_at_utc": "2026-10-24T17:48:38.175338+00:00",
+    "build": "PASSED_32_GENERATED_FILES",
+    "static_checks": "PASSED",
+    "candidate_fingerprint_recomputed": "362bf7490bb2aff6a7772eee99a5bb982d850c41b7155714de219aaab50ce60c",
+    "original_and_frozen_manifest_match": true,
+    "unit_tests_run": 33,
+    "unit_tests_passed": 32,
+    "unit_tests_skipped": 1,
+    "skip_reason": "Windows symlink creation requires a privilege absent in this session; no elevation requested",
+    "installation_gate": "EXPECTED_REJECTION_NOT_READY_FOR_INSTALL",
+    "source_bytes_and_modes": "VERIFIED_EXCEPT_INTENTIONAL_STATE_METADATA",
+    "github_integrity_run_at_first_readback": {
+      "id": 40117762567,
+      "status": "in_progress",
+      "url": "https://github.com/MGrinch/Lucifer/actions/runs/40117762567"
+    },
+    "native_behavior": "NOT_RUN",
+    "acoustic_behavior": "NOT_RUN",
+    "reviews_executed": false,
+    "personalization_installed": false
   }
 }
