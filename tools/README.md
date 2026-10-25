@@ -20,7 +20,7 @@ Use `python` or the appropriate Windows Python launcher when that is the availab
 - `build` owns the disposable `generated/` tree. It writes eight payloads, the 48 JSONL test definitions, 22 traceable reading sections, and a deterministic generated manifest. It removes stale generated files. It never changes the canonical specification, reviews, workflow state, sources, or settings.
 - `check` verifies required navigation, source byte hashes, extraction, exact generated content, payload limits, text-case IDs/splits, voice-case IDs, and reports the readiness gate separately. A valid pending repository can pass static checks while `ready_for_install` is false. An invalid claimed `READY_FOR_INSTALL` fails `check`.
 - `manifest` prints the current candidate manifest from the explicit reviewed-file allowlist. Redirecting it to `workflow/input-manifest.json` does not alter the candidate fingerprint. A printed manifest alone is not frozen evidence.
-- `freeze --round ...` saves the current manifest plus byte-exact inputs under that round's `input-snapshot/`. It never marks a file read or a review complete. A previously frozen identical input is a no-op; changed snapshots, changed real manifests, and missing snapshots for completed/attested reviews cannot be overwritten. The pristine pending placeholder `{schema:1,status:"NOT_PREPARED",fingerprint:null,files:[]}` can be initialized when no actual-review attestation or snapshot exists. Stage temporary copies are verified before becoming the snapshot.
+- `freeze --round ...` saves the current manifest plus byte-exact inputs under `input-snapshots/<fingerprint>/`. It never marks a file read or a review complete. Older pending snapshots stay in place when the candidate changes; the active manifest points to the new version. An identical input is a no-op. Corrupt snapshots, existing version collisions, and completed/attested reviews cannot be overwritten. The legacy `input-snapshot/` path remains readable for existing records. The pristine pending placeholder `{schema:1,status:"NOT_PREPARED",fingerprint:null,files:[]}` can be initialized when no actual-review attestation or snapshot exists. Stage temporary copies are verified before becoming the snapshot.
 - `gate` first performs static checks, then requires the complete sequential review/integration evidence below and the exact current candidate. The initial repository intentionally fails this gate.
 
 These tools check record consistency, byte integrity and attested reading coverage. They cannot authenticate a vendor, independently prove attention to every line, establish that a reported experiment happened, or certify native installation, behavior or voice. A truthful review capture and human/integrator assessment remain necessary. Unit tests use temporary synthetic records and do not constitute Gemini/Grok reviews.
@@ -41,7 +41,7 @@ outputs/
 private/
 ```
 
-Also reject the exact `.git` worktree file, `workflow/state.json`, `workflow/input-manifest.json`, every `__pycache__` directory, and `.pyc` files. Secret-like `.env*`, private-key names/extensions, and `.log` files cannot be allowlisted. Other authored installation instructions and the authored `.gitignore` remain included when explicitly listed; arbitrary gitignore rules are not interpreted. Symlinks and paths outside the repository are unsupported. Binary evidence should remain an explicitly referenced external item unless a later authorized schema adds a suitable review-coverage method.
+Also reject the exact `.git` worktree file, `workflow/state.json`, `workflow/input-manifest.json`, every `__pycache__` directory, and `.pyc` files. Secret-like `.env*`, private-key names/extensions, and `.log` files cannot be allowlisted. Other authored installation instructions and the authored `.gitignore` remain included when explicitly listed; arbitrary gitignore rules are not interpreted. Symlinks and paths outside the repository are unsupported. Binary evidence should remain an explicitly referenced external item unless a later authorized schema adds a suitable review-coverage method. Current Gemini supplements are pinned separately in `workflow/state.json.reviewer_intake`; their raw hashes and complete reading ranges are required in `reviews/01-gemini/supplementary-coverage.json`. This preserves the original frozen core snapshot while making the extra inputs part of the gate.
 
 For each included file, record its repository-relative POSIX path, raw SHA-256, bytes, and UTF-8 text line count. The fingerprint is SHA-256 over UTF-8 compact JSON of the sorted `{path, sha256}` pairs, with object keys sorted, no spaces, and `ensure_ascii=False`. The algorithm label is `sha256-path-hash-json-v1`. File metadata in the manifest is not a substitute for the actual raw-byte hash.
 
@@ -70,11 +70,11 @@ The extractor copies the authored payload blocks. It does not automatically prop
 
 Both `reviews/01-gemini/` and `reviews/02-grok/` require:
 
-1. `input-manifest.json` and `input-snapshot/`: the frozen complete candidate manifest and exact file bytes, created by `freeze`.
+1. `input-manifest.json` and the referenced `input-snapshots/<fingerprint>/` (or legacy `input-snapshot/`): the frozen complete candidate manifest and exact file bytes, created by `freeze`.
 2. `read-coverage.json`: matching `input_fingerprint` and `files: [{path, sha256, ranges, evidence}]`. Every input file appears once. Ranges are inclusive original line pairs such as `[[1, 100], [101, 230]]`; their union must cover all original lines, without gaps or out-of-bounds claims. An empty file has an empty range list. Evidence explains actual reading, including section/chunk routing and limits.
 3. `review.json`: completed status, truthful identity/attestation and artifact hashes.
 4. The actual unaltered report, structured `findings.json`, and `sources.json`, at the paths named by `review.json` within that review directory.
-5. `integration.json`: dispositions, input/output fingerprints, and exact evidence pins.
+5. `integration.json`: dispositions, input/output fingerprints, and exact evidence pins. Gemini additionally needs `supplementary-coverage.json` for every path pinned in `workflow/state.json.reviewer_intake`; its `input_fingerprint` is the frozen core candidate and its `external_fingerprint` hashes the exact supplementary path/hash set. Gemini's actual-review attestation records that same `supplementary_fingerprint`. Grok additionally needs `upstream-coverage.json` for the Gemini report, findings, sources, review/integration records, frozen manifest/read coverage, supplementary coverage and pinned supplements. The integration evidence and Grok upstream attestation pin that complete read-coverage record.
 
 `review.json` fields:
 
@@ -113,13 +113,13 @@ Completion requires `status: completed`, `actual_review: true`, the correct inpu
 
 `findings.json` contains `findings: [{id, blocking, summary, ...}]`. IDs are unique; `blocking` is Boolean. An empty list is valid only when the actual review found no actionable issues. `sources.json` contains `sources: [...]`; it may distinguish supplied-source references from newly verified primary sources. A blank research list does not justify invented citations.
 
-Grok's `review.json` additionally requires `upstream: {gemini_integration_sha256, reading_attested:true, evidence}`. The hash pins the actual raw Gemini integration record, which transitively pins its report, findings, sources, review identity, input manifest and reading coverage. `evidence` describes the real reading of that earlier review/integration. Changing Gemini's report and repinning its integration invalidates Grok's upstream pin; it cannot silently remain reviewed.
+Grok's `review.json` additionally requires `upstream: {gemini_integration_sha256, reading_attested:true, evidence, external_fingerprint, coverage_sha256}`. The external fingerprint and coverage hash pin the actual read ranges for the Gemini report, findings, sources, review identity, input manifest, core reading coverage, supplementary reading coverage, integration and pinned supplements. Changing any of these inputs invalidates Grok's upstream coverage until it is read and attested again.
 
 ## Integration and readiness
 
 `integration.json` has `status: integrated`, the reviewed `input_fingerprint`, integrated `output_fingerprint`, an exact `evidence` object, and `dispositions`.
 
-The evidence object contains precisely six raw file hashes:
+The evidence object contains six base raw file hashes plus one stage-specific coverage hash:
 
 ```text
 review_sha256          review.json
@@ -128,6 +128,8 @@ read_coverage_sha256   read-coverage.json
 report_sha256          the named report
 findings_sha256        the named findings JSON
 sources_sha256         the named sources JSON
+supplementary_coverage_sha256  Gemini only; exact read coverage for pinned supplements
+upstream_coverage_sha256      Grok only; exact read coverage for Gemini's packet
 ```
 
 Every finding has one disposition: `{finding_id, decision, reason, ...}`. `accepted` requires nonempty `verification` and `change_refs`; `rejected` requires the reason; `deferred` requires a nonblocking finding and a concrete `next_action`. Explain duplicates through a rejection reason referencing the finding/fix they duplicate. No blocking finding may be deferred. The machine verifies required evidence fields, not the truth or sufficiency of a prose rationale.

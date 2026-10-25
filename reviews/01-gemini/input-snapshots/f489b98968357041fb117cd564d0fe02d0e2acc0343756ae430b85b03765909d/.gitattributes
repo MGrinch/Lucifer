@@ -1,0 +1,5 @@
+* text=auto eol=lf
+sources/corpus/** -text
+sources/baseline/** -text
+reviews/**/input-snapshot/** -text
+reviews/**/input-snapshots/** -text

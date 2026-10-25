@@ -4,7 +4,7 @@ This is a working brief derived from Misha's requests and the recovered persona 
 
 ## Current task
 
-Create a private repository called Lucifer. Arrange a path from `start here.md` to `goal.md`. Preserve the researched `persona.md`. Have Gemini 4 Argon with requested high reasoning critique it using Google/YouTube sources. Integrate accepted changes. Have Grok 4.7 with requested high reasoning critique the updated result using X and other relevant evidence. Integrate the accepted changes into `main`. Then a separately instructed Codex gpt-6.1-sol worker at requested high effort installs the accepted persona through supported controls.
+Keep the intentionally public `MGrinch/Lucifer` repository as the shared read path for its two external reviewers; the owner has already changed its visibility so Gemini and Grok can read it. Preserve the researched `persona.md`. Have Gemini 4 Argon with requested high reasoning critique it using Google/YouTube sources. Integrate accepted changes. Have Grok 4.7 with requested high reasoning critique the updated result using X and other relevant evidence. Integrate the accepted changes into `main`. Then a separately instructed Codex gpt-6.1-sol worker at requested high effort installs the accepted persona through supported controls. Never change repository visibility as part of this workflow.
 
 The two critiques are future tasks. This repository does not impersonate either reviewer or claim that either has run.
 

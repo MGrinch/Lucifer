@@ -22,11 +22,11 @@
     "unit_tests_run": 33,
     "unit_tests_skipped": 1
   },
-  "candidate_fingerprint": "ea19cbb47577219582541f41789480d7c782f6ffa68aaa9537f3f5e7f336ba7a",
+  "candidate_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
   "complementary_review_update": {
     "canonical_persona_changed": false,
     "coordinator_self_check_design": "One evidence/coverage self-check and one adversarial consistency self-check per reviewer; finite resource cap",
-    "current_fingerprint": "ea19cbb47577219582541f41789480d7c782f6ffa68aaa9537f3f5e7f336ba7a",
+    "current_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
     "final_codex": "Apply every actual supported relevant control after real review/integration/gate prerequisites; readback and fresh behavior/voice checks",
     "gemini_evidence_lane": "Major practical YouTube research; actual modality/timestamps; primary verification",
     "grok_evidence_lane": "Major original X/thread/implementation research; independent audit and explicit Gemini comparison",
@@ -39,6 +39,33 @@
     "recorded_at_utc": "2026-10-24T18:23:00.499968+00:00",
     "skills": "Discover and apply relevant actually available native skills; do not invent capabilities",
     "status": "PREPARED_AND_LOCALLY_CHECKED"
+  },
+  "gate_hardening_update": {
+    "current_candidate_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
+    "gemini_review": "NOT_STARTED",
+    "grok_review": "NOT_STARTED",
+    "installation": "NOT_STARTED",
+    "persona_changed": false,
+    "previous_candidate_fingerprint": "29cfa61ef760f05f073089244e43857c3610365b2ea157d47f17d453921744c9",
+    "recorded_at_utc": "2026-10-25T06:43:35.963721+00:00",
+    "supplementary_and_upstream_read_coverage": "ENFORCED_BY_GATE",
+    "test_results": {
+      "baseline_regression_reproduction": "SYNTHETIC_BASE_COMMIT_ACCEPTED_READY_CHAIN_WITHOUT_EITHER_EXTERNAL_COVERAGE_FILE",
+      "build": "PASSED_32_GENERATED_FILES",
+      "native_behavior": "NOT_RUN",
+      "readiness_gate": "EXPECTED_BLOCK: Workflow is not READY_FOR_INSTALL",
+      "real_gemini_review": "NOT_RUN",
+      "real_grok_review": "NOT_RUN",
+      "static_checks": "PASSED",
+      "unit_tests": {
+        "first_default_temp_attempt": "FAILED because the sandbox denied writes to the OS temp directory; rerun passed with workspace-local temp",
+        "passed": 39,
+        "run": 40,
+        "skip_reason": "Windows host lacks symlink privilege (WinError 1314); no elevated retry",
+        "skipped": 1
+      }
+    },
+    "verified_at_utc": "2026-10-25T06:44:03.232728+00:00"
   },
   "gemini": "NOT_STARTED",
   "grok": "NOT_STARTED",
@@ -95,7 +122,7 @@
     "canonical_persona_changed": false,
     "current_fingerprint": "9e20a39fc851e8eae02a61067f5f68eddb5777d3ac9b48eacdce95af0e17033c",
     "guidance_verification": "LOCAL_CHECKS_PASSED",
-    "owner_request": "Make it public I need to point a Gemini and grok to it they have no access to my private repos so it needs to be public",
+    "owner_request": "Owner requested public access so the external reviewers can read the repository.",
     "previous_fingerprint": "362bf7490bb2aff6a7772eee99a5bb982d850c41b7155714de219aaab50ce60c",
     "review_phase_unchanged": true,
     "static_checks": "PASSED",
@@ -140,7 +167,7 @@
     "verified_at_utc": "2026-10-24T17:48:38.175338+00:00",
     "visibility_change_authority": "Misha's direct request in the current Codex conversation, 2026-10-24",
     "visibility_verified_at_utc": "2026-10-24T18:02:45.485301+00:00",
-    "write_route": "GitHub MCP private repository creation; existing authenticated Git HTTPS writer"
+    "write_route": "GitHub MCP content writer and existing authenticated Git HTTPS writer; repository already existed and remained public"
   },
   "required_order": [
     "gemini_review",
@@ -154,7 +181,8 @@
   "reviewer_intake": {
     "canonical_candidate_unchanged": false,
     "canonical_persona_unchanged": true,
-    "coverage_enforced_by_current_gate": false,
+    "coverage_enforced_by_current_gate": true,
+    "current_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
     "files": [
       {
         "bytes": 10898,
@@ -163,10 +191,10 @@
         "sha256": "5a10f8d001848f3c9e09e7e4677f4fd5491b494a0c585fd08b10d1883a2f2f82"
       },
       {
-        "bytes": 3209,
+        "bytes": 3440,
         "lines": 26,
         "path": "reviews/01-gemini/supplements/README.md",
-        "sha256": "e6282b8ab817116e72d8c3bec29620ad4880bd078dab24a2e6e62d7179f5f34d"
+        "sha256": "432007d010cabd2a81580ca60a3bd52567e530d6adf63227de524556a968d6fd"
       },
       {
         "bytes": 13661,
@@ -178,13 +206,8 @@
     "next_action": "Gemini reads and critiques these additional inputs; records hashes/ranges separately; integrator dispositions accepted changes before the fresh Grok freeze.",
     "original_frozen_manifest_preserved_at": "reviews/preparation-archive/362bf7490bb2aff6a7772eee99a5bb982d850c41b7155714de219aaab50ce60c",
     "original_frozen_manifest_unchanged": false,
-    "owner_request_excerpts": [
-      "I want a n agent to have a personality that stems from first principles going up",
-      "I didn't see the close but still wrong examples being represented in the examples for target behavior",
-      "with in tolerable measurable delta of detactably p value over noise"
-    ],
     "previous_pending_input_preserved_at": "reviews/preparation-archive/9e20a39fc851e8eae02a61067f5f68eddb5777d3ac9b48eacdce95af0e17033c",
-    "source": "Mishas live request in the current Codex task, 2026-10-24",
+    "source": "Supplemental proposals prepared for external review; direct conversation excerpts are not stored here.",
     "status": "UNREVIEWED_SUPPLEMENTARY_PROPOSALS"
   },
   "runtime_validation": "NOT_RUN",

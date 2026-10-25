@@ -57,7 +57,7 @@ Do not call the work finished by diluting Lucifer into generic politeness, addin
 
 ## Additional completion predicates from the final delivery request
 
-- Milestone A includes actual private remote creation/publication/readback under `workflow/00-repository-creation.md`; a local prepared repository alone is not remote publication.
+- Milestone A includes actual publication/readback of the owner-selected **public** repository under `workflow/00-repository-creation.md`; preserve its verified visibility and do not change it. A local prepared repository alone is not remote publication.
 - Milestone B includes two real separately attributable review contributions, verified pushes and merges, preserved history, and final remote-main checks under `workflow/08-git-review-history.md`. The content gate alone does not check these events.
 - Milestone C requires expanding `install/control-catalog.json` into actual per-control/per-object/per-device coverage under `workflow/09-surface-coverage.md`. Every relevant control has a deliberate evidence-backed disposition; unavailable controls remain explicit gaps.
 - Initial bootstrap does not perform future reviews or native installation. Final Codex honors the actual assigned phase and existing conditional installation authorization without redundant confirmation.
