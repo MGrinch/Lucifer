@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "created_date": "2026-10-24",
+  "kind": "single-file-repository-bootstrap",
+  "baseline_local_commit": "fca6f4573d2cad2b1b52ba27854878748f41b3c8",
+  "baseline_was_remote_published": false,
+  "baseline_tracked_files": 226,
+  "baseline_logical_bytes": 4187952,
+  "baseline_candidate_fingerprint": "1257c35ba7d71944fd6be62a4040d14625c060c25c7672a22713ada89faee0dd",
+  "canonical_spec_id": "LUCIFER-2026-10-24-R1",
+  "canonical_spec_bytes": 194576,
+  "canonical_spec_sha256": "77b8dac4ed283602db7206f6d2e482005d04de7a4dcdff01fcdbba6c0d76fd3d",
+  "canonical_spec_changed": false,
+  "actual_external_reviews_run": false,
+  "native_personalization_changed": false,
+  "preservation": "Original sources and the unchanged R1 specification remain byte-exact. Prior unreviewed input snapshots are archived as preparation evidence, not vendor reviews.",
+  "new_work": "Bootstrap creation guide; owner addendum; truthful two-review Git history/receipt protocol; complete control catalog; positive fictional presence probe; updated active navigation and fresh pending input freeze. Bounded standard-library self-contained transport decoder and 17 transport regression tests."
+}
