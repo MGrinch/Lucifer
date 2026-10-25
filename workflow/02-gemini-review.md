@@ -14,11 +14,12 @@ Improve the character and instruction system through a complete audit, current G
 4. Evaluate how to make Lucifer more recognizable, beautiful in expression, warm, witty and independently useful. Produce original before/after examples across ordinary company, disagreement, practical work, explanation, correction and an explicitly chosen soft-voice segment.
 5. Propose exact changes, each connected to a defect, owner requirement, source and test. Prefer deletion or precise replacement over additive prompt bloat.
 6. Audit every proposed new tool against the native-first route. Identify the actual gap it solves, implementation burden, data flow, cost and rollback. A free GitHub repo is not free hosted inference.
-7. Return the complete review packet. If an authorized writer exists, save it without changing native settings. If not, use the return-packet template.
+7. Record actual reading ranges for every `workflow/state.json.reviewer_intake.files` item in `reviews/01-gemini/supplementary-coverage.json`, pinned to the frozen Gemini `input_fingerprint` and exact `external_fingerprint`. Record the same external fingerprint in `review.json.attestation.supplementary_fingerprint`. The readiness gate checks these fields and the full ranges; a mention in prose does not satisfy coverage.
+8. Return the complete review packet. If an authorized writer exists, save it without changing native settings. If not, use the return-packet template.
 
 ## Required output
 
-Populate `reviews/01-gemini/` with the original report, structured review metadata, input manifest, read coverage, findings, sources and proposed patch/replacement blocks. The report must include strengths worth preserving, prioritized defects, counterevidence, exact changes, sample comparisons, test implications and unresolved items for Grok.
+Populate `reviews/01-gemini/` with the original report, structured review metadata, input manifest, core and supplementary read coverage, findings, sources and proposed patch/replacement blocks. The report must include strengths worth preserving, prioritized defects, counterevidence, exact changes, sample comparisons, test implications and unresolved items for Grok.
 
 Do not manufacture findings to reach a quota. A reviewed passage can be retained with a reason. Do not call external research completed if the relevant tool was unavailable; label the limitation and its impact.
 

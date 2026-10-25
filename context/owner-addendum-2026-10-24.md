@@ -2,18 +2,18 @@
 
 ## Current access decision — 2026-10-24
 
-Misha explicitly changed `MGrinch/Lucifer` to **public** so Gemini and Grok can read it without private-repository access. This supersedes earlier requirements to keep this repository private, including those in the unchanged canonical specification, bootstrap guides and archived snapshots. Read access is public; writes still require an authorized authenticated writer. Do not upload credentials, private installation backups, account exports or unrelated personal data. Public visibility grants no new license to the personal corpus and changes neither the two-review gate nor installation permissions.
+`MGrinch/Lucifer` is intentionally **public** by Misha's explicit instruction so Gemini and Grok can read it. Preserve its existing visibility; do not change it. This owner decision supersedes older workflow notes that called for private publication. Read access is public; writes still require an authorized authenticated writer. Do not upload credentials, private installation backups, account exports or unrelated personal data. Public visibility grants no new license to the personal corpus and changes neither the two-review gate nor installation permissions.
 
 Authority: Misha's direct request on 2026-10-24. This supplements the earlier owner brief. It changes delivery and execution detail, not Lucifer's established character. The source persona R1 and historical corpus remain intact.
 
 ## Requested sequence
 
-1. Supply one complete file to a Codex worker that can create repositories. That worker must create and populate **private `MGrinch/Lucifer`**, including all prepared material and an intelligible agent path from `start here.md` to `goal.md`.
+1. Supply one complete file to a Codex worker that can create repositories. That worker must create and populate `MGrinch/Lucifer` under the then-current owner decision. Misha later explicitly made the existing repository **public** so Gemini and Grok can read it; preserve and verify that visibility without changing it. Include all prepared material and an intelligible agent path from `start here.md` to `goal.md`.
 2. Misha will direct **Gemini 4 Argon**, with high reasoning where actually exposed, to perform the first real research and critique pass. Preserve its actual work, implement accepted changes, commit, push and merge them into `main`.
 3. Misha will direct **Grok 4.7**, with high reasoning where actually exposed, to perform the second real pass on the Gemini-integrated candidate. Preserve its actual work, reconcile and implement accepted changes, commit, push and merge them into `main`.
 4. A final **Codex gpt-6.1-sol** worker, requested high effort, uses the merged and verified repository to update every applicable, supported user-controlled personalization surface. It discovers the actual Windows 11/Android/account/agent environment, uses permitted computer automation and supported configuration tools, and verifies the experienced result.
 
-The first bootstrap assignment ends when the private repository is verified ready for Gemini. It does not impersonate reviewers, launch unsolicited vendor conversations, or install the persona prematurely. Misha has already expressed conditional intent for the final installation after the two real reviews; when the later worker is assigned that phase and prerequisites hold, do not demand a second ritual confirmation for ordinary in-scope work. Current host permissions and actual account access still apply.
+The first bootstrap assignment ends when the owner-selected public repository is verified ready for Gemini. It does not impersonate reviewers, launch unsolicited vendor conversations, or install the persona prematurely. Misha has already expressed conditional intent for the final installation after the two real reviews; when the later worker is assigned that phase and prerequisites hold, do not demand a second ritual confirmation for ordinary in-scope work. Current host permissions and actual account access still apply.
 
 ## Git meaning
 

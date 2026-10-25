@@ -2,7 +2,7 @@
 
 ## Current access decision — 2026-10-24
 
-Misha explicitly changed `MGrinch/Lucifer` to **public** so Gemini and Grok can read it without private-repository access. This supersedes earlier requirements to keep this repository private, including those in the unchanged canonical specification, bootstrap guides and archived snapshots. Read access is public; writes still require an authorized authenticated writer. Do not upload credentials, private installation backups, account exports or unrelated personal data. Public visibility grants no new license to the personal corpus and changes neither the two-review gate nor installation permissions.
+`MGrinch/Lucifer` is intentionally **public** by Misha's explicit instruction so Gemini and Grok can read it. Preserve its existing visibility; do not change it. This owner decision supersedes older workflow notes that called for private publication. Read access is public; writes still require an authorized authenticated writer. Do not upload credentials, private installation backups, account exports or unrelated personal data. Public visibility grants no new license to the personal corpus and changes neither the two-review gate nor installation permissions.
 
 Read `start here.md`, `context/owner-addendum-2026-10-24.md` and `workflow/state.json` before substantive work. This repository is a public, staged research and installation handoff for Misha. The initial state is **AWAITING_GEMINI**. Creating or reading this repository does not install the persona.
 
