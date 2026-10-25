@@ -34,4 +34,4 @@ No settings are applied by the review stage itself. Continue to [stage 06](06-in
 
 ## Required remote release proof
 
-Follow `08-git-review-history.md` stages B–C. Complete `reviews/02-grok/publication.json` from the actual contribution, push and merge; verify both review contributions and accepted bytes on private remote `main`. The current content gate is necessary but does not verify GitHub history. Hand the final installer the observed main commit and current fingerprint.
+Follow `08-git-review-history.md` stages B–C. Complete `reviews/02-grok/publication.json` from the actual contribution, push and merge; verify both review contributions and accepted bytes on public `main` while preserving repository visibility. The current content gate is necessary but does not verify GitHub history. Hand the final installer the observed main commit and current fingerprint.

@@ -128,7 +128,9 @@ def validate_manifest(root, value):
 
 
 def validate_snapshot(root, prefix, expected):
-    snapshot = safe_path(root, prefix + "input-snapshot")
+    snapshot_path = expected.get("snapshot_path", prefix + "input-snapshot")
+    require(isinstance(snapshot_path, str) and snapshot_path.startswith(prefix), "Frozen snapshot path outside review round")
+    snapshot = safe_path(root, snapshot_path)
     require(snapshot.is_dir(), "Frozen input snapshot missing")
     inventory = set()
     for path in snapshot.rglob("*"):
@@ -145,19 +147,33 @@ def freeze(root, folder):
     require(folder in dict(ROUNDS), "Select --round 01-gemini or 02-grok")
     prefix, current = f"reviews/{folder}/", manifest(root)
     review = read_json(root, prefix + "review.json")
-    target = safe_path(root, prefix + "input-snapshot")
     manifest_path = safe_path(root, prefix + "input-manifest.json")
-    if target.exists():
-        old = read_json(root, prefix + "input-manifest.json")
-        require(validate_snapshot(root, prefix, old) == current, "Existing frozen input changed; do not overwrite it")
-        return {"ok": True, "changed": False, "fingerprint": current["fingerprint"]}
-    require(review.get("status") == "pending" and review.get("attestation", {}).get("actual_review") is not True, "Cannot freeze a completed/attested review")
+    pending = review.get("status") == "pending" and review.get("attestation", {}).get("actual_review") is not True
+    legacy_target = safe_path(root, prefix + "input-snapshot")
+    require(not legacy_target.exists() or manifest_path.exists(), "Legacy frozen snapshot has no manifest; preserve and investigate")
+    old = read_json(root, prefix + "input-manifest.json") if manifest_path.exists() else None
+    pristine = old == {"schema": 1, "status": "NOT_PREPARED", "fingerprint": None, "files": []}
+    require(not pristine or not legacy_target.exists(),
+            "Pristine input manifest cannot bypass an existing legacy snapshot; preserve and investigate")
+    old_matches = isinstance(old, dict) and all(old.get(key) == current[key] for key in current)
+    if old_matches:
+        old_snapshot = old.get("snapshot_path", prefix + "input-snapshot")
+        if safe_path(root, old_snapshot).exists():
+            require(validate_snapshot(root, prefix, old) == current, "Existing frozen input is corrupt; preserve and investigate")
+            return {"ok": True, "changed": False, "fingerprint": current["fingerprint"]}
+    require(pending, "Cannot freeze a completed/attested review")
     if manifest_path.exists():
-        old = read_json(root, prefix + "input-manifest.json")
-        pristine = old == {"schema": 1, "status": "NOT_PREPARED", "fingerprint": None, "files": []}
-        require(pristine or old == current, "Existing real input manifest differs; preserve it")
+        require(pristine or isinstance(old, dict), "Invalid existing input manifest")
+        if not pristine and (legacy_target.exists() or old.get("snapshot_path")):
+            require(validate_snapshot(root, prefix, old), "Existing frozen input is invalid; preserve and investigate")
+    elif legacy_target.exists():
+        raise ValueError("Legacy frozen snapshot has no manifest; preserve and investigate")
+    target_relative = prefix + "input-snapshots/" + current["fingerprint"]
+    target = safe_path(root, target_relative)
+    require(not target.exists(), "Versioned snapshot path already exists; preserve and investigate")
+    target.parent.mkdir(parents=True, exist_ok=True)
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory(prefix=".freeze-", dir=manifest_path.parent) as work:
+    with tempfile.TemporaryDirectory(prefix=".freeze-", dir=target.parent) as work:
         stage = Path(work) / "input-snapshot"
         stage.mkdir()
         for item in current["files"]:
@@ -169,8 +185,10 @@ def freeze(root, folder):
         require(manifest(stage) == current, "Candidate metadata changed during freeze")
         require(not target.exists(), "Snapshot appeared during freeze")
         stage.rename(target)
-    manifest_path.write_bytes(encoded(current))
-    return {"ok": True, "changed": True, "fingerprint": current["fingerprint"], "state": "frozen_not_read_or_reviewed"}
+    frozen = {**current, "snapshot_path": target_relative}
+    manifest_path.write_bytes(encoded(frozen))
+    return {"ok": True, "changed": True, "fingerprint": current["fingerprint"], "snapshot_path": target_relative,
+            "state": "frozen_not_read_or_reviewed"}
 
 
 def fenced_block(document, kind, name, language):
@@ -250,28 +268,85 @@ def check_static(root):
     actual = {p.relative_to(root).as_posix() for p in safe_path(root, "generated").rglob("*") if p.is_file()}
     require(actual == set(expected), "Unexpected generated files; rebuild")
     validate_sources(root, allowlist(root))
+    reviewer_intake_pins(root)
+
+
+def reviewer_intake_pins(root):
+    state = read_json(root, "workflow/state.json")
+    intake = state.get("reviewer_intake", {})
+    require(isinstance(intake, dict), "Invalid reviewer intake")
+    pins = intake.get("files", [])
+    require(isinstance(pins, list), "Invalid reviewer intake file list")
+    normalized, seen = [], set()
+    for pin in pins:
+        require(isinstance(pin, dict) and nonempty(pin.get("path")), "Invalid reviewer intake pin")
+        path = pin["path"]
+        require(path.startswith("reviews/01-gemini/supplements/") and path not in seen,
+                "Reviewer intake path outside Gemini supplements or duplicated: " + path)
+        data = read_bytes(root, path)
+        lines = len(data.decode("utf-8").splitlines())
+        require(valid_hash(pin.get("sha256")) and pin["sha256"] == digest(data), "Reviewer intake hash mismatch: " + path)
+        require(type(pin.get("bytes")) is int and pin["bytes"] == len(data), "Reviewer intake byte count mismatch: " + path)
+        require(type(pin.get("lines")) is int and pin["lines"] == lines, "Reviewer intake line count mismatch: " + path)
+        normalized.append({"path": path, "sha256": pin["sha256"], "bytes": len(data), "lines": lines})
+        seen.add(path)
+    return sorted(normalized, key=lambda item: item["path"])
+
+
+def validate_file_read_coverage(files, entries, label):
+    require(isinstance(entries, list) and len(entries) == len(files), "Incomplete " + label + " inventory")
+    by_path = {entry.get("path"): entry for entry in entries if isinstance(entry, dict)}
+    require(len(by_path) == len(entries) and set(by_path) == {item["path"] for item in files}, label + " paths mismatch")
+    for item in files:
+        entry = by_path[item["path"]]
+        require(entry.get("sha256") == item["sha256"] and nonempty(entry.get("evidence")),
+                "Unpinned/unattested " + label + " reading: " + item["path"])
+        ranges = entry.get("ranges")
+        require(isinstance(ranges, list), "Missing " + label + " ranges: " + item["path"])
+        for span in ranges:
+            require(isinstance(span, list) and len(span) == 2 and all(type(number) is int for number in span),
+                    "Invalid " + label + " range: " + item["path"])
+            require(1 <= span[0] <= span[1] <= item["lines"], "Out-of-bounds " + label + " range: " + item["path"])
+        next_line = 1
+        for start, end in sorted(ranges):
+            require(start <= next_line, label + " coverage gap: " + item["path"])
+            next_line = max(next_line, end + 1)
+        require(next_line == item["lines"] + 1, "Partial " + label + " read: " + item["path"])
+
+
+def validate_external_coverage(candidate_fingerprint, files, value, label):
+    require(value.get("schema") == 1, "Unknown " + label + " schema")
+    require(value.get("input_fingerprint") == candidate_fingerprint, label + " candidate fingerprint mismatch")
+    external_fingerprint = fingerprint(files)
+    require(value.get("external_fingerprint") == external_fingerprint, label + " input fingerprint mismatch")
+    validate_file_read_coverage(files, value.get("files"), label)
+    return external_fingerprint
+
+
+def gemini_upstream_files(root):
+    prefix = "reviews/01-gemini/"
+    review = read_json(root, prefix + "review.json")
+    artifacts = review.get("artifacts", {})
+    require(isinstance(artifacts, dict) and set(artifacts) == {"report", "findings", "sources"}, "Invalid Gemini upstream artifacts")
+    paths = [prefix + name for name in ("review.json", "input-manifest.json", "read-coverage.json", "supplementary-coverage.json", "integration.json")]
+    for name in ("report", "findings", "sources"):
+        item = artifacts[name]
+        require(isinstance(item, dict) and isinstance(item.get("path"), str) and item["path"].startswith(prefix),
+                "Invalid Gemini upstream artifact path: " + name)
+        paths.append(item["path"])
+    paths.extend(item["path"] for item in reviewer_intake_pins(root))
+    files = []
+    for path in sorted(set(paths)):
+        data = read_bytes(root, path)
+        files.append({"path": path, "sha256": digest(data), "bytes": len(data),
+                      "lines": len(data.decode("utf-8").splitlines())})
+    return files
 
 
 def coverage(root, input_manifest, value):
     files = validate_manifest(root, input_manifest)
     require(value.get("input_fingerprint") == input_manifest["fingerprint"], "Coverage input mismatch")
-    entries = value.get("files")
-    require(isinstance(entries, list) and len(entries) == len(files), "Incomplete read-coverage inventory")
-    by_path = {e.get("path"): e for e in entries if isinstance(e, dict)}
-    require(len(by_path) == len(entries) and set(by_path) == {f["path"] for f in files}, "Coverage paths mismatch")
-    for f in files:
-        entry = by_path[f["path"]]
-        require(entry.get("sha256") == f["sha256"] and nonempty(entry.get("evidence")), "Unpinned/unattested reading: " + f["path"])
-        ranges = entry.get("ranges")
-        require(isinstance(ranges, list), "Missing read ranges")
-        for span in ranges:
-            require(isinstance(span, list) and len(span) == 2 and all(type(n) is int for n in span), "Invalid read range")
-            require(1 <= span[0] <= span[1] <= f["lines"], "Read range outside input")
-        next_line = 1
-        for start, end in sorted(ranges):
-            require(start <= next_line, "Read coverage gap: " + f["path"])
-            next_line = max(next_line, end + 1)
-        require(next_line == f["lines"] + 1, "Partial read: " + f["path"])
+    validate_file_read_coverage(files, value.get("files"), "read-coverage")
 
 
 def validate_round(root, folder, service):
@@ -302,6 +377,25 @@ def validate_round(root, folder, service):
     require(isinstance(attestation, dict), "Invalid attestation")
     require(attestation.get("actual_review") is True and attestation.get("input_fingerprint") == input_manifest["fingerprint"], "No actual review attestation for this input")
     require(all(nonempty(attestation.get(k)) for k in ("recorded_by", "evidence")), "Review provenance missing")
+    external_coverage_hash = None
+    if service == "Gemini":
+        intake = read_json(root, "workflow/state.json").get("reviewer_intake", {})
+        supplements = reviewer_intake_pins(root)
+        if supplements:
+            require(intake.get("current_fingerprint") == input_manifest["fingerprint"], "Gemini supplements are pinned to a different candidate")
+            external = read_json(root, prefix + "supplementary-coverage.json")
+            external_fingerprint = validate_external_coverage(input_manifest["fingerprint"], supplements, external, "Gemini supplementary coverage")
+            require(attestation.get("supplementary_fingerprint") == external_fingerprint, "Gemini attestation omits supplementary input fingerprint")
+            external_coverage_hash = digest(read_bytes(root, prefix + "supplementary-coverage.json"))
+    else:
+        upstream_files = gemini_upstream_files(root)
+        external = read_json(root, prefix + "upstream-coverage.json")
+        external_fingerprint = validate_external_coverage(input_manifest["fingerprint"], upstream_files, external, "Grok upstream coverage")
+        upstream = review.get("upstream", {})
+        require(isinstance(upstream, dict) and upstream.get("external_fingerprint") == external_fingerprint,
+                "Grok attestation omits Gemini upstream input fingerprint")
+        external_coverage_hash = digest(read_bytes(root, prefix + "upstream-coverage.json"))
+        require(upstream.get("coverage_sha256") == external_coverage_hash, "Grok upstream coverage hash mismatch")
     artifacts, hashes = review.get("artifacts", {}), {}
     require(isinstance(artifacts, dict) and set(artifacts) == {"report", "findings", "sources"}, "Expected three review artifacts")
     for name in ("report", "findings", "sources"):
@@ -326,6 +420,8 @@ def validate_round(root, folder, service):
     require(integration.get("input_fingerprint") == input_manifest["fingerprint"] and valid_hash(integration.get("output_fingerprint")), "Integration fingerprint mismatch")
     for field, path in (("review_sha256", "review.json"), ("input_manifest_sha256", "input-manifest.json"), ("read_coverage_sha256", "read-coverage.json")):
         hashes[field] = digest(read_bytes(root, prefix + path))
+    if external_coverage_hash is not None:
+        hashes["supplementary_coverage_sha256" if service == "Gemini" else "upstream_coverage_sha256"] = external_coverage_hash
     require(integration.get("evidence") == hashes, "Integration evidence pins differ")
     if service == "Grok":
         upstream = review.get("upstream", {})

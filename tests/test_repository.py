@@ -25,8 +25,15 @@ class RepositoryTests(unittest.TestCase):
         self.put("sources/corpus/history.txt", b"Historical test data.\n")
         self.write("sources/manifest.json", {"files": [{"path": "sources/corpus/history.txt", "sha256": tool.digest(b"Historical test data.\n")}], "external": []})
         self.write(tool.ALLOWLIST, {"schema": 1, "files": [*tool.NAVIGATION, tool.ALLOWLIST, "sources/manifest.json", "sources/corpus/history.txt"]})
+        self.supplement_path = "reviews/01-gemini/supplements/proposal.md"
+        self.put(self.supplement_path, b"Synthetic supplement.\nSecond line.\n")
         self.write("workflow/state.json", {"phase": "AWAITING_GEMINI", "candidate_fingerprint": None})
         tool.build(self.root)
+        supplement = self.root / self.supplement_path
+        data = supplement.read_bytes()
+        self.write("workflow/state.json", {"phase": "AWAITING_GEMINI", "candidate_fingerprint": None,
+            "reviewer_intake": {"current_fingerprint": tool.manifest(self.root)["fingerprint"], "files": [
+                {"path": self.supplement_path, "sha256": tool.digest(data), "bytes": len(data), "lines": len(data.decode("utf-8").splitlines())}]}})
 
     def put(self, path, data):
         target = self.root / path
@@ -39,6 +46,12 @@ class RepositoryTests(unittest.TestCase):
     def read(self, path):
         return json.loads((self.root / path).read_bytes())
 
+    def external_coverage(self, candidate_fingerprint, files, label):
+        return {"schema": 1, "input_fingerprint": candidate_fingerprint,
+            "external_fingerprint": tool.fingerprint(files), "files": [
+                {"path": item["path"], "sha256": item["sha256"], "ranges": [[1, item["lines"]]] if item["lines"] else [],
+                 "evidence": "Synthetic test declaration; no actual review."} for item in files]}
+
     def round(self, folder, service, findings=None, dispositions=None):
         prefix = f"reviews/{folder}/"
         self.write(prefix + "review.json", {"status": "pending", "attestation": {"actual_review": False}})
@@ -46,6 +59,15 @@ class RepositoryTests(unittest.TestCase):
         manifest = self.read(prefix + "input-manifest.json")
         self.write(prefix + "read-coverage.json", {"input_fingerprint": manifest["fingerprint"], "files": [
             {"path": f["path"], "sha256": f["sha256"], "ranges": [[1, f["lines"]]] if f["lines"] else [], "evidence": "Synthetic test declaration; no actual review."} for f in manifest["files"]]})
+        external_fingerprint = None
+        if service == "Gemini":
+            external_files = tool.reviewer_intake_pins(self.root)
+            external_fingerprint = tool.fingerprint(external_files)
+            self.write(prefix + "supplementary-coverage.json", self.external_coverage(manifest["fingerprint"], external_files, "Gemini"))
+        else:
+            external_files = tool.gemini_upstream_files(self.root)
+            external_fingerprint = tool.fingerprint(external_files)
+            self.write(prefix + "upstream-coverage.json", self.external_coverage(manifest["fingerprint"], external_files, "Grok"))
         self.put(prefix + "report.md", b"Synthetic fixture only; no Gemini or Grok review was performed.\n")
         self.write(prefix + "findings.json", {"findings": findings or []})
         self.write(prefix + "sources.json", {"sources": ["Synthetic fixture"]})
@@ -56,18 +78,29 @@ class RepositoryTests(unittest.TestCase):
         review = {"status": "completed", "identity": {"service_requested": service, "service_observed": service,
             "model_requested": requested, "model_observed": actual, "runtime_evidence": {"basis": "user_attestation", "model": actual, "reference": "Synthetic unit test"}},
             "attestation": {"actual_review": True, "input_fingerprint": manifest["fingerprint"], "recorded_by": "unittest fixture", "evidence": "Synthetic only"}, "artifacts": artifacts}
+        if service == "Gemini":
+            review["attestation"]["supplementary_fingerprint"] = external_fingerprint
         if service == "Grok":
-            review["upstream"] = {"gemini_integration_sha256": tool.digest((self.root / "reviews/01-gemini/integration.json").read_bytes()), "reading_attested": True, "evidence": "Synthetic upstream reading"}
+            coverage_hash = tool.digest((self.root / (prefix + "upstream-coverage.json")).read_bytes())
+            review["upstream"] = {"gemini_integration_sha256": tool.digest((self.root / "reviews/01-gemini/integration.json").read_bytes()),
+                "reading_attested": True, "evidence": "Synthetic upstream reading", "external_fingerprint": external_fingerprint,
+                "coverage_sha256": coverage_hash}
         self.write(prefix + "review.json", review)
         evidence = {name + "_sha256": item["sha256"] for name, item in artifacts.items()}
         evidence.update({field: tool.digest((self.root / prefix / name).read_bytes()) for field, name in (
             ("review_sha256", "review.json"), ("input_manifest_sha256", "input-manifest.json"), ("read_coverage_sha256", "read-coverage.json"))})
+        if service == "Gemini":
+            evidence["supplementary_coverage_sha256"] = tool.digest((self.root / prefix / "supplementary-coverage.json").read_bytes())
+        else:
+            evidence["upstream_coverage_sha256"] = tool.digest((self.root / prefix / "upstream-coverage.json").read_bytes())
         self.write(prefix + "integration.json", {"status": "integrated", "input_fingerprint": manifest["fingerprint"], "output_fingerprint": manifest["fingerprint"], "evidence": evidence, "dispositions": dispositions or []})
 
     def ready(self):
         for folder, service in tool.ROUNDS:
             self.round(folder, service)
-        self.write("workflow/state.json", {"phase": "READY_FOR_INSTALL", "candidate_fingerprint": tool.manifest(self.root)["fingerprint"]})
+        state = self.read("workflow/state.json")
+        state.update(phase="READY_FOR_INSTALL", candidate_fingerprint=tool.manifest(self.root)["fingerprint"])
+        self.write("workflow/state.json", state)
 
     def test_pending_is_static_valid_but_gate_closed(self):
         tool.check_static(self.root)
@@ -83,6 +116,24 @@ class RepositoryTests(unittest.TestCase):
         info = self.read("generated/manifest.json")
         self.assertEqual(len(info["sections"]), 22)
         self.assertEqual(len(info["payloads"]), 8)
+
+    def test_public_visibility_contract_has_no_private_bootstrap_directives(self):
+        public_paths = ("goal.md", "context/owner-intent.md", "context/owner-addendum-2026-10-24.md",
+                        "workflow/00-repository-creation.md", "research/cross-vendor-capabilities.md",
+                        "prompts/bootstrap-codex.md", "workflow/04-grok-review.md",
+                        "workflow/05-final-integration.md")
+        texts = {path: (REPO / path).read_text(encoding="utf-8") for path in public_paths}
+        stale = ("private `MGrinch/Lucifer`", "Visibility: private", "--private", "isPrivate == true",
+                 "private repository verified", "Keep the repo private", "Keep the repository private",
+                 "private visibility before transferring", "Do not publish the repo to simplify access",
+                 "private remote `main`", "verified private publication")
+        for path, document in texts.items():
+            with self.subTest(path=path):
+                for phrase in stale:
+                    self.assertNotIn(phrase, document)
+        self.assertIn("--public", texts["workflow/00-repository-creation.md"])
+        self.assertIn("do not change visibility", texts["workflow/00-repository-creation.md"].lower())
+        self.assertIn("do not change visibility", texts["prompts/bootstrap-codex.md"].lower())
 
     def test_generated_and_state_do_not_change_candidate(self):
         before = tool.manifest(self.root)["fingerprint"]
@@ -105,7 +156,7 @@ class RepositoryTests(unittest.TestCase):
         self.ready()
         self.put("goal.md", b"Changed candidate.\n")
         self.write("workflow/state.json", {"phase": "READY_FOR_INSTALL", "candidate_fingerprint": tool.manifest(self.root)["fingerprint"]})
-        with self.assertRaisesRegex(ValueError, "Final integration is stale"):
+        with self.assertRaisesRegex(ValueError, "Integration evidence pins differ"):
             tool.gate(self.root)
 
     def test_partial_read_fails(self):
@@ -200,18 +251,68 @@ class RepositoryTests(unittest.TestCase):
         integration = self.read(prefix + "integration.json")
         integration["evidence"].update(report_sha256=new_hash, review_sha256=tool.digest((self.root / prefix / "review.json").read_bytes()))
         self.write(prefix + "integration.json", integration)
-        with self.assertRaisesRegex(ValueError, "upstream Gemini evidence changed"):
+        with self.assertRaisesRegex(ValueError, "Grok upstream coverage input fingerprint mismatch"):
             tool.gate(self.root)
 
-    def test_freeze_placeholder_idempotency_and_immutability(self):
+    def test_pending_refreeze_preserves_old_snapshot_and_versions_new_candidate(self):
         prefix = "reviews/01-gemini/"
         self.write(prefix + "review.json", {"status": "pending", "attestation": {"actual_review": False}})
         self.write(prefix + "input-manifest.json", {"schema": 1, "status": "NOT_PREPARED", "fingerprint": None, "files": []})
-        self.assertTrue(tool.freeze(self.root, "01-gemini")["changed"])
+        first = tool.freeze(self.root, "01-gemini")
+        self.assertTrue(first["changed"])
+        old_manifest = self.read(prefix + "input-manifest.json")
+        old_path = old_manifest["snapshot_path"]
+        old_bytes = (self.root / old_path / "goal.md").read_bytes()
         self.assertFalse(tool.freeze(self.root, "01-gemini")["changed"])
         self.put("goal.md", b"New candidate")
-        with self.assertRaisesRegex(ValueError, "Existing frozen input changed"):
+        second = tool.freeze(self.root, "01-gemini")
+        self.assertTrue(second["changed"])
+        new_manifest = self.read(prefix + "input-manifest.json")
+        self.assertNotEqual(old_path, new_manifest["snapshot_path"])
+        self.assertEqual((self.root / old_path / "goal.md").read_bytes(), old_bytes)
+        self.assertEqual(tool.validate_snapshot(self.root, prefix, old_manifest)["fingerprint"], old_manifest["fingerprint"])
+        self.assertFalse(tool.freeze(self.root, "01-gemini")["changed"])
+
+    def test_pristine_manifest_cannot_bypass_legacy_snapshot(self):
+        prefix = "reviews/01-gemini/"
+        self.write(prefix + "review.json", {"status": "pending", "attestation": {"actual_review": False}})
+        self.write(prefix + "input-manifest.json", {"schema": 1, "status": "NOT_PREPARED", "fingerprint": None, "files": []})
+        (self.root / (prefix + "input-snapshot")).mkdir(parents=True)
+        with self.assertRaisesRegex(ValueError, "Pristine input manifest cannot bypass an existing legacy snapshot"):
             tool.freeze(self.root, "01-gemini")
+
+    def test_completed_review_cannot_be_refrozen(self):
+        prefix = "reviews/01-gemini/"
+        self.write(prefix + "review.json", {"status": "pending", "attestation": {"actual_review": False}})
+        tool.freeze(self.root, "01-gemini")
+        self.write(prefix + "review.json", {"status": "completed", "attestation": {"actual_review": True}})
+        self.put("goal.md", b"New candidate")
+        with self.assertRaisesRegex(ValueError, "Cannot freeze a completed/attested review"):
+            tool.freeze(self.root, "01-gemini")
+
+    def test_gemini_supplementary_coverage_is_required(self):
+        self.ready()
+        path = "reviews/01-gemini/supplementary-coverage.json"
+        value = self.read(path)
+        value["files"] = []
+        self.write(path, value)
+        with self.assertRaisesRegex(ValueError, "Incomplete Gemini supplementary coverage inventory"):
+            tool.gate(self.root)
+
+    def test_changed_gemini_supplement_fails_its_pin(self):
+        self.ready()
+        self.put(self.supplement_path, b"Changed after pin.\n")
+        with self.assertRaisesRegex(ValueError, "Reviewer intake hash mismatch"):
+            tool.gate(self.root)
+
+    def test_grok_upstream_coverage_is_required(self):
+        self.ready()
+        path = "reviews/02-grok/upstream-coverage.json"
+        value = self.read(path)
+        value["files"] = []
+        self.write(path, value)
+        with self.assertRaisesRegex(ValueError, "Incomplete Grok upstream coverage inventory"):
+            tool.gate(self.root)
 
 
 if __name__ == "__main__":
