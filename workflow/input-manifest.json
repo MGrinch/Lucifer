@@ -308,10 +308,10 @@
       "sha256": "285f5e682b2c82f76f7b64b53eddf28538422e684ce6c985fbc70fe9a33f7ba1"
     },
     {
-      "bytes": 18270,
-      "lines": 319,
+      "bytes": 18681,
+      "lines": 328,
       "path": "tests/test_repository.py",
-      "sha256": "c83dc94fd9c37d0782d737fa1bd0ae33c8854e2dc1d698cf90474bc940e8692e"
+      "sha256": "53758e62b99a2fac7aab2ee10b3bebe8168999f75e0edd1ff32e1829043ed35a"
     },
     {
       "bytes": 10411,
@@ -326,10 +326,10 @@
       "sha256": "78390e39f435a3bca914a3e03021aad16907c533f25cc65da06f3d2a9be43378"
     },
     {
-      "bytes": 29310,
+      "bytes": 29334,
       "lines": 492,
       "path": "tools/lucifer.py",
-      "sha256": "d0888d6c8b9c87d7c8198661b5f5958386b48ee87dfa587b4f559618096f902e"
+      "sha256": "2de78cbf11fdf9ec0395fd3250404c4050d76bcbc687aad6409bf434a62c892b"
     },
     {
       "bytes": 14914,
@@ -410,6 +410,6 @@
       "sha256": "f7224f489ab45b8d8c598fa4c2fc813ff36f7c02940c3fe5bb81ab06351a84b7"
     }
   ],
-  "fingerprint": "29cfa61ef760f05f073089244e43857c3610365b2ea157d47f17d453921744c9",
+  "fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
   "schema": 1
 }

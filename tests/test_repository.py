@@ -155,8 +155,10 @@ class RepositoryTests(unittest.TestCase):
     def test_changed_candidate_cannot_be_cured_by_state_only(self):
         self.ready()
         self.put("goal.md", b"Changed candidate.\n")
-        self.write("workflow/state.json", {"phase": "READY_FOR_INSTALL", "candidate_fingerprint": tool.manifest(self.root)["fingerprint"]})
-        with self.assertRaisesRegex(ValueError, "Integration evidence pins differ"):
+        state = self.read("workflow/state.json")
+        state.update(phase="READY_FOR_INSTALL", candidate_fingerprint=tool.manifest(self.root)["fingerprint"])
+        self.write("workflow/state.json", state)
+        with self.assertRaisesRegex(ValueError, "Final integration is stale"):
             tool.gate(self.root)
 
     def test_partial_read_fails(self):
@@ -304,6 +306,13 @@ class RepositoryTests(unittest.TestCase):
         self.put(self.supplement_path, b"Changed after pin.\n")
         with self.assertRaisesRegex(ValueError, "Reviewer intake hash mismatch"):
             tool.gate(self.root)
+
+    def test_supplementary_inputs_cannot_be_unpinned(self):
+        state = self.read("workflow/state.json")
+        state["reviewer_intake"]["files"] = []
+        self.write("workflow/state.json", state)
+        with self.assertRaisesRegex(ValueError, "Reviewer intake must pin at least one supplement"):
+            tool.check_static(self.root)
 
     def test_grok_upstream_coverage_is_required(self):
         self.ready()

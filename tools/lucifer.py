@@ -276,7 +276,7 @@ def reviewer_intake_pins(root):
     intake = state.get("reviewer_intake", {})
     require(isinstance(intake, dict), "Invalid reviewer intake")
     pins = intake.get("files", [])
-    require(isinstance(pins, list), "Invalid reviewer intake file list")
+    require(isinstance(pins, list) and pins, "Reviewer intake must pin at least one supplement")
     normalized, seen = [], set()
     for pin in pins:
         require(isinstance(pin, dict) and nonempty(pin.get("path")), "Invalid reviewer intake pin")

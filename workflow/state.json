@@ -22,11 +22,11 @@
     "unit_tests_run": 33,
     "unit_tests_skipped": 1
   },
-  "candidate_fingerprint": "29cfa61ef760f05f073089244e43857c3610365b2ea157d47f17d453921744c9",
+  "candidate_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
   "complementary_review_update": {
     "canonical_persona_changed": false,
     "coordinator_self_check_design": "One evidence/coverage self-check and one adversarial consistency self-check per reviewer; finite resource cap",
-    "current_fingerprint": "29cfa61ef760f05f073089244e43857c3610365b2ea157d47f17d453921744c9",
+    "current_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
     "final_codex": "Apply every actual supported relevant control after real review/integration/gate prerequisites; readback and fresh behavior/voice checks",
     "gemini_evidence_lane": "Major practical YouTube research; actual modality/timestamps; primary verification",
     "grok_evidence_lane": "Major original X/thread/implementation research; independent audit and explicit Gemini comparison",
@@ -41,13 +41,13 @@
     "status": "PREPARED_AND_LOCALLY_CHECKED"
   },
   "gate_hardening_update": {
-    "current_candidate_fingerprint": "29cfa61ef760f05f073089244e43857c3610365b2ea157d47f17d453921744c9",
+    "current_candidate_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
     "gemini_review": "NOT_STARTED",
     "grok_review": "NOT_STARTED",
     "installation": "NOT_STARTED",
     "persona_changed": false,
-    "previous_candidate_fingerprint": "56663f0d799150e914758a5872a8d91deaab156f65507a68e6a39f684c4836e1",
-    "recorded_at_utc": "2026-10-25T06:37:36.221109+00:00",
+    "previous_candidate_fingerprint": "29cfa61ef760f05f073089244e43857c3610365b2ea157d47f17d453921744c9",
+    "recorded_at_utc": "2026-10-25T06:43:35.963721+00:00",
     "supplementary_and_upstream_read_coverage": "ENFORCED_BY_GATE",
     "test_results": {
       "baseline_regression_reproduction": "SYNTHETIC_BASE_COMMIT_ACCEPTED_READY_CHAIN_WITHOUT_EITHER_EXTERNAL_COVERAGE_FILE",
@@ -59,13 +59,13 @@
       "static_checks": "PASSED",
       "unit_tests": {
         "first_default_temp_attempt": "FAILED because the sandbox denied writes to the OS temp directory; rerun passed with workspace-local temp",
-        "passed": 38,
-        "run": 39,
+        "passed": 39,
+        "run": 40,
         "skip_reason": "Windows host lacks symlink privilege (WinError 1314); no elevated retry",
         "skipped": 1
       }
     },
-    "verified_at_utc": "2026-10-25T06:38:33.932781+00:00"
+    "verified_at_utc": "2026-10-25T06:44:03.232728+00:00"
   },
   "gemini": "NOT_STARTED",
   "grok": "NOT_STARTED",
@@ -182,7 +182,7 @@
     "canonical_candidate_unchanged": false,
     "canonical_persona_unchanged": true,
     "coverage_enforced_by_current_gate": true,
-    "current_fingerprint": "29cfa61ef760f05f073089244e43857c3610365b2ea157d47f17d453921744c9",
+    "current_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
     "files": [
       {
         "bytes": 10898,
