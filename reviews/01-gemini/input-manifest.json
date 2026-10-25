@@ -2,10 +2,10 @@
   "algorithm": "sha256-path-hash-json-v1",
   "files": [
     {
-      "bytes": 104,
-      "lines": 4,
+      "bytes": 140,
+      "lines": 5,
       "path": ".gitattributes",
-      "sha256": "45947c5899db017c4b9da8f4e8a2b6f280ebaa2cb467c09c0c6c3771b10926c8"
+      "sha256": "735d5b5e3fa16291f2589ce0a6a8c76e6aae7849c9531c2f6c09ab1d9debd2eb"
     },
     {
       "bytes": 1109,
@@ -26,10 +26,10 @@
       "sha256": "af41fe522acf031a0bfee690a7bedff6777f8a8be063cb3a8cdb37860d46195a"
     },
     {
-      "bytes": 5103,
+      "bytes": 5062,
       "lines": 44,
       "path": "AGENTS.md",
-      "sha256": "30c41a046a6380f461f67171d124376f7c0b2fa854df9ca70b9a194a82ca77b3"
+      "sha256": "98dffefb765682109acfaa482aaae01aa6c29f05741145ed52ceac6fbca428cd"
     },
     {
       "bytes": 543,
@@ -44,10 +44,10 @@
       "sha256": "c621c61ce296b5c8648489fd343d9d73924716b87d0b7df6f12075baa189f0e4"
     },
     {
-      "bytes": 4919,
+      "bytes": 4878,
       "lines": 54,
       "path": "README.md",
-      "sha256": "f3407fdeaa3c60f3477622f71af44d4195c163cf55663805a2157f39f20acefb"
+      "sha256": "89c0fc843d366bb3d7cba0aaef3edd4bec8c14127f03c98f81cf49d9850f71fd"
     },
     {
       "bytes": 3408,
@@ -56,16 +56,16 @@
       "sha256": "feb5105292e3387294d2558151adc06624ff2444dace9f668c16e4dd4b355414"
     },
     {
-      "bytes": 5317,
+      "bytes": 5466,
       "lines": 34,
       "path": "context/owner-addendum-2026-10-24.md",
-      "sha256": "b86cc922a76cbb3ac40bbe3b3f07c691cc52448d44f08060e879ff00a8927c5e"
+      "sha256": "79f15f0eb213da5b52fb80e66923a25bd675cb2b2b3a71d36b6b817b2530f435"
     },
     {
-      "bytes": 3859,
+      "bytes": 4018,
       "lines": 39,
       "path": "context/owner-intent.md",
-      "sha256": "29350649e5b8c352674ec73236f3b6eed79f805f9c1c4f3785bf1d6bc5b82a2b"
+      "sha256": "ff8b7e37eb92c85e6d3495d3ace4e518561eae7112879be70888516385e2deeb"
     },
     {
       "bytes": 1182,
@@ -116,10 +116,10 @@
       "sha256": "b306cbf264452ed3da0cc232cbd8e64fb03ebbade64fdcf346eb6d55697b87e9"
     },
     {
-      "bytes": 6957,
+      "bytes": 7032,
       "lines": 63,
       "path": "goal.md",
-      "sha256": "55a8943849dd9d6041650c79d9f05db73e6087864345b39094b351429807317a"
+      "sha256": "ea9a2b2d5a2fb28a6c01c63dfdc1270db325aaf8ff7fd30edbfc28a0f30e238f"
     },
     {
       "bytes": 2554,
@@ -158,10 +158,10 @@
       "sha256": "1a148eb9368532607250945c93ac9376f92755c746d625bb685f2cecc28ab272"
     },
     {
-      "bytes": 1850,
+      "bytes": 2172,
       "lines": 11,
       "path": "prompts/bootstrap-codex.md",
-      "sha256": "1aae3c6a8098f3076c312b66a2945ffb546ba77418b3b7bec1c3bb71179feb6a"
+      "sha256": "feeee632d83ded6a99da40607d0d0df812615fd9d14ca607ab1d4a988c8945dd"
     },
     {
       "bytes": 4534,
@@ -170,16 +170,16 @@
       "sha256": "e1f62c8b93a1d7dbb1f841654d9f0bb4089044e340f78ce984ab5e9219f79fe0"
     },
     {
-      "bytes": 4234,
+      "bytes": 4487,
       "lines": 19,
       "path": "prompts/gemini.md",
-      "sha256": "adc1b04d6109cf89e0a1a9a05b104be2a86a02bf1e532777ca21e4a8c0bdc798"
+      "sha256": "2c1982d598dbe2be5a04ddfca8802b6a531fc313e26b08d3a2ed876360d2b4c4"
     },
     {
-      "bytes": 4414,
+      "bytes": 4710,
       "lines": 21,
       "path": "prompts/grok.md",
-      "sha256": "b7b9cd6bb7a23ade2555d8c797ae20577b2b62a307cd5c2bf509643e9349c143"
+      "sha256": "8494b04c3f40789888516a20036a962ab254a7d4a7aaeaab8519d5b61687ef2c"
     },
     {
       "bytes": 1648,
@@ -188,10 +188,10 @@
       "sha256": "f65dbc010cb8c9d698963374df6a211c606148c4cd3df13ed68d3aa61900f475"
     },
     {
-      "bytes": 11873,
+      "bytes": 11921,
       "lines": 70,
       "path": "research/cross-vendor-capabilities.md",
-      "sha256": "676d7ccc8b6283ace29b6c3b8fd3ab259dbd584ed435b53bb4f00a3ba7446583"
+      "sha256": "1a645df9e7763ab63f5f7835f702a085c9014f1bf6a36cfcaa1faf488b25a0de"
     },
     {
       "bytes": 3621,
@@ -302,16 +302,16 @@
       "sha256": "e8a5c44572105360fd5f4791900a6009ca5bed8a543a3d353c59f7b68f7c358d"
     },
     {
-      "bytes": 6326,
+      "bytes": 6285,
       "lines": 61,
       "path": "start here.md",
-      "sha256": "974396b5afffd4c230428ae5c4ed2a35658343e51429289ce4921c1d9e41068c"
+      "sha256": "285f5e682b2c82f76f7b64b53eddf28538422e684ce6c985fbc70fe9a33f7ba1"
     },
     {
-      "bytes": 11794,
-      "lines": 218,
+      "bytes": 18270,
+      "lines": 319,
       "path": "tests/test_repository.py",
-      "sha256": "d1c0e874819e7f42017fea166bbf607b07a342c6b8579048fedc805815426e26"
+      "sha256": "c83dc94fd9c37d0782d737fa1bd0ae33c8854e2dc1d698cf90474bc940e8692e"
     },
     {
       "bytes": 10411,
@@ -320,16 +320,16 @@
       "sha256": "de4a45985fe9c9dd287dee13018e4d633e4b88eb465606f708aeb0577aea6146"
     },
     {
-      "bytes": 15328,
-      "lines": 156,
+      "bytes": 16680,
+      "lines": 158,
       "path": "tools/README.md",
-      "sha256": "5fa29b7cd59f4d9d0129b8f1b590513ed05c631e27f0a967c0b7d298309ad808"
+      "sha256": "78390e39f435a3bca914a3e03021aad16907c533f25cc65da06f3d2a9be43378"
     },
     {
-      "bytes": 22938,
-      "lines": 396,
+      "bytes": 29310,
+      "lines": 492,
       "path": "tools/lucifer.py",
-      "sha256": "1b8768c5f5693354d7197a449f7f10882ee3b04b6616c450e063e5e916329c4b"
+      "sha256": "d0888d6c8b9c87d7c8198661b5f5958386b48ee87dfa587b4f559618096f902e"
     },
     {
       "bytes": 14914,
@@ -338,16 +338,16 @@
       "sha256": "59559dda5b820d184c354a6dd90a015c3689b59ce2c4d5dcfdf08ac32c48ab6e"
     },
     {
-      "bytes": 4360,
+      "bytes": 4319,
       "lines": 39,
       "path": "workflow/00-access.md",
-      "sha256": "7ca4a07b61123b7bb25e570789100b3c0eb276e151e7ea2f510950ab7e33b48a"
+      "sha256": "4d5762ab3bf5dc7ccb90a2a486b5f6841be55aa9b592ad35b767d393a356df68"
     },
     {
-      "bytes": 10583,
+      "bytes": 11191,
       "lines": 106,
       "path": "workflow/00-repository-creation.md",
-      "sha256": "1abf1b14f3002f42684f62ad2bfe2619ecb56d77728b90da57db2ecf98aebd0b"
+      "sha256": "afa2e9818169e44f60b04c3ac4f2d6689d8056ce0253807cd54ee40218d93944"
     },
     {
       "bytes": 4482,
@@ -356,10 +356,10 @@
       "sha256": "42f4a867ab86d65d74c7e97467d657765e1e70352cd0d99e8bcfacebe2d66ac2"
     },
     {
-      "bytes": 2645,
-      "lines": 27,
+      "bytes": 3092,
+      "lines": 28,
       "path": "workflow/02-gemini-review.md",
-      "sha256": "30d0e28bba1e7d454c01fa7fb73445ddd4c2389cf4f7f85a6dd7e967fa28f5a3"
+      "sha256": "fe9660973277c12bf9dda0d0070f21a7c8eb3a96ac347d777afe9c1d4a346836"
     },
     {
       "bytes": 2870,
@@ -368,16 +368,16 @@
       "sha256": "2ba923718073ae7845d23b9bb5cfaa2a2595b5419edfcb18f8530e245a60c814"
     },
     {
-      "bytes": 2698,
+      "bytes": 3100,
       "lines": 26,
       "path": "workflow/04-grok-review.md",
-      "sha256": "3b6f04c7a41f302bde84c9926108de4f58d85462dc5d5c499179033bc7dd5cbe"
+      "sha256": "190eb8ede38ac10c9a083590cee2c11647b7faa7ef2394fd17ac9e791a3ed097"
     },
     {
-      "bytes": 3464,
+      "bytes": 3495,
       "lines": 37,
       "path": "workflow/05-final-integration.md",
-      "sha256": "cdcd93265ad2d359eef9ab23c2aa7a46d588f7a35d4e5da2a6d0d5d73c8d2e8f"
+      "sha256": "909ac2a5d973423ea634eeb63d84ce7ca4074bda11e27cd1b648f7f5c53e96b0"
     },
     {
       "bytes": 2930,
@@ -392,10 +392,10 @@
       "sha256": "77b8b6d9f4f71f05565503b677b18da15ede6f7155abdd486e83712132626ae1"
     },
     {
-      "bytes": 10429,
+      "bytes": 10388,
       "lines": 126,
       "path": "workflow/08-git-review-history.md",
-      "sha256": "3cc5d10b2d94a885939f11b5912fe669c6486795716544a73fc9cee7f4de7c39"
+      "sha256": "0c82d57bb4b5b441d2b5c0a5de8ce9c1e4d0e16c4061eca2eb0287f617fd758d"
     },
     {
       "bytes": 14499,
@@ -410,6 +410,7 @@
       "sha256": "f7224f489ab45b8d8c598fa4c2fc813ff36f7c02940c3fe5bb81ab06351a84b7"
     }
   ],
-  "fingerprint": "ea19cbb47577219582541f41789480d7c782f6ffa68aaa9537f3f5e7f336ba7a",
-  "schema": 1
+  "fingerprint": "29cfa61ef760f05f073089244e43857c3610365b2ea157d47f17d453921744c9",
+  "schema": 1,
+  "snapshot_path": "reviews/01-gemini/input-snapshots/29cfa61ef760f05f073089244e43857c3610365b2ea157d47f17d453921744c9"
 }
