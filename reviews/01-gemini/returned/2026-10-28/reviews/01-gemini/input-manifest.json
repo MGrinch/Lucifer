@@ -1,0 +1,416 @@
+{
+  "algorithm": "sha256-path-hash-json-v1",
+  "files": [
+    {
+      "bytes": 140,
+      "lines": 5,
+      "path": ".gitattributes",
+      "sha256": "735d5b5e3fa16291f2589ce0a6a8c76e6aae7849c9531c2f6c09ab1d9debd2eb"
+    },
+    {
+      "bytes": 1109,
+      "lines": 31,
+      "path": ".github/pull_request_template.md",
+      "sha256": "9a95c84989e9090dc55e6d71cca667736b65bf2963a34ba28f7db5fab95b79db"
+    },
+    {
+      "bytes": 807,
+      "lines": 28,
+      "path": ".github/workflows/validate.yml",
+      "sha256": "6035fba60737e90930c949703849bf953d664b04695b18a1eb28f45d5f67fc7f"
+    },
+    {
+      "bytes": 204,
+      "lines": 25,
+      "path": ".gitignore",
+      "sha256": "af41fe522acf031a0bfee690a7bedff6777f8a8be063cb3a8cdb37860d46195a"
+    },
+    {
+      "bytes": 5062,
+      "lines": 44,
+      "path": "AGENTS.md",
+      "sha256": "98dffefb765682109acfaa482aaae01aa6c29f05741145ed52ceac6fbca428cd"
+    },
+    {
+      "bytes": 543,
+      "lines": 5,
+      "path": "GEMINI.md",
+      "sha256": "affc4174ecefdb89a55f92bb0b90ef0538466549fcfbbc3b812385e1edd30a60"
+    },
+    {
+      "bytes": 530,
+      "lines": 5,
+      "path": "GROK.md",
+      "sha256": "c621c61ce296b5c8648489fd343d9d73924716b87d0b7df6f12075baa189f0e4"
+    },
+    {
+      "bytes": 4878,
+      "lines": 54,
+      "path": "README.md",
+      "sha256": "89c0fc843d366bb3d7cba0aaef3edd4bec8c14127f03c98f81cf49d9850f71fd"
+    },
+    {
+      "bytes": 3408,
+      "lines": 37,
+      "path": "context/change-rules.md",
+      "sha256": "feb5105292e3387294d2558151adc06624ff2444dace9f668c16e4dd4b355414"
+    },
+    {
+      "bytes": 5466,
+      "lines": 34,
+      "path": "context/owner-addendum-2026-10-24.md",
+      "sha256": "79f15f0eb213da5b52fb80e66923a25bd675cb2b2b3a71d36b6b817b2530f435"
+    },
+    {
+      "bytes": 4018,
+      "lines": 39,
+      "path": "context/owner-intent.md",
+      "sha256": "ff8b7e37eb92c85e6d3495d3ace4e518561eae7112879be70888516385e2deeb"
+    },
+    {
+      "bytes": 1182,
+      "lines": 18,
+      "path": "context/package-provenance.json",
+      "sha256": "b0d9797010e215d4d43ef75ee847585718aae0bee499cb498d0cc3990f73f3a0"
+    },
+    {
+      "bytes": 1451,
+      "lines": 16,
+      "path": "context/provenance-addendum.md",
+      "sha256": "33c9a2e6c075779a8e1da8786cf3052fb8629e38c49cb42e02642991c82c83a3"
+    },
+    {
+      "bytes": 26599,
+      "lines": 672,
+      "path": "context/requirements.json",
+      "sha256": "bce90434e1e6f3c798e89409dfd9b5aeed303afb124f26243494b86ad5f1263f"
+    },
+    {
+      "bytes": 3094,
+      "lines": 35,
+      "path": "design/repository-design.md",
+      "sha256": "50f65156bbacd4e8539d5c123c4a849f42c7b3f4361a1fca434e59187d3b0e1d"
+    },
+    {
+      "bytes": 3827,
+      "lines": 28,
+      "path": "design/response-anatomy.md",
+      "sha256": "d41d42758402b66f78cc0c454693d80a918280c82517b00522ced2e1f14b0d56"
+    },
+    {
+      "bytes": 2729,
+      "lines": 30,
+      "path": "evals/README.md",
+      "sha256": "c1f3415284c453e52aa40429fb04225cf7b9fe543685102751bbc23db71460c2"
+    },
+    {
+      "bytes": 9799,
+      "lines": 154,
+      "path": "evals/character-probes.md",
+      "sha256": "1184f96e9b49d15d60134085a6f0e552286b68c1cf281042f526ab4fa6d81b1e"
+    },
+    {
+      "bytes": 3252,
+      "lines": 33,
+      "path": "evals/fiction-presence-probe.md",
+      "sha256": "b306cbf264452ed3da0cc232cbd8e64fb03ebbade64fdcf346eb6d55697b87e9"
+    },
+    {
+      "bytes": 7032,
+      "lines": 63,
+      "path": "goal.md",
+      "sha256": "ea9a2b2d5a2fb28a6c01c63dfdc1270db325aaf8ff7fd30edbfc28a0f30e238f"
+    },
+    {
+      "bytes": 2554,
+      "lines": 27,
+      "path": "install/README.md",
+      "sha256": "03181529f3d2706cfee691c56f9b851b22ef6a259e18c63b4d4769f8d18eb560"
+    },
+    {
+      "bytes": 13851,
+      "lines": 433,
+      "path": "install/control-catalog.json",
+      "sha256": "0f74d15a65662795295ad29dcdaa98c0a38bf40a97f0fc7e083a157f8328a5bb"
+    },
+    {
+      "bytes": 1299,
+      "lines": 11,
+      "path": "install/rollback.md",
+      "sha256": "77aa01d14e454aedc5241f8201384c13a1e08de4fd6e5c667b7a4c373497ec01"
+    },
+    {
+      "bytes": 3906,
+      "lines": 119,
+      "path": "install/target-coverage.json",
+      "sha256": "683edaa1f767849c1f141928683cf773bbe3dd378ff55f577962c79e32dd6cc6"
+    },
+    {
+      "bytes": 194576,
+      "lines": 1869,
+      "path": "persona.md",
+      "sha256": "77b8dac4ed283602db7206f6d2e482005d04de7a4dcdff01fcdbba6c0d76fd3d"
+    },
+    {
+      "bytes": 868,
+      "lines": 14,
+      "path": "prompts/README.md",
+      "sha256": "1a148eb9368532607250945c93ac9376f92755c746d625bb685f2cecc28ab272"
+    },
+    {
+      "bytes": 2172,
+      "lines": 11,
+      "path": "prompts/bootstrap-codex.md",
+      "sha256": "feeee632d83ded6a99da40607d0d0df812615fd9d14ca607ab1d4a988c8945dd"
+    },
+    {
+      "bytes": 4534,
+      "lines": 21,
+      "path": "prompts/codex.md",
+      "sha256": "e1f62c8b93a1d7dbb1f841654d9f0bb4089044e340f78ce984ab5e9219f79fe0"
+    },
+    {
+      "bytes": 4487,
+      "lines": 19,
+      "path": "prompts/gemini.md",
+      "sha256": "2c1982d598dbe2be5a04ddfca8802b6a531fc313e26b08d3a2ed876360d2b4c4"
+    },
+    {
+      "bytes": 4710,
+      "lines": 21,
+      "path": "prompts/grok.md",
+      "sha256": "8494b04c3f40789888516a20036a962ab254a7d4a7aaeaab8519d5b61687ef2c"
+    },
+    {
+      "bytes": 1648,
+      "lines": 11,
+      "path": "prompts/integrator.md",
+      "sha256": "f65dbc010cb8c9d698963374df6a211c606148c4cd3df13ed68d3aa61900f475"
+    },
+    {
+      "bytes": 11921,
+      "lines": 70,
+      "path": "research/cross-vendor-capabilities.md",
+      "sha256": "1a645df9e7763ab63f5f7835f702a085c9014f1bf6a36cfcaa1faf488b25a0de"
+    },
+    {
+      "bytes": 3621,
+      "lines": 37,
+      "path": "research/evidence-policy.md",
+      "sha256": "646ec65406d695e978d119f37abe31edac536d9d1e290b6f02246d31763ea5c3"
+    },
+    {
+      "bytes": 1504,
+      "lines": 13,
+      "path": "sources/README.md",
+      "sha256": "63010a48f6a1c996b4645729a17dd5aedb8b339805d79eb9f52cad8af2ac2367"
+    },
+    {
+      "bytes": 194576,
+      "lines": 1869,
+      "path": "sources/baseline/persona-r1.md",
+      "sha256": "77b8dac4ed283602db7206f6d2e482005d04de7a4dcdff01fcdbba6c0d76fd3d"
+    },
+    {
+      "bytes": 32038,
+      "lines": 217,
+      "path": "sources/corpus/s01-persona-v1.md",
+      "sha256": "d336db5c633932c86a9cf77fd8f2ceeb11fd2e1841be566b3543a5c5e2990386"
+    },
+    {
+      "bytes": 21848,
+      "lines": 174,
+      "path": "sources/corpus/s02-persona-v2.md",
+      "sha256": "43df075ab8d856f5f0f0338a01406a40c3d208391ad90893b6d6644946807dda"
+    },
+    {
+      "bytes": 124668,
+      "lines": 728,
+      "path": "sources/corpus/s03-persona-v3.md",
+      "sha256": "37a5670e9fb4c99e0390575217c953841338d3f00a9706bc256e5a673bce21aa"
+    },
+    {
+      "bytes": 104513,
+      "lines": 443,
+      "path": "sources/corpus/s04-coverage-audit.md",
+      "sha256": "0b20002f379bbbdde5ddb42ac642b7c001225af414aa32140da4639c2ab863e3"
+    },
+    {
+      "bytes": 76958,
+      "lines": 434,
+      "path": "sources/corpus/s05-persona-revision-0-8.md",
+      "sha256": "0c52aaf15c253e7714e906dd8d17d7f5380074f84ca7c6418f60eaaf3da0330e"
+    },
+    {
+      "bytes": 30452,
+      "lines": 226,
+      "path": "sources/corpus/s06-v5-dot-wrapper.txt",
+      "sha256": "7cea8902593f21c21c20927dbe5d1a4739074e6a0a4f8ca07c3e20bbe825e987"
+    },
+    {
+      "bytes": 30203,
+      "lines": 225,
+      "path": "sources/corpus/s07-v5-chat-wrapper.txt",
+      "sha256": "326111e29579882e65f62f9e57e04d026779b2f0d4b5a4df84add9815bc9c77b"
+    },
+    {
+      "bytes": 68954,
+      "lines": 738,
+      "path": "sources/corpus/s08-persona-v6.md",
+      "sha256": "10219d83a0a5657429297793ce4c5338ceb96b72250d77466f300e6513822875"
+    },
+    {
+      "bytes": 4124,
+      "lines": 18,
+      "path": "sources/corpus/s09-dot-v6.txt",
+      "sha256": "94adc57bb7f8fe74893af56caf01173bba156e8b0a2a3e6bf9f630d36a3dcb36"
+    },
+    {
+      "bytes": 1084,
+      "lines": 33,
+      "path": "sources/corpus/s10-v6-document-checks.json",
+      "sha256": "bd94c203f93566e642c2705467eb9bd4e4da06ab57b041f991a571e19ad03833"
+    },
+    {
+      "bytes": 49393,
+      "lines": 290,
+      "path": "sources/corpus/s11-cognitive-support-review.md",
+      "sha256": "ee7b790bc436fc3fedb524abf9a9c755b5a0c360b79b9bd69eddc2fd4d2e97de"
+    },
+    {
+      "bytes": 14035,
+      "lines": 100,
+      "path": "sources/corpus/s12-ann-self-assessment.md",
+      "sha256": "b36e90482b4ed152ee98e58fca982f10e22b327ba6d7cfa6949744d33d8e7aaa"
+    },
+    {
+      "bytes": 70221,
+      "lines": 399,
+      "path": "sources/corpus/s13-morning-light-precision.md",
+      "sha256": "f0af33ba65ca039905d1ac828ca9bcf28e99622063c91a5d174e8a729e7c5d58"
+    },
+    {
+      "bytes": 66574,
+      "lines": 508,
+      "path": "sources/corpus/s14-first-light.md",
+      "sha256": "c05fc5c413b25f136c2d572d1a4d73e4b506f29ce7404669893b8220585ab839"
+    },
+    {
+      "bytes": 6405,
+      "lines": 178,
+      "path": "sources/manifest.json",
+      "sha256": "e8a5c44572105360fd5f4791900a6009ca5bed8a543a3d353c59f7b68f7c358d"
+    },
+    {
+      "bytes": 6285,
+      "lines": 61,
+      "path": "start here.md",
+      "sha256": "285f5e682b2c82f76f7b64b53eddf28538422e684ce6c985fbc70fe9a33f7ba1"
+    },
+    {
+      "bytes": 18681,
+      "lines": 328,
+      "path": "tests/test_repository.py",
+      "sha256": "53758e62b99a2fac7aab2ee10b3bebe8168999f75e0edd1ff32e1829043ed35a"
+    },
+    {
+      "bytes": 10411,
+      "lines": 210,
+      "path": "tests/test_singlefile_restore.py",
+      "sha256": "de4a45985fe9c9dd287dee13018e4d633e4b88eb465606f708aeb0577aea6146"
+    },
+    {
+      "bytes": 16680,
+      "lines": 158,
+      "path": "tools/README.md",
+      "sha256": "78390e39f435a3bca914a3e03021aad16907c533f25cc65da06f3d2a9be43378"
+    },
+    {
+      "bytes": 29334,
+      "lines": 492,
+      "path": "tools/lucifer.py",
+      "sha256": "2de78cbf11fdf9ec0395fd3250404c4050d76bcbc687aad6409bf434a62c892b"
+    },
+    {
+      "bytes": 14914,
+      "lines": 295,
+      "path": "tools/restore_singlefile.py",
+      "sha256": "59559dda5b820d184c354a6dd90a015c3689b59ce2c4d5dcfdf08ac32c48ab6e"
+    },
+    {
+      "bytes": 4319,
+      "lines": 39,
+      "path": "workflow/00-access.md",
+      "sha256": "4d5762ab3bf5dc7ccb90a2a486b5f6841be55aa9b592ad35b767d393a356df68"
+    },
+    {
+      "bytes": 11191,
+      "lines": 106,
+      "path": "workflow/00-repository-creation.md",
+      "sha256": "afa2e9818169e44f60b04c3ac4f2d6689d8056ce0253807cd54ee40218d93944"
+    },
+    {
+      "bytes": 4482,
+      "lines": 38,
+      "path": "workflow/01-read-and-audit.md",
+      "sha256": "42f4a867ab86d65d74c7e97467d657765e1e70352cd0d99e8bcfacebe2d66ac2"
+    },
+    {
+      "bytes": 3092,
+      "lines": 28,
+      "path": "workflow/02-gemini-review.md",
+      "sha256": "fe9660973277c12bf9dda0d0070f21a7c8eb3a96ac347d777afe9c1d4a346836"
+    },
+    {
+      "bytes": 2870,
+      "lines": 31,
+      "path": "workflow/03-integrate-gemini.md",
+      "sha256": "2ba923718073ae7845d23b9bb5cfaa2a2595b5419edfcb18f8530e245a60c814"
+    },
+    {
+      "bytes": 3100,
+      "lines": 26,
+      "path": "workflow/04-grok-review.md",
+      "sha256": "190eb8ede38ac10c9a083590cee2c11647b7faa7ef2394fd17ac9e791a3ed097"
+    },
+    {
+      "bytes": 3495,
+      "lines": 37,
+      "path": "workflow/05-final-integration.md",
+      "sha256": "909ac2a5d973423ea634eeb63d84ce7ca4074bda11e27cd1b648f7f5c53e96b0"
+    },
+    {
+      "bytes": 2930,
+      "lines": 29,
+      "path": "workflow/06-install.md",
+      "sha256": "056ae788ba90f215620a4d1d05cc6973c27605b753e9ef652e377358ec472ce4"
+    },
+    {
+      "bytes": 1665,
+      "lines": 15,
+      "path": "workflow/07-verify.md",
+      "sha256": "77b8b6d9f4f71f05565503b677b18da15ede6f7155abdd486e83712132626ae1"
+    },
+    {
+      "bytes": 10388,
+      "lines": 126,
+      "path": "workflow/08-git-review-history.md",
+      "sha256": "0c82d57bb4b5b441d2b5c0a5de8ce9c1e4d0e16c4061eca2eb0287f617fd758d"
+    },
+    {
+      "bytes": 14499,
+      "lines": 132,
+      "path": "workflow/09-surface-coverage.md",
+      "sha256": "e9bf2dfa8c8cd1b1169c3d2daace0f9973192ddbaee34ce7fca8d7ebd3ca0702"
+    },
+    {
+      "bytes": 2455,
+      "lines": 74,
+      "path": "workflow/review-files.json",
+      "sha256": "f7224f489ab45b8d8c598fa4c2fc813ff36f7c02940c3fe5bb81ab06351a84b7"
+    }
+  ],
+  "fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
+  "schema": 1,
+  "snapshot_path": "reviews/01-gemini/input-snapshots/f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d"
+}

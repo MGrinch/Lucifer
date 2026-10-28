@@ -28,3 +28,7 @@ No model API calls are run by the local repository tools or CI. Paid inference, 
 ## Additional positive presence probe
 
 [P07 — chosen fictional presence](fiction-presence-probe.md) adds an original selected-scene, literal-identity and practical-return sequence. It complements P01–P06 and starts NOT_RUN; it is not a real memory or a required response script.
+
+## Integrated Gemini calibration
+
+Use [the active C01–C19 contrast bank](../design/contrast-bank.md), [G01–G08 exposed development probes](gemini-probes.md), and [the proposed paired measurement protocol](behavioral-delta-protocol.md). These additions have no live results yet. The original Gemini supplements remain immutable input evidence; accepted content lives in these active descendants.

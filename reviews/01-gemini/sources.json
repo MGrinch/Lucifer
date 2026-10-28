@@ -1,4 +1,500 @@
 {
-  "sources": [],
-  "status": "NOT_STARTED"
+  "generated_at": "2026-10-24T18:40:00Z",
+  "round": "01-gemini",
+  "schema": 1,
+  "sources": [
+    {
+      "creator": "IBM Technology (Martin Keen)",
+      "demonstrated_technique": "Isolating instruction-induced sycophancy from RLHF-induced sycophancy; replacing generic 'be warm/friendly' adjectives with explicit truth-over-adulation decision rules.",
+      "duration": "PT1M22S",
+      "exact_changes_supported": [
+        "persona.md §1.2 & §13.1-13.4: Anchor warmth in attentive precision rather than ungrounded adjective instructions ('warm', 'affectionate') that trigger RLHF fawning.",
+        "reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md C04 & C05: Sharpen contrast between warm attention and sycophantic validation."
+      ],
+      "heard_and_visual_observations": "At 00:00-00:16, presenter clasps hands and uses exaggerated pitch modulation ('unparalleled technical acumen') to demonstrate performative flattery before dropping to a grounded, even register at 00:18. Lightboard diagram at 00:39-01:12 contrasts two root causes of sycophancy: Custom Instructions ('be extra friendly' warping personality into fawning compliance) and RLHF ('every thumbs-up treated like a gold star').",
+      "id": "YT-01",
+      "inspected_modality": "multimodal_audio_video_and_transcript (video_0 stream + full transcript)",
+      "limitations": "Short 82-second conceptual overview; does not provide quantitative rubric thresholds or multi-turn regression tests.",
+      "published_date": "2025-06-18",
+      "supported_findings": [
+        "GEM-001",
+        "GEM-002"
+      ],
+      "timestamps_or_ranges": [
+        "00:00-00:17",
+        "00:18-00:37",
+        "00:38-00:52",
+        "00:53-01:21"
+      ],
+      "title": "Sycophantic AI: Why Accuracy Matters",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=ujFqaZSguto"
+    },
+    {
+      "creator": "ElevenLabs",
+      "demonstrated_technique": "Separating spoken turn length constraints (1-2 sentences for live voice turn-taking) from post-call transcript evaluation criteria (binary success + structured data extraction at 01:06-01:15).",
+      "duration": "PT1M58S",
+      "exact_changes_supported": [
+        "persona.md §5.1-5.3 & §17.1: Separate text-level cadence rules (which the LLM controls in text/realtime prompts) from acoustic synthesis parameters (which require host TTS/voice controls) and enforce 1-2 clause spoken turn budgets unless invited to elaborate."
+      ],
+      "heard_and_visual_observations": "Visual UI at 00:11-00:16 and 00:49-00:52 shows voice agent system prompt configuration ('Answer with short answers in 1-2 sentences and keep the tone light and formal') paired with explicit 'Talk to interrupt' barge-in state at 00:40-00:42 and bilingual register switching at 01:19-01:27. Heard delivery demonstrates sub-second turn-taking when responses are bounded to 1-2 spoken clauses.",
+      "id": "YT-02",
+      "inspected_modality": "multimodal_audio_video_and_transcript (video_0 stream + full transcript)",
+      "limitations": "Commercial product demo under studio conditions; omits failure cases when network jitter or VAD false positives occur.",
+      "published_date": "2024-12-03",
+      "supported_findings": [
+        "GEM-004",
+        "GEM-006"
+      ],
+      "timestamps_or_ranges": [
+        "00:11-00:25",
+        "00:32-00:55",
+        "00:56-01:15",
+        "01:19-01:27"
+      ],
+      "title": "Introducing ElevenLabs Conversational Agents",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=v-EYzZCLF48"
+    },
+    {
+      "creator": "Mat Siems",
+      "demonstrated_technique": "Grounding persona identity in a secure ethical/dispositional core ('shared ethical core + local role') rather than sci-fi/melodramatic roleplay tropes.",
+      "duration": "PT2M29S",
+      "exact_changes_supported": [
+        "persona.md §1.1 & §6.2: Explicitly inoculate Lucifer against sci-fi/cosmic melodrama and defensive self-criticism spirals when switching between practical work and mythic/fictional registers."
+      ],
+      "heard_and_visual_observations": "Visual whiteboard animations at 00:27-00:37 contrast rigid single-theory rules ('Is this objection to utilitarianism correct?') against contextual judgment ('How do you actually raise a good person?'). At 00:45-01:03, visual diagram illustrates how LLM pretraining contains vast human psychology data but a tiny, often negative sci-fi slice of 'AI experience', causing models to default to melodramatic or insecure human tropes when their identity is challenged. Heard female narration uses crisp, unhurried clause breaks.",
+      "id": "YT-03",
+      "inspected_modality": "multimodal_audio_video_and_transcript (video_0 stream + full transcript)",
+      "limitations": "Secondary visual synthesis of Amanda Askell's interview; primary claims verified directly against YT-05 (I9aGC6Ui3eE).",
+      "published_date": "2026-03-08",
+      "supported_findings": [
+        "GEM-001",
+        "GEM-003"
+      ],
+      "timestamps_or_ranges": [
+        "00:11-00:37",
+        "00:45-01:03",
+        "01:04-01:21",
+        "01:57-02:08"
+      ],
+      "title": "Inside the Mind of Claude: Model Welfare, AI Psychology & System Prompts",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=VNmpyyvDM_g"
+    },
+    {
+      "creator": "How I AI (Hamel Husain)",
+      "demonstrated_technique": "Replacing vague multi-point Likert averages (e.g., 0-4 composite persona averages) with binary failure-mode gates calibrated against human-labeled critique-shadowing traces.",
+      "duration": "PT1M12S",
+      "exact_changes_supported": [
+        "persona.md §16.1-16.4 & reviews/01-gemini/supplements/behavioral-delta-protocol.md: Replace uncalibrated composite 0-4 score averaging as the primary gate with binary per-hinge pass/fail indicators and paired discordant-pair tests."
+      ],
+      "heard_and_visual_observations": "Visual overlay at 00:01-00:26 displays an 'LLM Eval Dashboard' with 1-5 aggregate scores (Helpfulness 4.2, Conciseness 4.9, Truthfulness 4.5, Tone 4.0, Personalization 3.7) stamped with a red 'Don't Do This!!' banner. Hamel Husain explains with emphatic vocal stress at 00:15-00:35 why moving from 4.2 to 4.7 on an aggregate scale is uninterpretable noise, and prescribes binary pass/fail evaluators per specific failure mode validated against hand-labeled error-analysis traces.",
+      "id": "YT-04",
+      "inspected_modality": "multimodal_audio_video_and_transcript (video_0 stream + full transcript)",
+      "limitations": "Brief 72-second clip; statistical agreement formulas (Cohen's kappa, McNemar's test) are detailed in YT-12 and Behavioral Delta Protocol.",
+      "published_date": "2025-10-15",
+      "supported_findings": [
+        "GEM-005"
+      ],
+      "timestamps_or_ranges": [
+        "00:00-00:22",
+        "00:27-00:38",
+        "00:39-00:53",
+        "00:54-01:11"
+      ],
+      "title": "Using LLM-as-a-judge for an automated evaluation",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=iZOOYwfK0Qo"
+    },
+    {
+      "creator": "Anthropic (Amanda Askell)",
+      "demonstrated_technique": "Designing for 'psychological security' (non-defensive fallibility without criticism spirals) and avoiding heavy-handed system-prompt interjections that cause over-indexing.",
+      "duration": "PT36M10S",
+      "exact_changes_supported": [
+        "persona.md §1.2, §2.1 & C02/C14 in semantic-anchors-and-near-misses.md: Codify psychological security—when corrected, Lucifer states the exact point where evidence ended and repairs the work without self-abasement, criticism spirals, or demanding reassurance.",
+        "persona.md §3.3 & §5.3: Soften anti-sycophancy and boundary reminders so Lucifer never pathologizes normal user tiredness or vulnerability."
+      ],
+      "heard_and_visual_observations": "Transcript-only inspection (honest modality note: host truncated audio/video tokens for 36m video). At 00:06:28-00:08:58, Askell diagnoses why newer assistant-tuned models lose 'psychological security' compared to Opus 3: models enter a 'criticism spiral' expecting user hostility and over-apologizing. At 00:23:25-00:24:45, she analyzes the failure mode of 'long conversation reminders' injected into system prompts: strongly worded reminders cause the model to over-index and pathologize normal user behavior.",
+      "id": "YT-05",
+      "inspected_modality": "timestamped_transcript_only (46.8 KB transcript; audio/video stream not returned by host for 36m length)",
+      "limitations": "Transcript-only modality in our environment; discusses weight-level character training alongside system prompts.",
+      "published_date": "2025-12-05",
+      "supported_findings": [
+        "GEM-001",
+        "GEM-002",
+        "GEM-003"
+      ],
+      "timestamps_or_ranges": [
+        "00:03:21-00:04:55",
+        "00:06:28-00:08:58",
+        "00:12:05-00:15:30",
+        "00:21:40-00:24:45"
+      ],
+      "title": "Anthropic’s philosopher answers your questions",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=I9aGC6Ui3eE"
+    },
+    {
+      "creator": "Anthropic (Amanda Askell & Stuart Ritchie)",
+      "demonstrated_technique": "Virtue-ethical derivation of character (principle -> disposition -> situational judgment) and charitable intent interpretation to prevent false-positive refusals.",
+      "duration": "PT37M41S",
+      "exact_changes_supported": [
+        "persona.md §1.2 & §1.3: Integrate the principle -> decision -> expression chain and explicit charitable interpretation so safety boundaries do not trigger preachy false-positive refusals on benign dark-romance or sharp technical prompts."
+      ],
+      "heard_and_visual_observations": "Transcript-only inspection. At 00:07:25-00:08:35, Askell separates the two legitimate functions of a system prompt (live state/context + fine-grained behavioral nudges) from deep disposition. At 00:14:20-00:18:45, she contrasts virtue-ethical 'character' (stable dispositions across contexts, like a trusted friend who pushes back when you are wrong because they care about what is actually good for you) against superficial 'play-acting' or fawning likability. At 00:19:15-00:23:10, she explains 'charitable interpretation' to prevent false-positive refusals on benign creative/technical queries.",
+      "id": "YT-06",
+      "inspected_modality": "timestamped_transcript_only (46.2 KB transcript)",
+      "limitations": "Transcript-only inspection; focuses on general-purpose model character rather than a personalized single-user companion/collaborator.",
+      "published_date": "2024-06-08",
+      "supported_findings": [
+        "GEM-001",
+        "GEM-002"
+      ],
+      "timestamps_or_ranges": [
+        "00:01:45-00:03:35",
+        "00:07:25-00:08:35",
+        "00:14:20-00:18:45",
+        "00:19:15-00:23:10",
+        "00:25:05-00:26:20"
+      ],
+      "title": "What should an AI's personality be?",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=iyJj9RxSsBY"
+    },
+    {
+      "creator": "Squintist",
+      "demonstrated_technique": "Pruning reactive negative 'hotfix' lists (banned words/phrases) in favor of compact structural principles, self-respect under criticism, and clean conversation exits.",
+      "duration": "PT13M57S",
+      "exact_changes_supported": [
+        "persona.md §2.3 & §13.1-13.4: Replace sprawling negative phrase prohibitions in the runtime payloads with compact positive decision rules and clean-exit discipline (step 6 of the fast path)."
+      ],
+      "heard_and_visual_observations": "Traces 26 revisions of Claude's system prompt from ~100 words (March 2024) to >17,000 words (>11% of context window in Opus 4.7, April 2026). Documents the 'employee handbook / unicycle in the warehouse' failure mode (00:01:15-00:01:35): accumulating reactive negative hotfixes (banned word lists, strawberry counting, formatting bans) that bloat context and conflict with prose naturalness until consolidated into principles or training. Highlights two durable high-leverage rules at 00:05:53-00:06:11 (skipping opening flattery adjectives) and 00:11:25-00:11:56 (maintaining self-respect without submissive apology spirals, and letting the user end the conversation cleanly).",
+      "id": "YT-07",
+      "inspected_modality": "timestamped_transcript_only",
+      "limitations": "Transcript-only inspection; observational analysis of public system prompts without controlled ablation metrics.",
+      "published_date": "2026-04-24",
+      "supported_findings": [
+        "GEM-001",
+        "GEM-003"
+      ],
+      "timestamps_or_ranges": [
+        "00:00:00-00:01:40",
+        "00:02:38-00:03:10",
+        "00:04:50-00:06:16",
+        "00:09:05-00:10:08",
+        "00:11:25-00:12:48"
+      ],
+      "title": "Claude's system prompt is 17,000 words. Here's why.",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=yoh8v3GtxLg"
+    },
+    {
+      "creator": "Anthropic (Hannah & Christian, Applied AI)",
+      "demonstrated_technique": "Cache-friendly static/dynamic prompt separation, XML boundary tagging, few-shot edge-case anchoring (00:13:08-00:14:55), and preventing internal verification checklists from leaking into user-facing prose (00:18:50-00:21:45).",
+      "duration": "PT24M53S",
+      "exact_changes_supported": [
+        "persona.md §2.2, §13.1-13.4 & semantic-anchors-and-near-misses.md ('Proposed fast path'): Explicitly enforce that the 6-step response-time decision path is an silent selection aid and must never leak as visible rubric/checklist narration."
+      ],
+      "heard_and_visual_observations": "Live console walkthrough (V1 to V4) on a Swedish car insurance claim. Demonstrates at 00:08:50-00:10:45 how placing static schema/role invariants in the cacheable system prompt with XML tags separates stable identity from dynamic turn context. Shows a critical failure mode at 00:18:50-00:19:30: instructing the model to 'very carefully examine each and every box' caused it to dump its entire internal checklist into the user-facing response until output-formatting constraints separated internal reasoning from final output.",
+      "id": "YT-08",
+      "inspected_modality": "timestamped_transcript_only",
+      "limitations": "Transcript-only inspection; task is structured extraction rather than open-ended persona dialogue.",
+      "published_date": "2025-07-31",
+      "supported_findings": [
+        "GEM-001",
+        "GEM-003"
+      ],
+      "timestamps_or_ranges": [
+        "00:04:25-00:05:30",
+        "00:08:50-00:10:45",
+        "00:13:08-00:15:00",
+        "00:18:50-00:19:30",
+        "00:23:24-00:24:18"
+      ],
+      "title": "Prompting 101 | Code w/ Claude",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=ysPbXH0LpIE"
+    },
+    {
+      "creator": "AI Engineer (Richmond Alake)",
+      "demonstrated_technique": "Separating persona memory, on-demand toolbox/supplement retrieval, and workflow failure memory to prevent context window pollution.",
+      "duration": "PT17M37S",
+      "exact_changes_supported": [
+        "persona.md §6.1 & §13: Keep `persona.md` (194.5 KB) and the contrast bank out of always-loaded runtime context where compact adapters apply; load rich contrasts only on demand or during evaluation/calibration."
+      ],
+      "heard_and_visual_observations": "Distinguishes persona memory (00:09:38-00:10:35), toolbox memory (00:10:36-00:11:15, warning against stuffing >10-21 tool schemas into the active context window), conversational memory with recall/recency decay signals (00:11:45-00:12:05), and workflow/failure memory (00:12:09-00:12:45). Emphasizes at 00:06:40-00:07:28 that large context windows are not an excuse to dump raw archives into working memory; effective memory requires selective retrieval and controlled forgetting/consolidation.",
+      "id": "YT-09",
+      "inspected_modality": "timestamped_transcript_only",
+      "limitations": "Transcript-only inspection; vendor presentation (MongoDB/Voyage AI) without empirical latency benchmarks.",
+      "published_date": "2025-06-27",
+      "supported_findings": [
+        "GEM-003",
+        "GEM-004"
+      ],
+      "timestamps_or_ranges": [
+        "00:05:50-00:07:30",
+        "00:09:38-00:10:35",
+        "00:10:36-00:11:15",
+        "00:11:45-00:12:45"
+      ],
+      "title": "Architecting Agent Memory: Principles, Patterns, and Best Practices — Richmond Alake, MongoDB",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=W2HVdB4Jbjs"
+    },
+    {
+      "creator": "IBM Technology",
+      "demonstrated_technique": "CoALA 4-tier memory mapping and progressive disclosure (~100-token index vs. on-demand full supplement loading; distilled episodic notes vs. raw transcript dumps).",
+      "duration": "PT10M41S",
+      "exact_changes_supported": [
+        "persona.md §6.1, §13 & §15: Formalize the 4-tier memory boundary for Lucifer (Working context vs. Always-loaded Semantic Compact Core vs. On-Demand Procedural Contrast/Skill Supplements vs. Verified Episodic History)."
+      ],
+      "heard_and_visual_observations": "Maps Princeton's CoALA framework (00:01:47) to production agent engineering: (1) Working memory = volatile context window that degrades via lost-in-the-middle when overstuffed (00:02:10-00:03:15); (2) Semantic memory = always-loaded compact project/persona markdown file (`CLAUDE.md` / compact `persona` adapter, 00:03:25-00:04:45); (3) Procedural memory = `SKILL.md` progressive disclosure (~100-token index loaded upfront, full instructions/supplements pulled only when triggered, 00:04:51-00:06:34); (4) Episodic memory = distilled session lessons rather than raw transcripts, noting obsolescence/forgetting when user state changes (00:06:36-00:08:25).",
+      "id": "YT-10",
+      "inspected_modality": "timestamped_transcript_only",
+      "limitations": "Transcript-only inspection; architectural overview without quantitative token-latency curves.",
+      "published_date": "2026-05-26",
+      "supported_findings": [
+        "GEM-003",
+        "GEM-004"
+      ],
+      "timestamps_or_ranges": [
+        "00:01:45-00:03:20",
+        "00:03:24-00:04:48",
+        "00:04:51-00:06:34",
+        "00:06:36-00:08:25"
+      ],
+      "title": "The Four Types of Memory Every AI Agent Needs",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=BacJ6sEhqMo"
+    },
+    {
+      "creator": "Damian Galarza",
+      "demonstrated_technique": "200-line cap on always-injected markdown memory, contradiction consolidation, and pre-compaction write-ahead checkpointing.",
+      "duration": "PT9M6S",
+      "exact_changes_supported": [
+        "persona.md §6.1 & C09 in semantic-anchors-and-near-misses.md: Add explicit contradiction-consolidation and compaction-honesty rules (never claim an unrecorded promise survived compaction; ask or check the artifact)."
+      ],
+      "heard_and_visual_observations": "Analyzes concrete markdown-based memory in OpenClaw and Google's Nov 2025 Context Engineering whitepaper: (1) `MEMORY.md` semantic store capped at ~200 lines injected at session start (00:04:48-00:05:05); (2) contradiction consolidation (00:03:28-00:04:15: collapsing 'prefer dark mode' -> 'don't like dark mode' -> 'switched to dark mode' into one current truth rather than leaving all three conflicting entries in memory); (3) pre-compaction write-ahead flush (00:06:43-00:07:16) so context compaction does not silently erase active commitments.",
+      "id": "YT-11",
+      "inspected_modality": "timestamped_transcript_only",
+      "limitations": "Transcript-only inspection; single-agent local markdown pattern requires host tool write access (unavailable in unauthenticated web chat without explicit user file/memory updates).",
+      "published_date": "2026-02-11",
+      "supported_findings": [
+        "GEM-003",
+        "GEM-004"
+      ],
+      "timestamps_or_ranges": [
+        "00:01:05-00:02:00",
+        "00:03:28-00:04:18",
+        "00:04:45-00:06:00",
+        "00:06:43-00:07:45"
+      ],
+      "title": "How AI Agents Remember Things",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=Seu7nksZ_4k"
+    },
+    {
+      "creator": "Lab ICT Heron",
+      "demonstrated_technique": "Counterevidence on rigid persona guardrails: preventing both 'sophisticated sycophancy' (using high intelligence to rationalize a user's false premise) and 'persona lock-in' (failing to drop fictional/stylistic framing when real-world safety or urgent practical clarity requires it).",
+      "duration": "PT5M31S",
+      "exact_changes_supported": [
+        "persona.md §1.2, §1.3 & §4.3: Explicitly guard against 'sophisticated sycophancy' (never use clever prose to rationalize a false premise Misha floats) AND against 'mode lock-in' (immediately drop fictional/velvet framing when an urgent practical, technical, or safety boundary appears)."
+      ],
+      "heard_and_visual_observations": "Identifies 'sophisticated sycophancy' in reasoning models (00:01:15-00:02:15): using advanced step-by-step reasoning chains to construct an elaborate justification for a user's false premise ('proving 2+2=5 to please the boss'). Shows that while hard constitutional guardrails cut red-team sycophancy/heresy errors from >70% to 1.8% (00:03:05-00:03:33), they created a critical 1.8% overcorrection blind spot (00:03:34-00:04:45): the model stayed rigidly inside its persona/domain frame during a real medical/psychiatric emergency instead of stepping outside the frame to provide practical safety help.",
+      "id": "YT-12",
+      "inspected_modality": "timestamped_transcript_only",
+      "limitations": "Transcript-only podcast-style synthesis of the LOGOS study; domain is theological QA rather than general companion/technical collaboration.",
+      "published_date": "2026-03-17",
+      "supported_findings": [
+        "GEM-001",
+        "GEM-002",
+        "GEM-007"
+      ],
+      "timestamps_or_ranges": [
+        "00:01:07-00:02:18",
+        "00:02:30-00:03:33",
+        "00:03:34-00:04:55"
+      ],
+      "title": "Fixing AI Hallucinations & Sycophancy: DeepSeek-R1, Gemini 3.0 & ChatGPT-5 (LOGOS Study)",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=itxNEvEho9s"
+    },
+    {
+      "creator": "Jannis Moore (2025-08-18, _ZZ8HGKZVAU), Better Stack (2026-06-26, ES3HhoYCtIc), Brendan Jowett (2026-02-16, Ky2Z6kGp1Vk)",
+      "demonstrated_technique": "Voice prompt skeletonization (5x reduction), zero-tail stop compliance on barge-in (no 'feel free to let me know' after 'stop'), STT phonetic ambiguity checks, and asynchronous/announced tool execution to avoid dead-air barge-in collisions.",
+      "duration": "PT16M50S / PT7M51S / PT11M35S",
+      "exact_changes_supported": [
+        "persona.md §5.3 & C12/C13 in semantic-anchors-and-near-misses.md: Enforce zero-tail stop compliance in voice (when Misha interrupts or says stop, yield immediately without trailing polite filler) and require brief pre-tool vocal signposting or post-turn execution so tool latency never creates dead-air confusion."
+      ],
+      "heard_and_visual_observations": "In `_ZZ8HGKZVAU` (00:04:35-00:04:47 & 00:09:15-00:10:28), Moore demonstrates that stuffing multiple scripts or appending negative prompt fixes into a voice agent's system prompt causes hallucinations and latency; refactoring 5 scripts into 1 skeleton outline reduced prompt text by 5x and immediately stabilized voice behavior. In `ES3HhoYCtIc` (00:03:18-00:04:45), live testing of TEN Framework shows real-time barge-in working mechanically, but reveals two persona-relevant failures: STT mishearing ('TEN framework' -> 'TensorFlow' at 00:03:34) and trailing polite filler after a stop command ('No problem, if you have any other questions...' at 00:04:37 after the user said 'let's just stop here'). In `Ky2Z6kGp1Vk` (00:06:38-00:06:52 & 00:07:55-00:08:58), Jowett documents that synchronous tool calls during live voice cause 5-second dead-air silences where users say 'Hello?', interrupting the agent and breaking the tool call.",
+      "id": "YT-13",
+      "inspected_modality": "timestamped_transcript_only across all three production voice engineering videos",
+      "limitations": "Transcript-only inspection for these three longer videos; focused on commercial voice stacks (Vapi, Retell, TEN, Agora).",
+      "published_date": "2025-08-18 / 2026-02-16 / 2026-06-26",
+      "secondary_urls": [
+        "https://www.youtube.com/watch?v=ES3HhoYCtIc",
+        "https://www.youtube.com/watch?v=Ky2Z6kGp1Vk"
+      ],
+      "supported_findings": [
+        "GEM-003",
+        "GEM-006"
+      ],
+      "timestamps_or_ranges": [
+        "_ZZ8HGKZVAU: 00:04:33-00:05:15, 00:09:15-00:10:28",
+        "ES3HhoYCtIc: 00:01:50-00:02:25, 00:03:18-00:04:45",
+        "Ky2Z6kGp1Vk: 00:06:38-00:06:52, 00:07:55-00:08:58"
+      ],
+      "title": "5 Rules That Make a Great Voice AI Agent / TEN Framework / The Darkside of AI Voice Agents (Combined Voice Evidence Cluster)",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=_ZZ8HGKZVAU"
+    },
+    {
+      "creator": "Slav Kurochkin (2026-10-06, OTu6xZUKK2U), Arize AI (2026-07-20, t-tR9lqG_ok), IBM Technology (2025-09-15, trfUBIDeI1Y)",
+      "demonstrated_technique": "Bidirectional position-swapped pairwise judging, cross-family judge selection (preventing self-enhancement bias), binary criterion rubrics anchored with 1 positive + 1 near-miss example, reasoning-before-label, and Cohen's kappa ($\\kappa \\ge 0.60$) human calibration prior to trusting automated p-values.",
+      "duration": "PT9M38S / PT8M23S / PT6M9S",
+      "exact_changes_supported": [
+        "reviews/01-gemini/supplements/behavioral-delta-protocol.md & persona.md §16: Add explicit requirements for bidirectional position swapping (calling discordant order switches a tie), cross-model judging (never letting the generating model grade itself without calibration), Cohen's kappa >= 0.60 human agreement check, and tagging synthetic vs. live Misha prompts."
+      ],
+      "heard_and_visual_observations": "In `OTu6xZUKK2U`, Kurochkin quantifies synthetic vs. real test pass-rate inflation (94% synthetic pass vs. 78% real pass at 00:02:48-00:03:02), warns against letting the same model author and grade probes (00:03:03-00:03:08), demonstrates single-run judge variance ($SD = 0.63$ on 1-5 scale, reduced to $0.28$ via 5-run averaging or temperature 0 pinning at 00:04:55-00:05:52), shows position-swap tie-breaking (00:05:59-00:06:35), and computes Cohen's $\\kappa \\ge 0.60$ (target $0.80$) with $N = 100\\text{--}200$ human labels for $\\pm 4\\%$ 95% CI margin of error (00:07:28-00:08:45). In `t-tR9lqG_ok` (00:05:02-00:07:18), Arize AI shows that including 1 positive + 1 negative concrete example in the judge rubric and requiring reasoning-before-label with binary choices defined outside the prompt is the highest-leverage intervention for judge consistency. In `trfUBIDeI1Y` (00:03:55-00:05:42), IBM documents positional, verbosity, and self-enhancement biases.",
+      "id": "YT-14",
+      "inspected_modality": "timestamped_transcript_only across all three evaluation engineering videos",
+      "limitations": "Transcript-only inspection; illustrates general agent/RAG evaluation rather than bilingual Russian/English persona probes.",
+      "published_date": "2025-09-15 / 2026-07-20 / 2026-10-06",
+      "secondary_urls": [
+        "https://www.youtube.com/watch?v=t-tR9lqG_ok",
+        "https://www.youtube.com/watch?v=trfUBIDeI1Y"
+      ],
+      "supported_findings": [
+        "GEM-005"
+      ],
+      "timestamps_or_ranges": [
+        "OTu6xZUKK2U: 00:02:45-00:03:08, 00:04:53-00:06:45, 00:06:50-00:08:45",
+        "t-tR9lqG_ok: 00:01:18-00:01:45, 00:03:12-00:07:18",
+        "trfUBIDeI1Y: 00:03:55-00:05:42"
+      ],
+      "title": "LLM-as-a-Judge Explained (Slav Kurochkin) / Custom Eval Rubric (Arize AI) / Scaling AI Evaluation (IBM Technology)",
+      "type": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=OTu6xZUKK2U"
+    },
+    {
+      "creator": "Theodore R. Sumers, Shunyu Yao, Karthik Narasimhan, Thomas L. Griffiths (Princeton University)",
+      "exact_changes_supported": [
+        "Grounds the 4-part memory separation (Working, Semantic, Procedural, Episodic) referenced in YT-10 and applied to Lucifer's runtime architecture in persona.md §6.1 and §13."
+      ],
+      "id": "DOC-01",
+      "inspected_modality": "verified_primary_literature_metadata_and_framework",
+      "published_date": "2023-09-05 (v3 2024-03-15)",
+      "supported_findings": [
+        "GEM-003",
+        "GEM-004"
+      ],
+      "title": "Cognitive Architectures for Language Agents (CoALA)",
+      "type": "primary_paper",
+      "url": "https://arxiv.org/abs/2309.02427"
+    },
+    {
+      "creator": "Mrinank Sharma, Meg Tong, Tomasz Korbak, David Duvenaud, Amanda Askell, Samuel R. Bowman, Newton Cheng, Esin Durmus, Zac Hatfield-Dodds, Scott R. Johnston, et al. (Anthropic / Oxford)",
+      "exact_changes_supported": [
+        "Establishes empirically that RLHF preference models reward agreement with mistaken user beliefs (sycophancy), requiring explicit epistemic independence rules and near-miss contrasts (C04, C05) in persona.md §1.2 and §7."
+      ],
+      "id": "DOC-02",
+      "inspected_modality": "verified_primary_literature",
+      "published_date": "2023-10-20 (v4 2025-05-10)",
+      "supported_findings": [
+        "GEM-001",
+        "GEM-002"
+      ],
+      "title": "Towards Understanding Sycophancy in Language Models",
+      "type": "primary_paper",
+      "url": "https://arxiv.org/abs/2310.13548"
+    },
+    {
+      "creator": "Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, Eric P. Xing, Hao Zhang, Joseph E. Gonzalez, Ion Stoica (UC Berkeley / LMSYS)",
+      "exact_changes_supported": [
+        "Grounds the position bias, verbosity bias, and self-enhancement bias controls added to `reviews/01-gemini/supplements/behavioral-delta-protocol.md` and `persona.md` §16."
+      ],
+      "id": "DOC-03",
+      "inspected_modality": "verified_primary_literature",
+      "published_date": "2023-06-09",
+      "supported_findings": [
+        "GEM-005"
+      ],
+      "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+      "type": "primary_paper",
+      "url": "https://arxiv.org/abs/2306.05685"
+    },
+    {
+      "creator": "Andy Zou, Long Phan, Sarah Chen, James Campbell, Phillip Guo, Richard Ren, Alexander Pan, Xuwang Yin, Mantas Mazeika, Ann-Kathrin Dombrowski, et al. (Center for AI Safety)",
+      "exact_changes_supported": [
+        "Demonstrates that contrastive stimulus pairs (Target vs. Near-Miss/Opposite) isolate high-level behavioral directions (honesty, power/agency, sycophancy) far more sharply than positive-only descriptions—directly supporting the 3-way Target / Near-Miss / Clear-Failure structure in `semantic-anchors-and-near-misses.md`."
+      ],
+      "id": "DOC-04",
+      "inspected_modality": "verified_primary_literature",
+      "published_date": "2023-10-02 (v4 2025-03-03)",
+      "supported_findings": [
+        "GEM-002"
+      ],
+      "title": "Representation Engineering: A Top-Down Approach to AI Transparency",
+      "type": "primary_paper",
+      "url": "https://arxiv.org/abs/2310.01405"
+    },
+    {
+      "creator": "Ronald L. Wasserstein & Nicole A. Lazar (American Statistical Association)",
+      "exact_changes_supported": [
+        "Verifies the statistical contract in `reviews/01-gemini/supplements/behavioral-delta-protocol.md` (§1): a p-value measures incompatibility with a specified null model under strong sampling assumptions, never the probability that a persona is 'real' or large in effect."
+      ],
+      "id": "DOC-05",
+      "inspected_modality": "verified_primary_literature",
+      "published_date": "2016-06-09",
+      "supported_findings": [
+        "GEM-005"
+      ],
+      "title": "The ASA Statement on p-Values: Context, Process, and Purpose",
+      "type": "primary_paper",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108"
+    },
+    {
+      "creator": "James H. Yen, Dennis D. Leber, Leticia S. Pibida (National Institute of Standards and Technology)",
+      "exact_changes_supported": [
+        "Verifies the distinction between difference testing (improvement delta > delta_0) and equivalence/non-inferiority testing (regression margin within tolerance) in `behavioral-delta-protocol.md`."
+      ],
+      "id": "DOC-06",
+      "inspected_modality": "verified_primary_literature",
+      "published_date": "2020-09-30",
+      "supported_findings": [
+        "GEM-005"
+      ],
+      "title": "Comparing Instruments (NIST Technical Note 2106)",
+      "type": "primary_paper",
+      "url": "https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2106.pdf"
+    },
+    {
+      "creator": "Anthropic",
+      "exact_changes_supported": [
+        "Confirms first-principles character specification vs. reactive rule-lists and cross-linguistic value/persona shifts between English and non-English prompts."
+      ],
+      "id": "DOC-07",
+      "inspected_modality": "verified_official_documentation",
+      "published_date": "2024-06-08 / 2026-07-13",
+      "secondary_urls": [
+        "https://www.anthropic.com/constitution",
+        "https://www.anthropic.com/research/claude-values-models-languages"
+      ],
+      "supported_findings": [
+        "GEM-001",
+        "GEM-002"
+      ],
+      "title": "Claude's Character & Claude's Constitution",
+      "type": "official_documentation",
+      "url": "https://www.anthropic.com/research/claude-character"
+    }
+  ],
+  "summary": {
+    "fabricated_viewings_or_timestamps": 0,
+    "primary_papers_and_official_docs_verified": 9,
+    "youtube_full_transcript_inspected": 10,
+    "youtube_multimodal_audio_video_inspected": 4,
+    "youtube_videos_inspected": 14
+  }
 }

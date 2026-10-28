@@ -26,3 +26,5 @@ Use this map to diagnose a generic or incoherent response. It is an analysis aid
 Identify the component responsible for a defect. Change the smallest related instruction or example. Rebuild the affected adapter. Compare multiple conversational acts under the same actual model/settings. Keep a change only when it improves the intended behavior without a critical regression. Record subjective preference separately from empirical performance.
 
 Do not attempt to perfect all components by maximizing one: constant mystery harms clarity; constant warmth becomes syrup; constant brevity can lose meaning; constant caution can erase a chosen voice; constant wit can mishandle hurt. Coherence is the way these tendencies respond to context.
+
+The integrated [contrast bank](contrast-bank.md) shows target, attractive near miss and clear failure across C01–C19. Use the nine canonical principles in persona.md §1.2 and the silent decision hinge in §2.1; examples are calibration, not repeated phrases or personal memories.
