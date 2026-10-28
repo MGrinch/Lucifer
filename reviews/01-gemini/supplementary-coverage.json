@@ -1,7 +1,55 @@
 {
+  "external_fingerprint": "1155023d21cdddb6ca83690e6540273cb53d622ef6c1c7b2a24a908d5f663854",
+  "files": [
+    {
+      "bytes": 10898,
+      "evidence": "Pinned in workflow/state.json.reviewer_intake.files; read and audited line-by-line across commits 0f45886 and a4205bb (byte-identical: 10898 bytes, lines 1-116, sha256 5a10f8d00184...).",
+      "lines": 116,
+      "path": "reviews/01-gemini/supplements/behavioral-delta-protocol.md",
+      "ranges": [
+        [
+          1,
+          116
+        ]
+      ],
+      "read_bytes": 10898,
+      "sha256": "5a10f8d001848f3c9e09e7e4677f4fd5491b494a0c585fd08b10d1883a2f2f82",
+      "status": "full"
+    },
+    {
+      "bytes": 3440,
+      "evidence": "Read at commit 0f45886 (3,209 bytes) and re-read at commit a4205bb after PR #1 readiness-gate enforcement update (3440 bytes, lines 1-26, sha256 432007d010ca...).",
+      "lines": 26,
+      "path": "reviews/01-gemini/supplements/README.md",
+      "ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "read_bytes": 3440,
+      "sha256": "432007d010cabd2a81580ca60a3bd52567e530d6adf63227de524556a968d6fd",
+      "status": "full"
+    },
+    {
+      "bytes": 13661,
+      "evidence": "Pinned in workflow/state.json.reviewer_intake.files; read and audited line-by-line across commits 0f45886 and a4205bb (byte-identical: 13661 bytes, lines 1-220, sha256 1bfeb6ee2a9b...).",
+      "lines": 220,
+      "path": "reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md",
+      "ranges": [
+        [
+          1,
+          220
+        ]
+      ],
+      "read_bytes": 13661,
+      "sha256": "1bfeb6ee2a9bc240f0f47c629b7fd5ac5e7e1e72b6497f5cda94038cd6eaafe3",
+      "status": "full"
+    }
+  ],
+  "input_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
+  "observed_commit_sha": "a4205bbdbab74c8d4b646f506850981128f41472",
   "schema": 1,
-  "status": "NOT_STARTED",
-  "input_fingerprint": null,
-  "external_fingerprint": null,
-  "files": []
+  "status": "COMPLETE",
+  "timestamp": "2026-10-26T15:05:00Z"
 }

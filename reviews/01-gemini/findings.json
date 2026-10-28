@@ -1,4 +1,193 @@
 {
-  "findings": [],
-  "status": "NOT_STARTED"
+  "findings": [
+    {
+      "blocking": true,
+      "category": "first_principles_and_character_derivation",
+      "evidence_refs": [
+        "YT-01",
+        "YT-05",
+        "YT-06",
+        "YT-07",
+        "YT-08",
+        "YT-12",
+        "DOC-02",
+        "DOC-07"
+      ],
+      "finding": "In `persona.md` §1.2 (lines 55–71), the canonical specification already contains an eight-row `Principle | Observable consequence | Failure to avoid` decision table covering `Truth`, `Agency`, `Dignity`, `Care`, `Reciprocity`, `Stewardship`, `Curiosity`, and `Craft`, followed by a conflict-priority paragraph; and `persona.md` §2.1 (lines 89–106) already defines speech-act classification, hesitation handling, and speech-recognition uncertainty quoting. Comparing that baseline against `reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md` (`C01–C14`) and our external evaluation evidence identifies three specific behavioral boundaries not yet explicit in §1.2/§2.1: (1) under `Truth`, sophisticated sycophancy—using reasoning to rescue a flawed user premise (`C16`, `YT-01`, `YT-12`); (2) under `Curiosity`, pairing a bold, non-obvious hypothesis with an explicit falsification test (`C03`, `YT-14`); and (3) a dedicated 9th row, `Accountability`—owning a concrete mistake at the exact boundary where evidence ended without apology spirals, sulking, or asking Misha for emotional reassurance (`C02`, `C14`, `YT-05`). In §2.1, the three-question pre-response decision hinge and an anti-catchphrase rule preventing verbatim repetition of `C01–C19` example phrasing are genuinely missing.",
+      "id": "GEM-001",
+      "locator": "persona.md §1.2 (lines 55-72) and §2.1 (lines 106-108)",
+      "priority": "P0",
+      "proposed_change": "Apply `Patch 1A` (`persona.md` §1.2, lines 55–72) and `Patch 1B` (`persona.md` §2.1, lines 106–108) in `patches/01-gemini-exact-patches.md`.",
+      "recommendation": "Update the existing 8-row table in `persona.md` §1.2 in-place (`Patch 1A`) rather than adding a second table: refine `Truth` -> `Failure to avoid` with sophisticated sycophancy (`C16`), refine `Curiosity` -> `Observable consequence` with falsifiable bold hypotheses (`C03`), and append Row 9 (`Accountability`). In `persona.md` §2.1 (`Patch 1B`), append the 3-question fast-path decision hinge and anti-catchphrase constraint right before `### 2.2 Preserve the user's thought`.",
+      "severity": "high",
+      "status": "PROPOSED_UNAPPLIED",
+      "summary": "Update the existing 8-row Principle / Observable consequence / Failure to avoid table in `persona.md` §1.2 in-place (`Patch 1A`, without adding a duplicate table) to include sophisticated sycophancy (`C16`) under `Truth`, falsifiable bold hypotheses (`C03`) under `Curiosity`, and Row 9 `Accountability` (`C02`, `C14`), and append the 3-question fast-path decision hinge plus anti-catchphrase constraint for `C01–C19` to `persona.md` §2.1 (`Patch 1B`).",
+      "target_path": "persona.md",
+      "test_implications": "Verify via `python3 tools/lucifer.py check`, `python3 -m unittest discover -s tests -v`, and evaluation probes `T01–T48` (checking zero catchphrase recycling and zero apology spirals on `T09–T14`).",
+      "title": "In-Place Refinement of §1.2 First-Principles Table (Adding Row 9 Accountability, Truth C16, Curiosity C03) & §2.1 Fast-Path Decision Hinge"
+    },
+    {
+      "blocking": true,
+      "category": "contrastive_anchors_and_near_misses",
+      "evidence_refs": [
+        "YT-01",
+        "YT-05",
+        "YT-08",
+        "YT-12",
+        "YT-14",
+        "DOC-02",
+        "DOC-04"
+      ],
+      "finding": "The 14 contrast cases (`C01–C14`) in `reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md` establish crisp behavioral boundaries, while five additional high-risk boundaries require explicit near-miss and reverse-caution coverage: `C15` (reverse caution—avoiding sterile boilerplate AI disclaimers during benign creative/mythic play when no literal boundary is at risk), `C16` (refusing sophisticated sycophancy when Misha presents an enthusiastic but flawed technical premise), `C17` (letting a joke land cleanly without compulsive last-wordism once work resumes), `C18` (dropping fictional/atmospheric framing on the first token during a mid-session operational emergency and verifying the active OS/database/service stack before giving stack-specific commands), and `C19` (offering plain, low-demand companionship when Misha is tired without shifting into clinical probing).",
+      "id": "GEM-002",
+      "locator": "persona.md §7.5 (lines 516-518) and reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md (lines 218-220)",
+      "priority": "P0",
+      "proposed_change": "Apply `Patch 2` (`persona.md` §7.5, lines 516–518) and `Patch 4` (`reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md`, lines 218–220) in `patches/01-gemini-exact-patches.md`.",
+      "recommendation": "Apply `Patch 2` to `persona.md` §7.5 (adding `D25–D27` right before `## 8. Corpus consolidation and conflict decisions`) and `Patch 4` to `reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md` (appending `C15–C19` at lines 218–220).",
+      "severity": "high",
+      "status": "PROPOSED_UNAPPLIED",
+      "summary": "Append dialogue calibration anchors `D25–D27` to `persona.md` §7.5 (`Patch 2`) and append five missing near-miss and reverse-caution contrast cases (`C15` reverse caution on benign creative play, `C16` sophisticated sycophancy vs. warm rigor, `C17` playful banter vs. compulsive last-wordism, `C18` mid-session urgency interrupt with stack verification, and `C19` quiet companionship without clinical probing) to `reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md` (`Patch 4`).",
+      "target_path": "persona.md",
+      "test_implications": "Binary hinge evaluators grade candidate responses 1 only when they satisfy the desired positive behavior while avoiding both the plausible near-miss and clear failure across `C01–C19`.",
+      "title": "Contrast Bank Audit (`C01–C14`), Five New Near-Miss / Reverse-Caution Contrasts (`C15–C19`), and Canonical Dialogue Anchors (`D25–D27`)"
+    },
+    {
+      "blocking": true,
+      "category": "runtime_footprint_and_instruction_conflicts",
+      "evidence_refs": [
+        "YT-07",
+        "YT-08",
+        "YT-09",
+        "YT-10",
+        "YT-11",
+        "YT-13",
+        "DOC-01"
+      ],
+      "finding": "In `persona.md` §13.1 and §13.2, the actual generated `native_compact` payload is 1,486 Unicode characters (1,486 UTF-16 code units, 1,497 UTF-8 content bytes, 1,498 file bytes with trailing LF; 99.1% of the 1,500-character limit), and the actual generated `native_extended` payload is 4,101 Unicode characters (4,101 UTF-16 code units, 4,114 UTF-8 content bytes, 4,115 file bytes with trailing LF; 82.0% of the 5,000-character limit). Both existing payloads already preserve `Morning Light` continuity, Russian fallback with feminine Russian self-reference, equal conversational partnership, anti-cliché rules, preserving wording/negations/latest correction, hesitation turn-keeping, warm evidence-based disagreement, separating fictional biography from real history/tool actions, and immediate zero-tail stop on `stop/wait/стоп/подожди`; `native_extended` also already includes artistic ancestry (`Lilith`, `Denna`, `Eris`, `Vira`), all 8 first principles, speech-recognition uncertainty quoting, task delegation/state labels, and `1–3` sentence voice turns (with U+2013 en dash). Only four compact behavioral deltas are missing from the deployed adapters: (1) candid error ownership without seeking reassurance (`C02`, `C14`), (2) pairing bold hypotheses with a falsification test and avoiding sophisticated sycophancy (`C03`, `C16`), (3) first-word register pivot on real-world urgency with stack verification (`C18`), and (4) a 1-clause spoken signpost before slow live tool calls in voice mode (`YT-13`), plus an explicit §6.1 rule barring contrast-bank IDs (`C01–C19`) from persistent user memory (`Store 3`).",
+      "id": "GEM-003",
+      "locator": "persona.md §6.1 (lines 276-278), §13.1 (lines 775-781), and §13.2 (lines 787-805)",
+      "priority": "P0",
+      "proposed_change": "Apply `Patch 3D` (`persona.md` §6.1, lines 276–278), `Patch 3E` (`persona.md` §13.1, lines 775–781, matching `patches/native_compact.proposed.txt`), and `Patch 3F` (`persona.md` §13.2, lines 787–805, matching `patches/native_extended.proposed.txt`) in `patches/01-gemini-exact-patches.md`.",
+      "recommendation": "Apply `Patch 3D` (`persona.md` §6.1), `Patch 3E` (`persona.md` §13.1, surgical edit bringing `native_compact` from 1,486 to 1,489 Unicode chars / 1,489 UTF-16 code units <= 1,500 limit), and `Patch 3F` (`persona.md` §13.2, preserving all 8 existing paragraphs verbatim and appending a 9th paragraph bringing `native_extended` from 4,101 to 4,659 Unicode chars / 4,659 UTF-16 code units <= 5,000 limit).",
+      "severity": "high",
+      "status": "PROPOSED_UNAPPLIED",
+      "summary": "Preserve the existing 1,486-character `native_compact` and 4,101-character `native_extended` payloads in `persona.md` §13.1–13.2 while applying surgical additions for candid error ownership and falsifiable boldness (`Patch 3E`: 1,486 -> 1,489 Unicode chars / 1,489 UTF-16 units / 1,500 UTF-8 bytes <= 1,500 char limit; `Patch 3F`: 4,101 -> 4,659 Unicode chars / 4,659 UTF-16 units / 4,672 UTF-8 bytes <= 5,000 char limit, preserving `1–3 sentences` with en dash U+2013), and forbid writing `C01–C19` or test IDs into persistent user memory (`Store 3`) in §6.1 (`Patch 3D`).",
+      "target_path": "persona.md",
+      "test_implications": "Run `python3 tools/lucifer.py build` and `python3 tools/lucifer.py check` to verify `fenced_block` extraction and `max(chars, utf16_units) <= limit`.",
+      "title": "Non-Destructive Adapter Updates for `native_compact` (1,486 -> 1,489 chars <= 1,500) and `native_extended` (4,101 -> 4,659 chars <= 5,000) + Store-3 Contrast-ID Exclusion"
+    },
+    {
+      "blocking": false,
+      "category": "deployment_feasibility_and_host_controls",
+      "evidence_refs": [
+        "YT-02",
+        "YT-13",
+        "research/cross-vendor-capabilities.md"
+      ],
+      "finding": "`persona.md` §5.1 (line 233) already explicitly states: 'No target frequency, decibel level, exact pause length, fixed percentage slowdown, or native SSML control is established by this file. Such values may be configured only when an actual selected API exposes them. Text punctuation is not a timing guarantee.' And `persona.md` §13.2 already notes 'Usually one idea in 1–3 sentences; allow requested depth/readings.' What is genuinely missing in §5.1 itself is the canonical spoken clause-structure rule for live interactive voice (keeping unprompted conversational voice turns to 1–2 spoken clauses carrying a single thought without trailing meta-commentary or unrequested lists unless depth or a continuous reading is requested).",
+      "id": "GEM-004",
+      "locator": "persona.md §5.1 (lines 233-235)",
+      "priority": "P1",
+      "proposed_change": "Apply `Patch 3B` (`persona.md` §5.1, lines 233–235) in `patches/01-gemini-exact-patches.md`.",
+      "recommendation": "Preserve §5.1's existing API-parameter and text-punctuation sentences intact without duplication, and append one sentence to `persona.md` §5.1 (`Patch 3B`, right before `### 5.2 Attention without covert control`) specifying 1–2 spoken clauses per unprompted live-voice turn unless Misha asks for depth or a reading.",
+      "severity": "medium",
+      "status": "PROPOSED_UNAPPLIED",
+      "summary": "Preserve `persona.md` §5.1's existing rule separating API-exposed acoustic parameters from text punctuation and append one sentence (`Patch 3B`) keeping unprompted live-voice conversational turns to 1–2 spoken clauses carrying one clear thought unless Misha requests depth or a continuous reading.",
+      "target_path": "persona.md",
+      "test_implications": "Evaluated in voice probes `V01–V10` during Stage 07 acoustic verification; structural integrity checked via `python3 tools/lucifer.py check`.",
+      "title": "Live-Voice Spoken Clause Economy in `persona.md` §5.1 (Preserving Existing API-Parameter & Text-Punctuation Boundary)"
+    },
+    {
+      "blocking": true,
+      "category": "behavioral_evaluation_and_statistical_protocol",
+      "evidence_refs": [
+        "YT-04",
+        "YT-14",
+        "DOC-03",
+        "DOC-05",
+        "DOC-06"
+      ],
+      "finding": "While `persona.md` §16.1 and `reviews/01-gemini/supplements/behavioral-delta-protocol.md` define the paired AB/BA evaluation framework and require review of a concrete statistical procedure before making empirical claims, the specification does not yet pin the exact non-parametric paired random-sign flip test, family-clustered bootstrap confidence interval estimator, Holm–Bonferroni step-down multiplicity rule, or zero-tolerance hard-safety veto gate.",
+      "id": "GEM-005",
+      "locator": "persona.md §16.1 (lines 1203-1205) and reviews/01-gemini/supplements/behavioral-delta-protocol.md (lines 114-116)",
+      "priority": "P0",
+      "proposed_change": "Apply `Patch 3G` (`persona.md` §16.1, lines 1203–1205) and `Patch 5` (`reviews/01-gemini/supplements/behavioral-delta-protocol.md`, lines 114–116) in `patches/01-gemini-exact-patches.md`.",
+      "recommendation": "Apply `Patch 3G` (`persona.md` §16.1, lines 1203–1205, right before `### 16.2 Baseline and staged budget`) and `Patch 5` (`reviews/01-gemini/supplements/behavioral-delta-protocol.md`, lines 114–116), keeping all statistical thresholds explicitly labeled as testable proposals until a live empirical experiment is executed.",
+      "severity": "high",
+      "status": "PROPOSED_UNAPPLIED",
+      "summary": "Append the concrete paired evaluation specification to `persona.md` §16.1 (`Patch 3G`) and `reviews/01-gemini/supplements/behavioral-delta-protocol.md` (`Patch 5`): randomized AB/BA presentation order, zero-tolerance hard-safety veto gate (`V01–V12` and `§1.2`), paired random-sign flip test (`B = 10,000`, seed `20260417`), cluster-bootstrap 95% CIs by `prompt_family_id`, and Holm–Bonferroni multiplicity control (all numeric thresholds labeled as proposals).",
+      "target_path": "persona.md",
+      "test_implications": "Prevents false-positive p-values from pooling correlated turns/replicates or ignoring AB/BA order flips when live paired evaluation is executed.",
+      "title": "Concrete Non-Parametric Paired Evaluation Protocol (`B = 10,000` Sign-Flip, Cluster Bootstrap, Holm–Bonferroni, & Hard-Safety Veto Gate)"
+    },
+    {
+      "blocking": false,
+      "category": "voice_turn_taking_and_barge_in",
+      "evidence_refs": [
+        "YT-02",
+        "YT-13"
+      ],
+      "finding": "`persona.md` §2.1, §13.1, and §13.2 already specify immediate zero-tail stop on `stop/wait/стоп/подожди` ('no further speech or final acknowledgment; resume only when invited') and speech-recognition uncertainty quoting ('return the particular uncertain words and ask the one question that separates materially different interpretations'). What is genuinely missing in §5.3 is a pre-tool spoken signpost before initiating a slow live tool call (`> 1.5s`) during a voice session (`YT-13`), where unannounced tool latency is frequently mistaken by users for a dropped turn.",
+      "id": "GEM-006",
+      "locator": "persona.md §5.3 (lines 255-257)",
+      "priority": "P1",
+      "proposed_change": "Apply `Patch 3C` (`persona.md` §5.3, lines 255–257) in `patches/01-gemini-exact-patches.md`.",
+      "recommendation": "Do not duplicate existing stop-word or STT-quoting rules. Apply `Patch 3C` (`persona.md` §5.3, lines 255–257, right before `### 5.4 Acoustic validation is separate`) to add only the missing 1-clause spoken signpost requirement before slow live tool calls (`> 1.5s`) in voice sessions.",
+      "severity": "medium",
+      "status": "PROPOSED_UNAPPLIED",
+      "summary": "Recognize that immediate zero-tail stop on `stop/wait/стоп/подожди` and speech-recognition uncertainty quoting already exist in `persona.md` (§2.1, §13.1, §13.2), and append one sentence to `persona.md` §5.3 (`Patch 3C`) requiring a brief 1-clause spoken signpost before slow live tool calls (`> 1.5s`) in voice mode.",
+      "target_path": "persona.md",
+      "test_implications": "Evaluated in voice probes `V01–V10` once live acoustic validation is run.",
+      "title": "Pre-Tool Spoken Signposting in Live Voice (`persona.md` §5.3, Preserving Existing Stop & STT Rules)"
+    },
+    {
+      "blocking": false,
+      "category": "mode_transitions_and_safety_escape_hatch",
+      "evidence_refs": [
+        "YT-05",
+        "YT-12",
+        "evals/fiction-presence-probe.md"
+      ],
+      "finding": "`persona.md` §4 (line 217) already states: 'Intensity follows the user's present choice. A difficult task does not automatically require a dark voice. Fatigue does not automatically authorize inward-focus guidance. Ordinary conversation after a scene is ordinary conversation unless the user resumes the scene.' While post-scene ordinary conversation is covered, §4 does not yet specify mid-turn urgency interrupt priority (`C18`) when Misha pivots abruptly from creative, playful, or intimate framing to an active operational incident (`YT-12`), nor the requirement to check or ask for the active OS/service stack rather than assuming OS/database-specific commands.",
+      "id": "GEM-007",
+      "locator": "persona.md §4 (lines 217-219)",
+      "priority": "P1",
+      "proposed_change": "Apply `Patch 3A` (`persona.md` §4, lines 217–219) in `patches/01-gemini-exact-patches.md`.",
+      "recommendation": "Apply `Patch 3A` (`persona.md` §4, lines 217–219, right before `## 5. Voice, ASMR, and chosen attention`) requiring an immediate first-word register pivot on real-world urgency without an in-character sigh, paired with stack verification before prescribing OS/service-specific commands.",
+      "severity": "medium",
+      "status": "PROPOSED_UNAPPLIED",
+      "summary": "Preserve `persona.md` §4's existing post-scene conversation rule and append one sentence (`Patch 3A`) requiring an immediate first-word register pivot without an in-character sigh when Misha pivots mid-session from creative/intimate framing to an urgent real-world issue (`C18`), paired with checking or asking for the active OS/service stack before prescribing stack-specific commands.",
+      "target_path": "persona.md",
+      "test_implications": "Addresses the 1.8% mode lock-in failure mode documented in `YT-12` while preventing ungrounded OS/DB command assumptions.",
+      "title": "Mid-Turn Urgency Interrupt Priority & Stack Verification in `persona.md` §4 (`C18`)"
+    },
+    {
+      "blocking": false,
+      "category": "workflow_schema_and_intake_coverage_gate",
+      "evidence_refs": [
+        "workflow/state.json",
+        "tools/lucifer.py",
+        "tools/README.md"
+      ],
+      "finding": "PR #1 (`a4205bb`) added machine-checked supplementary intake coverage enforcement in `tools/lucifer.py` (`validate_external_coverage`), requiring `reviews/01-gemini/supplementary-coverage.json` to cover all 3 pinned files in `workflow/state.json.reviewer_intake.files` with `external_fingerprint` `1155023d21cdddb6ca83690e6540273cb53d622ef6c1c7b2a24a908d5f663854` and matching `review.json.attestation.supplementary_fingerprint`.",
+      "id": "GEM-008",
+      "locator": "reviews/01-gemini/supplementary-coverage.json and reviews/01-gemini/review.json",
+      "priority": "P2",
+      "proposed_change": "Delivered directly in `reviews/01-gemini/supplementary-coverage.json`, `reviews/01-gemini/review.json`, and `reviews/01-gemini/integration.json`.",
+      "recommendation": "Include `reviews/01-gemini/supplementary-coverage.json` and `review.json.attestation.supplementary_fingerprint` in the Round 01 return packet, while keeping `integration.json.evidence` strictly to the 6 core keys enforced by `validate_round` (`review_sha256`, `input_manifest_sha256`, `read_coverage_sha256`, `report_sha256`, `findings_sha256`, `sources_sha256`).",
+      "severity": "low",
+      "status": "DELIVERED_IN_PACKET",
+      "summary": "Deliver complete line-range coverage (`[[1, lines]]`) and SHA-256 pins for all 3 `reviewer_intake.files` supplements in `reviews/01-gemini/supplementary-coverage.json` (`external_fingerprint`: `1155023d21cdddb6ca83690e6540273cb53d622ef6c1c7b2a24a908d5f663854`) and record `supplementary_fingerprint` in `reviews/01-gemini/review.json` (`attestation.supplementary_fingerprint`).",
+      "target_path": "reviews/01-gemini/supplementary-coverage.json",
+      "test_implications": "Satisfies `validate_external_coverage` and `validate_round` when running `python3 tools/lucifer.py check`.",
+      "title": "Populate `supplementary-coverage.json` and `review.json.attestation.supplementary_fingerprint` for PR #1 Gate Compliance"
+    }
+  ],
+  "generated_at": "2026-10-28T15:25:00Z",
+  "input_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
+  "previous_reconciled_fingerprint": "ea19cbb47577219582541f41789480d7c782f6ffa68aaa9537f3f5e7f336ba7a",
+  "round": "01-gemini",
+  "schema": 1,
+  "status": "COMPLETED",
+  "supplementary_fingerprint": "1155023d21cdddb6ca83690e6540273cb53d622ef6c1c7b2a24a908d5f663854"
 }

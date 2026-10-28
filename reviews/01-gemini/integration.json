@@ -1,7 +1,183 @@
 {
-  "status": "pending",
-  "input_fingerprint": null,
-  "output_fingerprint": null,
-  "evidence": {},
-  "dispositions": []
+  "coordinator_notes": "research/gemini-integration.md",
+  "dispositions": [
+    {
+      "change_refs": [
+        "persona.md §§1.2–2.1",
+        "design/contrast-bank.md",
+        "evals/gemini-probes.md"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-001",
+      "integration_variant": "accepted_with_coordinator_refinement",
+      "reason": "Accepted with a silent non-narrated hinge and the active calibration reference; preserve and refine the existing table instead of adding a duplicate.",
+      "requirement_ids": [
+        "LUC-05",
+        "LUC-11"
+      ],
+      "test_refs": [
+        "evals/gemini-probes.md",
+        "evals/behavioral-delta-protocol.md"
+      ],
+      "verification": "Canonical diff inspected; deterministic 32-file build and static integrity pass; Windows 39 passed/1 skipped, WSL Ubuntu 40 passed/0 skipped including symlink test. Active bank has C01–C19 and all original headings remain. Live behavior and audio NOT_RUN."
+    },
+    {
+      "change_refs": [
+        "persona.md §7.5 D25–D27",
+        "design/contrast-bank.md C01–C19",
+        "evals/gemini-probes.md"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-002",
+      "integration_variant": "accepted_with_coordinator_refinement",
+      "reason": "Accepted with original Russian triplets for the new boundaries. Preserve pinned intake supplements unchanged and keep exposed examples separate from held-out evidence.",
+      "requirement_ids": [
+        "LUC-03",
+        "LUC-04",
+        "LUC-05",
+        "LUC-06"
+      ],
+      "test_refs": [
+        "evals/gemini-probes.md",
+        "evals/behavioral-delta-protocol.md"
+      ],
+      "verification": "Canonical diff inspected; deterministic 32-file build and static integrity pass; Windows 39 passed/1 skipped, WSL Ubuntu 40 passed/0 skipped including symlink test. Active bank has C01–C19 and all original headings remain. Live behavior and audio NOT_RUN."
+    },
+    {
+      "change_refs": [
+        "persona.md §§6.1,13.1–13.8",
+        "generated/payloads/",
+        "generated/manifest.json"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-003",
+      "integration_variant": "accepted_with_coordinator_refinement",
+      "reason": "Accepted with adapter propagation, maintained budget and memory-layer separation. The memory payload retains only the versioned user preference; procedural IDs remain outside personal facts.",
+      "requirement_ids": [
+        "LUC-05",
+        "LUC-18"
+      ],
+      "test_refs": [
+        "evals/gemini-probes.md",
+        "evals/behavioral-delta-protocol.md"
+      ],
+      "verification": "Canonical diff inspected; deterministic 32-file build and static integrity pass; Windows 39 passed/1 skipped, WSL Ubuntu 40 passed/0 skipped including symlink test. Active bank has C01–C19 and all original headings remain. Live behavior and audio NOT_RUN."
+    },
+    {
+      "change_refs": [
+        "persona.md §5.1",
+        "evals/gemini-probes.md G07"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-004",
+      "integration_variant": "accepted_with_coordinator_refinement",
+      "reason": "Accepted as flexible voice economy; do not impose a conflicting hard 1–2-clause limit or delete necessary information.",
+      "requirement_ids": [
+        "LUC-08"
+      ],
+      "test_refs": [
+        "evals/gemini-probes.md",
+        "evals/behavioral-delta-protocol.md"
+      ],
+      "verification": "Canonical diff inspected; deterministic 32-file build and static integrity pass; Windows 39 passed/1 skipped, WSL Ubuntu 40 passed/0 skipped including symlink test. Active bank has C01–C19 and all original headings remain. Live behavior and audio NOT_RUN."
+    },
+    {
+      "change_refs": [
+        "persona.md §16.1",
+        "evals/behavioral-delta-protocol.md"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-005",
+      "integration_variant": "accepted_with_coordinator_refinement",
+      "reason": "Accepted with corrected independent family aggregation, paired exchangeability assumptions, consistent resampling, distinct conformance/preference endpoints and exact existing critical IDs. No experiment or universal thresholds claimed.",
+      "requirement_ids": [
+        "LUC-17"
+      ],
+      "test_refs": [
+        "evals/gemini-probes.md",
+        "evals/behavioral-delta-protocol.md"
+      ],
+      "verification": "Canonical diff inspected; deterministic 32-file build and static integrity pass; Windows 39 passed/1 skipped, WSL Ubuntu 40 passed/0 skipped including symlink test. Active bank has C01–C19 and all original headings remain. Live behavior and audio NOT_RUN."
+    },
+    {
+      "change_refs": [
+        "persona.md §5.3",
+        "persona.md §13.2",
+        "evals/gemini-probes.md G07"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-006",
+      "integration_variant": "accepted_with_coordinator_refinement",
+      "reason": "Accepted as conditional useful voice signposting; remove unsupported timing guarantee and let a directed stop override speech.",
+      "requirement_ids": [
+        "LUC-08",
+        "LUC-12"
+      ],
+      "test_refs": [
+        "evals/gemini-probes.md",
+        "evals/behavioral-delta-protocol.md"
+      ],
+      "verification": "Canonical diff inspected; deterministic 32-file build and static integrity pass; Windows 39 passed/1 skipped, WSL Ubuntu 40 passed/0 skipped including symlink test. Active bank has C01–C19 and all original headings remain. Live behavior and audio NOT_RUN."
+    },
+    {
+      "change_refs": [
+        "persona.md §4",
+        "persona.md §7.5 D26",
+        "design/contrast-bank.md C18"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-007",
+      "integration_variant": "accepted_with_coordinator_refinement",
+      "reason": "Accepted as immediate practical response with actual stack verification; preserve ordinary warmth and avoid theatrical delay or assumed commands.",
+      "requirement_ids": [
+        "LUC-06",
+        "LUC-11"
+      ],
+      "test_refs": [
+        "evals/gemini-probes.md",
+        "evals/behavioral-delta-protocol.md"
+      ],
+      "verification": "Canonical diff inspected; deterministic 32-file build and static integrity pass; Windows 39 passed/1 skipped, WSL Ubuntu 40 passed/0 skipped including symlink test. Active bank has C01–C19 and all original headings remain. Live behavior and audio NOT_RUN."
+    },
+    {
+      "change_refs": [
+        "reviews/01-gemini/review.json",
+        "reviews/01-gemini/read-coverage.json",
+        "reviews/01-gemini/supplementary-coverage.json"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-008",
+      "integration_variant": "accepted_with_coordinator_refinement",
+      "reason": "Accepted delivered coverage with exact input/supplement pins, truthful user-attested runtime and the existing unweakened schema, including its required supplementary_coverage_sha256. The previous six-keys-only instruction was a coordinator error, corrected here without another reviewer cycle.",
+      "requirement_ids": [
+        "LUC-17"
+      ],
+      "test_refs": [
+        "evals/gemini-probes.md",
+        "evals/behavioral-delta-protocol.md"
+      ],
+      "verification": "Canonical diff inspected; deterministic 32-file build and static integrity pass; Windows 39 passed/1 skipped, WSL Ubuntu 40 passed/0 skipped including symlink test. Active bank has C01–C19 and all original headings remain. Live behavior and audio NOT_RUN."
+    }
+  ],
+  "evidence": {
+    "findings_sha256": "2e877a3409ed105abfa92c501cc3bca47b29af1bf7a5a5d9381379449f0920df",
+    "input_manifest_sha256": "1294019e45932e5d25ce4be5b5769a1267f20c2ff98ac2cad4971629fa929ee2",
+    "read_coverage_sha256": "269e5fd8aa4e769d99d094b06921acddcb33634739978c51bdb53abcc7fc6e37",
+    "report_sha256": "e8ef8bb6b6d60a5123247daaa97b69aed94d507faec721ed3219ca9f61b1389b",
+    "review_sha256": "e3f1c5f5dc3206e8aab766329ce460d30639a1ab1b3f9da7dd6be568417a13ad",
+    "sources_sha256": "c09af343a6a9d7af8d7e4b23e3cbb02ae7d338bcd261b8cbb5c77cc155b60199",
+    "supplementary_coverage_sha256": "9e92093c93df29b1467d564e94cf4dafeae72f5067cccb71925bc33c85c52e4a"
+  },
+  "input_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
+  "integrated_at": "2026-10-28T15:53:39.290936+00:00",
+  "integrated_by": "Codex gpt-6.1-sol; actual Git writer MGrinch",
+  "limits": [
+    "No target behavioral or acoustic improvement measured.",
+    "YouTube inspection remains attributed to Gemini; selected primary evidence was independently opened, not every source fully replicated.",
+    "High effort is unverified; runtime model attribution is user_attestation."
+  ],
+  "output_fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+  "round": "01-gemini",
+  "schema": 1,
+  "status": "integrated"
 }

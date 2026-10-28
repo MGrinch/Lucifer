@@ -1,36 +1,14 @@
 {
+  "base_commit": "a4205bbdbab74c8d4b646f506850981128f41472",
+  "branch": "main",
+  "candidate_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
+  "merged": false,
+  "note": "Gemini host session has no GitHub write access (`write_capability_observed: false`); publication remains `NOT_STARTED` (`pushed: false`) until the coordinating Codex writer integrates accepted changes and pushes to `main`.",
+  "pushed": false,
+  "report_sha256": "e8ef8bb6b6d60a5123247daaa97b69aed94d507faec721ed3219ca9f61b1389b",
+  "repository": "MGrinch/Lucifer",
+  "round": "01-gemini",
   "schema": 1,
   "status": "NOT_STARTED",
-  "repository": "MGrinch/Lucifer",
-  "private_observed": null,
-  "review_service": "Gemini",
-  "review_model_requested": "Gemini 4 Argon",
-  "review_model_observed": null,
-  "writer_identity_observed": null,
-  "write_route": null,
-  "base_commit": null,
-  "branch": null,
-  "contribution_commit": null,
-  "push": {
-    "observed": false,
-    "remote_commit": null,
-    "evidence": null,
-    "observed_at": null
-  },
-  "merge": {
-    "observed": false,
-    "commit": null,
-    "pull_request_url": null,
-    "evidence": null
-  },
-  "main_head_verified": null,
-  "contribution_is_ancestor_of_main": null,
-  "candidate_fingerprint": null,
-  "report_sha256": null,
-  "integration_sha256": null,
-  "verification": {
-    "checked_at": null,
-    "by": null,
-    "evidence": []
-  }
+  "supplementary_fingerprint": "1155023d21cdddb6ca83690e6540273cb53d622ef6c1c7b2a24a908d5f663854"
 }

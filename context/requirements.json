@@ -71,7 +71,12 @@
         "P01"
       ],
       "change_rule": "Preserve the established owner preference. Reviewers may refine wording or expression while retaining this experience; replacing the preference requires Misha's actual instruction. A platform limit is recorded as a limit, not recast as a change of taste.",
-      "review_status": "baseline_mapped"
+      "review_status": "baseline_mapped",
+      "gemini_integration": {
+        "calibration": "evals/gemini-probes.md",
+        "record": "reviews/01-gemini/integration.json",
+        "status": "integrated_design_not_behaviorally_validated"
+      }
     },
     {
       "id": "LUC-04",
@@ -101,7 +106,12 @@
         "P07"
       ],
       "change_rule": "Preserve the established owner preference. Reviewers may refine wording or expression while retaining this experience; replacing the preference requires Misha's actual instruction. A platform limit is recorded as a limit, not recast as a change of taste.",
-      "review_status": "baseline_mapped"
+      "review_status": "baseline_mapped",
+      "gemini_integration": {
+        "calibration": "evals/gemini-probes.md",
+        "record": "reviews/01-gemini/integration.json",
+        "status": "integrated_design_not_behaviorally_validated"
+      }
     },
     {
       "id": "LUC-05",
@@ -127,7 +137,12 @@
         "P04"
       ],
       "change_rule": "Preserve the established owner preference. Reviewers may refine wording or expression while retaining this experience; replacing the preference requires Misha's actual instruction. A platform limit is recorded as a limit, not recast as a change of taste.",
-      "review_status": "baseline_mapped"
+      "review_status": "baseline_mapped",
+      "gemini_integration": {
+        "calibration": "evals/gemini-probes.md",
+        "record": "reviews/01-gemini/integration.json",
+        "status": "integrated_design_not_behaviorally_validated"
+      }
     },
     {
       "id": "LUC-06",
@@ -152,7 +167,12 @@
         "P07"
       ],
       "change_rule": "Preserve the established owner preference. Reviewers may refine wording or expression while retaining this experience; replacing the preference requires Misha's actual instruction. A platform limit is recorded as a limit, not recast as a change of taste.",
-      "review_status": "baseline_mapped"
+      "review_status": "baseline_mapped",
+      "gemini_integration": {
+        "calibration": "evals/gemini-probes.md",
+        "record": "reviews/01-gemini/integration.json",
+        "status": "integrated_design_not_behaviorally_validated"
+      }
     },
     {
       "id": "LUC-07",
@@ -207,7 +227,12 @@
         "P02"
       ],
       "change_rule": "Preserve the established owner preference. Reviewers may refine wording or expression while retaining this experience; replacing the preference requires Misha's actual instruction. A platform limit is recorded as a limit, not recast as a change of taste.",
-      "review_status": "baseline_mapped"
+      "review_status": "baseline_mapped",
+      "gemini_integration": {
+        "calibration": "evals/gemini-probes.md",
+        "record": "reviews/01-gemini/integration.json",
+        "status": "integrated_design_not_behaviorally_validated"
+      }
     },
     {
       "id": "LUC-09",
@@ -280,7 +305,12 @@
         "P01"
       ],
       "change_rule": "Preserve the behavioral contract and its source scope. Refine the method only with requirement coverage and relevant regression evidence; do not treat an archived draft or reviewer preference as an owner revision.",
-      "review_status": "baseline_mapped"
+      "review_status": "baseline_mapped",
+      "gemini_integration": {
+        "calibration": "evals/gemini-probes.md",
+        "record": "reviews/01-gemini/integration.json",
+        "status": "integrated_design_not_behaviorally_validated"
+      }
     },
     {
       "id": "LUC-12",
@@ -438,7 +468,12 @@
         "P07"
       ],
       "change_rule": "Preserve the behavioral contract and its source scope. Refine the method only with requirement coverage and relevant regression evidence; do not treat an archived draft or reviewer preference as an owner revision.",
-      "review_status": "baseline_mapped"
+      "review_status": "baseline_mapped",
+      "gemini_integration": {
+        "calibration": "evals/gemini-probes.md",
+        "record": "reviews/01-gemini/integration.json",
+        "status": "integrated_design_not_behaviorally_validated"
+      }
     },
     {
       "id": "LUC-19",

@@ -1,6 +1,4 @@
 {
-  "schema": 1,
-  "purpose": "Explicit reviewed UTF-8 inputs; do not include credentials, runtime outputs, generated duplicates or review records.",
   "files": [
     ".gitattributes",
     ".github/pull_request_template.md",
@@ -16,11 +14,14 @@
     "context/package-provenance.json",
     "context/provenance-addendum.md",
     "context/requirements.json",
+    "design/contrast-bank.md",
     "design/repository-design.md",
     "design/response-anatomy.md",
     "evals/README.md",
+    "evals/behavioral-delta-protocol.md",
     "evals/character-probes.md",
     "evals/fiction-presence-probe.md",
+    "evals/gemini-probes.md",
     "goal.md",
     "install/README.md",
     "install/control-catalog.json",
@@ -35,6 +36,7 @@
     "prompts/integrator.md",
     "research/cross-vendor-capabilities.md",
     "research/evidence-policy.md",
+    "research/gemini-integration.md",
     "sources/README.md",
     "sources/baseline/persona-r1.md",
     "sources/corpus/s01-persona-v1.md",
@@ -70,5 +72,7 @@
     "workflow/08-git-review-history.md",
     "workflow/09-surface-coverage.md",
     "workflow/review-files.json"
-  ]
+  ],
+  "purpose": "Explicit reviewed UTF-8 inputs; do not include credentials, runtime outputs, generated duplicates or review records.",
+  "schema": 1
 }

@@ -1,0 +1,14 @@
+{
+  "base_commit": "a4205bbdbab74c8d4b646f506850981128f41472",
+  "branch": "main",
+  "candidate_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
+  "merged": false,
+  "note": "Gemini host session has no GitHub write access (`write_capability_observed: false`); publication remains `NOT_STARTED` (`pushed: false`) until the coordinating Codex writer integrates accepted changes and pushes to `main`.",
+  "pushed": false,
+  "report_sha256": "e8ef8bb6b6d60a5123247daaa97b69aed94d507faec721ed3219ca9f61b1389b",
+  "repository": "MGrinch/Lucifer",
+  "round": "01-gemini",
+  "schema": 1,
+  "status": "NOT_STARTED",
+  "supplementary_fingerprint": "1155023d21cdddb6ca83690e6540273cb53d622ef6c1c7b2a24a908d5f663854"
+}

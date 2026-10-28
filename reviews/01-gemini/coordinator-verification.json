@@ -1,0 +1,38 @@
+{
+  "acoustic_validation": "NOT_RUN",
+  "archive": {
+    "bytes": 214970,
+    "files": 20,
+    "sha256": "1b65625965872e3dc16174981f0196e61779bd2dc1a6417f057569b369d56f30"
+  },
+  "base_commit": "a4205bbdbab74c8d4b646f506850981128f41472",
+  "candidate_fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+  "checked_at": "2026-10-28T15:53:39.290936+00:00",
+  "core_files": 68,
+  "gemini_round_validation": "PASSED",
+  "generated_files": 32,
+  "installation_gate": "EXPECTED_CLOSED_PENDING_GROK",
+  "original_return_files_preserved": true,
+  "original_sources_unchanged": true,
+  "patch_anchor_checks": "all match once against the pinned commit; coordinator adaptations separately dispositioned",
+  "patch_anchor_count": 12,
+  "receipt_note": "Publication and Grok freeze are verified in a later evidence-only commit. Current generated payload byte counts exclude a trailing LF; Gemini proposed files include LF.",
+  "repo_tool_changes": false,
+  "runtime_behavior": "NOT_RUN",
+  "schema": 1,
+  "stage": "Gemini integration before publication",
+  "supplement_files": 3,
+  "whitespace_check_limit": "Authored changes checked separately; verbatim returned artifacts and original reports excluded because original trailing spaces, blank lines and historical transport defects are intentionally retained. No source normalization to hide these findings.",
+  "windows_tests": {
+    "passed": 39,
+    "reason": "symlink privilege absent; skip not counted as pass",
+    "run": 40,
+    "skipped": 1
+  },
+  "wsl_ubuntu_tests": {
+    "passed": 40,
+    "run": 40,
+    "skipped": 0,
+    "symlink_test": "PASSED"
+  }
+}

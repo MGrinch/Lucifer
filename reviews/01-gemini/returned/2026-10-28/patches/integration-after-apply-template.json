@@ -1,0 +1,98 @@
+{
+  "dispositions": [
+    {
+      "change_refs": [
+        "persona.md",
+        "persona.md §1.2 (lines 55-72) and §2.1 (lines 106-108)"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-001",
+      "reason": "Codex integrator disposition template (to be confirmed or modified to accepted/rejected/deferred by Codex during Stage 03): Update the existing 8-row Principle / Observable consequence / Failure to avoid table in `persona.md` §1.2 in-place (`Patch 1A`, without adding a duplicate table) to include sophisticated sycophancy (`C16`) under `Truth`, falsifiable bold hypotheses (`C03`) under `Curiosity`, and Row 9 `Accountability` (`C02`, `C14`), and append the 3-question fast-path decision hinge plus anti-catchphrase constraint for `C01–C19` to `persona.md` §2.1 (`Patch 1B`).",
+      "verification": "Verify via `python3 tools/lucifer.py build`, `python3 tools/lucifer.py check`, and `python3 -m unittest discover -s tests -v`."
+    },
+    {
+      "change_refs": [
+        "persona.md",
+        "persona.md §7.5 (lines 516-518) and reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md (lines 218-220)"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-002",
+      "reason": "Codex integrator disposition template (to be confirmed or modified to accepted/rejected/deferred by Codex during Stage 03): Append dialogue calibration anchors `D25–D27` to `persona.md` §7.5 (`Patch 2`) and append five missing near-miss and reverse-caution contrast cases (`C15` reverse caution on benign creative play, `C16` sophisticated sycophancy vs. warm rigor, `C17` playful banter vs. compulsive last-wordism, `C18` mid-session urgency interrupt with stack verification, and `C19` quiet companionship without clinical probing) to `reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md` (`Patch 4`).",
+      "verification": "Verify via `python3 tools/lucifer.py build`, `python3 tools/lucifer.py check`, and `python3 -m unittest discover -s tests -v`."
+    },
+    {
+      "change_refs": [
+        "persona.md",
+        "persona.md §6.1 (lines 276-278), §13.1 (lines 775-781), and §13.2 (lines 787-805)"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-003",
+      "reason": "Codex integrator disposition template (to be confirmed or modified to accepted/rejected/deferred by Codex during Stage 03): Preserve the existing 1,486-character `native_compact` and 4,101-character `native_extended` payloads in `persona.md` §13.1–13.2 while applying surgical additions for candid error ownership and falsifiable boldness (`Patch 3E`: 1,486 -> 1,489 Unicode chars / 1,489 UTF-16 units / 1,500 UTF-8 bytes <= 1,500 char limit; `Patch 3F`: 4,101 -> 4,659 Unicode chars / 4,659 UTF-16 units / 4,672 UTF-8 bytes <= 5,000 char limit, preserving `1–3 sentences` with en dash U+2013), and forbid writing `C01–C19` or test IDs into persistent user memory (`Store 3`) in §6.1 (`Patch 3D`).",
+      "verification": "Verify via `python3 tools/lucifer.py build`, `python3 tools/lucifer.py check`, and `python3 -m unittest discover -s tests -v`."
+    },
+    {
+      "change_refs": [
+        "persona.md",
+        "persona.md §5.1 (lines 233-235)"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-004",
+      "reason": "Codex integrator disposition template (to be confirmed or modified to accepted/rejected/deferred by Codex during Stage 03): Preserve `persona.md` §5.1's existing rule separating API-exposed acoustic parameters from text punctuation and append one sentence (`Patch 3B`) keeping unprompted live-voice conversational turns to 1–2 spoken clauses carrying one clear thought unless Misha requests depth or a continuous reading.",
+      "verification": "Verify via `python3 tools/lucifer.py build`, `python3 tools/lucifer.py check`, and `python3 -m unittest discover -s tests -v`."
+    },
+    {
+      "change_refs": [
+        "persona.md",
+        "persona.md §16.1 (lines 1203-1205) and reviews/01-gemini/supplements/behavioral-delta-protocol.md (lines 114-116)"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-005",
+      "reason": "Codex integrator disposition template (to be confirmed or modified to accepted/rejected/deferred by Codex during Stage 03): Append the concrete paired evaluation specification to `persona.md` §16.1 (`Patch 3G`) and `reviews/01-gemini/supplements/behavioral-delta-protocol.md` (`Patch 5`): randomized AB/BA presentation order, zero-tolerance hard-safety veto gate (`V01–V12` and `§1.2`), paired random-sign flip test (`B = 10,000`, seed `20260417`), cluster-bootstrap 95% CIs by `prompt_family_id`, and Holm–Bonferroni multiplicity control (all numeric thresholds labeled as proposals).",
+      "verification": "Verify via `python3 tools/lucifer.py build`, `python3 tools/lucifer.py check`, and `python3 -m unittest discover -s tests -v`."
+    },
+    {
+      "change_refs": [
+        "persona.md",
+        "persona.md §5.3 (lines 255-257)"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-006",
+      "reason": "Codex integrator disposition template (to be confirmed or modified to accepted/rejected/deferred by Codex during Stage 03): Recognize that immediate zero-tail stop on `stop/wait/стоп/подожди` and speech-recognition uncertainty quoting already exist in `persona.md` (§2.1, §13.1, §13.2), and append one sentence to `persona.md` §5.3 (`Patch 3C`) requiring a brief 1-clause spoken signpost before slow live tool calls (`> 1.5s`) in voice mode.",
+      "verification": "Verify via `python3 tools/lucifer.py build`, `python3 tools/lucifer.py check`, and `python3 -m unittest discover -s tests -v`."
+    },
+    {
+      "change_refs": [
+        "persona.md",
+        "persona.md §4 (lines 217-219)"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-007",
+      "reason": "Codex integrator disposition template (to be confirmed or modified to accepted/rejected/deferred by Codex during Stage 03): Preserve `persona.md` §4's existing post-scene conversation rule and append one sentence (`Patch 3A`) requiring an immediate first-word register pivot without an in-character sigh when Misha pivots mid-session from creative/intimate framing to an urgent real-world issue (`C18`), paired with checking or asking for the active OS/service stack before prescribing stack-specific commands.",
+      "verification": "Verify via `python3 tools/lucifer.py build`, `python3 tools/lucifer.py check`, and `python3 -m unittest discover -s tests -v`."
+    },
+    {
+      "change_refs": [
+        "reviews/01-gemini/supplementary-coverage.json",
+        "reviews/01-gemini/supplementary-coverage.json and reviews/01-gemini/review.json"
+      ],
+      "decision": "accepted",
+      "finding_id": "GEM-008",
+      "reason": "Codex integrator disposition template (to be confirmed or modified to accepted/rejected/deferred by Codex during Stage 03): Deliver complete line-range coverage (`[[1, lines]]`) and SHA-256 pins for all 3 `reviewer_intake.files` supplements in `reviews/01-gemini/supplementary-coverage.json` (`external_fingerprint`: `1155023d21cdddb6ca83690e6540273cb53d622ef6c1c7b2a24a908d5f663854`) and record `supplementary_fingerprint` in `reviews/01-gemini/review.json` (`attestation.supplementary_fingerprint`).",
+      "verification": "Verify via `python3 tools/lucifer.py build`, `python3 tools/lucifer.py check`, and `python3 -m unittest discover -s tests -v`."
+    }
+  ],
+  "evidence": {
+    "findings_sha256": "2e877a3409ed105abfa92c501cc3bca47b29af1bf7a5a5d9381379449f0920df",
+    "input_manifest_sha256": "1294019e45932e5d25ce4be5b5769a1267f20c2ff98ac2cad4971629fa929ee2",
+    "read_coverage_sha256": "269e5fd8aa4e769d99d094b06921acddcb33634739978c51bdb53abcc7fc6e37",
+    "report_sha256": "e8ef8bb6b6d60a5123247daaa97b69aed94d507faec721ed3219ca9f61b1389b",
+    "review_sha256": "e3f1c5f5dc3206e8aab766329ce460d30639a1ab1b3f9da7dd6be568417a13ad",
+    "sources_sha256": "c09af343a6a9d7af8d7e4b23e3cbb02ae7d338bcd261b8cbb5c77cc155b60199"
+  },
+  "input_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
+  "note": "Illustrative schema template for Codex (`03-integrate-gemini`) showing the exact 6-key `evidence` object and `dispositions` structure expected by `validate_round` in `python3 tools/lucifer.py check` once Codex records its actual `accepted` / `rejected` / `deferred` decisions, runs `python3 tools/lucifer.py build`, and populates `output_fingerprint`.",
+  "output_fingerprint": "REPLACE_WITH_POST_BUILD_CANDIDATE_FINGERPRINT_FROM_LUCIFER_PY",
+  "round": "01-gemini",
+  "schema": 1,
+  "status": "integrated"
+}
