@@ -1,0 +1,76 @@
+{
+  "external_fingerprint": "423ec6ce5f0637a1120f411b8b13bb28348e619e221f50be9fe84e91bbd89295",
+  "files": [
+    {
+      "bytes": 21575,
+      "lines": 193,
+      "path": "reviews/01-gemini/findings.json",
+      "sha256": "2e877a3409ed105abfa92c501cc3bca47b29af1bf7a5a5d9381379449f0920df"
+    },
+    {
+      "bytes": 12548,
+      "lines": 416,
+      "path": "reviews/01-gemini/input-manifest.json",
+      "sha256": "1294019e45932e5d25ce4be5b5769a1267f20c2ff98ac2cad4971629fa929ee2"
+    },
+    {
+      "bytes": 8900,
+      "lines": 183,
+      "path": "reviews/01-gemini/integration.json",
+      "sha256": "8b36528717eda7be0dd718e008ade378f695a32de0d5f167a021327ce25aadac"
+    },
+    {
+      "bytes": 33229,
+      "lines": 1033,
+      "path": "reviews/01-gemini/read-coverage.json",
+      "sha256": "269e5fd8aa4e769d99d094b06921acddcb33634739978c51bdb53abcc7fc6e37"
+    },
+    {
+      "bytes": 110006,
+      "lines": 660,
+      "path": "reviews/01-gemini/report.md",
+      "sha256": "e8ef8bb6b6d60a5123247daaa97b69aed94d507faec721ed3219ca9f61b1389b"
+    },
+    {
+      "bytes": 6455,
+      "lines": 91,
+      "path": "reviews/01-gemini/review.json",
+      "sha256": "e3f1c5f5dc3206e8aab766329ce460d30639a1ab1b3f9da7dd6be568417a13ad"
+    },
+    {
+      "bytes": 34123,
+      "lines": 500,
+      "path": "reviews/01-gemini/sources.json",
+      "sha256": "c09af343a6a9d7af8d7e4b23e3cbb02ae7d338bcd261b8cbb5c77cc155b60199"
+    },
+    {
+      "bytes": 1951,
+      "lines": 55,
+      "path": "reviews/01-gemini/supplementary-coverage.json",
+      "sha256": "9e92093c93df29b1467d564e94cf4dafeae72f5067cccb71925bc33c85c52e4a"
+    },
+    {
+      "bytes": 3440,
+      "lines": 26,
+      "path": "reviews/01-gemini/supplements/README.md",
+      "sha256": "432007d010cabd2a81580ca60a3bd52567e530d6adf63227de524556a968d6fd"
+    },
+    {
+      "bytes": 10898,
+      "lines": 116,
+      "path": "reviews/01-gemini/supplements/behavioral-delta-protocol.md",
+      "sha256": "5a10f8d001848f3c9e09e7e4677f4fd5491b494a0c585fd08b10d1883a2f2f82"
+    },
+    {
+      "bytes": 13661,
+      "lines": 220,
+      "path": "reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md",
+      "sha256": "1bfeb6ee2a9bc240f0f47c629b7fd5ac5e7e1e72b6497f5cda94038cd6eaafe3"
+    }
+  ],
+  "gemini_integration_sha256": "8b36528717eda7be0dd718e008ade378f695a32de0d5f167a021327ce25aadac",
+  "input_fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+  "notes": "Preparer inventory only. Grok must actually read and provide upstream-coverage.json and review.json.upstream; no reading is attested here.",
+  "schema": 1,
+  "status": "PINNED_NOT_READ_BY_GROK"
+}

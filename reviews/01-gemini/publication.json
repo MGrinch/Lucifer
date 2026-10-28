@@ -1,14 +1,41 @@
 {
   "base_commit": "a4205bbdbab74c8d4b646f506850981128f41472",
-  "branch": "main",
-  "candidate_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
-  "merged": false,
-  "note": "Gemini host session has no GitHub write access (`write_capability_observed: false`); publication remains `NOT_STARTED` (`pushed: false`) until the coordinating Codex writer integrates accepted changes and pushes to `main`.",
-  "pushed": false,
+  "branch": "review/gemini-argon-01",
+  "candidate_fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+  "contribution_commit": "c3bb04de8358fc9e60d49d91e062b28f2b46589a",
+  "contribution_is_ancestor_of_main": true,
+  "integration_sha256": "8b36528717eda7be0dd718e008ade378f695a32de0d5f167a021327ce25aadac",
+  "main_head_verified": "35cb48cd3a2cf0522d60a803d505b21bbb8e7c28",
+  "merge": {
+    "commit": "35cb48cd3a2cf0522d60a803d505b21bbb8e7c28",
+    "evidence": "GitHub PR state MERGED, mergedAt 2026-10-28T15:54:27Z; fetched origin/main; ancestor check exit 0",
+    "observed": true,
+    "pull_request_url": "https://github.com/MGrinch/Lucifer/pull/2"
+  },
+  "private_observed": false,
+  "push": {
+    "evidence": "GitHub branch API readback and PR #2 headRefOid matched the pushed commit",
+    "observed": true,
+    "observed_at": "2026-10-28T15:55:13.113559+00:00",
+    "remote_commit": "c3bb04de8358fc9e60d49d91e062b28f2b46589a"
+  },
   "report_sha256": "e8ef8bb6b6d60a5123247daaa97b69aed94d507faec721ed3219ca9f61b1389b",
   "repository": "MGrinch/Lucifer",
-  "round": "01-gemini",
+  "review_model_evidenced": "Gemini 4 Argon (user_attestation)",
+  "review_model_observed": null,
+  "review_model_requested": "Gemini 4 Argon",
+  "review_service": "Gemini",
   "schema": 1,
-  "status": "NOT_STARTED",
-  "supplementary_fingerprint": "1155023d21cdddb6ca83690e6540273cb53d622ef6c1c7b2a24a908d5f663854"
+  "status": "VERIFIED_PUBLIC_MAIN",
+  "verification": {
+    "by": "Codex gpt-6.1-sol",
+    "checked_at": "2026-10-28T15:55:13.113559+00:00",
+    "evidence": [
+      "All 72 candidate files match fetched origin/main Git bytes",
+      "https://github.com/MGrinch/Lucifer/actions/runs/40720598124",
+      "reviews/01-gemini/coordinator-verification.json"
+    ]
+  },
+  "write_route": "Authenticated git HTTPS and gh PR merge",
+  "writer_identity_observed": "MGrinch via Codex gpt-6.1-sol"
 }

@@ -1,0 +1,433 @@
+{
+  "schema": 1,
+  "status": "TEMPLATE_NOT_OBSERVED",
+  "purpose": "Expand each category into actual per-control/per-object/per-device records; categories are not claims of installed features.",
+  "categories": [
+    {
+      "id": "account-identity",
+      "consumer": "Account and workspace identity",
+      "multiplicity": "each used account/workspace/client",
+      "investigate_and_decide": "Verify same intended account on Windows and Android; identify managed workspace constraints.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "O01",
+        "O04"
+      ],
+      "observed": false
+    },
+    {
+      "id": "account-ci",
+      "consumer": "Account Custom Instructions",
+      "multiplicity": "each actual instruction field",
+      "investigate_and_decide": "Inspect enabled state, existing content, actual capacity and exact consumer; merge scoped core.",
+      "adapter_candidates": [
+        "native_compact",
+        "native_extended"
+      ],
+      "source_refs": [
+        "O01"
+      ],
+      "observed": false
+    },
+    {
+      "id": "account-preset",
+      "consumer": "Personality preset",
+      "multiplicity": "each actual scope",
+      "investigate_and_decide": "Observe existing baseline; change only if a documented supported choice improves compatibility.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "O03"
+      ],
+      "observed": false
+    },
+    {
+      "id": "account-characteristics",
+      "consumer": "Exposed style characteristics",
+      "multiplicity": "each actual control",
+      "investigate_and_decide": "Discover current labels and ranges; do not invent sliders or set all values to maximum.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "O03"
+      ],
+      "observed": false
+    },
+    {
+      "id": "chatgpt-memory",
+      "consumer": "ChatGPT relevant memories",
+      "multiplicity": "each relevant preference/memory and memory control",
+      "investigate_and_decide": "Separate user facts from character, state and fiction; preserve unrelated memory and existing privacy choices.",
+      "adapter_candidates": [
+        "memory"
+      ],
+      "source_refs": [
+        "O02"
+      ],
+      "observed": false
+    },
+    {
+      "id": "windows-text",
+      "consumer": "Windows native ChatGPT text",
+      "multiplicity": "each used workspace/client",
+      "investigate_and_decide": "Verify actual account, saved setting scope and fresh ordinary text separately from cloud work.",
+      "adapter_candidates": [
+        "native_compact",
+        "native_extended"
+      ],
+      "source_refs": [
+        "O01",
+        "O02",
+        "O03"
+      ],
+      "observed": false
+    },
+    {
+      "id": "android-text",
+      "consumer": "Android native ChatGPT text",
+      "multiplicity": "each used workspace/client",
+      "investigate_and_decide": "Verify shared-account propagation in a fresh ordinary chat; avoid duplicate conflicting writes.",
+      "adapter_candidates": [
+        "native_compact",
+        "native_extended"
+      ],
+      "source_refs": [
+        "O01",
+        "O02",
+        "O03"
+      ],
+      "observed": false
+    },
+    {
+      "id": "project-instructions",
+      "consumer": "Project instructions",
+      "multiplicity": "each relevant Project",
+      "investigate_and_decide": "Inspect explicit instructions and task rules; compose character contribution without erasing purpose.",
+      "adapter_candidates": [
+        "project"
+      ],
+      "source_refs": [
+        "O04"
+      ],
+      "observed": false
+    },
+    {
+      "id": "project-sources",
+      "consumer": "Project sources",
+      "multiplicity": "each relevant Project/source",
+      "investigate_and_decide": "Identify stale competing persona references; preserve originals and use one current reference where useful.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "O04"
+      ],
+      "observed": false
+    },
+    {
+      "id": "project-memory",
+      "consumer": "Project memory and privacy scope",
+      "multiplicity": "each relevant Project",
+      "investigate_and_decide": "Observe default/project-only/shared scope; preserve existing boundary rather than relaxing it.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "O04"
+      ],
+      "observed": false
+    },
+    {
+      "id": "existing-gpt",
+      "consumer": "Existing custom GPT",
+      "multiplicity": "each actually used editable GPT",
+      "investigate_and_decide": "Inspect own instructions/knowledge and current edit availability; do not presume account CI or memories transfer.",
+      "adapter_candidates": [
+        "project"
+      ],
+      "source_refs": [
+        "O05"
+      ],
+      "observed": false
+    },
+    {
+      "id": "temporary-chat",
+      "consumer": "Temporary chat selection",
+      "multiplicity": "each actually used mode",
+      "investigate_and_decide": "Respect intentional personalized/unpersonalized choice and verify within that scope.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "O06"
+      ],
+      "observed": false
+    },
+    {
+      "id": "voice-selected",
+      "consumer": "Selected native voice",
+      "multiplicity": "each account/device/mode with a separate control",
+      "investigate_and_decide": "Record current voice and preserve it unless the owner chooses an audition or change.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "O07"
+      ],
+      "observed": false
+    },
+    {
+      "id": "voice-windows",
+      "consumer": "Windows native voice",
+      "multiplicity": "each used voice mode and ordinary/Project/Work/dot context",
+      "investigate_and_decide": "Assess actual instructions, language, delivery, intelligibility and interruption; hear audio.",
+      "adapter_candidates": [
+        "voice"
+      ],
+      "source_refs": [
+        "O07",
+        "O08",
+        "O09"
+      ],
+      "observed": false
+    },
+    {
+      "id": "voice-android",
+      "consumer": "Android native voice",
+      "multiplicity": "each used voice mode and ordinary/Project/Work/dot context",
+      "investigate_and_decide": "Assess actual instructions, language, delivery, intelligibility and interruption; hear audio.",
+      "adapter_candidates": [
+        "voice"
+      ],
+      "source_refs": [
+        "O07",
+        "O08",
+        "O09"
+      ],
+      "observed": false
+    },
+    {
+      "id": "voice-project",
+      "consumer": "Project voice context",
+      "multiplicity": "each used Project/device/mode",
+      "investigate_and_decide": "Verify actual project instruction loading and audio; do not generalize to ordinary chat.",
+      "adapter_candidates": [
+        "project",
+        "voice"
+      ],
+      "source_refs": [
+        "O07",
+        "O08"
+      ],
+      "observed": false
+    },
+    {
+      "id": "voice-turn-control",
+      "consumer": "Voice interruption and turn-taking",
+      "multiplicity": "each relevant device/mode",
+      "investigate_and_decide": "Test directed stop/wait, no final intended acknowledgment, buffering and task cancellation distinction.",
+      "adapter_candidates": [
+        "voice"
+      ],
+      "source_refs": [
+        "O07",
+        "O09"
+      ],
+      "observed": false
+    },
+    {
+      "id": "dot-identity",
+      "consumer": "Existing Morning Light dot identity",
+      "multiplicity": "existing used dot only",
+      "investigate_and_decide": "Preserve current assistant/product identity; do not create a replacement to install style.",
+      "adapter_candidates": [
+        "dot"
+      ],
+      "source_refs": [
+        "O16",
+        "O18"
+      ],
+      "observed": false
+    },
+    {
+      "id": "dot-preferences",
+      "consumer": "Dot conversation preferences and notes",
+      "multiplicity": "each supported relevant store",
+      "investigate_and_decide": "Reconcile stable conversational preference and separate dot notes; verify subsequent task and call.",
+      "adapter_candidates": [
+        "dot",
+        "memory"
+      ],
+      "source_refs": [
+        "O16",
+        "O17"
+      ],
+      "observed": false
+    },
+    {
+      "id": "dot-action-rules",
+      "consumer": "Dot action and task controls",
+      "multiplicity": "each relevant existing rule",
+      "investigate_and_decide": "Preserve action authorization rules; do not treat them as writing-style fields.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "O17",
+        "O18"
+      ],
+      "observed": false
+    },
+    {
+      "id": "codex-hosts",
+      "consumer": "Codex execution environments",
+      "multiplicity": "each used Windows native/desktop/CLI/IDE/WSL/SSH host",
+      "investigate_and_decide": "Identify actual host and configuration directory; a cloud filesystem is not the PC.",
+      "adapter_candidates": [
+        "codex"
+      ],
+      "source_refs": [
+        "O11",
+        "O13"
+      ],
+      "observed": false
+    },
+    {
+      "id": "codex-global",
+      "consumer": "Codex global instruction chain",
+      "multiplicity": "each actual host/global override or base consumer",
+      "investigate_and_decide": "Inspect effective loaded chain; merge small contribution and preserve unrelated operational rules.",
+      "adapter_candidates": [
+        "codex"
+      ],
+      "source_refs": [
+        "O11"
+      ],
+      "observed": false
+    },
+    {
+      "id": "codex-project",
+      "consumer": "Codex project instruction hierarchy",
+      "multiplicity": "each used repo/worktree/nested path",
+      "investigate_and_decide": "Preserve engineering instructions; check overriding style and actual combined instruction budget.",
+      "adapter_candidates": [
+        "codex"
+      ],
+      "source_refs": [
+        "O11"
+      ],
+      "observed": false
+    },
+    {
+      "id": "codex-model-config",
+      "consumer": "Codex effective model/effort/style configuration",
+      "multiplicity": "each actual host/profile",
+      "investigate_and_decide": "Verify requested gpt-6.1-sol and high effort where exposed; document effective precedence and optional style compatibility.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "O12",
+        "O13"
+      ],
+      "observed": false
+    },
+    {
+      "id": "codex-memory",
+      "consumer": "Local Codex memories",
+      "multiplicity": "each actually used host/store",
+      "investigate_and_decide": "Keep separate from ChatGPT memory; avoid generated database edits or enabling memory without need.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "O14"
+      ],
+      "observed": false
+    },
+    {
+      "id": "cloud-work",
+      "consumer": "Cloud ChatGPT Work",
+      "multiplicity": "each actual cloud task/context",
+      "investigate_and_decide": "Inspect supported account/project/task consumers separately from local Codex; verify fresh cloud work.",
+      "adapter_candidates": [
+        "native_compact",
+        "native_extended",
+        "project",
+        "subagent"
+      ],
+      "source_refs": [
+        "O09",
+        "O14"
+      ],
+      "observed": false
+    },
+    {
+      "id": "delegation",
+      "consumer": "Delegated workers",
+      "multiplicity": "each real user-facing delegation route",
+      "investigate_and_decide": "Supply compact context where supported, preserve specialist role and have root integrate real return.",
+      "adapter_candidates": [
+        "subagent"
+      ],
+      "source_refs": [
+        "O15"
+      ],
+      "observed": false
+    },
+    {
+      "id": "selected-workflows",
+      "consumer": "Selected skills and independent personas",
+      "multiplicity": "each actually selected workflow",
+      "investigate_and_decide": "Preserve task skills such as Ann; do not silently replace their contract with daily-character instructions.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "O20"
+      ],
+      "observed": false
+    },
+    {
+      "id": "plugins-hooks",
+      "consumer": "Plugins, skills and hooks",
+      "multiplicity": "each actually relevant loading or action route",
+      "investigate_and_decide": "Inspect capability and trigger; no assumption that installation means persistent persona injection.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "O20",
+        "O21"
+      ],
+      "observed": false
+    },
+    {
+      "id": "third-party-optional",
+      "consumer": "Optional external runtime",
+      "multiplicity": "only an evidence-backed unmet requirement",
+      "investigate_and_decide": "Use canonical toolbox ROI gate; separate apps do not reconfigure native ChatGPT; pin/review before installation.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "persona.md §12"
+      ],
+      "observed": false
+    },
+    {
+      "id": "language-and-audience",
+      "consumer": "Language and output audience",
+      "multiplicity": "each actual consumer/context",
+      "investigate_and_decide": "Preserve Russian feminine self-reference when appropriate, requested English, exact meaning and professional artifact audience.",
+      "adapter_candidates": [
+        "native_compact",
+        "native_extended",
+        "project",
+        "codex",
+        "subagent",
+        "voice"
+      ],
+      "source_refs": [
+        "persona.md §§1–6"
+      ],
+      "observed": false
+    },
+    {
+      "id": "continuity-and-stop",
+      "consumer": "Continuity, corrections and stop",
+      "multiplicity": "each actual target and resumed/delegated session",
+      "investigate_and_decide": "Preserve unfinished thought, negation, corrections, truthful memory and task return; test text/voice stop distinctions.",
+      "adapter_candidates": [
+        "native_compact",
+        "native_extended",
+        "project",
+        "codex",
+        "subagent",
+        "voice"
+      ],
+      "source_refs": [
+        "persona.md §§2–6"
+      ],
+      "observed": false
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+* text=auto eol=lf
+sources/corpus/** -text
+sources/baseline/** -text
+reviews/**/input-snapshot/** -text
+reviews/**/input-snapshots/** -text
+reviews/01-gemini/returned/** -text
+reviews/01-gemini/report-original-preserved.md -text

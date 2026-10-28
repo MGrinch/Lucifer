@@ -67,7 +67,7 @@
     },
     "verified_at_utc": "2026-10-25T06:44:03.232728+00:00"
   },
-  "gemini": "INTEGRATED",
+  "gemini": "INTEGRATED_AND_PUBLISHED",
   "gemini_integration": {
     "high_effort_verified": false,
     "input_fingerprint": "f489b98968357041fb117cd564d0fe02d0e2acc0343756ae430b85b03765909d",
@@ -77,10 +77,20 @@
     "verification": "reviews/01-gemini/coordinator-verification.json"
   },
   "grok": "NOT_STARTED",
+  "grok_input": {
+    "base_integration_merge": "35cb48cd3a2cf0522d60a803d505b21bbb8e7c28",
+    "core_files": 72,
+    "fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+    "gemini_integration_sha256": "8b36528717eda7be0dd718e008ade378f695a32de0d5f167a021327ce25aadac",
+    "manifest": "reviews/02-grok/input-manifest.json",
+    "reading_attested": false,
+    "upstream_files": 11,
+    "upstream_manifest": "reviews/02-grok/upstream-input-manifest.json"
+  },
   "installation": "NOT_STARTED",
   "last_transition": {
-    "date": "2026-10-28T15:53:39.290936+00:00",
-    "reason": "Real Gemini final packet imported, eight findings dispositioned and integrated with coordinator refinements; source and runtime limits preserved. Awaiting publication readback before Grok freeze."
+    "date": "2026-10-28T15:55:13.113559+00:00",
+    "reason": "Actual Gemini contribution merged and read back; all candidate bytes verified; fresh 72-file Grok snapshot and upstream inventory pinned. No Grok review or installation claimed."
   },
   "latest_test_verification": {
     "local_wsl_ubuntu": {
@@ -113,7 +123,8 @@
       "tests_run": 1
     }
   },
-  "phase": "GEMINI_INTEGRATED_AWAITING_PUBLICATION",
+  "next_action": "Owner launches Grok 4.7 using prompts/grok.md on this integrated public main. Grok reads the frozen candidate and genuine Gemini upstream evidence, researches X/primary sources and returns a complete actual review packet.",
+  "phase": "AWAITING_GROK",
   "preparation_verification": {
     "acoustic_behavior": "NOT_RUN",
     "gemini_input": "FROZEN_NOT_REVIEWED",
