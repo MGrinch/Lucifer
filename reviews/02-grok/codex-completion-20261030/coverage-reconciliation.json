@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "status": "ALL_83_INPUTS_COVERED",
+  "core_files": 72,
+  "upstream_files": 11,
+  "core_original_lines": 13350,
+  "upstream_original_lines": 3493,
+  "frozen_bytes_verified": true,
+  "shared_fragments_byte_verified": true,
+  "proof_boundary": "Integrity and attributed reading attestations; no Grok execution or native result claimed",
+  "source_ledgers": [
+    {
+      "path": "coverage-corpus-a.json",
+      "sha256": "8b4fe2fa0bce1beeecb8e3fa924e83649d803088feb979a8da659361db5aaf8b"
+    },
+    {
+      "path": "coverage-contracts-b.json",
+      "sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "coverage-core-upstream-c.json",
+      "sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    }
+  ]
+}

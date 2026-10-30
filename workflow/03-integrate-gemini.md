@@ -28,4 +28,4 @@ Next: [04 — Grok critique](04-grok-review.md).
 
 ## Required publication receipt
 
-Follow `08-git-review-history.md` stage A. Preserve a substantive actual Gemini contribution commit, verify its push and integration into private `main`, and complete `reviews/01-gemini/publication.json` from observed evidence. Only then freeze the updated Grok candidate. Never attribute the writer's Git action to Gemini unless that runtime actually performed it.
+Follow `08-git-review-history.md` stage A. Preserve a substantive actual Gemini contribution commit, verify its push and integration into the owner-selected public `main`, and complete `reviews/01-gemini/publication.json` from observed evidence. Only then freeze the updated Grok candidate. Never attribute the writer's Git action to Gemini unless that runtime actually performed it.

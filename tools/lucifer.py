@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build deterministic reference artifacts and validate attested review gates."""
 import argparse
+from datetime import date
 import hashlib
 import json
 import re
@@ -349,6 +350,47 @@ def coverage(root, input_manifest, value):
     validate_file_read_coverage(files, value.get("files"), "read-coverage")
 
 
+def validate_cross_service_substitute(root, folder, service, identity, actual):
+    """Validate explicit owner-authorized Codex completion, never authenticate a vendor."""
+    substitute = identity.get("accepted_substitute")
+    require(folder == "02-grok" and service == "Grok" and identity.get("service_observed") == "Codex",
+            "Unsupported cross-service substitution")
+    require(isinstance(substitute, dict) and substitute.get("service") == "Codex"
+            and nonempty(substitute.get("model")) and model_key(substitute["model"]) == model_key(actual)
+            and nonempty(substitute.get("evidence")), "Cross-service substitution needs explicit service/model/evidence")
+    path = substitute.get("authorization_path")
+    expected_hash = substitute.get("authorization_sha256")
+    require(isinstance(path, str) and path.startswith(f"reviews/{folder}/") and path.endswith(".json"),
+            "Substitution authorization must be a same-round JSON record")
+    raw = read_bytes(root, path)
+    require(valid_hash(expected_hash) and digest(raw) == expected_hash, "Substitution authorization hash mismatch")
+    authorization = json.loads(raw)
+    require(isinstance(authorization, dict), "Substitution authorization must be an object")
+    require(type(authorization.get("schema")) is int and authorization["schema"] == 1
+            and authorization.get("kind") == "owner_authorized_review_substitution",
+            "Invalid substitution authorization schema/kind")
+    require(authorization.get("round") == folder
+            and authorization.get("requested_service") == service
+            and authorization.get("actual_service") == identity["service_observed"],
+            "Substitution authorization service/round mismatch")
+    for field, expected in (("requested_model", identity["model_requested"]), ("actual_model", actual)):
+        require(nonempty(authorization.get(field)) and model_key(authorization[field]) == model_key(expected),
+                "Substitution authorization model mismatch: " + field)
+    recorded_date = authorization.get("date")
+    require(isinstance(recorded_date, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", recorded_date) is not None,
+            "Substitution authorization date missing/invalid")
+    try:
+        date.fromisoformat(recorded_date)
+    except ValueError as exc:
+        raise ValueError("Substitution authorization date missing/invalid") from exc
+    require(authorization.get("scope") == "complete_unfinished_second_review",
+            "Substitution authorization scope mismatch")
+    require(nonempty(authorization.get("owner_authorization_quote")) and nonempty(authorization.get("recorded_by")),
+            "Substitution authorization owner quote/recorder missing")
+    require(authorization.get("original_grok_completion_attested") is False,
+            "Substitution must not attest original Grok completion")
+
+
 def validate_round(root, folder, service):
     prefix = f"reviews/{folder}/"
     review = read_json(root, prefix + "review.json")
@@ -356,16 +398,24 @@ def validate_round(root, folder, service):
     identity = review.get("identity", {})
     require(isinstance(identity, dict), "Invalid reviewer identity")
     require(identity.get("service_requested") == service, "Wrong requested reviewer")
-    require(identity.get("service_observed") in (None, service), "Observed reviewer mismatch")
     for field in ("service_observed", "model_requested", "model_observed"):
         require(field in identity and (identity[field] is None or nonempty(identity[field])), "Missing/invalid identity field: " + field)
     runtime = identity.get("runtime_evidence")
-    require(isinstance(runtime, dict) and runtime.get("basis") in ("observed_ui", "api_metadata", "user_attestation"), "Runtime identity evidence missing")
+    require(isinstance(runtime, dict) and runtime.get("basis") in ("observed_ui", "api_metadata", "user_attestation", "runtime_metadata"), "Runtime identity evidence missing")
+    if runtime["basis"] == "runtime_metadata":
+        require(identity.get("service_observed") == "Codex" and runtime.get("service") == "Codex"
+                and runtime.get("source") == "codex_orchestration_metadata",
+                "Runtime metadata must identify the observed Codex orchestration source")
     require(nonempty(runtime.get("reference")) and nonempty(runtime.get("model")), "Runtime evidence needs model and reference")
     actual = identity.get("model_observed") or runtime["model"]
     require(model_key(actual) == model_key(runtime["model"]), "Observed model contradicts runtime evidence")
     require(nonempty(identity.get("model_requested")), "Requested model missing")
     require(model_key(identity["model_requested"]) == model_key(REQUESTED_MODELS[service]), "Requested stage model was redefined")
+    substitute = identity.get("accepted_substitute")
+    if isinstance(substitute, dict) and substitute.get("service") is not None:
+        require(identity.get("service_observed") == substitute["service"], "Substitute service contradicts observed reviewer")
+    if identity.get("service_observed") not in (None, service):
+        validate_cross_service_substitute(root, folder, service, identity, actual)
     if model_key(actual) != model_key(identity["model_requested"]):
         substitute = identity.get("accepted_substitute")
         require(isinstance(substitute, dict) and nonempty(substitute.get("model")) and model_key(substitute["model"]) == model_key(actual) and nonempty(substitute.get("evidence")), "Unapproved model substitution")

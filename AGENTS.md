@@ -42,3 +42,7 @@ Default work mode is review/prepare, not install. Continue authorized work witho
 - Every review integration follows `workflow/08-git-review-history.md`: preserve real model work, actual writer identity, separate contribution commits/pushes/merges and remote readback.
 - Final installation follows `workflow/09-surface-coverage.md` and expands `install/control-catalog.json` into actual targets. The local content gate does not verify remote history or native behavior.
 - The outer bootstrap file is never a runtime payload. It restores the inner canonical `persona.md`; historical snapshots remain evidence.
+
+## Owner-authorized completion update — 30 October 2026
+
+The current second-stage completion is explicitly authorized Codex work using preserved Grok sources, not a claim that Grok delivered its missing final packet. Preserve requested-stage history and actual reviewer identity. Read `reviews/02-grok/codex-completion-20261030/provenance.json` and its report; all complete input/upstream coverage, source, disposition, artifact, publication and actual-target gates still apply. The original partial Grok report remains immutable. The standing private Lucifer/ASMR performance clarification is in current persona.md §5.1 and its reviewed adapters; this repository instruction file is not an installation payload.

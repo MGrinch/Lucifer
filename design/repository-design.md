@@ -2,7 +2,7 @@
 
 ## Intended result
 
-A portable private handoff that a new worker can read without this chat, improve through two attributed critiques, and then use to install and verify the accepted persona. The repository must distinguish review completion, content acceptance, settings application and actual behavior.
+A portable handoff in the owner-selected public repository that a new worker can read without this chat, improve through two attributed critiques, and then use to install and verify the accepted persona. Private target settings and rollback copies remain private. The repository must distinguish review completion, content acceptance, settings application and actual behavior.
 
 ## Architecture
 

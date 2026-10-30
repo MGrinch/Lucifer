@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "date": "2026-10-30",
+  "scope": "Actual local source integration and content integrity, not target installation",
+  "candidate_fingerprint": "4de78633277647d48e54ff1dac29e7adcc9d8978d96c2a1e99326d93fe2a2bc5",
+  "commands": [
+    {
+      "command": "python -X utf8 -B tools/lucifer.py build",
+      "exit_code": 0,
+      "result": "32 generated files; derived only"
+    },
+    {
+      "command": "python -X utf8 -B tools/lucifer.py check",
+      "exit_code": 0,
+      "result": "static checks passed; current content gate true",
+      "tool_chunk_id": "57bd00"
+    },
+    {
+      "command": "python -X utf8 -B tools/lucifer.py gate",
+      "exit_code": 0,
+      "result": "recorded-attestation and exact-hash chain satisfied",
+      "tool_chunk_id": "7bb548"
+    },
+    {
+      "command": "python -X utf8 -B -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests_run": 44,
+      "passed": 43,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 10.884,
+      "skip": "Windows host cannot create test symlink without unavailable privilege; no elevation attempted, skip not a pass",
+      "tool_chunk_ids": [
+        "2f0fd6",
+        "fe9853"
+      ]
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "tool_chunk_id": "9774fc"
+    }
+  ],
+  "reading_integrity": {
+    "core_files": 72,
+    "upstream_files": 11,
+    "all_frozen_hashes_and_range_unions_verified": true,
+    "shared_byte_blocks_independently_rechecked": true,
+    "independent_vendor_replication": false
+  },
+  "focused_diff_review": {
+    "status": "completed_by_integrator",
+    "corrections": [
+      "Replaced colliding new O22/O23/O24 labels with unique OAI-prefixed labels; historical canonical labels untouched",
+      "Preserved exact completion evidence bytes via scoped .gitattributes exemption; normalized active hash-pinned records before computing evidence hashes",
+      "Verified compact1499/extended4772 character lengths and preserved silence/selectedvoice/consent/format boundaries",
+      "Staged-byte check exposed CRLF whitespace in four newly authored metadata files: normalized them toLF and repinned dependent hashes. Verbatim original Grok Markdown retains its two intentional hard-break spaces via a source-only whitespace attribute; original SHA unchanged.",
+      "Preserved delegated corpus-A ledger bytes unchanged; exact-file whitespace rule recognizes CR-at-EOL while retaining blank-at-EOL/EOF and space-before-tab checks. Staged diff check then passes."
+    ],
+    "limitation": "Coordinator self-check is not independent external review"
+  },
+  "privacy_scan": {
+    "files_scanned": 80,
+    "credential_or_email_pattern_matches": 0,
+    "tool_chunk_id": "865b58",
+    "limits": "Pattern scan plus scoped diff/source-intent review, not proof of absence; parent exact public review remains before push"
+  },
+  "native_settings_changed": false,
+  "authentication_changed": false,
+  "paid_model_or_voice_jobs_started": false,
+  "native_behavior": "NOT_RUN",
+  "acoustic_validation": "NOT_RUN",
+  "phone_fedora_voice_action_return": "NOT_RUN",
+  "long_session_persona_effect": "NOT_RUN",
+  "publication": "NOT_STARTED",
+  "rollback": "Ordinary scoped revert of integration contribution; original inputs and source artifacts preserved; no native setting changes to roll back",
+  "public_projection": {
+    "new_files": 27,
+    "new_file_sensitive_path_account_uri_secret_email_pattern_matches": 0,
+    "tool_chunk_id": "2e928d",
+    "new_raw_sources": "Only four original Grok persona-review report/findings/source records already intended for the public corpus; no raw private chats, email envelopes, screenshots, credentials or recovery material. Six original-stage copies are already-public repository pending/state records.",
+    "publication_still_requires": "Parent exact diff/privacy review and actual publication/readback receipt"
+  },
+  "staged_bytes": {
+    "files": 81,
+    "raw_byte_mismatches": 0,
+    "tool_chunk_id": "8eeeda",
+    "initial_staged_diff_check": "FAILED on new CRLF metadata and two verbatim original Markdown hard breaks; corrected scoped normalization/attribute, final check recorded after repin",
+    "final_staged_diff_check": {
+      "exit_code": 0,
+      "tool_chunk_id": "84834f",
+      "scope": "Normal whitespace checks retained; exact delegated CRLF evidence recognizesCR-at-EOL, verbatim original Grok Markdown alone exempt from whitespace rewriting."
+    }
+  },
+  "final_content_validation": {
+    "tool_chunk_id": "57d8f8",
+    "check_exit_code": 0,
+    "gate_exit_code": 0,
+    "candidate_fingerprint": "4de78633277647d48e54ff1dac29e7adcc9d8978d96c2a1e99326d93fe2a2bc5",
+    "meaning": "Local reviewed-content integrity; no native/authentication/publication outcome"
+  }
+}

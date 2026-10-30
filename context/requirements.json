@@ -637,7 +637,7 @@
     },
     {
       "id": "LUC-25",
-      "requirement": "The first Codex worker restores a complete one-file payload, creates and verifies private MGrinch/Lucifer, then stops ready for the real Gemini review.",
+      "requirement": "The first Codex worker restores a complete one-file payload, resumes or creates MGrinch/Lucifer with the owner-selected public visibility and verifies it, then stops ready for the real Gemini review.",
       "kind": "deployment",
       "source_refs": [
         "context/owner-addendum-2026-10-24.md"

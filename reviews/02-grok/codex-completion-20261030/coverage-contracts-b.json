@@ -1,0 +1,816 @@
+{
+  "schema": 1,
+  "kind": "delegated_codex_full_read_coverage",
+  "status": "complete_for_assigned_subset",
+  "recorded_at_utc": "2026-10-30T23:21:28.376738+00:00",
+  "reviewer": {
+    "service_observed": "Codex",
+    "agent_task": "/root/repo_audit",
+    "model_observed": null,
+    "effort_observed": null,
+    "identity_limit": "This worker records service/task identity; it does not invent independent provider model/effort evidence or a Grok attestation."
+  },
+  "originating_coordinator": "/root/codex_research",
+  "repository_head": "0754096d3f816a45d7f48fe882e1ac7eda88bceb",
+  "input_manifest_path": "reviews/02-grok/input-manifest.json",
+  "input_manifest_sha256": "f3cb9c63f615541be2aab3aed26949c72c3c325b1bd7415a176711124f53d92f",
+  "input_manifest_bytes": 13275,
+  "input_fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+  "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+  "assignment": "s08-s14 and manifest context/install/tools/tests/workflow entries",
+  "counts": {
+    "files": 34,
+    "unique_content_hashes": 34,
+    "bytes": 494229,
+    "lines": 5695
+  },
+  "duplicates": {
+    "cross_assigned_file_hash_duplicates": [],
+    "active_snapshot_aliases": "Each assigned active path matched its frozen copy; read frozen bytes once, preserve both provenance locations."
+  },
+  "read_limit_recovery": [
+    "Initial English contract batch rendered some non-ASCII punctuation incorrectly; every affected non-ASCII line reread in explicit UTF8 via chunk65a844.",
+    "Combined output37428e truncated workflow09 middle; full lines71-111 reread in76b7e0. No missing range counted as read."
+  ],
+  "final_integrity_check": {
+    "tool_chunk_id": "4e9920",
+    "snapshot_hash_bytes_lines_match": true,
+    "active_changes_since_start": [],
+    "assigned_snapshot_reparse_ancestors": []
+  },
+  "files": [
+    {
+      "bytes": 3408,
+      "lines": 37,
+      "path": "context/change-rules.md",
+      "sha256": "feb5105292e3387294d2558151adc06624ff2444dace9f668c16e4dd4b355414",
+      "ranges": [
+        [
+          1,
+          37
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/context/change-rules.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 165b58,65a844. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "165b58",
+        "65a844"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "One mutable canon; preserve historical bytes; preference versus empirical evidence; scoped changes with regression impact."
+    },
+    {
+      "bytes": 5466,
+      "lines": 34,
+      "path": "context/owner-addendum-2026-10-24.md",
+      "sha256": "79f15f0eb213da5b52fb80e66923a25bd675cb2b2b3a71d36b6b817b2530f435",
+      "ranges": [
+        [
+          1,
+          34
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/context/owner-addendum-2026-10-24.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 165b58,65a844. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "165b58",
+        "65a844"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Public visibility owner decision; separately attributable reviews and writer; complete control coverage; outer bootstrap never runtime payload."
+    },
+    {
+      "bytes": 4018,
+      "lines": 39,
+      "path": "context/owner-intent.md",
+      "sha256": "ff8b7e37eb92c85e6d3495d3ace4e518561eae7112879be70888516385e2deeb",
+      "ranges": [
+        [
+          1,
+          39
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/context/owner-intent.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 165b58,65a844. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "165b58",
+        "65a844"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Preserve female Lucifer within Morning Light; ordinary company and no forced coaching; delegated work must return; owner revision required for review substitution."
+    },
+    {
+      "bytes": 1182,
+      "lines": 18,
+      "path": "context/package-provenance.json",
+      "sha256": "b0d9797010e215d4d43ef75ee847585718aae0bee499cb498d0cc3990f73f3a0",
+      "ranges": [
+        [
+          1,
+          18
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/context/package-provenance.json",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 165b58,65a844. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "165b58",
+        "65a844"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Historical preparation receipt, not current install/review execution. Preserve dated baseline pins."
+    },
+    {
+      "bytes": 1451,
+      "lines": 16,
+      "path": "context/provenance-addendum.md",
+      "sha256": "33c9a2e6c075779a8e1da8786cf3052fb8629e38c49cb42e02642991c82c83a3",
+      "ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/context/provenance-addendum.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 165b58,65a844. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "165b58",
+        "65a844"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "S13/S14 raw CRLF acquisition and version distinctions; historical saves are not independently repeated by this audit."
+    },
+    {
+      "bytes": 28062,
+      "lines": 707,
+      "path": "context/requirements.json",
+      "sha256": "f74c832249abf0151d5fd51395d5a2659f413984f8a0edcff5dd35aebd8343a5",
+      "ranges": [
+        [
+          1,
+          350
+        ],
+        [
+          351,
+          707
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/context/requirements.json",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 65a844,0e1181. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "65a844",
+        "0e1181"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "All28 mappings inspected. LUC12 no final spoken acknowledgement; LUC23 allows only owner workflow revision; LUC25 stale private phrase is B02."
+    },
+    {
+      "bytes": 2554,
+      "lines": 27,
+      "path": "install/README.md",
+      "sha256": "03181529f3d2706cfee691c56f9b851b22ef6a259e18c63b4d4769f8d18eb560",
+      "ranges": [
+        [
+          1,
+          27
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/install/README.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 165b58,65a844. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "165b58",
+        "65a844"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Actual installation authorization and exact gate, private scoped backups, composed target checks, per-surface proof."
+    },
+    {
+      "bytes": 13851,
+      "lines": 433,
+      "path": "install/control-catalog.json",
+      "sha256": "0f74d15a65662795295ad29dcdaa98c0a38bf40a97f0fc7e083a157f8328a5bb",
+      "ranges": [
+        [
+          1,
+          433
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/install/control-catalog.json",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 37428e. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "37428e"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "All categories unobserved templates; expand actual controls; no max-slider assumption or universal inheritance."
+    },
+    {
+      "bytes": 1299,
+      "lines": 11,
+      "path": "install/rollback.md",
+      "sha256": "77aa01d14e454aedc5241f8201384c13a1e08de4fd6e5c667b7a4c373497ec01",
+      "ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/install/rollback.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 165b58,65a844. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "165b58",
+        "65a844"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Restore known managed delta only, preserve later edits, inspect unknown outcomes before retry, retain partial status."
+    },
+    {
+      "bytes": 3906,
+      "lines": 119,
+      "path": "install/target-coverage.json",
+      "sha256": "683edaa1f767849c1f141928683cf773bbe3dd378ff55f577962c79e32dd6cc6",
+      "ranges": [
+        [
+          1,
+          119
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/install/target-coverage.json",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 0e1181. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "0e1181"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Eight unobserved groups; boolean false/null means pending, not installed. Expand per real object and device."
+    },
+    {
+      "bytes": 68954,
+      "lines": 738,
+      "path": "sources/corpus/s08-persona-v6.md",
+      "sha256": "10219d83a0a5657429297793ce4c5338ceb96b72250d77466f300e6513822875",
+      "ranges": [
+        [
+          1,
+          180
+        ],
+        [
+          181,
+          380
+        ],
+        [
+          381,
+          570
+        ],
+        [
+          571,
+          738
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s08-persona-v6.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs bbe462,a69027,185a06,edd44f. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "bbe462",
+        "a69027",
+        "185a06",
+        "edd44f"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Earlier V6 original character, ASMR/voice limitations, historical source claims and test proposals; old stop acknowledgement superseded, no source mutation."
+    },
+    {
+      "bytes": 4124,
+      "lines": 18,
+      "path": "sources/corpus/s09-dot-v6.txt",
+      "sha256": "94adc57bb7f8fe74893af56caf01173bba156e8b0a2a3e6bf9f630d36a3dcb36",
+      "ranges": [
+        [
+          1,
+          18
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s09-dot-v6.txt",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs edd44f. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "edd44f"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Compact original adult woman, independent warmth, dimensions of soft voice, consent, preserve existing assistant and truthful save state."
+    },
+    {
+      "bytes": 1084,
+      "lines": 33,
+      "path": "sources/corpus/s10-v6-document-checks.json",
+      "sha256": "bd94c203f93566e642c2705467eb9bd4e4da06ab57b041f991a571e19ad03833",
+      "ranges": [
+        [
+          1,
+          33
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s10-v6-document-checks.json",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs edd44f. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "edd44f"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "S08 raw hash/bytes/lines consistent. Structural PASS explicitly not behavior/audio; failed memory operation not a save."
+    },
+    {
+      "bytes": 49393,
+      "lines": 290,
+      "path": "sources/corpus/s11-cognitive-support-review.md",
+      "sha256": "ee7b790bc436fc3fedb524abf9a9c755b5a0c360b79b9bd69eddc2fd4d2e97de",
+      "ranges": [
+        [
+          1,
+          100
+        ],
+        [
+          101,
+          200
+        ],
+        [
+          201,
+          290
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s11-cognitive-support-review.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 82e0ed,3ba6cb,3794e7. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "82e0ed",
+        "3ba6cb",
+        "3794e7"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "U/R/S/P source distinction; optional scaffolding; sixteen authored scenarios not live benchmark; stop empty speech; native memory versus voice context."
+    },
+    {
+      "bytes": 14035,
+      "lines": 100,
+      "path": "sources/corpus/s12-ann-self-assessment.md",
+      "sha256": "b36e90482b4ed152ee98e58fca982f10e22b327ba6d7cfa6949744d33d8e7aaa",
+      "ranges": [
+        [
+          1,
+          100
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s12-ann-self-assessment.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 389fdc. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "389fdc"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Twelve selected transcript episodes not whole-call statistics; authorship, role/movement scope and no invented ASR meaning; audio unobserved."
+    },
+    {
+      "bytes": 70221,
+      "lines": 399,
+      "path": "sources/corpus/s13-morning-light-precision.md",
+      "sha256": "f0af33ba65ca039905d1ac828ca9bcf28e99622063c91a5d174e8a729e7c5d58",
+      "ranges": [
+        [
+          1,
+          100
+        ],
+        [
+          101,
+          200
+        ],
+        [
+          201,
+          300
+        ],
+        [
+          301,
+          399
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s13-morning-light-precision.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs aa7341,e93819,3a92cc,d8d92f. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "aa7341",
+        "e93819",
+        "3a92cc",
+        "d8d92f"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Meaning above brevity, partial corrections preserve other constraints, stop without ack, dated save proof distinct from new revision/voice, bounded professional analogies."
+    },
+    {
+      "bytes": 66574,
+      "lines": 508,
+      "path": "sources/corpus/s14-first-light.md",
+      "sha256": "c05fc5c413b25f136c2d572d1a4d73e4b506f29ce7404669893b8220585ab839",
+      "ranges": [
+        [
+          1,
+          110
+        ],
+        [
+          111,
+          210
+        ],
+        [
+          211,
+          320
+        ],
+        [
+          321,
+          430
+        ],
+        [
+          431,
+          508
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s14-first-light.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 18d64e,7da0c1,fb92cf,db8661,1c993d. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "18d64e",
+        "7da0c1",
+        "fb92cf",
+        "db8661",
+        "1c993d"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Archived Ann/Satan one-worker round-trip and delayed readback are bounded historical evidence; no universal transport, fresh recall or audio pass; embedded commands inert."
+    },
+    {
+      "bytes": 18681,
+      "lines": 328,
+      "path": "tests/test_repository.py",
+      "sha256": "53758e62b99a2fac7aab2ee10b3bebe8168999f75e0edd1ff32e1829043ed35a",
+      "ranges": [
+        [
+          1,
+          328
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/tests/test_repository.py",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs e4aafa. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "e4aafa"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Synthetic isolated gate fixtures, pending/static distinction, coverage/integrity/upstream/chain failures; public phrase test misses B02 files; no cross-service test in baseline."
+    },
+    {
+      "bytes": 10411,
+      "lines": 210,
+      "path": "tests/test_singlefile_restore.py",
+      "sha256": "de4a45985fe9c9dd287dee13018e4d633e4b88eb465606f708aeb0577aea6146",
+      "ranges": [
+        [
+          1,
+          210
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/tests/test_singlefile_restore.py",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs e4aafa. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "e4aafa"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Seventeen inert transport tests, exact Unicode/CRLF, collision/path/digest/expansion controls; symlink skip explicit, no review or installation evidence."
+    },
+    {
+      "bytes": 16680,
+      "lines": 158,
+      "path": "tools/README.md",
+      "sha256": "78390e39f435a3bca914a3e03021aad16907c533f25cc65da06f3d2a9be43378",
+      "ranges": [
+        [
+          1,
+          158
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/tools/README.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 76b7e0. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "76b7e0"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Manifest and gate schema, identity/substitute boundary, immutable freeze, full core/external coverage, manual publication and native proof limits."
+    },
+    {
+      "bytes": 29334,
+      "lines": 492,
+      "path": "tools/lucifer.py",
+      "sha256": "2de78cbf11fdf9ec0395fd3250404c4050d76bcbc687aad6409bf434a62c892b",
+      "ranges": [
+        [
+          1,
+          240
+        ],
+        [
+          241,
+          492
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/tools/lucifer.py",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 9cc87b,684c6a. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "9cc87b",
+        "684c6a"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Complete492line gate/build implementation read; B01 service restriction, model substitution, all core/upstream/evidence/disposition/chain checks; symlink-only guard caveat."
+    },
+    {
+      "bytes": 14914,
+      "lines": 295,
+      "path": "tools/restore_singlefile.py",
+      "sha256": "59559dda5b820d184c354a6dd90a015c3689b59ce2c4d5dcfdf08ac32c48ab6e",
+      "ranges": [
+        [
+          1,
+          295
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/tools/restore_singlefile.py",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs d5228f. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "d5228f"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Bounded standard-library inert decoder, exact hashes, new destination, reparse-aware restoration/readback; trusted directory concurrency limit explicit."
+    },
+    {
+      "bytes": 4319,
+      "lines": 39,
+      "path": "workflow/00-access.md",
+      "sha256": "4d5762ab3bf5dc7ccb90a2a486b5f6841be55aa9b592ad35b767d393a356df68",
+      "ranges": [
+        [
+          1,
+          39
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/workflow/00-access.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 165b58,65a844. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "165b58",
+        "65a844"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Actual capabilities/runtime/writer distinct; explicit owner substitute allowed; current public corpus does not authorize additional disclosure."
+    },
+    {
+      "bytes": 11191,
+      "lines": 106,
+      "path": "workflow/00-repository-creation.md",
+      "sha256": "afa2e9818169e44f60b04c3ac4f2d6689d8056ce0253807cd54ee40218d93944",
+      "ranges": [
+        [
+          1,
+          106
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/workflow/00-repository-creation.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs ea67eb. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "ea67eb"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "New destination restore and publication under actual scope, exact remote identity and byte readback; preserve frozen evidence and actual writer."
+    },
+    {
+      "bytes": 4482,
+      "lines": 38,
+      "path": "workflow/01-read-and-audit.md",
+      "sha256": "42f4a867ab86d65d74c7e97467d657765e1e70352cd0d99e8bcfacebe2d66ac2",
+      "ranges": [
+        [
+          1,
+          38
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/workflow/01-read-and-audit.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs ea67eb. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "ea67eb"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Full original line coverage, independent candidate then upstream pass, duplicate hash provenance, immutable inputs; search/summary not reading."
+    },
+    {
+      "bytes": 3092,
+      "lines": 28,
+      "path": "workflow/02-gemini-review.md",
+      "sha256": "fe9660973277c12bf9dda0d0070f21a7c8eb3a96ac347d777afe9c1d4a346836",
+      "ranges": [
+        [
+          1,
+          28
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/workflow/02-gemini-review.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs ea67eb. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "ea67eb"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Substantive first pass, sources/modalities, supplemental complete ranges, examples/counterevidence and no actual-review fabrication."
+    },
+    {
+      "bytes": 2870,
+      "lines": 31,
+      "path": "workflow/03-integrate-gemini.md",
+      "sha256": "2ba923718073ae7845d23b9bb5cfaa2a2595b5419edfcb18f8530e245a60c814",
+      "ranges": [
+        [
+          1,
+          31
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/workflow/03-integrate-gemini.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs ea67eb. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "ea67eb"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Preserve returned packet, disposition and integrate before secondfreeze; B02 stale private-main phrase at31."
+    },
+    {
+      "bytes": 3100,
+      "lines": 26,
+      "path": "workflow/04-grok-review.md",
+      "sha256": "190eb8ede38ac10c9a083590cee2c11647b7faa7ef2394fd17ac9e791a3ed097",
+      "ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/workflow/04-grok-review.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs ea67eb. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "ea67eb"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Independent candidate, genuine Gemini upstream complete reading, actual X/web source provenance, explicit comparison and limitation, no installation."
+    },
+    {
+      "bytes": 3495,
+      "lines": 37,
+      "path": "workflow/05-final-integration.md",
+      "sha256": "909ac2a5d973423ea634eeb63d84ce7ca4074bda11e27cd1b648f7f5c53e96b0",
+      "ranges": [
+        [
+          1,
+          37
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/workflow/05-final-integration.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs ea67eb. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "ea67eb"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Resolve all findings, preserve owner experience, exact output chain, no deferred blockers, local gate separate from remote release."
+    },
+    {
+      "bytes": 2930,
+      "lines": 29,
+      "path": "workflow/06-install.md",
+      "sha256": "056ae788ba90f215620a4d1d05cc6973c27605b753e9ef652e377358ec472ce4",
+      "ranges": [
+        [
+          1,
+          29
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/workflow/06-install.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs ea67eb. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "ea67eb"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Actual task plus complete release, preserve existing environment, composed payload/readback/fresh tests; check actual supported tool not assumed UI bypass."
+    },
+    {
+      "bytes": 1665,
+      "lines": 15,
+      "path": "workflow/07-verify.md",
+      "sha256": "77b8b6d9f4f71f05565503b677b18da15ede6f7155abdd486e83712132626ae1",
+      "ranges": [
+        [
+          1,
+          15
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/workflow/07-verify.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs ea67eb. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "ea67eb"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Integrity/save/load/behavior/audio distinct, finite correction cycle, private detailed receipts and precise partial closure."
+    },
+    {
+      "bytes": 10388,
+      "lines": 126,
+      "path": "workflow/08-git-review-history.md",
+      "sha256": "0c82d57bb4b5b441d2b5c0a5de8ce9c1e4d0e16c4061eca2eb0287f617fd758d",
+      "ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/workflow/08-git-review-history.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 37428e. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "37428e"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Real contribution, writer and reviewer distinct; current public remote ancestry and push/merge proof separate from local Python gate."
+    },
+    {
+      "bytes": 14499,
+      "lines": 132,
+      "path": "workflow/09-surface-coverage.md",
+      "sha256": "e9bf2dfa8c8cd1b1169c3d2daace0f9973192ddbaee34ce7fca8d7ebd3ca0702",
+      "ranges": [
+        [
+          1,
+          70
+        ],
+        [
+          71,
+          111
+        ],
+        [
+          112,
+          132
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/workflow/09-surface-coverage.md",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 37428e,76b7e0. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "37428e",
+        "76b7e0"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Per-control object/device inventories; scope-preserving merges, meaningful checks, no automatic service/privacy expansion or persona length inflation."
+    },
+    {
+      "bytes": 2596,
+      "lines": 78,
+      "path": "workflow/review-files.json",
+      "sha256": "adc80d194047982e1e14db335731f54defbeec1031b955a94a90d72e3e5bfbd9",
+      "ranges": [
+        [
+          1,
+          78
+        ]
+      ],
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/workflow/review-files.json",
+      "read_status": "complete",
+      "evidence": "Full original-line reading through local exec_command outputs; chunk IDs 0e1181. No source execution or runtime behavior claimed.",
+      "tool_chunk_ids": [
+        "0e1181"
+      ],
+      "active_bytes_matched_at_final_recheck": true,
+      "semantic_notes": "Explicit72file allowlist including tools/tests/historicalcorpus; excludes runtime/review/generated duplicates by design."
+    }
+  ],
+  "limitations": [
+    "Not full72file core coverage; other readers own remaining38.",
+    "No independent external source/audio/native-event verification by this subreview.",
+    "No tests or provider calls performed for read-only audit.",
+    "Coverage is attributed reading evidence, not proof of persona installation or behavioral effectiveness."
+  ]
+}

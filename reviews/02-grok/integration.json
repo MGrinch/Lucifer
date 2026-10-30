@@ -1,7 +1,249 @@
 {
-  "status": "pending",
-  "input_fingerprint": null,
-  "output_fingerprint": null,
-  "evidence": {},
-  "dispositions": []
+  "schema": 1,
+  "status": "integrated",
+  "actual_integrator": "Codex, not Grok",
+  "date": "2026-10-30",
+  "input_fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+  "output_fingerprint": "4de78633277647d48e54ff1dac29e7adcc9d8978d96c2a1e99326d93fe2a2bc5",
+  "evidence": {
+    "report_sha256": "4abf0876a25f2172d990bd2ff7d8aa7b170adbd47c1bb8c891b086a251f9e147",
+    "findings_sha256": "1cd876b136960428e4b3b302f1c6806b3d847682b74d7012549a880b60452ed9",
+    "sources_sha256": "180e6cd851eaae22249659be05d37daa8868de52db5b4b61f93b955b6f3c822f",
+    "review_sha256": "0436343477d2ec4c147c0e204f7d15c2dc3da196a9d30eb75a0734d0daec950b",
+    "input_manifest_sha256": "f3cb9c63f615541be2aab3aed26949c72c3c325b1bd7415a176711124f53d92f",
+    "read_coverage_sha256": "9be9230efa992a2577795e3df3d3248e171cebe450e271e9bdfa4eb1a6f84ae8",
+    "upstream_coverage_sha256": "a24187affc8b952c488c6b95a4f55140fb4dec32c5b1daddc4c9bcc8cb42ed5c"
+  },
+  "dispositions": [
+    {
+      "finding_id": "GROK-001",
+      "decision": "accepted",
+      "reason": "Retain genuine partial Grok finding after full Codex reassessment; no new persona rule required. Historical empirical unknowns stay NOT_RUN.",
+      "change_refs": [
+        "persona.md",
+        "reviews/02-grok/codex-completion-20261030/report.md"
+      ],
+      "verification": "Direct full canonical/upstream/protocol reading; explicit reconciliation table. This is semantic retention, not a live result."
+    },
+    {
+      "finding_id": "GROK-002",
+      "decision": "accepted",
+      "reason": "Retain genuine partial Grok finding after full Codex reassessment; no new persona rule required. Historical empirical unknowns stay NOT_RUN.",
+      "change_refs": [
+        "persona.md",
+        "reviews/02-grok/codex-completion-20261030/report.md"
+      ],
+      "verification": "Direct full canonical/upstream/protocol reading; explicit reconciliation table. This is semantic retention, not a live result."
+    },
+    {
+      "finding_id": "GROK-003",
+      "decision": "accepted",
+      "reason": "Retain genuine partial Grok finding after full Codex reassessment; no new persona rule required. Historical empirical unknowns stay NOT_RUN.",
+      "change_refs": [
+        "persona.md",
+        "reviews/02-grok/codex-completion-20261030/report.md"
+      ],
+      "verification": "Direct full canonical/upstream/protocol reading; explicit reconciliation table. This is semantic retention, not a live result."
+    },
+    {
+      "finding_id": "GROK-004",
+      "decision": "accepted",
+      "reason": "Retain genuine partial Grok finding after full Codex reassessment; no new persona rule required. Historical empirical unknowns stay NOT_RUN.",
+      "change_refs": [
+        "persona.md",
+        "reviews/02-grok/codex-completion-20261030/report.md"
+      ],
+      "verification": "Direct full canonical/upstream/protocol reading; explicit reconciliation table. This is semantic retention, not a live result."
+    },
+    {
+      "finding_id": "CODEX-B01",
+      "decision": "accepted",
+      "reason": "Narrow dated/hash-bound Codex authorization added without changing requested Grok identity or substantive coverage/artifact/disposition/chain gates.",
+      "change_refs": [
+        "tools/lucifer.py",
+        "tools/README.md",
+        "tests/test_repository.py",
+        "reviews/02-grok/codex-completion-20261030/provenance.json"
+      ],
+      "verification": "Full source reading and focused final integration checks recorded in codex-completion-20261030/verification.json."
+    },
+    {
+      "finding_id": "CODEX-B02",
+      "decision": "accepted",
+      "reason": "Correct only active wording and extend visibility regression coverage; preserve historical initial-publication records and actual repository visibility.",
+      "change_refs": [
+        "context/requirements.json",
+        "workflow/03-integrate-gemini.md",
+        "design/repository-design.md",
+        "tests/test_repository.py"
+      ],
+      "verification": "Full source reading and focused final integration checks recorded in codex-completion-20261030/verification.json."
+    },
+    {
+      "finding_id": "CODEX-C01",
+      "decision": "accepted",
+      "reason": "Add current official Linux route and exact per-consumer inventory; no parity/runtime promise, no global install.",
+      "change_refs": [
+        "persona.md#10.3",
+        "install/control-catalog.json",
+        "workflow/09-surface-coverage.md",
+        "prompts/codex.md"
+      ],
+      "verification": "Full source reading and focused final integration checks recorded in codex-completion-20261030/verification.json."
+    },
+    {
+      "finding_id": "CODEX-C02",
+      "decision": "accepted",
+      "reason": "Add finite VFR-01 acceptance and preserve NOT_RUN until actual linked observations; no invented bridge.",
+      "change_refs": [
+        "evals/voice-action-return.md",
+        "evals/README.md",
+        "persona.md#10.3",
+        "install/control-catalog.json"
+      ],
+      "verification": "Full source reading and focused final integration checks recorded in codex-completion-20261030/verification.json."
+    },
+    {
+      "finding_id": "CODEX-C03",
+      "decision": "accepted",
+      "reason": "Use current reviewed version wording; bump current spec toR3 and rebuild derivatives; leave historical R1 counts and frozen source untouched.",
+      "change_refs": [
+        "persona.md",
+        "generated/"
+      ],
+      "verification": "Full source reading and focused final integration checks recorded in codex-completion-20261030/verification.json."
+    },
+    {
+      "finding_id": "CODEX-C04",
+      "decision": "accepted",
+      "reason": "Retain originals, restore attributed URLs, record403 access failures, use fresh real83-file Codex reading and treat community anecdotes as test leads only.",
+      "change_refs": [
+        "reviews/02-grok/codex-completion-20261030/original-grok/",
+        "reviews/02-grok/codex-completion-20261030/sources.json",
+        "reviews/02-grok/read-coverage.json",
+        "reviews/02-grok/upstream-coverage.json"
+      ],
+      "verification": "Full source reading and focused final integration checks recorded in codex-completion-20261030/verification.json."
+    },
+    {
+      "finding_id": "CODEX-C05",
+      "decision": "accepted",
+      "reason": "Retain active refined protocol; reject universal zero-egress/cost, tokenizer-mood, hard latency/clause limits and training-to-prompt efficacy transfer. Original report remains unchanged.",
+      "change_refs": [
+        "reviews/02-grok/codex-completion-20261030/report.md",
+        "evals/behavioral-delta-protocol.md"
+      ],
+      "verification": "All11 upstream files read and compared against active descendants; sources refreshed within recorded limits. No study executed."
+    },
+    {
+      "finding_id": "CODEX-C06",
+      "decision": "accepted",
+      "reason": "Preserve chosen identity, four artistic influences as one character, latest silent-stop, true memory, agency, useful work and positive expressive range.",
+      "change_refs": [
+        "persona.md",
+        "reviews/02-grok/codex-completion-20261030/report.md",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md",
+        "reviews/02-grok/codex-completion-20261030/review-contracts-b.md"
+      ],
+      "verification": "Full corpus/canonical semantic assessment; no subjective user fit or runtime pass invented."
+    },
+    {
+      "finding_id": "CODEX-C07",
+      "decision": "accepted",
+      "reason": "Propagate explicit standing default across all8adapters and test text/heard/fresh-session behavior. Preserve selectedvoice, format/audience control, silentstop, and explicit-request boundary for inward-focus.",
+      "change_refs": [
+        "persona.md#5.1",
+        "persona.md#13",
+        "evals/asmr-acting-probe.md",
+        "evals/README.md",
+        "reviews/02-grok/codex-completion-20261030/asmr-acting-coverage.md"
+      ],
+      "verification": "Full source reading and focused final integration checks recorded in codex-completion-20261030/verification.json."
+    },
+    {
+      "finding_id": "CA-01",
+      "decision": "accepted",
+      "reason": "Retain current resolution; no source-body rewrite. Detailed historical evidence and current comparison in delegated report.",
+      "change_refs": [
+        "persona.md#5",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "verification": "Full assigned corpus reading with exact disclosed byte-dedup and canonical comparison; no live target outcome claimed."
+    },
+    {
+      "finding_id": "CA-02",
+      "decision": "accepted",
+      "reason": "Retain current resolution; no source-body rewrite. Detailed historical evidence and current comparison in delegated report.",
+      "change_refs": [
+        "persona.md#3.4",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "verification": "Full assigned corpus reading with exact disclosed byte-dedup and canonical comparison; no live target outcome claimed."
+    },
+    {
+      "finding_id": "CA-03",
+      "decision": "accepted",
+      "reason": "Retain current resolution; no source-body rewrite. Detailed historical evidence and current comparison in delegated report.",
+      "change_refs": [
+        "persona.md#21",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "verification": "Full assigned corpus reading with exact disclosed byte-dedup and canonical comparison; no live target outcome claimed."
+    },
+    {
+      "finding_id": "CA-04",
+      "decision": "accepted",
+      "reason": "Retain current resolution; no source-body rewrite. Detailed historical evidence and current comparison in delegated report.",
+      "change_refs": [
+        "persona.md#8",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "verification": "Full assigned corpus reading with exact disclosed byte-dedup and canonical comparison; no live target outcome claimed."
+    },
+    {
+      "finding_id": "CA-05",
+      "decision": "accepted",
+      "reason": "Retain current resolution; no source-body rewrite. Detailed historical evidence and current comparison in delegated report.",
+      "change_refs": [
+        "persona.md#1",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "verification": "Full assigned corpus reading with exact disclosed byte-dedup and canonical comparison; no live target outcome claimed."
+    },
+    {
+      "finding_id": "CA-06",
+      "decision": "accepted",
+      "reason": "Retain current resolution; no source-body rewrite. Detailed historical evidence and current comparison in delegated report.",
+      "change_refs": [
+        "sources/manifest.json",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "verification": "Full assigned corpus reading with exact disclosed byte-dedup and canonical comparison; no live target outcome claimed."
+    },
+    {
+      "finding_id": "CA-07",
+      "decision": "accepted",
+      "reason": "Retain current resolution; no source-body rewrite. Detailed historical evidence and current comparison in delegated report.",
+      "change_refs": [
+        "persona.md#21",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "verification": "Full assigned corpus reading with exact disclosed byte-dedup and canonical comparison; no live target outcome claimed."
+    },
+    {
+      "finding_id": "CA-08",
+      "decision": "accepted",
+      "reason": "Retain current resolution; no source-body rewrite. Detailed historical evidence and current comparison in delegated report.",
+      "change_refs": [
+        "persona.md#2",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "verification": "Full assigned corpus reading with exact disclosed byte-dedup and canonical comparison; no live target outcome claimed."
+    }
+  ],
+  "native_installation": "NOT_STARTED",
+  "native_behavior": "NOT_RUN",
+  "acoustic_validation": "NOT_RUN",
+  "publication": "NOT_STARTED_LOCAL_INTEGRATION_ONLY",
+  "verification_record": "reviews/02-grok/codex-completion-20261030/verification.json"
 }

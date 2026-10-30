@@ -1,46 +1,71 @@
 {
   "schema": 1,
-  "status": "pending",
+  "status": "completed",
   "identity": {
     "service_requested": "Grok",
-    "service_observed": null,
+    "service_observed": "Codex",
     "model_requested": "Grok 4.7",
-    "model_observed": null,
+    "model_observed": "gpt-6-astra",
     "effort_requested": "high",
     "effort_observed": null,
-    "product": null,
-    "runtime_evidence": null,
-    "accepted_substitute": null
+    "product": "OpenAI Codex current orchestration",
+    "runtime_evidence": {
+      "basis": "runtime_metadata",
+      "source": "codex_orchestration_metadata",
+      "service": "Codex",
+      "model": "gpt-6-astra",
+      "reference": "reviews/02-grok/codex-completion-20261030/provenance.json runtime_evidence_limit; parent-confirmed current orchestration metadata, not an API call or Grok selector"
+    },
+    "accepted_substitute": {
+      "service": "Codex",
+      "model": "gpt-6-astra",
+      "evidence": "Current owner explicitly authorized complete unfinished review using Grok sources; actual Codex authorship disclosed.",
+      "authorization_path": "reviews/02-grok/codex-completion-20261030/provenance.json",
+      "authorization_sha256": "589f7e956be9e1ee878a4653e48a40c57c6bf4a7db67328cc8e1dfb55871dda7"
+    }
   },
   "access": {
-    "route": null,
-    "write_capability_observed": false,
-    "research_tools_observed": [],
-    "research_tools_used": []
+    "route": "Exact local public repository clone and frozen snapshots; official docs and web source retrieval",
+    "write_capability_observed": true,
+    "research_tools_observed": [
+      "local read-only source inspection",
+      "OpenAI Docs connector",
+      "web retrieval"
+    ],
+    "research_tools_used": [
+      "local full line-bounded reading",
+      "official documentation retrieval",
+      "original recovered source URL refresh"
+    ]
   },
   "attestation": {
-    "actual_review": false,
-    "input_fingerprint": null,
-    "recorded_by": null,
-    "evidence": null
+    "actual_review": true,
+    "input_fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+    "recorded_by": "Codex coordinator /root/codex_research with /root/repo_audit and /root/fedora_research",
+    "evidence": "reviews/02-grok/codex-completion-20261030/report.md and coverage-reconciliation.json: 72core+11upstream actual full coordinated review; exact shared-byte reuse disclosed. Not completed historical Grok authorship."
   },
   "artifacts": {
     "report": {
-      "path": "reviews/02-grok/report.md",
-      "sha256": null
+      "path": "reviews/02-grok/codex-completion-20261030/report.md",
+      "sha256": "4abf0876a25f2172d990bd2ff7d8aa7b170adbd47c1bb8c891b086a251f9e147"
     },
     "findings": {
-      "path": "reviews/02-grok/findings.json",
-      "sha256": null
+      "path": "reviews/02-grok/codex-completion-20261030/findings.json",
+      "sha256": "1cd876b136960428e4b3b302f1c6806b3d847682b74d7012549a880b60452ed9"
     },
     "sources": {
-      "path": "reviews/02-grok/sources.json",
-      "sha256": null
+      "path": "reviews/02-grok/codex-completion-20261030/sources.json",
+      "sha256": "180e6cd851eaae22249659be05d37daa8868de52db5b4b61f93b955b6f3c822f"
     }
   },
   "upstream": {
-    "gemini_integration_sha256": null,
-    "reading_attested": false,
-    "evidence": null
-  }
+    "gemini_integration_sha256": "8b36528717eda7be0dd718e008ade378f695a32de0d5f167a021327ce25aadac",
+    "reading_attested": true,
+    "evidence": "All11originalGemini files fully read by coordinator; detailed decisions in completionreport, exactranges/notes in coverage-core-upstream-c.json. Prior integration-summary exposure disclosed; notblind.",
+    "external_fingerprint": "423ec6ce5f0637a1120f411b8b13bb28348e619e221f50be9fe84e91bbd89295",
+    "coverage_sha256": "a24187affc8b952c488c6b95a4f55140fb4dec32c5b1daddc4c9bcc8cb42ed5c"
+  },
+  "original_grok_status": "PARTIAL_RECONCILED_PACKET_RECOVERED_FINAL_READING_COMPLETE_ARCHIVE_NOT_RECEIVED",
+  "native_behavior": "NOT_RUN",
+  "acoustic_validation": "NOT_RUN"
 }

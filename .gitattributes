@@ -5,3 +5,6 @@ reviews/**/input-snapshot/** -text
 reviews/**/input-snapshots/** -text
 reviews/01-gemini/returned/** -text
 reviews/01-gemini/report-original-preserved.md -text
+reviews/02-grok/codex-completion-20261030/** -text
+reviews/02-grok/codex-completion-20261030/original-grok/** -whitespace
+reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

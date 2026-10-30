@@ -102,6 +102,36 @@ class RepositoryTests(unittest.TestCase):
         state.update(phase="READY_FOR_INSTALL", candidate_fingerprint=tool.manifest(self.root)["fingerprint"])
         self.write("workflow/state.json", state)
 
+    def codex_second_round(self):
+        """Synthetic authorization and orchestration metadata, not an actual review."""
+        self.ready()
+        authorization_path = "reviews/02-grok/codex-completion/provenance.json"
+        authorization = {
+            "schema": 1, "kind": "owner_authorized_review_substitution", "round": "02-grok",
+            "date": "2026-10-30", "requested_service": "Grok", "requested_model": "Grok 4.7",
+            "actual_service": "Codex", "actual_model": "gpt-6-astra",
+            "scope": "complete_unfinished_second_review",
+            "owner_authorization_quote": "Synthetic owner authorization fixture; no real authorization.",
+            "recorded_by": "unittest fixture", "original_grok_completion_attested": False,
+        }
+        self.write(authorization_path, authorization)
+        review = self.read("reviews/02-grok/review.json")
+        review["identity"].update(
+            service_observed="Codex", model_observed="gpt-6-astra",
+            runtime_evidence={"basis": "runtime_metadata", "source": "codex_orchestration_metadata",
+                              "service": "Codex", "model": "gpt-6-astra", "reference": "Synthetic orchestration fixture; not an API call"},
+            accepted_substitute={"service": "Codex", "model": "gpt-6-astra", "evidence": "Synthetic explicit substitution",
+                                 "authorization_path": authorization_path,
+                                 "authorization_sha256": tool.digest((self.root / authorization_path).read_bytes())})
+        self.repin_second_review(review)
+        return authorization_path
+
+    def repin_second_review(self, review):
+        self.write("reviews/02-grok/review.json", review)
+        integration = self.read("reviews/02-grok/integration.json")
+        integration["evidence"]["review_sha256"] = tool.digest((self.root / "reviews/02-grok/review.json").read_bytes())
+        self.write("reviews/02-grok/integration.json", integration)
+
     def test_pending_is_static_valid_but_gate_closed(self):
         tool.check_static(self.root)
         with self.assertRaisesRegex(ValueError, "not READY"):
@@ -119,6 +149,7 @@ class RepositoryTests(unittest.TestCase):
 
     def test_public_visibility_contract_has_no_private_bootstrap_directives(self):
         public_paths = ("goal.md", "context/owner-intent.md", "context/owner-addendum-2026-10-24.md",
+                        "context/requirements.json", "workflow/03-integrate-gemini.md",
                         "workflow/00-repository-creation.md", "research/cross-vendor-capabilities.md",
                         "prompts/bootstrap-codex.md", "workflow/04-grok-review.md",
                         "workflow/05-final-integration.md")
@@ -126,7 +157,7 @@ class RepositoryTests(unittest.TestCase):
         stale = ("private `MGrinch/Lucifer`", "Visibility: private", "--private", "isPrivate == true",
                  "private repository verified", "Keep the repo private", "Keep the repository private",
                  "private visibility before transferring", "Do not publish the repo to simplify access",
-                 "private remote `main`", "verified private publication")
+                  "private remote `main`", "verified private publication", "private MGrinch/Lucifer", "private `main`")
         for path, document in texts.items():
             with self.subTest(path=path):
                 for phrase in stale:
@@ -322,6 +353,76 @@ class RepositoryTests(unittest.TestCase):
         self.write(path, value)
         with self.assertRaisesRegex(ValueError, "Incomplete Grok upstream coverage inventory"):
             tool.gate(self.root)
+
+    def test_explicit_codex_substitution_preserves_requested_grok_identity(self):
+        self.codex_second_round()
+        self.assertTrue(tool.gate(self.root)["ready_for_install"])
+        identity = self.read("reviews/02-grok/review.json")["identity"]
+        self.assertEqual(identity["service_requested"], "Grok")
+        self.assertEqual(identity["model_requested"], "Grok 4.7")
+        self.assertEqual(identity["service_observed"], "Codex")
+
+    def test_cross_service_substitution_rejects_missing_or_conflicting_identity(self):
+        changes = (
+            ("no-authorization", lambda i: i.pop("accepted_substitute")),
+            ("unsupported-service", lambda i: i.update(service_observed="Other")),
+            ("unknown-service-evasion", lambda i: i.update(service_observed=None)),
+            ("missing-substitute-service", lambda i: i["accepted_substitute"].pop("service")),
+            ("wrong-substitute-model", lambda i: i["accepted_substitute"].update(model="other-model")),
+            ("missing-substitute-evidence", lambda i: i["accepted_substitute"].update(evidence="")),
+            ("hash-mismatch", lambda i: i["accepted_substitute"].update(authorization_sha256="0" * 64)),
+            ("outside-round", lambda i: i["accepted_substitute"].update(authorization_path="context/provenance.json")),
+            ("traversal", lambda i: i["accepted_substitute"].update(authorization_path="reviews/02-grok/../01-gemini/provenance.json")),
+            ("wrong-runtime-source", lambda i: i["runtime_evidence"].update(source="assistant_self_identification")),
+            ("wrong-runtime-model", lambda i: i["runtime_evidence"].update(model="other-model")),
+            ("missing-runtime-reference", lambda i: i["runtime_evidence"].update(reference="")),
+        )
+        for label, change in changes:
+            with self.subTest(case=label):
+                self.codex_second_round()
+                review = self.read("reviews/02-grok/review.json")
+                change(review["identity"])
+                self.repin_second_review(review)
+                with self.assertRaises(ValueError):
+                    tool.gate(self.root)
+
+    def test_cross_service_substitution_requires_exact_authority_scope(self):
+        changes = (
+            ("date", None), ("date", "2026-02-30"), ("scope", "install_everywhere"),
+            ("requested_service", "Codex"), ("actual_service", "Other"),
+            ("requested_model", "gpt-6-astra"), ("actual_model", "other-model"),
+            ("owner_authorization_quote", ""), ("recorded_by", ""),
+            ("original_grok_completion_attested", True), ("round", "01-gemini"),
+        )
+        for key, value in changes:
+            with self.subTest(field=key, value=value):
+                path = self.codex_second_round()
+                authorization = self.read(path)
+                if value is None:
+                    authorization.pop(key)
+                else:
+                    authorization[key] = value
+                self.write(path, authorization)
+                review = self.read("reviews/02-grok/review.json")
+                review["identity"]["accepted_substitute"]["authorization_sha256"] = tool.digest((self.root / path).read_bytes())
+                self.repin_second_review(review)
+                with self.assertRaises(ValueError):
+                    tool.gate(self.root)
+
+    def test_codex_substitution_does_not_bypass_core_or_upstream_reading(self):
+        for name, expected in (("read-coverage.json", "Partial read-coverage"),
+                               ("upstream-coverage.json", "Incomplete Grok upstream coverage")):
+            with self.subTest(coverage=name):
+                self.codex_second_round()
+                path = "reviews/02-grok/" + name
+                value = self.read(path)
+                if name == "read-coverage.json":
+                    next(f for f in value["files"] if f["path"] == "persona.md")["ranges"] = [[1, 10]]
+                else:
+                    value["files"] = []
+                self.write(path, value)
+                with self.assertRaisesRegex(ValueError, expected):
+                    tool.gate(self.root)
 
 
 if __name__ == "__main__":

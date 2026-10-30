@@ -4,9 +4,9 @@ Use this together with accepted `persona.md` §§10 and 13–19, `install/contro
 
 ## Entry and scope
 
-The final worker uses requested `gpt-6.1-sol`, high effort where actually available, and records the observed model/control rather than merely repeating the requested name. Before changing settings, verify both actual review publications/merges, current public remote `main`, the exact accepted candidate and the local content gate. Earlier conditional installation authorization remains effective for this assigned phase.
+The final worker preserves the current owner-selected runtime for its role and records the observed model/provider/effort rather than merely repeating the requested name. The earlier installer preference `gpt-6.1-sol` / high is historical when a later explicit selection applies; persona installation does not itself authorize a model change. Before changing settings, verify the actual Gemini integration and the owner-authorized 2026-10-30 second-stage completion under `reviews/02-grok/codex-completion-20261030/provenance.json`, their attributable publication/merge history, current public remote `main`, exact accepted candidate and local content gate. The second-stage completion preserves real partial Grok work but attributes completed reading and reconciliation to Codex, not Grok. Missing provenance, incomplete coverage or an inconsistent gate contract remains a blocker, not permission to invent an attestation. Earlier conditional installation authorization remains effective for this assigned phase.
 
-Discover actual devices, accounts, workspaces, clients, Projects, existing GPTs, dot identity, cloud tasks, local Codex hosts and delegated consumers. The research catalog names possibilities; it does not assert they all exist. A cloud shell is not the user's Windows PC. A remote device advertised by a tool can still be offline. Inspect current permission and capabilities of each tool before choosing it.
+Discover actual devices, accounts, workspaces, clients, Projects, existing GPTs, dot identity, cloud tasks, local Codex hosts and delegated consumers, including the selected Fedora migration host. The research catalog names possibilities; it does not assert they all exist. A cloud shell is not the user's Windows or Fedora PC. A remote device advertised by a tool can still be offline. Inspect current permission and capabilities of each tool before choosing it.
 
 Inventory all in-scope user-controlled behavior inputs reachable through supported routes. Do not collect hidden system prompts, unrelated private chats, credentials or full device/account backups. Do not widen OAuth scopes, change privacy modes, activate paid services or create unused assistants merely to fill the catalog. Preserve existing unrelated instructions and selected independent workflows such as Ann.
 
@@ -56,18 +56,30 @@ Keep actual backup values and detailed operation logs in an appropriate private 
 
 | Consumer | Inspect and reconcile | Verify separately |
 |---|---|---|
-| Ordinary ChatGPT account | Custom Instructions enablement, all current instruction fields, full composed size, relevant current memories, visible personality and characteristic controls if present. Preserve unrelated preferences. | Fresh ordinary text on the same account/workspace in Windows and Android. Inspect effective scope instead of assuming synchronization. [O01–O03] |
+| Ordinary ChatGPT account | Custom Instructions enablement, all current instruction fields, full composed size, relevant current memories, visible personality and characteristic controls if present. Preserve unrelated preferences. | Fresh ordinary text on each actual same-account client, including Windows, Fedora preview and Android where exposed. Inspect effective scope instead of assuming synchronization. [O01–O03, OAI-LINUX-20261030] |
 | Projects | Each used private Project's explicit instructions, persona sources and actual memory mode; shared projects have their own ownership/audience constraints. | Fresh project text, resumed work, and Project Live if actually used. A project pass does not prove ordinary chat. [O04, O08] |
 | Existing custom GPTs | Each actually used and editable GPT's independent instructions/knowledge, available migration/edit controls and obsolete persona fragments. | A new conversation in that particular GPT; account CI/memory are not presumed inherited. Do not create a new GPT as an automatic central solution. [O05] |
 | Temporary contexts | The actually selected personalized/unpersonalized mode and its documented scope. | Intentional unpersonalized operation is not a persona defect; do not change it behind the user. [O06] |
-| Native voice | Selected voice, actual available mode, language, conversation/project context, supported pace/style direction, interruption and buffering. | Windows and Android; ordinary, Project, Work and dot calls where used; each actual voice mode separately. Preserve the selected voice unless the owner chooses another. [O07–O09] |
+| Native voice | Selected voice, actual available mode, language, conversation/project context, supported pace/style direction, interruption and buffering. | Windows, Android and Fedora only where the mode is actually exposed; ordinary, Project, Work and dot calls where used; each actual voice mode separately. Dictation does not prove live task voice. Preserve the selected voice unless the owner chooses another. [O07–O09, OAI-LINUX-20261030] |
 | Morning Light | Existing identity, relevant conversation preferences/memory and dot notes, separate task context, actual custom action rules. | Separate task and call; writing style and action permission rules are different consumers. [O16–O18] |
-| Local Codex | Each used native Windows desktop/CLI/IDE, WSL, SSH or other host: actual configuration directory, global override/base files, nested project instructions, effective config and selected model/effort. | A fresh process/session, automatic instruction loading evidence and an actual repository task. Reading a file manually does not prove automatic loading. [O11–O14] |
+| Local Codex | Each used native Windows or Fedora desktop/CLI/IDE, WSL, SSH or other host: actual configuration directory, global override/base files, nested project instructions, effective config and selected model/effort. | A fresh process/session, automatic instruction loading evidence and an actual repository task. Reading a file manually does not prove automatic loading. Native sandbox and approval enforcement are separate from persona prose. [O11–O14, OAI-LINUX-20261030, OAI-SANDBOX-20261030] |
+| Fedora desktop preview | Actual OS/architecture, selected desktop/session, package version/signature/update provenance and supported app capabilities. Preserve existing account authentication, profile and selected voice. | Current documentation supports Fedora 43/44, not every Linux edition/session combination. Linux native Computer Use is unavailable; native Wayland is experimental and XWayland default where available. Recheck at execution, then test this exact profile; a package install alone does not certify GUI or voice behavior. [OAI-LINUX-20261030] |
+| Phone-to-Fedora route | Actual phone client, supported host/bridge, destination machine and origin conversation/task identity. Keep control ports private. | Current native mobile-host instructions name macOS/Windows. Direct Linux native hosting is unestablished. Prove the chosen hop-by-hop route, reconnect, result receipt and audio independently; a cloud task is not local-PC execution. [OAI-REMOTE-20261030] |
 | Cloud Work | Actual cloud task and its supported account/project/context consumers. | Fresh cloud work separately from local Codex and connected-PC instructions. A local global instruction file is not assumed to configure the cloud orchestrator. [O09, O14] |
 | Delegation | Real parent/child role packet, user-facing style contribution, task state, return route and coordinator integration. | Actual delegated result return; do not claim all agents share a memory or identity store. Preserve specialist duties and audience-appropriate output. [O15] |
 | Skills/plugins/hooks | Actual selected workflows, load triggers, exposed controls and trust requirements. | Only use a documented applicable loading route. Installing a plugin or saving a skill does not make a persona always loaded. No universal hook injection is assumed. [O20, O21] |
 
 The full primary source definitions are in the canonical specification and the references below. At execution time, recheck material product changes and actual UI labels; do not assume a slider, setting or field remains available because it appeared in dated research.
+
+Apply the standing private Lucifer/ASMR performance requirement in the reviewed adapters and verify A01 in `evals/asmr-acting-probe.md`: fresh-session text performance and actual heard delivery are separate. Preserve selected voice, plain-format/audience overrides, silent stop and the explicit-request boundary for inward-focus.
+
+### Fedora migration and voice-action-return acceptance
+
+The above Linux/mobile facts were fetched on 2026-10-30; they are dated support evidence, not runtime acceptance. The current migration target is Fedora 44 x86_64. Do not convert Windows paths, executable caches or credential databases into Linux configuration by copying them wholesale. Resolve the actual `CODEX_HOME` and existing instruction chain, preserve original values privately, and merge only the reviewed managed adapter. Existing valid Linux login state is preserved; an owner-completed supported sign-in is required when authentication is absent. Do not expose or copy tokens to complete the inventory.
+
+Where a Linux preview, voice mode or actual phone route is used, require one observed loop: **spoken request → stable task ID and execution-host identity → scoped artifact/action → independent result check → actual delivery to the originating conversation → heard summary**. Save each stage separately. Test speech stop without a final acknowledgment, while treating explicit task cancellation as a separate worker operation. A local file, completed worker or written briefing does not prove delivery or sound. If a native voice mode is absent, mark that mode unsupported/unavailable while continuing useful authorized text work.
+
+Phone SSH, a supported macOS/Windows desktop bridging a Fedora SSH project, and cloud execution are separate alternatives. A second supported desktop is not assumed to exist; dual-booting the same PC cannot keep both operating systems active. A third-party Linux MCP may provide separately verified local application controls, but cannot be represented as native OpenAI Computer Use, mobile eligibility, or a bypass for an excluded interface. Preserve the working recovery/control route until the owner-accepted replacement passes its actual test.
 
 ## Construct a coherent configuration
 
@@ -97,7 +109,7 @@ If a correction changes reviewed candidate bytes, retain its rationale, update a
 Maintain distinct evidence levels:
 
 1. Repository restored, source integrity verified.
-2. Public remote and two real review contributions/pushes/merges verified.
+2. Public remote and the currently owner-authorized review contributions verified: actual Gemini integration plus the explicitly attributed Codex completion using preserved partial Grok work, with provenance, complete source coverage, dispositions and real publication/merge evidence. Never relabel the latter as a completed Grok runtime pass.
 3. Exact adapter prepared for an actual target.
 4. Actual target value saved and read back.
 5. Effective loading supported by fresh-session behavior or host metadata, with its limits stated.
@@ -128,5 +140,8 @@ Report the reached milestone from `goal.md`; list actual coverage, observed char
 - [O18] Dot controls: https://learn.chatgpt.com/docs/dots/controls
 - [O20] Skills: https://learn.chatgpt.com/docs/build-skills
 - [O21] Hooks: https://learn.chatgpt.com/docs/hooks
+- [OAI-LINUX-20261030] Linux desktop preview (fetched 2026-10-30): https://learn.chatgpt.com/docs/linux/linux-app
+- [OAI-REMOTE-20261030] Remote connections (fetched 2026-10-30): https://learn.chatgpt.com/docs/remote-connections
+- [OAI-SANDBOX-20261030] Native sandboxing: https://learn.chatgpt.com/docs/sandboxing
 
 These are supporting product references, not proof of the actual account's permissions or installed configuration. Preserve the fuller source qualifications in `persona.md`.

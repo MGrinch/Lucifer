@@ -7,7 +7,7 @@
       "id": "account-identity",
       "consumer": "Account and workspace identity",
       "multiplicity": "each used account/workspace/client",
-      "investigate_and_decide": "Verify same intended account on Windows and Android; identify managed workspace constraints.",
+      "investigate_and_decide": "Verify the intended account/workspace on each used Windows, Fedora preview and Android client; preserve existing login and identify managed workspace constraints. Do not read or migrate credentials.",
       "adapter_candidates": [],
       "source_refs": [
         "O01",
@@ -77,6 +77,65 @@
         "O01",
         "O02",
         "O03"
+      ],
+      "observed": false
+    },
+    {
+      "id": "linux-preview-host",
+      "consumer": "Fedora native desktop preview",
+      "multiplicity": "each actually used Linux host/session",
+      "investigate_and_decide": "Verify actual Fedora release/architecture, desktop/session, existing signed app package/version/update origin and capabilities. Current fetched docs support Fedora 43/44; migration target Fedora 44 x86_64. Native Linux Computer Use is unavailable; native Wayland experimental, XWayland default where available. Do not assume a specific spin or voice mode was certified. Preserve name, selected voice and existing login.",
+      "adapter_candidates": [],
+      "source_refs": [
+        "OAI-LINUX-20261030"
+      ],
+      "observed": false
+    },
+    {
+      "id": "linux-text",
+      "consumer": "Fedora preview text/task consumer",
+      "multiplicity": "each used account/workspace/client",
+      "investigate_and_decide": "Verify which account/project/task instruction scope the actual preview consumes; preserve unrelated instructions and test a fresh real task. No automatic account/Android synchronization claim from a local AGENTS file.",
+      "adapter_candidates": [
+        "native_compact",
+        "native_extended",
+        "project",
+        "codex"
+      ],
+      "source_refs": [
+        "O01",
+        "O11",
+        "OAI-LINUX-20261030"
+      ],
+      "observed": false
+    },
+    {
+      "id": "voice-linux",
+      "consumer": "Fedora native voice where exposed",
+      "multiplicity": "each actually available used voice mode/context",
+      "investigate_and_decide": "Inspect actual mode, selected voice, language and audio route; preserve existing values. Distinguish dictation, live conversation and voice task control. Require heard output and no-final-acknowledgment stop evidence; absent mode remains an explicit capability gap.",
+      "adapter_candidates": [
+        "voice"
+      ],
+      "source_refs": [
+        "O07",
+        "O09",
+        "OAI-LINUX-20261030"
+      ],
+      "observed": false
+    },
+    {
+      "id": "phone-fedora-return",
+      "consumer": "Phone-originated Fedora task and return route",
+      "multiplicity": "each actual supported phone/host/bridge/origin route",
+      "investigate_and_decide": "Current remote docs name macOS/Windows native mobile hosts; direct Linux parity is unestablished. Record actual route and host/task IDs. Test request, local artifact, independent verification, reconnect, return to origin and heard summary separately. SSH, supported separate desktop bridge and cloud execution are distinct. Do not expose raw control ports or assume simultaneous dual-boot hosts.",
+      "adapter_candidates": [
+        "subagent",
+        "voice"
+      ],
+      "source_refs": [
+        "OAI-LINUX-20261030",
+        "OAI-REMOTE-20261030"
       ],
       "observed": false
     },
@@ -269,14 +328,16 @@
     {
       "id": "codex-hosts",
       "consumer": "Codex execution environments",
-      "multiplicity": "each used Windows native/desktop/CLI/IDE/WSL/SSH host",
-      "investigate_and_decide": "Identify actual host and configuration directory; a cloud filesystem is not the PC.",
+      "multiplicity": "each used Windows or Fedora native desktop/CLI/IDE, WSL or SSH execution host",
+      "investigate_and_decide": "Identify actual OS/architecture/host, app and CLI versions, CODEX_HOME and effective instruction chain. A cloud filesystem is not the PC; a desktop app and CLI are distinct consumers.",
       "adapter_candidates": [
         "codex"
       ],
       "source_refs": [
         "O11",
-        "O13"
+        "O13",
+        "OAI-LINUX-20261030",
+        "OAI-SANDBOX-20261030"
       ],
       "observed": false
     },
@@ -310,7 +371,7 @@
       "id": "codex-model-config",
       "consumer": "Codex effective model/effort/style configuration",
       "multiplicity": "each actual host/profile",
-      "investigate_and_decide": "Verify requested gpt-6.1-sol and high effort where exposed; document effective precedence and optional style compatibility.",
+      "investigate_and_decide": "Preserve the current owner-selected model/provider/effort and document actual effective precedence. The historical installer gpt-6.1-sol/high preference does not override a later explicit choice. Persona installation does not authorize an unrelated model switch.",
       "adapter_candidates": [],
       "source_refs": [
         "O12",
@@ -429,5 +490,8 @@
       ],
       "observed": false
     }
-  ]
+  ],
+  "research_updated_at": "2026-10-30",
+  "review_prerequisite_reference": "reviews/02-grok/codex-completion-20261030/provenance.json",
+  "review_prerequisite_note": "Verify the current owner-authorized attributed review contract and gate. Preserved partial Grok material plus Codex completion is not a complete Grok runtime attestation."
 }

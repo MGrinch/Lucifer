@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "status": "pending",
+  "identity": {
+    "service_requested": "Grok",
+    "service_observed": null,
+    "model_requested": "Grok 4.7",
+    "model_observed": null,
+    "effort_requested": "high",
+    "effort_observed": null,
+    "product": null,
+    "runtime_evidence": null,
+    "accepted_substitute": null
+  },
+  "access": {
+    "route": null,
+    "write_capability_observed": false,
+    "research_tools_observed": [],
+    "research_tools_used": []
+  },
+  "attestation": {
+    "actual_review": false,
+    "input_fingerprint": null,
+    "recorded_by": null,
+    "evidence": null
+  },
+  "artifacts": {
+    "report": {
+      "path": "reviews/02-grok/report.md",
+      "sha256": null
+    },
+    "findings": {
+      "path": "reviews/02-grok/findings.json",
+      "sha256": null
+    },
+    "sources": {
+      "path": "reviews/02-grok/sources.json",
+      "sha256": null
+    }
+  },
+  "upstream": {
+    "gemini_integration_sha256": null,
+    "reading_attested": false,
+    "evidence": null
+  }
+}

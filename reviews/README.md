@@ -42,3 +42,7 @@ GitHub branch protection is not configured by this repository. The checker is a 
 ## Actual Git publication
 
 Each review directory also has `publication.json`, initially NOT_STARTED. Follow `workflow/08-git-review-history.md`; actual reviewer, authenticated writer, contribution commit, push and merge evidence are separate. These receipts are not auto-validated by the content gate and must be checked against the actual remote before installation.
+
+## Dated owner-authorized reviewer substitution — 30 October 2026
+
+The earlier two-vendor assignment above is preserved as history. The owner subsequently authorized Codex to finish the unfinished second-stage review using recovered Grok sources. The exact scope and exposed runtime are recorded in `02-grok/codex-completion-20261030/provenance.json`. Current second-stage metadata must say actual Codex, not Grok; requested Grok/Grok4.7 stays visible. The completed Codex supplement, actual full83-input reading and independent source reconciliation do not retroactively complete the missing Grok archive. No source/coverage/disposition/integrity/publication/native gate is removed.

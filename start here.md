@@ -59,3 +59,7 @@ The integrator owns the commit and readback. Misha should not have to translate 
 ## 6. End at the right goal
 
 [goal.md](goal.md) distinguishes a reviewed specification, a supported installation, and verified behavior. Reaching one does not certify the next. The initial repository is ready for the first critique; it is not ready to install.
+
+## Current second-stage completion — 30 October 2026
+
+The owner authorized Codex to complete the unfinished second review using the preserved Grok sources. Start with [the truthful completion and provenance](reviews/02-grok/codex-completion-20261030/report.md), then inspect current `workflow/state.json`, content gate and actual publication receipt. Do not relabel the completion as a new Grok execution or assume public release/native installation from a local pass. Current R3 includes standing Lucifer/ASMR performance, Fedora route limits and separate text/heard/end-to-end acceptance probes. Original vendor reports and frozen snapshots remain unchanged.

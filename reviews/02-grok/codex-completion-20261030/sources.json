@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "retrieved_date": "2026-10-30",
+  "actual_researcher": "Codex; not Grok",
+  "sources": [
+    {
+      "id": "X-01",
+      "url": "https://x.com/CryonixCrypto/status/2114799175137124533",
+      "historical_author_claim": "Cryonix",
+      "historical_date_claim": "2026-10-26",
+      "historical_inspection_claim": "Grok FINAL source record says full post; current researcher did not observe it",
+      "refresh_status": "HTTP_403",
+      "inspected_modality": "Recovered original source metadata only; inaccessible post",
+      "supported_claim": "The original packet contains this URL; no categorical technical claim depends on its contents.",
+      "limitations": "Author/date/content not independently verified. Historical theme is context drift and compact/subagents; anecdotal and Claude-focused if accurate, not OpenAI causal evidence.",
+      "finding_refs": ["GROK-001", "CODEX-C04"]
+    },
+    {
+      "id": "X-02",
+      "url": "https://x.com/jamesj_cottrell/status/2113221066113863919",
+      "historical_author_claim": "James Cottrell",
+      "historical_date_claim": "2026-10-22",
+      "historical_inspection_claim": "Grok FINAL source record says full post; current researcher did not observe it",
+      "refresh_status": "HTTP_403",
+      "inspected_modality": "Recovered original source metadata only; inaccessible post",
+      "supported_claim": "The original packet contains this URL; current correction tests are justified by owner requirements, not this inaccessible claim.",
+      "limitations": "Alleged memory-rules-over-current-correction observation is unverified and not prevalence or mechanism evidence.",
+      "finding_refs": ["GROK-001", "CODEX-C04"]
+    },
+    {
+      "id": "X-03",
+      "url": "https://x.com/LithiumFlower22/status/2113837503576711303",
+      "historical_author_claim": "Grace Amid Chaos",
+      "historical_date_claim": "2026-10-24",
+      "historical_inspection_claim": "Grok FINAL source record says full post; current researcher did not observe it",
+      "refresh_status": "HTTP_403",
+      "inspected_modality": "Recovered original source metadata only; inaccessible post",
+      "supported_claim": "The original packet contains this URL; no persona rewrite is inferred from it.",
+      "limitations": "Alleged personality reversion under emotional content is an unverified anecdote, not a measured universal effect.",
+      "finding_refs": ["GROK-001", "CODEX-C04"]
+    },
+    {
+      "id": "WEB-01",
+      "url": "https://community.openai.com/t/custom-instructions-and-memory-preferences-repeatedly-drift-in-long-chatgpt-conversations/1406547",
+      "author": "Community user 2993351615",
+      "publication_date": "2026-10-15",
+      "refresh_status": "RETRIEVED",
+      "inspected_modality": "Full accessible text, 35 returned lines",
+      "supported_claim": "One user describes Chinese paragraph-style preferences drifting after long conversations and temporary improvement after correction.",
+      "limitations": "First-person complaint, no controlled comparison, verified cause, measured incidence or guarantee of transfer to Lucifer.",
+      "finding_refs": ["GROK-001", "CODEX-C04"]
+    },
+    {
+      "id": "DOC-ASA",
+      "url": "https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf",
+      "author": "American Statistical Association",
+      "publication_date": "2016",
+      "refresh_status": "RETRIEVED",
+      "inspected_modality": "Three-page PDF text, 65 returned lines",
+      "supported_claim": "P-values do not supply effect size or the probability that a hypothesis is true; transparent context and more than thresholds are needed.",
+      "limitations": "General interpretive guidance, not validation of this persona's estimator or effects.",
+      "finding_refs": ["GROK-004", "CODEX-C05"]
+    },
+    {
+      "id": "DOC-NIST",
+      "url": "https://www.nist.gov/publications/comparing-instruments",
+      "title": "Comparing Instruments",
+      "author": "James Yen; Dennis Leber; Leticia Pibida",
+      "publication_date": "2020-09-30",
+      "refresh_status": "PUBLISHER_PAGE_RETRIEVED_FULL_PDF_NOT_RETRIEVED",
+      "inspected_modality": "Publisher metadata and abstract",
+      "alternate_attempts": [
+        {"url": "https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2106.pdf", "status": "TIMEOUT"},
+        {"url": "https://doi.org/10.6028/NIST.TN.2106", "status": "HTTP_404_IN_THIS_RETRIEVAL"}
+      ],
+      "supported_claim": "Correct title/authors; comparison of binary/continuous measurements, differences and confidence intervals; distinguish comparison questions.",
+      "limitations": "This refresh did not inspect full PDF methods or independently validate a clustered persona evaluation; no equivalence result is claimed.",
+      "finding_refs": ["GROK-004", "CODEX-C05"]
+    },
+    {
+      "id": "DOC-SCIPY",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.permutation_test.html",
+      "author": "SciPy documentation",
+      "publication_date": null,
+      "refresh_status": "RETRIEVED",
+      "inspected_modality": "Reference page text and examples",
+      "supported_claim": "Paired-sample permutation preserves pairing; randomized testing uses its documented conservative add-one convention.",
+      "limitations": "Assumptions and chosen permutation unit remain the study designer's responsibility. No executed estimator, power analysis or observed persona outcome.",
+      "finding_refs": ["GROK-004", "CODEX-C05"]
+    },
+    {
+      "id": "OAI-LINUX-20261030",
+      "url": "https://learn.chatgpt.com/docs/linux/linux-app",
+      "author": "OpenAI",
+      "publication_date": null,
+      "refresh_status": "RETRIEVED_OFFICIAL_DOCS",
+      "inspected_modality": "Official documentation text",
+      "supported_claim": "Linux desktop preview includes Fedora43/44 x64/ARM64; native Computer Use unavailable; native Wayland experimental with XWayland default.",
+      "limitations": "Documentation is not installed-package, account rollout or device-test evidence; preview facts may change.",
+      "finding_refs": ["CODEX-C01"]
+    },
+    {
+      "id": "OAI-REMOTE-20261030",
+      "url": "https://learn.chatgpt.com/docs/remote-connections",
+      "author": "OpenAI",
+      "publication_date": null,
+      "refresh_status": "RETRIEVED_OFFICIAL_DOCS",
+      "inspected_modality": "Official documentation text",
+      "supported_claim": "Documented mobile host setup describes macOS/Windows desktop app, not CLI/IDE hosting; SSH-connected machines are a separate supported route.",
+      "limitations": "No direct native Android-to-Fedora host parity established. This is not proof of permanent impossibility or of this user's current host pairing.",
+      "finding_refs": ["CODEX-C01", "CODEX-C02"]
+    },
+    {
+      "id": "OAI-VOICE-20261030",
+      "url": "https://learn.chatgpt.com/docs/features/voice",
+      "author": "OpenAI",
+      "publication_date": null,
+      "refresh_status": "RETRIEVED_OFFICIAL_DOCS",
+      "inspected_modality": "Official documentation text",
+      "supported_claim": "Live can coordinate Chat/Work/Codex according to exposed rollout and plan; actual tasks and selected executor are distinct from the conversation's voice.",
+      "limitations": "No current phone/Fedora end-to-end or selected voice proof. Dictation, live conversation and task execution are distinct; audio must be heard.",
+      "finding_refs": ["CODEX-C02"]
+    },
+    {
+      "id": "OAI-PERSONALIZE-20261030",
+      "url": "https://learn.chatgpt.com/docs/personalize",
+      "author": "OpenAI",
+      "publication_date": null,
+      "refresh_status": "RETRIEVED_OFFICIAL_DOCS",
+      "inspected_modality": "Official documentation text",
+      "supported_claim": "Custom instructions, memory, personalization and Codex personal instructions are supported but distinct controls; style does not create capability.",
+      "limitations": "Actual consumer, inheritance, field capacity, persistence and voice must be observed on target; no global write performed.",
+      "finding_refs": ["CODEX-C01", "CODEX-C02"]
+    },
+    {
+      "id": "INPUT-83",
+      "url": "https://github.com/MGrinch/Lucifer/tree/0754096d3f816a45d7f48fe882e1ac7eda88bceb",
+      "author": "Attributed repository authors and preserved reviewers",
+      "refresh_status": "EXACT_LOCAL_FROZEN_BYTES_READ",
+      "inspected_modality": "72 core and 11 genuine Gemini upstream files, full original-line coverage with disclosed exact-block reuse",
+      "supported_claim": "Current candidate, provenance, active behavior contracts, preserved historical limitations and actual reviewer records.",
+      "limitations": "Reading a cited historical UI/action/source does not re-execute it. Full details in three named coverage ledgers.",
+      "finding_refs": ["CODEX-B01", "CODEX-B02", "CODEX-C01", "CODEX-C02", "CODEX-C03", "CODEX-C04", "CODEX-C05", "CODEX-C06"]
+    }
+  ],
+  "upstream_video_boundary": "All original Gemini source records read, but no new independent video/audio inspection; modalities/timestamps remain attributed to Gemini. No acoustic conclusion or prompt-effect gain inferred.",
+  "no_external_messages_or_paid_provider_jobs": true
+}

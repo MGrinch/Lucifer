@@ -103,11 +103,34 @@ Both `reviews/01-gemini/` and `reviews/02-grok/` require:
 }
 ```
 
-Replace pending values only with actual evidence. The second round requests `Grok`. `service_observed` may remain null if the attribution is limited; when present it must match the requested service. Record the requested model explicitly. `runtime_evidence` must identify `{basis, model, reference}`, where basis is `observed_ui`, `api_metadata`, or `user_attestation`. The latter is an explicitly attributed user report, not inferred backend metadata. An unknown `model_observed` can stay null when that evidence identifies the actual runtime; do not copy the requested model into an observed field. If the evidenced actual model differs from the requested model, require `accepted_substitute: {model, evidence}` identifying explicit owner authorization for that substitute. Unknown effort remains an explicit limitation, not assumed High.
+Replace pending values only with actual evidence. The second round requests `Grok`. `service_observed` may remain null if the attribution is genuinely limited; when present it must match the requested service except for the explicit Codex completion contract below. Do not hide a known substitute behind null. Record the requested model explicitly. `runtime_evidence` must identify `{basis, model, reference}`, where the ordinary basis is `observed_ui`, `api_metadata`, or `user_attestation`. The latter is an explicitly attributed user report, not inferred backend metadata. An unknown `model_observed` can stay null when that evidence identifies the actual runtime; do not copy the requested model into an observed field. If the evidenced actual model differs from the requested model, require `accepted_substitute: {model, evidence}` identifying explicit owner authorization for that substitute. Unknown effort remains an explicit limitation, not assumed High.
 
 Known equivalent display/API labels are explicitly mapped: `Gemini 4 Argon` ↔ `gemini-4-argon` and `Grok 4.7` ↔ `grok-4.7` (case-insensitive for these aliases). Other names do not match by substring or assumed family membership; a new alias needs documented justification. This mapping identifies requested labels; it does not establish current service availability.
 
 The requested stage models are pinned in the reviewed tool to `Gemini 4 Argon` and `Grok 4.7`. A report cannot silently redefine that request by changing both its requested and observed labels. An owner-approved alternative uses the explicit substitute record; a later change to the governing request requires a deliberate reviewed update to the workflow/tool.
+
+### Explicit Codex completion of the unfinished second review
+
+The owner-authorized 2026-10-30 integration adds one narrow cross-service route: `02-grok` may be completed by **Codex**, retaining `service_requested: Grok` and `model_requested: Grok 4.7`. It does not attest that Grok completed the old review. Other cross-service routes are rejected. This is a content/provenance contract, not independent authentication of a provider or the owner's identity.
+
+Set the actual `service_observed` to `Codex` and record the actually evidenced model. `accepted_substitute` must include `service: Codex`, that same `model`, nonempty `evidence`, and `authorization_path` plus `authorization_sha256`. The authorization is a same-repository, same-round `.json` file below `reviews/02-grok/`, read through the normal path checks and pinned by its exact raw-byte SHA-256. Its required fields are:
+
+| Field | Required value |
+| --- | --- |
+| `schema` | Integer `1` |
+| `kind` | `owner_authorized_review_substitution` |
+| `round` | `02-grok` |
+| `date` | Valid calendar date in `YYYY-MM-DD` form |
+| `requested_service`, `requested_model` | `Grok`, `Grok 4.7` (documented model aliases remain accepted) |
+| `actual_service`, `actual_model` | `Codex`, the same evidenced actual model |
+| `scope` | `complete_unfinished_second_review` |
+| `owner_authorization_quote` | Nonempty, faithfully attributed owner authorization |
+| `recorded_by` | Nonempty, truthful recorder attribution |
+| `original_grok_completion_attested` | Boolean `false` |
+
+When the available identity evidence is Codex orchestration metadata rather than a provider API response, use `runtime_evidence.basis: runtime_metadata`, with `service: Codex`, `source: codex_orchestration_metadata`, the actual `model`, and a nonempty `reference` explaining the source and its limits. This basis is accepted only for observed Codex. It must not be described as an independent provider attestation or an API call that did not occur. The model in the authorization, substitute, runtime evidence and observed identity must agree; the requested Grok identity remains unchanged.
+
+All existing complete core-reading, upstream Gemini-reading, artifact, finding-disposition, snapshot, input/output fingerprint and integration-chain gates still apply. A substitution record neither supplies missing reading nor advances publication or installation evidence.
 
 Completion requires `status: completed`, `actual_review: true`, the correct input fingerprint, a nonempty `recorded_by` and evidence reference, and exact hashes of three distinct nonempty artifact files. These declarations must come from a real review capture or an accurately attributed owner-supplied review, never from the validator's unit tests.
 

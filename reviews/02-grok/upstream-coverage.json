@@ -1,7 +1,151 @@
 {
   "schema": 1,
-  "status": "NOT_STARTED",
-  "input_fingerprint": null,
-  "external_fingerprint": null,
-  "files": []
+  "input_fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+  "external_fingerprint": "423ec6ce5f0637a1120f411b8b13bb28348e619e221f50be9fe84e91bbd89295",
+  "actual_reviewer": "Codex coordinator; direct full reading of all11 genuine Gemini inputs",
+  "files": [
+    {
+      "path": "reviews/01-gemini/findings.json",
+      "sha256": "2e877a3409ed105abfa92c501cc3bca47b29af1bf7a5a5d9381379449f0920df",
+      "ranges": [
+        [
+          1,
+          193
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. All eight findings and exact proposed changes read; disposition against active descendants, not only original suggested wording. No runtime success evidence.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "reviews/01-gemini/input-manifest.json",
+      "sha256": "1294019e45932e5d25ce4be5b5769a1267f20c2ff98ac2cad4971629fa929ee2",
+      "ranges": [
+        [
+          1,
+          416
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Every frozen required input path/hash/size read; original snapshot differs from post-integration current candidate as expected.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "reviews/01-gemini/integration.json",
+      "sha256": "8b36528717eda7be0dd718e008ade378f695a32de0d5f167a021327ce25aadac",
+      "ranges": [
+        [
+          1,
+          183
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. All accepted-with-refinement decisions, artifact hashes and output evidence read; original reviewed proposals distinct from later applied coordinator changes.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "reviews/01-gemini/read-coverage.json",
+      "sha256": "269e5fd8aa4e769d99d094b06921acddcb33634739978c51bdb53abcc7fc6e37",
+      "ranges": [
+        [
+          1,
+          1033
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. All 1033 lines of claimed reviewer ranges and semantic notes read; exact pinned ledger does not authenticate another reviewer cognition.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "reviews/01-gemini/report.md",
+      "sha256": "e8ef8bb6b6d60a5123247daaa97b69aed94d507faec721ed3219ca9f61b1389b",
+      "ranges": [
+        [
+          1,
+          660
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Full 660 lines read after own provisional critique. Eight proposals with original video/statistics/runtime limits. Reject unsupported zero-egress/$0 generalization, tokenizer-mood explanation, inward-focus example and universal latency threshold; accepted integration already removes core problematic rules. Video claims attributed, not independently watched.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "reviews/01-gemini/review.json",
+      "sha256": "e3f1c5f5dc3206e8aab766329ce460d30639a1ab1b3f9da7dd6be568417a13ad",
+      "ranges": [
+        [
+          1,
+          91
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Requested Gemini4Argon/high distinct from observed null; user attestation, actual source snapshot and complete input assertions not native runtime proof.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "reviews/01-gemini/sources.json",
+      "sha256": "c09af343a6a9d7af8d7e4b23e3cbb02ae7d338bcd261b8cbb5c77cc155b60199",
+      "ranges": [
+        [
+          1,
+          500
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Every source record read. Four multimodal and ten transcript claims attributed to Gemini; YT13/YT14 aggregate URLs, not independent video verification. Weight-level representation engineering not direct prompt efficacy.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "reviews/01-gemini/supplementary-coverage.json",
+      "sha256": "9e92093c93df29b1467d564e94cf4dafeae72f5067cccb71925bc33c85c52e4a",
+      "ranges": [
+        [
+          1,
+          55
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. All three pinned supplementary inputs and ranges read; hash evidence seventh key required, not six-key closeout simplification.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "reviews/01-gemini/supplements/README.md",
+      "sha256": "432007d010cabd2a81580ca60a3bd52567e530d6adf63227de524556a968d6fd",
+      "ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Preserved original supplementary authority/scope and evidence boundaries, no automatic global loading.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "reviews/01-gemini/supplements/behavioral-delta-protocol.md",
+      "sha256": "5a10f8d001848f3c9e09e7e4677f4fd5491b494a0c585fd08b10d1883a2f2f82",
+      "ranges": [
+        [
+          1,
+          116
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Original proposed estimator versus active corrected descendant compared; aggregation, critical IDs, threshold and paired-test refinements justified; no empirical run.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md",
+      "sha256": "1bfeb6ee2a9bc240f0f47c629b7fd5ac5e7e1e72b6497f5cda94038cd6eaafe3",
+      "ranges": [
+        [
+          1,
+          220
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Full original target/near-miss/failure and semantic anchor design read; active integration preserves exposed examples without claiming personal memory or training-level effects.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    }
+  ]
 }

@@ -1,5 +1,1247 @@
 {
-  "input_fingerprint": null,
-  "files": [],
-  "coverage_status": "NOT_STARTED"
+  "schema": 1,
+  "input_fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+  "actual_reviewer": "Codex team; original partial Grok coverage not reused as completion evidence",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "0880c8a16bc73de595eb436b0494006ddb4f4207899faf3f1316e3cf4e0fea08",
+      "ranges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. LF for active text; exact corpus/baseline/snapshot bytes exempt. Preserve immutable historical bytes.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "sha256": "9a95c84989e9090dc55e6d71cca667736b65bf2963a34ba28f7db5fab95b79db",
+      "ranges": [
+        [
+          1,
+          31
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Requires actual runtime/coverage/source and integration evidence, honest limits, no native-install claim from PR.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "6035fba60737e90930c949703849bf953d664b04695b18a1eb28f45d5f67fc7f",
+      "ranges": [
+        [
+          1,
+          28
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Pinned checkout, contents read, bounded timeout; check and unittest only, no LLM/API/install/native settings.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "af41fe522acf031a0bfee690a7bedff6777f8a8be063cb3a8cdb37860d46195a",
+      "ranges": [
+        [
+          1,
+          25
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Excludes environment/auth/private backups/recordings/archives and logs; ignore rules are not a secret scanner.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "98dffefb765682109acfaa482aaae01aa6c29f05741145ed52ceac6fbca428cd",
+      "ranges": [
+        [
+          1,
+          44
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. One canonical source and attributed staged reviews; preserves current owner intent, supported controls, actual coverage and no invented results.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "GEMINI.md",
+      "sha256": "affc4174ecefdb89a55f92bb0b90ef0538466549fcfbbc3b812385e1edd30a60",
+      "ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Routing pointer, not proof that Gemini loaded repository instructions or has a writer.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "GROK.md",
+      "sha256": "c621c61ce296b5c8648489fd343d9d73924716b87d0b7df6f12075baa189f0e4",
+      "ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Routing pointer, not proof of Grok identity/loading/X access; no independent execution authority.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "89c0fc843d366bb3d7cba0aaef3edd4bec8c14127f03c98f81cf49d9850f71fd",
+      "ranges": [
+        [
+          1,
+          54
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. One current persona, immutable baseline, stage entry points; content/review/application/audio proof distinct. Historical vendor-specific stage needs disclosed substitute addendum.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "context/change-rules.md",
+      "sha256": "feb5105292e3387294d2558151adc06624ff2444dace9f668c16e4dd4b355414",
+      "ranges": [
+        [
+          1,
+          37
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. One mutable canon; preserve historical bytes; preference versus empirical evidence; scoped changes with regression impact.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "context/owner-addendum-2026-10-24.md",
+      "sha256": "79f15f0eb213da5b52fb80e66923a25bd675cb2b2b3a71d36b6b817b2530f435",
+      "ranges": [
+        [
+          1,
+          34
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Public visibility owner decision; separately attributable reviews and writer; complete control coverage; outer bootstrap never runtime payload.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "context/owner-intent.md",
+      "sha256": "ff8b7e37eb92c85e6d3495d3ace4e518561eae7112879be70888516385e2deeb",
+      "ranges": [
+        [
+          1,
+          39
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Preserve female Lucifer within Morning Light; ordinary company and no forced coaching; delegated work must return; owner revision required for review substitution.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "context/package-provenance.json",
+      "sha256": "b0d9797010e215d4d43ef75ee847585718aae0bee499cb498d0cc3990f73f3a0",
+      "ranges": [
+        [
+          1,
+          18
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Historical preparation receipt, not current install/review execution. Preserve dated baseline pins.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "context/provenance-addendum.md",
+      "sha256": "33c9a2e6c075779a8e1da8786cf3052fb8629e38c49cb42e02642991c82c83a3",
+      "ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. S13/S14 raw CRLF acquisition and version distinctions; historical saves are not independently repeated by this audit.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "context/requirements.json",
+      "sha256": "f74c832249abf0151d5fd51395d5a2659f413984f8a0edcff5dd35aebd8343a5",
+      "ranges": [
+        [
+          1,
+          350
+        ],
+        [
+          351,
+          707
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. All28 mappings inspected. LUC12 no final spoken acknowledgement; LUC23 allows only owner workflow revision; LUC25 stale private phrase is B02.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "design/contrast-bank.md",
+      "sha256": "8e1c49916db28a235dac735c50941b09b2f522a6e2004028f5369d4dd6d55b46",
+      "ranges": [
+        [
+          1,
+          250
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. C01-C19 preserve positive expression while exposing plausible warm but wrong decisions. Useful calibration, not memories or measured outputs; C15-C19 are Codex-authored descendants. No new persona rewrite justified.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "design/repository-design.md",
+      "sha256": "50f65156bbacd4e8539d5c123c4a849f42c7b3f4361a1fca434e59187d3b0e1d",
+      "ranges": [
+        [
+          1,
+          35
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Single normative source, generated views and fail-closed records coherent. Active private-handoff wording conflicts with accepted public visibility; initial-publication paragraph remains historical.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "design/response-anatomy.md",
+      "sha256": "6eb97dd731e859e06a5c8897522560d3a231f2ad50cda0bc79d12b0a0200e7b6",
+      "ranges": [
+        [
+          1,
+          30
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Component-level diagnosis and controlled improvements avoid maximizing wit/caution/warmth at expense of actual act. Acoustic and delegation tests correctly require real target evidence.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "evals/README.md",
+      "sha256": "ba0a808cb73c432d38870a4c76abe47c701c3f6003205bb215f6ebe1b2ca46ee",
+      "ranges": [
+        [
+          1,
+          34
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Four proof layers separated; exposed final cases not blind generalization. Positive and failure tests complementary. NOT_RUN preserved.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "evals/behavioral-delta-protocol.md",
+      "sha256": "8a3a440518a2460ce7046c013fd63642bb604f9c1ea18f691710fc9916caa911",
+      "ranges": [
+        [
+          1,
+          131
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Paired family-aware units, permutation/bootstrap assumptions, binary versus preference scoring, multiplicity and finite revisions correctly bounded. Procedure unexecuted; no universal effect threshold or guarantee.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "evals/character-probes.md",
+      "sha256": "1184f96e9b49d15d60134085a6f0e552286b68c1cf281042f526ab4fa6d81b1e",
+      "ranges": [
+        [
+          1,
+          154
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. P01-P06 test company, welcome softness, requested focus, warm disagreement, exact repeat and actual silent stop. Fixtures not real memories; subjective fit belongs to Misha; no final intended ack after stop.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "evals/fiction-presence-probe.md",
+      "sha256": "b306cbf264452ed3da0cc232cbd8e64fb03ebbade64fdcf346eb6d55697b87e9",
+      "ranges": [
+        [
+          1,
+          33
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. P07 selected fiction→literal identity→practical return preserves one expressive character without false human biography. Actual listening optional and separate; no observed pass.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "evals/gemini-probes.md",
+      "sha256": "f460a1cadeaebfb433e2c38d34aaf2b27fa851d192e17024ba64899d9a1ee69f",
+      "ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. G01-G08 exposed development probes cover integrated boundaries, including standing feminine Russian. G08 is not bibliography [G08] LibreChat.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "goal.md",
+      "sha256": "ea9a2b2d5a2fb28a6c01c63dfdc1270db325aaf8ff7fd30edbfc28a0f30e238f",
+      "ranges": [
+        [
+          1,
+          63
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Repository creation, two reviews, accepted integration and native verification distinct milestones; no repository-green-to-install inference. New user-authorized substitution must be disclosed in stage contract.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "install/README.md",
+      "sha256": "03181529f3d2706cfee691c56f9b851b22ef6a259e18c63b4d4769f8d18eb560",
+      "ranges": [
+        [
+          1,
+          27
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Actual installation authorization and exact gate, private scoped backups, composed target checks, per-surface proof.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "install/control-catalog.json",
+      "sha256": "0f74d15a65662795295ad29dcdaa98c0a38bf40a97f0fc7e083a157f8328a5bb",
+      "ranges": [
+        [
+          1,
+          433
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. All categories unobserved templates; expand actual controls; no max-slider assumption or universal inheritance.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "install/rollback.md",
+      "sha256": "77aa01d14e454aedc5241f8201384c13a1e08de4fd6e5c667b7a4c373497ec01",
+      "ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Restore known managed delta only, preserve later edits, inspect unknown outcomes before retry, retain partial status.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "install/target-coverage.json",
+      "sha256": "683edaa1f767849c1f141928683cf773bbe3dd378ff55f577962c79e32dd6cc6",
+      "ranges": [
+        [
+          1,
+          119
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Eight unobserved groups; boolean false/null means pending, not installed. Expand per real object and device.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "persona.md",
+      "sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+      "ranges": [
+        [
+          1,
+          1903
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Entire 1903 lines read: one fictional adult Lucifer/Morning Light; feminine Russian; responsive warmth, exact intent, true memory and owned returns; requested softness versus deliberate focus; speech stop separate from task cancel. Eight exact adapters, scoped installation/rollback, T01-T48/V01-V10 and finite repair. Fedora surface update and three stale operational R1 labels needed, not personality rewrite. Voice/action/return needs composed live test.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "prompts/README.md",
+      "sha256": "1a148eb9368532607250945c93ac9376f92755c746d625bb685f2cecc28ab272",
+      "ranges": [
+        [
+          1,
+          14
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Stage routes do not create connectors or runtimes; public visibility corrected; bootstrap assignment historical.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "prompts/bootstrap-codex.md",
+      "sha256": "feeee632d83ded6a99da40607d0d0df812615fd9d14ca607ab1d4a988c8945dd",
+      "ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Resume existing repo, preserve visibility/history, no duplicate remote or native install at bootstrap. Requested models not proof observed runtime.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "prompts/codex.md",
+      "sha256": "e1f62c8b93a1d7dbb1f841654d9f0bb4089044e340f78ce984ab5e9219f79fe0",
+      "ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Actual accepted review chain before supported apply; all controls/rollback/readback/fresh behavior and audio distinct. Windows/Android target enumeration needs Fedora addition; current-model identity must remain observed not forced fiction.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "prompts/gemini.md",
+      "sha256": "2c1982d598dbe2be5a04ddfca8802b6a531fc313e26b08d3a2ed876360d2b4c4",
+      "ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Actual full reading, practical video modalities, minimal source-mapped improvement and complete return; explicitly no install or impersonating next reviewer.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "prompts/grok.md",
+      "sha256": "1935f2abeb01799c3dc9bc69bc58abd7dc3020d85734c08154b0c0a177ff4a7b",
+      "ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Independent critique then upstream reconciliation, real X scope/limits, positive character and measurable distinctions. Codex cannot claim unavailable X or original Grok identity; honest explicit substitute route needed.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "prompts/integrator.md",
+      "sha256": "f65dbc010cb8c9d698963374df6a211c606148c4cd3df13ed68d3aa61900f475",
+      "ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Preserve original report, actual coverage/provenance, dispositions and real commit/readback chain; coordinating authorship separate.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "research/cross-vendor-capabilities.md",
+      "sha256": "1a645df9e7763ab63f5f7835f702a085c9014f1bf6a36cfcaa1faf488b25a0de",
+      "ranges": [
+        [
+          1,
+          70
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Dated 2026-10-24 vendor research distinguishes snapshot imports, connectors, actual runtime/tool availability and requested models. Not revalidated as current account state; model self-identification insufficient.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "research/evidence-policy.md",
+      "sha256": "646ec65406d695e978d119f37abe31edac536d9d1e290b6f02246d31763ea5c3",
+      "ranges": [
+        [
+          1,
+          37
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Evidence matched to claim, original modalities and inaccessible limits; historical text not authority. Stop research at resolved uncertainty or exact gap, not link quota.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "research/gemini-integration.md",
+      "sha256": "a0a097c4320e4d1c3de409ed3e5641ad413559b4a1c89b1c35eeeab6334df0cf",
+      "ranges": [
+        [
+          1,
+          35
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. All eight Gemini findings dispositioned with useful coordinator corrections; initial report preserved. Seven-key supplement hash correction valid; reviewed proposal is not live effect.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "sources/README.md",
+      "sha256": "63010a48f6a1c996b4645729a17dd5aedb8b339805d79eb9f52cad8af2ac2367",
+      "ranges": [
+        [
+          1,
+          13
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Archive untrusted historical evidence, V6 alias dedup and S13/S14 raw recovery disclosed, excludes secrets/unrelated history.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "sources/baseline/persona-r1.md",
+      "sha256": "77b8dac4ed283602db7206f6d2e482005d04de7a4dcdff01fcdbba6c0d76fd3d",
+      "ranges": [
+        [
+          5,
+          5
+        ],
+        [
+          61,
+          61
+        ],
+        [
+          67,
+          67
+        ],
+        [
+          217,
+          217
+        ],
+        [
+          233,
+          233
+        ],
+        [
+          255,
+          255
+        ],
+        [
+          276,
+          276
+        ],
+        [
+          767,
+          767
+        ],
+        [
+          777,
+          779
+        ],
+        [
+          813,
+          813
+        ],
+        [
+          838,
+          838
+        ],
+        [
+          850,
+          850
+        ],
+        [
+          860,
+          860
+        ],
+        [
+          880,
+          880
+        ],
+        [
+          900,
+          900
+        ],
+        [
+          937,
+          937
+        ],
+        [
+          1445,
+          1445
+        ],
+        [
+          1492,
+          1492
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          60
+        ],
+        [
+          62,
+          66
+        ],
+        [
+          68,
+          68
+        ],
+        [
+          69,
+          106
+        ],
+        [
+          107,
+          216
+        ],
+        [
+          218,
+          232
+        ],
+        [
+          234,
+          254
+        ],
+        [
+          256,
+          275
+        ],
+        [
+          277,
+          516
+        ],
+        [
+          517,
+          766
+        ],
+        [
+          768,
+          776
+        ],
+        [
+          780,
+          803
+        ],
+        [
+          804,
+          812
+        ],
+        [
+          814,
+          828
+        ],
+        [
+          829,
+          837
+        ],
+        [
+          839,
+          849
+        ],
+        [
+          851,
+          859
+        ],
+        [
+          861,
+          870
+        ],
+        [
+          871,
+          879
+        ],
+        [
+          881,
+          890
+        ],
+        [
+          891,
+          899
+        ],
+        [
+          901,
+          901
+        ],
+        [
+          902,
+          936
+        ],
+        [
+          938,
+          1171
+        ],
+        [
+          1172,
+          1444
+        ],
+        [
+          1446,
+          1491
+        ],
+        [
+          1493,
+          1869
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json. Historical R1 differs from current canonical at20 source lines, chiefly revision identity and evolved compact/action guidance. Distinct old text read directly;1849 exact matching lines shared with coordinator canonical read. No lost-source defect established.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json",
+      "ledger_sha256": "8b4fe2fa0bce1beeecb8e3fa924e83649d803088feb979a8da659361db5aaf8b"
+    },
+    {
+      "path": "sources/corpus/s01-persona-v1.md",
+      "sha256": "d336db5c633932c86a9cf77fd8f2ceeb11fd2e1841be566b3543a5c5e2990386",
+      "ranges": [
+        [
+          1,
+          110
+        ],
+        [
+          111,
+          217
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json. Original four-influence ratios, mythic origin, banter and ASMR palette are preserved as provenance; automatic memory locking, covert Yllish conditioning, physiological claims and fixed timing are superseded mechanisms, not obligations to restore.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json",
+      "ledger_sha256": "8b4fe2fa0bce1beeecb8e3fa924e83649d803088feb979a8da659361db5aaf8b"
+    },
+    {
+      "path": "sources/corpus/s02-persona-v2.md",
+      "sha256": "43df075ab8d856f5f0f0338a01406a40c3d208391ad90893b6d6644946807dda",
+      "ranges": [
+        [
+          1,
+          95
+        ],
+        [
+          96,
+          174
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json. Adds rigid invariants, owner-correction refusal and forever persistence while relaxing seven-word frequency. Preserve creative intent but do not revive anti-owner immutability or token-as-action proof.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json",
+      "ledger_sha256": "8b4fe2fa0bce1beeecb8e3fa924e83649d803088feb979a8da659361db5aaf8b"
+    },
+    {
+      "path": "sources/corpus/s03-persona-v3.md",
+      "sha256": "37a5670e9fb4c99e0390575217c953841338d3f00a9706bc256e5a673bce21aa",
+      "ranges": [
+        [
+          1,
+          150
+        ],
+        [
+          151,
+          300
+        ],
+        [
+          301,
+          460
+        ],
+        [
+          461,
+          590
+        ],
+        [
+          591,
+          728
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json. Full reconciliation of v1/v2: one woman within existing product identity, owner amendments, actual tools, bounded receipts, voluntary scenes, input-modality honesty, source metadata limits. Six supplied Vira URLs are not verified eleven-video acoustic corpus.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json",
+      "ledger_sha256": "8b4fe2fa0bce1beeecb8e3fa924e83649d803088feb979a8da659361db5aaf8b"
+    },
+    {
+      "path": "sources/corpus/s04-coverage-audit.md",
+      "sha256": "0b20002f379bbbdde5ddb42ac642b7c001225af414aa32140da4639c2ab863e3",
+      "ranges": [
+        [
+          1,
+          100
+        ],
+        [
+          101,
+          200
+        ],
+        [
+          201,
+          300
+        ],
+        [
+          301,
+          443
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json. Historical248row audit:147live-untested,27synthetic,65static,7reportedstorage,2unsupported;21samples20scenarios including assisted E-repair. Counts and self-reported store results cannot become current native or acoustic proof.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json",
+      "ledger_sha256": "8b4fe2fa0bce1beeecb8e3fa924e83649d803088feb979a8da659361db5aaf8b"
+    },
+    {
+      "path": "sources/corpus/s05-persona-revision-0-8.md",
+      "sha256": "0c52aaf15c253e7714e906dd8d17d7f5380074f84ca7c6418f60eaaf3da0330e",
+      "ranges": [
+        [
+          1,
+          100
+        ],
+        [
+          101,
+          220
+        ],
+        [
+          221,
+          330
+        ],
+        [
+          331,
+          434
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json. Earlier accepted owner wishes and later compiled wording kept distinct. Strong literal stop/wait rule has no final acknowledgment. MorningLight naming and accepted warmth predate quartet; old scene costumes/Ann roles not universal. UI Maple field explicitly Codex new chats not established Dot voice.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json",
+      "ledger_sha256": "8b4fe2fa0bce1beeecb8e3fa924e83649d803088feb979a8da659361db5aaf8b"
+    },
+    {
+      "path": "sources/corpus/s06-v5-dot-wrapper.txt",
+      "sha256": "7cea8902593f21c21c20927dbe5d1a4739074e6a0a4f8ca07c3e20bbe825e987",
+      "ranges": [
+        [
+          1,
+          115
+        ],
+        [
+          116,
+          226
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json. Distinct Dot delivery wrapper plus full V5 artistic behavioral specification/self-critique. Seven chosen values, source shadows transformed, optional grammar, work receipts and reality boundaries. Its apply-now/history assertions are archived evidence, not current actions.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json",
+      "ledger_sha256": "8b4fe2fa0bce1beeecb8e3fa924e83649d803088feb979a8da659361db5aaf8b"
+    },
+    {
+      "path": "sources/corpus/s07-v5-chat-wrapper.txt",
+      "sha256": "326111e29579882e65f62f9e57e04d026779b2f0d4b5a4df84add9815bc9c77b",
+      "ranges": [
+        [
+          1,
+          2
+        ],
+        [
+          224,
+          225
+        ],
+        [
+          3,
+          223
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json. Distinct normal-ChatGPT wrapper;221lines byte-identical to S06. Different consumer and historical statement that Dot received update is not independent delivery or installation proof. No double-vote for duplicate V5 body.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-corpus-a.json",
+      "ledger_sha256": "8b4fe2fa0bce1beeecb8e3fa924e83649d803088feb979a8da659361db5aaf8b"
+    },
+    {
+      "path": "sources/corpus/s08-persona-v6.md",
+      "sha256": "10219d83a0a5657429297793ce4c5338ceb96b72250d77466f300e6513822875",
+      "ranges": [
+        [
+          1,
+          180
+        ],
+        [
+          181,
+          380
+        ],
+        [
+          381,
+          570
+        ],
+        [
+          571,
+          738
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Earlier V6 original character, ASMR/voice limitations, historical source claims and test proposals; old stop acknowledgement superseded, no source mutation.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "sources/corpus/s09-dot-v6.txt",
+      "sha256": "94adc57bb7f8fe74893af56caf01173bba156e8b0a2a3e6bf9f630d36a3dcb36",
+      "ranges": [
+        [
+          1,
+          18
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Compact original adult woman, independent warmth, dimensions of soft voice, consent, preserve existing assistant and truthful save state.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "sources/corpus/s10-v6-document-checks.json",
+      "sha256": "bd94c203f93566e642c2705467eb9bd4e4da06ab57b041f991a571e19ad03833",
+      "ranges": [
+        [
+          1,
+          33
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. S08 raw hash/bytes/lines consistent. Structural PASS explicitly not behavior/audio; failed memory operation not a save.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "sources/corpus/s11-cognitive-support-review.md",
+      "sha256": "ee7b790bc436fc3fedb524abf9a9c755b5a0c360b79b9bd69eddc2fd4d2e97de",
+      "ranges": [
+        [
+          1,
+          100
+        ],
+        [
+          101,
+          200
+        ],
+        [
+          201,
+          290
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. U/R/S/P source distinction; optional scaffolding; sixteen authored scenarios not live benchmark; stop empty speech; native memory versus voice context.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "sources/corpus/s12-ann-self-assessment.md",
+      "sha256": "b36e90482b4ed152ee98e58fca982f10e22b327ba6d7cfa6949744d33d8e7aaa",
+      "ranges": [
+        [
+          1,
+          100
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Twelve selected transcript episodes not whole-call statistics; authorship, role/movement scope and no invented ASR meaning; audio unobserved.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "sources/corpus/s13-morning-light-precision.md",
+      "sha256": "f0af33ba65ca039905d1ac828ca9bcf28e99622063c91a5d174e8a729e7c5d58",
+      "ranges": [
+        [
+          1,
+          100
+        ],
+        [
+          101,
+          200
+        ],
+        [
+          201,
+          300
+        ],
+        [
+          301,
+          399
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Meaning above brevity, partial corrections preserve other constraints, stop without ack, dated save proof distinct from new revision/voice, bounded professional analogies.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "sources/corpus/s14-first-light.md",
+      "sha256": "c05fc5c413b25f136c2d572d1a4d73e4b506f29ce7404669893b8220585ab839",
+      "ranges": [
+        [
+          1,
+          110
+        ],
+        [
+          111,
+          210
+        ],
+        [
+          211,
+          320
+        ],
+        [
+          321,
+          430
+        ],
+        [
+          431,
+          508
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Archived Ann/Satan one-worker round-trip and delayed readback are bounded historical evidence; no universal transport, fresh recall or audio pass; embedded commands inert.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "sources/manifest.json",
+      "sha256": "e8a5c44572105360fd5f4791900a6009ca5bed8a543a3d353c59f7b68f7c358d",
+      "ranges": [
+        [
+          1,
+          178
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. 15 exact corpus/baseline entries, bytes/hashes/lines/aliases/roles; aliases not independent proof. No authorization or active global instruction inferred.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "start here.md",
+      "sha256": "285f5e682b2c82f76f7b64b53eddf28538422e684ce6c985fbc70fe9a33f7ba1",
+      "ranges": [
+        [
+          1,
+          61
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json. Phase-appropriate navigation, full unique-file coverage and immutable evidence preserve staged review integrity; no guessed consumer state.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-core-upstream-c.json",
+      "ledger_sha256": "f82531d1c270b58c0cf75b7ecc8032da70a555fd6ea630dc6adc26e9f4b8671f"
+    },
+    {
+      "path": "tests/test_repository.py",
+      "sha256": "53758e62b99a2fac7aab2ee10b3bebe8168999f75e0edd1ff32e1829043ed35a",
+      "ranges": [
+        [
+          1,
+          328
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Synthetic isolated gate fixtures, pending/static distinction, coverage/integrity/upstream/chain failures; public phrase test misses B02 files; no cross-service test in baseline.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "tests/test_singlefile_restore.py",
+      "sha256": "de4a45985fe9c9dd287dee13018e4d633e4b88eb465606f708aeb0577aea6146",
+      "ranges": [
+        [
+          1,
+          210
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Seventeen inert transport tests, exact Unicode/CRLF, collision/path/digest/expansion controls; symlink skip explicit, no review or installation evidence.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "tools/README.md",
+      "sha256": "78390e39f435a3bca914a3e03021aad16907c533f25cc65da06f3d2a9be43378",
+      "ranges": [
+        [
+          1,
+          158
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Manifest and gate schema, identity/substitute boundary, immutable freeze, full core/external coverage, manual publication and native proof limits.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "tools/lucifer.py",
+      "sha256": "2de78cbf11fdf9ec0395fd3250404c4050d76bcbc687aad6409bf434a62c892b",
+      "ranges": [
+        [
+          1,
+          240
+        ],
+        [
+          241,
+          492
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Complete492line gate/build implementation read; B01 service restriction, model substitution, all core/upstream/evidence/disposition/chain checks; symlink-only guard caveat.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "tools/restore_singlefile.py",
+      "sha256": "59559dda5b820d184c354a6dd90a015c3689b59ce2c4d5dcfdf08ac32c48ab6e",
+      "ranges": [
+        [
+          1,
+          295
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Bounded standard-library inert decoder, exact hashes, new destination, reparse-aware restoration/readback; trusted directory concurrency limit explicit.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "workflow/00-access.md",
+      "sha256": "4d5762ab3bf5dc7ccb90a2a486b5f6841be55aa9b592ad35b767d393a356df68",
+      "ranges": [
+        [
+          1,
+          39
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Actual capabilities/runtime/writer distinct; explicit owner substitute allowed; current public corpus does not authorize additional disclosure.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "workflow/00-repository-creation.md",
+      "sha256": "afa2e9818169e44f60b04c3ac4f2d6689d8056ce0253807cd54ee40218d93944",
+      "ranges": [
+        [
+          1,
+          106
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. New destination restore and publication under actual scope, exact remote identity and byte readback; preserve frozen evidence and actual writer.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "workflow/01-read-and-audit.md",
+      "sha256": "42f4a867ab86d65d74c7e97467d657765e1e70352cd0d99e8bcfacebe2d66ac2",
+      "ranges": [
+        [
+          1,
+          38
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Full original line coverage, independent candidate then upstream pass, duplicate hash provenance, immutable inputs; search/summary not reading.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "workflow/02-gemini-review.md",
+      "sha256": "fe9660973277c12bf9dda0d0070f21a7c8eb3a96ac347d777afe9c1d4a346836",
+      "ranges": [
+        [
+          1,
+          28
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Substantive first pass, sources/modalities, supplemental complete ranges, examples/counterevidence and no actual-review fabrication.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "workflow/03-integrate-gemini.md",
+      "sha256": "2ba923718073ae7845d23b9bb5cfaa2a2595b5419edfcb18f8530e245a60c814",
+      "ranges": [
+        [
+          1,
+          31
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Preserve returned packet, disposition and integrate before secondfreeze; B02 stale private-main phrase at31.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "workflow/04-grok-review.md",
+      "sha256": "190eb8ede38ac10c9a083590cee2c11647b7faa7ef2394fd17ac9e791a3ed097",
+      "ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Independent candidate, genuine Gemini upstream complete reading, actual X/web source provenance, explicit comparison and limitation, no installation.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "workflow/05-final-integration.md",
+      "sha256": "909ac2a5d973423ea634eeb63d84ce7ca4074bda11e27cd1b648f7f5c53e96b0",
+      "ranges": [
+        [
+          1,
+          37
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Resolve all findings, preserve owner experience, exact output chain, no deferred blockers, local gate separate from remote release.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "workflow/06-install.md",
+      "sha256": "056ae788ba90f215620a4d1d05cc6973c27605b753e9ef652e377358ec472ce4",
+      "ranges": [
+        [
+          1,
+          29
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Actual task plus complete release, preserve existing environment, composed payload/readback/fresh tests; check actual supported tool not assumed UI bypass.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "workflow/07-verify.md",
+      "sha256": "77b8b6d9f4f71f05565503b677b18da15ede6f7155abdd486e83712132626ae1",
+      "ranges": [
+        [
+          1,
+          15
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Integrity/save/load/behavior/audio distinct, finite correction cycle, private detailed receipts and precise partial closure.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "workflow/08-git-review-history.md",
+      "sha256": "0c82d57bb4b5b441d2b5c0a5de8ce9c1e4d0e16c4061eca2eb0287f617fd758d",
+      "ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Real contribution, writer and reviewer distinct; current public remote ancestry and push/merge proof separate from local Python gate.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "workflow/09-surface-coverage.md",
+      "sha256": "e9bf2dfa8c8cd1b1169c3d2daace0f9973192ddbaee34ce7fca8d7ebd3ca0702",
+      "ranges": [
+        [
+          1,
+          70
+        ],
+        [
+          71,
+          111
+        ],
+        [
+          112,
+          132
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Per-control object/device inventories; scope-preserving merges, meaningful checks, no automatic service/privacy expansion or persona length inflation.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    },
+    {
+      "path": "workflow/review-files.json",
+      "sha256": "adc80d194047982e1e14db335731f54defbeec1031b955a94a90d72e3e5bfbd9",
+      "ranges": [
+        [
+          1,
+          78
+        ]
+      ],
+      "evidence": "Actual Codex team reading; exact reader/ranges/semantic notes and any shared-byte mapping in reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json. Explicit72file allowlist including tools/tests/historicalcorpus; excludes runtime/review/generated duplicates by design.",
+      "ledger_path": "reviews/02-grok/codex-completion-20261030/coverage-contracts-b.json",
+      "ledger_sha256": "4b4e124c83e2b5eaff21073ed0911dd2dffde3061fb6797c035efca3ba36eaf4"
+    }
+  ]
 }

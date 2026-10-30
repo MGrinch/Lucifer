@@ -1,0 +1,330 @@
+{
+  "schema": 1,
+  "findings": [
+    {
+      "id": "GROK-001",
+      "blocking": false,
+      "summary": "Long-context drift: specification distinguishes instruction from memory and does not claim perfect recall. No change required; empirical long-context behavior remains NOT_RUN.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83",
+        "WEB-01"
+      ],
+      "change_refs": [
+        "persona.md",
+        "reviews/02-grok/codex-completion-20261030/report.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "GROK-002",
+      "blocking": false,
+      "summary": "Host-dependent voice latency: acoustic parameters are separated from text punctuation. Latency and interruption remain host-dependent and unmeasured in this review.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "persona.md",
+        "reviews/02-grok/codex-completion-20261030/report.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "GROK-003",
+      "blocking": false,
+      "summary": "Russian feminine stability: persona.md line 47 requires natural feminine self-reference in Russian as a standing identity rule, independent of invitation to artistic or intimate mode. Address to Misha and explicitly selected scene modes are separate. Empirical long-session stability is NOT_RUN. No change required.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "persona.md",
+        "reviews/02-grok/codex-completion-20261030/report.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "GROK-004",
+      "blocking": false,
+      "summary": "Statistical assumptions: protocol uses cluster-level summaries, non-inferiority framing, and appropriate references. Thresholds remain unvalidated proposals.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83",
+        "DOC-ASA",
+        "DOC-NIST",
+        "DOC-SCIPY"
+      ],
+      "change_refs": [
+        "persona.md",
+        "reviews/02-grok/codex-completion-20261030/report.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CODEX-B01",
+      "blocking": true,
+      "summary": "Truthful cross-service second-review substitution needs explicit bound owner authority; existing model-only branch rejects observed Codex.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "tools/lucifer.py",
+        "tools/README.md",
+        "tests/test_repository.py",
+        "reviews/02-grok/codex-completion-20261030/provenance.json"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CODEX-B02",
+      "blocking": false,
+      "summary": "Active private-publication wording contradicts owner-selected public repository.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "context/requirements.json",
+        "workflow/03-integrate-gemini.md",
+        "design/repository-design.md",
+        "tests/test_repository.py"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CODEX-C01",
+      "blocking": true,
+      "summary": "Windows/Android-only installation map omits current Fedora preview and its material phone/native-computer-use limitations.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "OAI-LINUX-20261030",
+        "OAI-REMOTE-20261030",
+        "OAI-PERSONALIZE-20261030"
+      ],
+      "change_refs": [
+        "persona.md#10.3",
+        "install/control-catalog.json",
+        "workflow/09-surface-coverage.md",
+        "prompts/codex.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CODEX-C02",
+      "blocking": false,
+      "summary": "Separate voice/delegation tests do not themselves verify the complete spoken request→intended host→artifact→origin return→heard result chain.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "OAI-VOICE-20261030",
+        "OAI-REMOTE-20261030",
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "evals/voice-action-return.md",
+        "evals/README.md",
+        "persona.md#10.3",
+        "install/control-catalog.json"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CODEX-C03",
+      "blocking": false,
+      "summary": "Three active R1 installation/fixture labels are stale after reviewed revisions.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "persona.md",
+        "generated/"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CODEX-C04",
+      "blocking": false,
+      "summary": "Recovered X URLs were absent from reconciled source ledger; complete-looking old Grok ranges do not establish actual reading.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "X-01",
+        "X-02",
+        "X-03",
+        "WEB-01"
+      ],
+      "change_refs": [
+        "reviews/02-grok/codex-completion-20261030/original-grok/",
+        "reviews/02-grok/codex-completion-20261030/sources.json",
+        "reviews/02-grok/read-coverage.json",
+        "reviews/02-grok/upstream-coverage.json"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CODEX-C05",
+      "blocking": false,
+      "summary": "Original Gemini report contains overly broad implementation/statistical claims that must not be inherited as facts.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "DOC-ASA",
+        "DOC-NIST",
+        "DOC-SCIPY",
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "reviews/02-grok/codex-completion-20261030/report.md",
+        "evals/behavioral-delta-protocol.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CODEX-C06",
+      "blocking": false,
+      "summary": "Whole-character source review supports retaining current core and later corrections, not maximizing theatricality or restoring obsolete control mechanisms.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "persona.md",
+        "reviews/02-grok/codex-completion-20261030/report.md",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md",
+        "reviews/02-grok/codex-completion-20261030/review-contracts-b.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CODEX-C07",
+      "blocking": true,
+      "summary": "Current owner requires standing Lucifer acting and ASMR-informed delivery in future private answers, not optional decorative persona activation.",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83",
+        "OAI-PERSONALIZE-20261030",
+        "OAI-VOICE-20261030"
+      ],
+      "change_refs": [
+        "persona.md#5.1",
+        "persona.md#13",
+        "evals/asmr-acting-probe.md",
+        "evals/README.md",
+        "reviews/02-grok/codex-completion-20261030/asmr-acting-coverage.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CA-01",
+      "blocking": false,
+      "summary": "Preserve artistic motives, not obsolete hidden-control mechanisms",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "persona.md#5",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CA-02",
+      "blocking": false,
+      "summary": "Later directed stop forbids final intended acknowledgment",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "persona.md#3.4",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CA-03",
+      "blocking": false,
+      "summary": "Historical synthetic audit counts are not a live success rate",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "persona.md#21",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CA-04",
+      "blocking": false,
+      "summary": "Source acceptance differs from compiler draft wording",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "persona.md#8",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CA-05",
+      "blocking": false,
+      "summary": "Product identity, story roles and old voice settings remain distinct",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "persona.md#1",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CA-06",
+      "blocking": false,
+      "summary": "V5 wrappers are distinct deliveries of one common body",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "sources/manifest.json",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CA-07",
+      "blocking": false,
+      "summary": "Creative-source metadata is not independently heard video evidence",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "persona.md#21",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    },
+    {
+      "id": "CA-08",
+      "blocking": false,
+      "summary": "Character is neither a checklist nor constant theatre",
+      "actual_assessor": "Codex completion (original Grok IDs retain historical provenance)",
+      "source_ids": [
+        "INPUT-83"
+      ],
+      "change_refs": [
+        "persona.md#2",
+        "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+      ],
+      "native_behavior": "NOT_RUN"
+    }
+  ]
+}

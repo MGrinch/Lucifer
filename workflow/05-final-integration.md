@@ -35,3 +35,7 @@ No settings are applied by the review stage itself. Continue to [stage 06](06-in
 ## Required remote release proof
 
 Follow `08-git-review-history.md` stages B–C. Complete `reviews/02-grok/publication.json` from the actual contribution, push and merge; verify both review contributions and accepted bytes on public `main` while preserving repository visibility. The current content gate is necessary but does not verify GitHub history. Hand the final installer the observed main commit and current fingerprint.
+
+## Current authorized completion reviewer — 30 October 2026
+
+For this release, the owner explicitly authorized the disclosed Codex completion in `reviews/02-grok/codex-completion-20261030/provenance.json`. References above to the second/Grok stage identify the historical requested stage, not a license to counterfeit Grok authorship. Integrate the actual Codex report and preserved partial Grok findings, enforce full72+11 coverage and all unchanged evidence/disposition/chain requirements, and record the real reviewer/writer in publication receipts. Content readiness remains separate from verified public-main release and actual installation/audio.

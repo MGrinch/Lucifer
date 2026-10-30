@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "kind": "owner_authorized_review_substitution",
+  "round": "02-grok",
+  "date": "2026-10-30",
+  "requested_service": "Grok",
+  "requested_model": "Grok 4.7",
+  "actual_service": "Codex",
+  "actual_model": "gpt-6-astra",
+  "scope": "complete_unfinished_second_review",
+  "owner_authorization_quote": "complete Grok reviews for him ... using Grok sources",
+  "recorded_by": "Codex coordinator, from the current owner-directed task and its orchestration metadata",
+  "original_grok_completion_attested": false,
+  "interpretation": "The owner authorized Codex to finish the outstanding substantive second review using preserved Grok sources. This changes the current completion reviewer, not the historical authorship or completion of Grok's own work.",
+  "runtime_evidence_limit": "gpt-6-astra is exposed by the current Codex orchestration runtime and confirmed by the parent coordinator. This record is not independent provider authentication, an observed Grok selector, or evidence of a new Grok/API model call. Delegates record actual Codex roles and do not invent separate model/effort attestations.",
+  "publication_scope": "Only the already-public intended persona review corpus, its scoped original review packet, current technical findings and this minimal authority excerpt. No emails, account exports, private logs, credentials or native configuration backups.",
+  "installation_authorized_by_this_file": false,
+  "source_commit": "0754096d3f816a45d7f48fe882e1ac7eda88bceb"
+}

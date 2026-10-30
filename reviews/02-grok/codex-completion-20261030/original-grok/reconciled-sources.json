@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "id": "X-01",
+      "status": "unverified",
+      "note": "Historical ID from prior FINAL package. Original URL/author/date not recoverable in this workspace (FINAL.zip absent). No categorical claims rest on it."
+    },
+    {
+      "id": "X-02",
+      "status": "unverified",
+      "note": "Historical ID from prior FINAL package. Original URL/author/date not recoverable in this workspace. No categorical claims rest on it."
+    },
+    {
+      "id": "X-03",
+      "status": "unverified",
+      "note": "Historical ID from prior FINAL package. Original URL/author/date not recoverable in this workspace. No categorical claims rest on it."
+    },
+    {
+      "id": "DOC-ASA",
+      "url": "https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf",
+      "note": "Referenced for p-value interpretation in the statistical protocol."
+    },
+    {
+      "id": "DOC-NIST",
+      "url": "https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2106.pdf",
+      "note": "Referenced for equivalence versus difference testing."
+    }
+  ]
+}

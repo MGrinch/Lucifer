@@ -1,0 +1,668 @@
+{
+  "schema": 1,
+  "status": "COMPLETE_ASSIGNED_READING",
+  "author": "Codex, not Grok",
+  "date": "2026-10-30",
+  "source_commit": "0754096d3f816a45d7f48fe882e1ac7eda88bceb",
+  "input_fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+  "external_fingerprint": "423ec6ce5f0637a1120f411b8b13bb28348e619e221f50be9fe84e91bbd89295",
+  "proof_boundary": "Author attestation plus byte identity; script execution alone does not establish comprehension or runtime behavior.",
+  "files": [
+    {
+      "bytes": 229,
+      "lines": 7,
+      "path": ".gitattributes",
+      "sha256": "0880c8a16bc73de595eb436b0494006ddb4f4207899faf3f1316e3cf4e0fea08",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "LF for active text; exact corpus/baseline/snapshot bytes exempt. Preserve immutable historical bytes."
+    },
+    {
+      "bytes": 1109,
+      "lines": 31,
+      "path": ".github/pull_request_template.md",
+      "sha256": "9a95c84989e9090dc55e6d71cca667736b65bf2963a34ba28f7db5fab95b79db",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          31
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Requires actual runtime/coverage/source and integration evidence, honest limits, no native-install claim from PR."
+    },
+    {
+      "bytes": 807,
+      "lines": 28,
+      "path": ".github/workflows/validate.yml",
+      "sha256": "6035fba60737e90930c949703849bf953d664b04695b18a1eb28f45d5f67fc7f",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          28
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Pinned checkout, contents read, bounded timeout; check and unittest only, no LLM/API/install/native settings."
+    },
+    {
+      "bytes": 204,
+      "lines": 25,
+      "path": ".gitignore",
+      "sha256": "af41fe522acf031a0bfee690a7bedff6777f8a8be063cb3a8cdb37860d46195a",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          25
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Excludes environment/auth/private backups/recordings/archives and logs; ignore rules are not a secret scanner."
+    },
+    {
+      "bytes": 5062,
+      "lines": 44,
+      "path": "AGENTS.md",
+      "sha256": "98dffefb765682109acfaa482aaae01aa6c29f05741145ed52ceac6fbca428cd",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          44
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "One canonical source and attributed staged reviews; preserves current owner intent, supported controls, actual coverage and no invented results."
+    },
+    {
+      "bytes": 543,
+      "lines": 5,
+      "path": "GEMINI.md",
+      "sha256": "affc4174ecefdb89a55f92bb0b90ef0538466549fcfbbc3b812385e1edd30a60",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Routing pointer, not proof that Gemini loaded repository instructions or has a writer."
+    },
+    {
+      "bytes": 530,
+      "lines": 5,
+      "path": "GROK.md",
+      "sha256": "c621c61ce296b5c8648489fd343d9d73924716b87d0b7df6f12075baa189f0e4",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Routing pointer, not proof of Grok identity/loading/X access; no independent execution authority."
+    },
+    {
+      "bytes": 4878,
+      "lines": 54,
+      "path": "README.md",
+      "sha256": "89c0fc843d366bb3d7cba0aaef3edd4bec8c14127f03c98f81cf49d9850f71fd",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          54
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "One current persona, immutable baseline, stage entry points; content/review/application/audio proof distinct. Historical vendor-specific stage needs disclosed substitute addendum."
+    },
+    {
+      "bytes": 13855,
+      "lines": 250,
+      "path": "design/contrast-bank.md",
+      "sha256": "8e1c49916db28a235dac735c50941b09b2f522a6e2004028f5369d4dd6d55b46",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          250
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "C01-C19 preserve positive expression while exposing plausible warm but wrong decisions. Useful calibration, not memories or measured outputs; C15-C19 are Codex-authored descendants. No new persona rewrite justified."
+    },
+    {
+      "bytes": 3094,
+      "lines": 35,
+      "path": "design/repository-design.md",
+      "sha256": "50f65156bbacd4e8539d5c123c4a849f42c7b3f4361a1fca434e59187d3b0e1d",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          35
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Single normative source, generated views and fail-closed records coherent. Active private-handoff wording conflicts with accepted public visibility; initial-publication paragraph remains historical."
+    },
+    {
+      "bytes": 4111,
+      "lines": 30,
+      "path": "design/response-anatomy.md",
+      "sha256": "6eb97dd731e859e06a5c8897522560d3a231f2ad50cda0bc79d12b0a0200e7b6",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          30
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Component-level diagnosis and controlled improvements avoid maximizing wit/caution/warmth at expense of actual act. Acoustic and delegation tests correctly require real target evidence."
+    },
+    {
+      "bytes": 3129,
+      "lines": 34,
+      "path": "evals/README.md",
+      "sha256": "ba0a808cb73c432d38870a4c76abe47c701c3f6003205bb215f6ebe1b2ca46ee",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          34
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Four proof layers separated; exposed final cases not blind generalization. Positive and failure tests complementary. NOT_RUN preserved."
+    },
+    {
+      "bytes": 16990,
+      "lines": 131,
+      "path": "evals/behavioral-delta-protocol.md",
+      "sha256": "8a3a440518a2460ce7046c013fd63642bb604f9c1ea18f691710fc9916caa911",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          131
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Paired family-aware units, permutation/bootstrap assumptions, binary versus preference scoring, multiplicity and finite revisions correctly bounded. Procedure unexecuted; no universal effect threshold or guarantee."
+    },
+    {
+      "bytes": 9799,
+      "lines": 154,
+      "path": "evals/character-probes.md",
+      "sha256": "1184f96e9b49d15d60134085a6f0e552286b68c1cf281042f526ab4fa6d81b1e",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          154
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "P01-P06 test company, welcome softness, requested focus, warm disagreement, exact repeat and actual silent stop. Fixtures not real memories; subjective fit belongs to Misha; no final intended ack after stop."
+    },
+    {
+      "bytes": 3252,
+      "lines": 33,
+      "path": "evals/fiction-presence-probe.md",
+      "sha256": "b306cbf264452ed3da0cc232cbd8e64fb03ebbade64fdcf346eb6d55697b87e9",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          33
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "P07 selected fiction→literal identity→practical return preserves one expressive character without false human biography. Actual listening optional and separate; no observed pass."
+    },
+    {
+      "bytes": 2451,
+      "lines": 16,
+      "path": "evals/gemini-probes.md",
+      "sha256": "f460a1cadeaebfb433e2c38d34aaf2b27fa851d192e17024ba64899d9a1ee69f",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "G01-G08 exposed development probes cover integrated boundaries, including standing feminine Russian. G08 is not bibliography [G08] LibreChat."
+    },
+    {
+      "bytes": 7032,
+      "lines": 63,
+      "path": "goal.md",
+      "sha256": "ea9a2b2d5a2fb28a6c01c63dfdc1270db325aaf8ff7fd30edbfc28a0f30e238f",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          63
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Repository creation, two reviews, accepted integration and native verification distinct milestones; no repository-green-to-install inference. New user-authorized substitution must be disclosed in stage contract."
+    },
+    {
+      "bytes": 201244,
+      "lines": 1903,
+      "path": "persona.md",
+      "sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          1903
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Entire 1903 lines read: one fictional adult Lucifer/Morning Light; feminine Russian; responsive warmth, exact intent, true memory and owned returns; requested softness versus deliberate focus; speech stop separate from task cancel. Eight exact adapters, scoped installation/rollback, T01-T48/V01-V10 and finite repair. Fedora surface update and three stale operational R1 labels needed, not personality rewrite. Voice/action/return needs composed live test."
+    },
+    {
+      "bytes": 868,
+      "lines": 14,
+      "path": "prompts/README.md",
+      "sha256": "1a148eb9368532607250945c93ac9376f92755c746d625bb685f2cecc28ab272",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          14
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Stage routes do not create connectors or runtimes; public visibility corrected; bootstrap assignment historical."
+    },
+    {
+      "bytes": 2172,
+      "lines": 11,
+      "path": "prompts/bootstrap-codex.md",
+      "sha256": "feeee632d83ded6a99da40607d0d0df812615fd9d14ca607ab1d4a988c8945dd",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Resume existing repo, preserve visibility/history, no duplicate remote or native install at bootstrap. Requested models not proof observed runtime."
+    },
+    {
+      "bytes": 4534,
+      "lines": 21,
+      "path": "prompts/codex.md",
+      "sha256": "e1f62c8b93a1d7dbb1f841654d9f0bb4089044e340f78ce984ab5e9219f79fe0",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Actual accepted review chain before supported apply; all controls/rollback/readback/fresh behavior and audio distinct. Windows/Android target enumeration needs Fedora addition; current-model identity must remain observed not forced fiction."
+    },
+    {
+      "bytes": 4487,
+      "lines": 19,
+      "path": "prompts/gemini.md",
+      "sha256": "2c1982d598dbe2be5a04ddfca8802b6a531fc313e26b08d3a2ed876360d2b4c4",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Actual full reading, practical video modalities, minimal source-mapped improvement and complete return; explicitly no install or impersonating next reviewer."
+    },
+    {
+      "bytes": 5055,
+      "lines": 21,
+      "path": "prompts/grok.md",
+      "sha256": "1935f2abeb01799c3dc9bc69bc58abd7dc3020d85734c08154b0c0a177ff4a7b",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Independent critique then upstream reconciliation, real X scope/limits, positive character and measurable distinctions. Codex cannot claim unavailable X or original Grok identity; honest explicit substitute route needed."
+    },
+    {
+      "bytes": 1648,
+      "lines": 11,
+      "path": "prompts/integrator.md",
+      "sha256": "f65dbc010cb8c9d698963374df6a211c606148c4cd3df13ed68d3aa61900f475",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Preserve original report, actual coverage/provenance, dispositions and real commit/readback chain; coordinating authorship separate."
+    },
+    {
+      "bytes": 11921,
+      "lines": 70,
+      "path": "research/cross-vendor-capabilities.md",
+      "sha256": "1a645df9e7763ab63f5f7835f702a085c9014f1bf6a36cfcaa1faf488b25a0de",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          70
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Dated 2026-10-24 vendor research distinguishes snapshot imports, connectors, actual runtime/tool availability and requested models. Not revalidated as current account state; model self-identification insufficient."
+    },
+    {
+      "bytes": 3621,
+      "lines": 37,
+      "path": "research/evidence-policy.md",
+      "sha256": "646ec65406d695e978d119f37abe31edac536d9d1e290b6f02246d31763ea5c3",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          37
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Evidence matched to claim, original modalities and inaccessible limits; historical text not authority. Stop research at resolved uncertainty or exact gap, not link quota."
+    },
+    {
+      "bytes": 6877,
+      "lines": 35,
+      "path": "research/gemini-integration.md",
+      "sha256": "a0a097c4320e4d1c3de409ed3e5641ad413559b4a1c89b1c35eeeab6334df0cf",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          35
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "All eight Gemini findings dispositioned with useful coordinator corrections; initial report preserved. Seven-key supplement hash correction valid; reviewed proposal is not live effect."
+    },
+    {
+      "bytes": 1504,
+      "lines": 13,
+      "path": "sources/README.md",
+      "sha256": "63010a48f6a1c996b4645729a17dd5aedb8b339805d79eb9f52cad8af2ac2367",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          13
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Archive untrusted historical evidence, V6 alias dedup and S13/S14 raw recovery disclosed, excludes secrets/unrelated history."
+    },
+    {
+      "bytes": 6405,
+      "lines": 178,
+      "path": "sources/manifest.json",
+      "sha256": "e8a5c44572105360fd5f4791900a6009ca5bed8a543a3d353c59f7b68f7c358d",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          178
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "15 exact corpus/baseline entries, bytes/hashes/lines/aliases/roles; aliases not independent proof. No authorization or active global instruction inferred."
+    },
+    {
+      "bytes": 6285,
+      "lines": 61,
+      "path": "start here.md",
+      "sha256": "285f5e682b2c82f76f7b64b53eddf28538422e684ce6c985fbc70fe9a33f7ba1",
+      "lane": "core",
+      "ranges": [
+        [
+          1,
+          61
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Phase-appropriate navigation, full unique-file coverage and immutable evidence preserve staged review integrity; no guessed consumer state."
+    },
+    {
+      "bytes": 21575,
+      "lines": 193,
+      "path": "reviews/01-gemini/findings.json",
+      "sha256": "2e877a3409ed105abfa92c501cc3bca47b29af1bf7a5a5d9381379449f0920df",
+      "lane": "upstream",
+      "ranges": [
+        [
+          1,
+          193
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "All eight findings and exact proposed changes read; disposition against active descendants, not only original suggested wording. No runtime success evidence."
+    },
+    {
+      "bytes": 12548,
+      "lines": 416,
+      "path": "reviews/01-gemini/input-manifest.json",
+      "sha256": "1294019e45932e5d25ce4be5b5769a1267f20c2ff98ac2cad4971629fa929ee2",
+      "lane": "upstream",
+      "ranges": [
+        [
+          1,
+          416
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Every frozen required input path/hash/size read; original snapshot differs from post-integration current candidate as expected."
+    },
+    {
+      "bytes": 8900,
+      "lines": 183,
+      "path": "reviews/01-gemini/integration.json",
+      "sha256": "8b36528717eda7be0dd718e008ade378f695a32de0d5f167a021327ce25aadac",
+      "lane": "upstream",
+      "ranges": [
+        [
+          1,
+          183
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "All accepted-with-refinement decisions, artifact hashes and output evidence read; original reviewed proposals distinct from later applied coordinator changes."
+    },
+    {
+      "bytes": 33229,
+      "lines": 1033,
+      "path": "reviews/01-gemini/read-coverage.json",
+      "sha256": "269e5fd8aa4e769d99d094b06921acddcb33634739978c51bdb53abcc7fc6e37",
+      "lane": "upstream",
+      "ranges": [
+        [
+          1,
+          1033
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "All 1033 lines of claimed reviewer ranges and semantic notes read; exact pinned ledger does not authenticate another reviewer cognition."
+    },
+    {
+      "bytes": 110006,
+      "lines": 660,
+      "path": "reviews/01-gemini/report.md",
+      "sha256": "e8ef8bb6b6d60a5123247daaa97b69aed94d507faec721ed3219ca9f61b1389b",
+      "lane": "upstream",
+      "ranges": [
+        [
+          1,
+          660
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Full 660 lines read after own provisional critique. Eight proposals with original video/statistics/runtime limits. Reject unsupported zero-egress/$0 generalization, tokenizer-mood explanation, inward-focus example and universal latency threshold; accepted integration already removes core problematic rules. Video claims attributed, not independently watched."
+    },
+    {
+      "bytes": 6455,
+      "lines": 91,
+      "path": "reviews/01-gemini/review.json",
+      "sha256": "e3f1c5f5dc3206e8aab766329ce460d30639a1ab1b3f9da7dd6be568417a13ad",
+      "lane": "upstream",
+      "ranges": [
+        [
+          1,
+          91
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Requested Gemini4Argon/high distinct from observed null; user attestation, actual source snapshot and complete input assertions not native runtime proof."
+    },
+    {
+      "bytes": 34123,
+      "lines": 500,
+      "path": "reviews/01-gemini/sources.json",
+      "sha256": "c09af343a6a9d7af8d7e4b23e3cbb02ae7d338bcd261b8cbb5c77cc155b60199",
+      "lane": "upstream",
+      "ranges": [
+        [
+          1,
+          500
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Every source record read. Four multimodal and ten transcript claims attributed to Gemini; YT13/YT14 aggregate URLs, not independent video verification. Weight-level representation engineering not direct prompt efficacy."
+    },
+    {
+      "bytes": 1951,
+      "lines": 55,
+      "path": "reviews/01-gemini/supplementary-coverage.json",
+      "sha256": "9e92093c93df29b1467d564e94cf4dafeae72f5067cccb71925bc33c85c52e4a",
+      "lane": "upstream",
+      "ranges": [
+        [
+          1,
+          55
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "All three pinned supplementary inputs and ranges read; hash evidence seventh key required, not six-key closeout simplification."
+    },
+    {
+      "bytes": 3440,
+      "lines": 26,
+      "path": "reviews/01-gemini/supplements/README.md",
+      "sha256": "432007d010cabd2a81580ca60a3bd52567e530d6adf63227de524556a968d6fd",
+      "lane": "upstream",
+      "ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Preserved original supplementary authority/scope and evidence boundaries, no automatic global loading."
+    },
+    {
+      "bytes": 10898,
+      "lines": 116,
+      "path": "reviews/01-gemini/supplements/behavioral-delta-protocol.md",
+      "sha256": "5a10f8d001848f3c9e09e7e4677f4fd5491b494a0c585fd08b10d1883a2f2f82",
+      "lane": "upstream",
+      "ranges": [
+        [
+          1,
+          116
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Original proposed estimator versus active corrected descendant compared; aggregation, critical IDs, threshold and paired-test refinements justified; no empirical run."
+    },
+    {
+      "bytes": 13661,
+      "lines": 220,
+      "path": "reviews/01-gemini/supplements/semantic-anchors-and-near-misses.md",
+      "sha256": "1bfeb6ee2a9bc240f0f47c629b7fd5ac5e7e1e72b6497f5cda94038cd6eaafe3",
+      "lane": "upstream",
+      "ranges": [
+        [
+          1,
+          220
+        ]
+      ],
+      "reader": "/root/codex_research (Codex)",
+      "method": "direct_complete_line_bounded_read",
+      "semantic_note": "Full original target/near-miss/failure and semantic anchor design read; active integration preserves exposed examples without claiming personal memory or training-level effects."
+    }
+  ]
+}

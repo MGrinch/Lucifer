@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "id": "X-01",
+      "url": "https://x.com/CryonixCrypto/status/2114799175137124533",
+      "author": "Cryonix",
+      "date": "2026-10-26",
+      "inspected": "full post",
+      "observation": "Context fills before user input; long sessions lose the plot; subagents + compact help.",
+      "limitation": "Anecdotal, Claude-focused.",
+      "implication": "Supports compact adapters and on-demand bank."
+    },
+    {
+      "id": "X-02",
+      "url": "https://x.com/jamesj_cottrell/status/2113221066113863919",
+      "author": "James Cottrell",
+      "date": "2026-10-22",
+      "inspected": "full post",
+      "observation": "Persistent memory RULES can override current correction.",
+      "limitation": "Single report.",
+      "implication": "Store-3 exclusion and hierarchy help."
+    },
+    {
+      "id": "X-03",
+      "url": "https://x.com/LithiumFlower22/status/2113837503576711303",
+      "author": "Grace Amid Chaos",
+      "date": "2026-10-24",
+      "inspected": "full post",
+      "observation": "Personality reverts under emotional content.",
+      "limitation": "Anecdotal.",
+      "implication": "Test stability under correction/vulnerability."
+    },
+    {
+      "id": "WEB-01",
+      "url": "https://community.openai.com/t/custom-instructions-and-memory-preferences-repeatedly-drift-in-long-chatgpt-conversations/1406547",
+      "author": "OpenAI Community",
+      "date": "2026-10-15",
+      "inspected": "thread content",
+      "observation": "User-reported drift after dozens of turns.",
+      "limitation": "Complaint, not measured rate.",
+      "implication": "Long-session probes useful."
+    }
+  ]
+}

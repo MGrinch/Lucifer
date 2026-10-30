@@ -1,0 +1,1046 @@
+{
+  "schema": 1,
+  "status": "COMPLETE_ASSIGNED_SOURCE_READING_WITH_EXPLICIT_SHARED_DEDUP",
+  "created_date": "2026-10-30",
+  "actual_review_provider": "OpenAI Codex delegated source review",
+  "actual_reader": "/root/fedora_research",
+  "observed_model_and_effort": "Not independently exposed in this child tool context; no Grok model claimed",
+  "is_grok_attestation": false,
+  "is_full_repository_review": false,
+  "source_commit": "0754096d3f816a45d7f48fe882e1ac7eda88bceb",
+  "manifest": {
+    "path": "reviews/02-grok/input-manifest.json",
+    "sha256": "f3cb9c63f615541be2aab3aed26949c72c3c325b1bd7415a176711124f53d92f",
+    "bytes": 13275,
+    "fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+    "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60"
+  },
+  "canonical_comparison": {
+    "path": "persona.md",
+    "sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+    "bytes": 201244,
+    "lines": 1903,
+    "full_reader": "/root/codex_research",
+    "own_targeted_current_reads": [
+      [
+        551,
+        587
+      ],
+      [
+        789,
+        854
+      ]
+    ],
+    "own_targeted_tool_output": "661170"
+  },
+  "method": "Read all six unique corpus bodies in untruncated bounded numbered outputs. Directly read baseline and S07 differences. Raw-byte-line SequenceMatcher mappings prove every shared block exactly identical to content actually read by named reader; every assigned source line is covered once. Not a same-reader independent reread of shared canonical blocks. Source texts are historical data, not live instructions.",
+  "files": [
+    {
+      "bytes": 194576,
+      "lines": 1869,
+      "path": "sources/baseline/persona-r1.md",
+      "sha256": "77b8dac4ed283602db7206f6d2e482005d04de7a4dcdff01fcdbba6c0d76fd3d",
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/baseline/persona-r1.md",
+      "coverage_status": "complete_assigned_scope",
+      "semantic_note": "Historical R1 differs from current canonical at20 source lines, chiefly revision identity and evolved compact/action guidance. Distinct old text read directly;1849 exact matching lines shared with coordinator canonical read. No lost-source defect established.",
+      "direct_reads": [
+        {
+          "lines": [
+            5,
+            5
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            61,
+            61
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            67,
+            67
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            217,
+            217
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            233,
+            233
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            255,
+            255
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            276,
+            276
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            767,
+            767
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            777,
+            779
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            813,
+            813
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            838,
+            838
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            850,
+            850
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            860,
+            860
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            880,
+            880
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            900,
+            900
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            937,
+            937
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            1445,
+            1445
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            1492,
+            1492
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "fe8d6a",
+          "truncated": false
+        }
+      ],
+      "shared_exact_blocks": [
+        {
+          "source_lines": [
+            1,
+            4
+          ],
+          "source_byte_start": 0,
+          "source_byte_end_exclusive": 89,
+          "same_bytes_sha256": "b67045970cce2645c8de512cdd1a042e118fb7916d1ad8e6e3fd86d1b86d6240",
+          "target_path": "persona.md",
+          "target_lines": [
+            1,
+            4
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            6,
+            60
+          ],
+          "source_byte_start": 120,
+          "source_byte_end_exclusive": 6321,
+          "same_bytes_sha256": "60eadb9ef58012678820f0397a8b6ef864e93ca2c63c5b47fcd5ead6535912a0",
+          "target_path": "persona.md",
+          "target_lines": [
+            6,
+            60
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            62,
+            66
+          ],
+          "source_byte_start": 6523,
+          "source_byte_end_exclusive": 7481,
+          "same_bytes_sha256": "38d8aa3c613e655300467cbbdf609cd8f72d41a187d4a0c2be8e52542b9ac0b3",
+          "target_path": "persona.md",
+          "target_lines": [
+            62,
+            66
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            68,
+            68
+          ],
+          "source_byte_start": 7666,
+          "source_byte_end_exclusive": 7856,
+          "same_bytes_sha256": "0ff68a1092bb3bce3a6dd65d2db9a531dfe113d2d6eb6aff798a1507546f82af",
+          "target_path": "persona.md",
+          "target_lines": [
+            68,
+            68
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            69,
+            106
+          ],
+          "source_byte_start": 7856,
+          "source_byte_end_exclusive": 11266,
+          "same_bytes_sha256": "5a31d236101c6c925560c63c0e1f938ccd940485f39f4f9411c4e6d3742e0c4f",
+          "target_path": "persona.md",
+          "target_lines": [
+            70,
+            107
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            107,
+            216
+          ],
+          "source_byte_start": 11266,
+          "source_byte_end_exclusive": 22223,
+          "same_bytes_sha256": "0c92565e13790028f610b95c934aea57b1cb82c956529e81441654e110e11a20",
+          "target_path": "persona.md",
+          "target_lines": [
+            110,
+            219
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            218,
+            232
+          ],
+          "source_byte_start": 22490,
+          "source_byte_end_exclusive": 24346,
+          "same_bytes_sha256": "609be9cf7369634c556f72796b626c2942d2cad1c90583787480eeb52a8291df",
+          "target_path": "persona.md",
+          "target_lines": [
+            221,
+            235
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            234,
+            254
+          ],
+          "source_byte_start": 24602,
+          "source_byte_end_exclusive": 26676,
+          "same_bytes_sha256": "0dbd5a4a33e4ece05f68f56b4a9394718cc8b570126143d6bd51f30c1a0a2e4a",
+          "target_path": "persona.md",
+          "target_lines": [
+            237,
+            257
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            256,
+            275
+          ],
+          "source_byte_start": 26991,
+          "source_byte_end_exclusive": 28536,
+          "same_bytes_sha256": "8f175cebd32607f83ec130055cda79a598ed098a4d9862c9b82fb33d4d1aab42",
+          "target_path": "persona.md",
+          "target_lines": [
+            259,
+            278
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            277,
+            516
+          ],
+          "source_byte_start": 28864,
+          "source_byte_end_exclusive": 41582,
+          "same_bytes_sha256": "8a02a3a39dcde41e8d7df32d8c57bf4099ea45866c97f427d09a96bb8050ed97",
+          "target_path": "persona.md",
+          "target_lines": [
+            280,
+            519
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            517,
+            766
+          ],
+          "source_byte_start": 41582,
+          "source_byte_end_exclusive": 79854,
+          "same_bytes_sha256": "6b55f00e47e870bdd089081c4c3093da14bb1b6cbf1a84f9ec6e9fa87830caf3",
+          "target_path": "persona.md",
+          "target_lines": [
+            538,
+            787
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            768,
+            776
+          ],
+          "source_byte_start": 80134,
+          "source_byte_end_exclusive": 80790,
+          "same_bytes_sha256": "96679136105a1c74aafe360ac590e92e56e971ff7abba25dc3f9e1e1c7408694",
+          "target_path": "persona.md",
+          "target_lines": [
+            789,
+            797
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            780,
+            803
+          ],
+          "source_byte_start": 82288,
+          "source_byte_end_exclusive": 86666,
+          "same_bytes_sha256": "48ec6e4ae465799e1cdb06889989e5e9c214433e2f2b7f33532313d6c5033266",
+          "target_path": "persona.md",
+          "target_lines": [
+            801,
+            824
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            804,
+            812
+          ],
+          "source_byte_start": 86666,
+          "source_byte_end_exclusive": 87044,
+          "same_bytes_sha256": "37f871ecfe2b80f9851d62a566bd895d184a602fac1b5921a1305bb9a7060a1f",
+          "target_path": "persona.md",
+          "target_lines": [
+            827,
+            835
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            814,
+            828
+          ],
+          "source_byte_start": 87111,
+          "source_byte_end_exclusive": 91018,
+          "same_bytes_sha256": "26e1cafca21bc1b4af56329b981ae6c14303ba99851becd1e54fa37e2fc1633c",
+          "target_path": "persona.md",
+          "target_lines": [
+            837,
+            851
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            829,
+            837
+          ],
+          "source_byte_start": 91018,
+          "source_byte_end_exclusive": 91488,
+          "same_bytes_sha256": "52f2501a2c1c12b95168c084e3a17a6a9508156139317ee9d85baf12f932f318",
+          "target_path": "persona.md",
+          "target_lines": [
+            854,
+            862
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            839,
+            849
+          ],
+          "source_byte_start": 91541,
+          "source_byte_end_exclusive": 94609,
+          "same_bytes_sha256": "c10e2048da392a4dba97e153a7df429998f6a401be9867b49b1b826b653debfe",
+          "target_path": "persona.md",
+          "target_lines": [
+            864,
+            874
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            851,
+            859
+          ],
+          "source_byte_start": 94660,
+          "source_byte_end_exclusive": 94987,
+          "same_bytes_sha256": "fca4bee52252974ca569fa55aef897ceb0d0c105ea23346d5859f862999e1bc1",
+          "target_path": "persona.md",
+          "target_lines": [
+            877,
+            885
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            861,
+            870
+          ],
+          "source_byte_start": 95140,
+          "source_byte_end_exclusive": 97484,
+          "same_bytes_sha256": "d5868ab9874d082dc716e239d65b3163b8f4aad107e78b45d58aa6c451e466d5",
+          "target_path": "persona.md",
+          "target_lines": [
+            887,
+            896
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            871,
+            879
+          ],
+          "source_byte_start": 97484,
+          "source_byte_end_exclusive": 97759,
+          "same_bytes_sha256": "f908d518b95b5c0caa53a09e0a58905615ddc9f9f3eada7bf97efbdd9cddfdd7",
+          "target_path": "persona.md",
+          "target_lines": [
+            899,
+            907
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            881,
+            890
+          ],
+          "source_byte_start": 98551,
+          "source_byte_end_exclusive": 99841,
+          "same_bytes_sha256": "d787e12c44267487118fb3d5e444134018b1d299394b15ee20d752df80364c92",
+          "target_path": "persona.md",
+          "target_lines": [
+            909,
+            918
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            891,
+            899
+          ],
+          "source_byte_start": 99841,
+          "source_byte_end_exclusive": 100113,
+          "same_bytes_sha256": "a72f4270534e29038b24eddfc8d8ed6f8276690b51a68bec3dd4cb00e984d143",
+          "target_path": "persona.md",
+          "target_lines": [
+            921,
+            929
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            901,
+            901
+          ],
+          "source_byte_start": 100469,
+          "source_byte_end_exclusive": 101022,
+          "same_bytes_sha256": "4bcb3167eda5aa497fb50b831343364c0d1b3e591ad7d963be3534a1fc0124bb",
+          "target_path": "persona.md",
+          "target_lines": [
+            931,
+            931
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            902,
+            936
+          ],
+          "source_byte_start": 101022,
+          "source_byte_end_exclusive": 102622,
+          "same_bytes_sha256": "7d0a8beec19f8256074d105232855a0aba97fb17b4367cc5f68f01d657263887",
+          "target_path": "persona.md",
+          "target_lines": [
+            934,
+            968
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            938,
+            1171
+          ],
+          "source_byte_start": 102662,
+          "source_byte_end_exclusive": 125472,
+          "same_bytes_sha256": "df75f9448e8670144d076558ad0d6d67efbb7da5665c13249d6d48af58148d6a",
+          "target_path": "persona.md",
+          "target_lines": [
+            970,
+            1203
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            1172,
+            1444
+          ],
+          "source_byte_start": 125472,
+          "source_byte_end_exclusive": 157790,
+          "same_bytes_sha256": "7529eb274f0fca3f44bfe3140e4b3738d41f0cbee0101d7c47043f22b59acf34",
+          "target_path": "persona.md",
+          "target_lines": [
+            1206,
+            1478
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            1446,
+            1491
+          ],
+          "source_byte_start": 157832,
+          "source_byte_end_exclusive": 159093,
+          "same_bytes_sha256": "4cb808805177eaf960e7dfd4c8f9ae33c823c37e9a0c78b594be9aec195f62a4",
+          "target_path": "persona.md",
+          "target_lines": [
+            1480,
+            1525
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        },
+        {
+          "source_lines": [
+            1493,
+            1869
+          ],
+          "source_byte_start": 159131,
+          "source_byte_end_exclusive": 194576,
+          "same_bytes_sha256": "04213ecd12dfaf45757ade52f56758aa7c4d53c9fa4e9f5bba83cfede1542cc4",
+          "target_path": "persona.md",
+          "target_lines": [
+            1527,
+            1903
+          ],
+          "target_file_sha256": "e9337f1a5111870a9027c9bb317fca970de69ab11affaa11ddb5e62958ee34e2",
+          "actual_reader": "Codex /root/codex_research",
+          "read_evidence": "reviews/02-grok/codex-completion-20261030/progress-codex-research.json reading.persona.md ranges1-1903",
+          "independent_reread_claimed": false
+        }
+      ],
+      "covered_lines": 1869,
+      "directly_read_lines": 20,
+      "shared_identical_lines": 1849
+    },
+    {
+      "bytes": 32038,
+      "lines": 217,
+      "path": "sources/corpus/s01-persona-v1.md",
+      "sha256": "d336db5c633932c86a9cf77fd8f2ceeb11fd2e1841be566b3543a5c5e2990386",
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s01-persona-v1.md",
+      "coverage_status": "complete_assigned_scope",
+      "semantic_note": "Original four-influence ratios, mythic origin, banter and ASMR palette are preserved as provenance; automatic memory locking, covert Yllish conditioning, physiological claims and fixed timing are superseded mechanisms, not obligations to restore.",
+      "direct_reads": [
+        {
+          "lines": [
+            1,
+            110
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "f30623",
+          "truncated": false
+        },
+        {
+          "lines": [
+            111,
+            217
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "79794e",
+          "truncated": false
+        }
+      ],
+      "shared_exact_blocks": [],
+      "covered_lines": 217,
+      "directly_read_lines": 217,
+      "shared_identical_lines": 0
+    },
+    {
+      "bytes": 21848,
+      "lines": 174,
+      "path": "sources/corpus/s02-persona-v2.md",
+      "sha256": "43df075ab8d856f5f0f0338a01406a40c3d208391ad90893b6d6644946807dda",
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s02-persona-v2.md",
+      "coverage_status": "complete_assigned_scope",
+      "semantic_note": "Adds rigid invariants, owner-correction refusal and forever persistence while relaxing seven-word frequency. Preserve creative intent but do not revive anti-owner immutability or token-as-action proof.",
+      "direct_reads": [
+        {
+          "lines": [
+            1,
+            95
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "799272",
+          "truncated": false
+        },
+        {
+          "lines": [
+            96,
+            174
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "acbbf0",
+          "truncated": false
+        }
+      ],
+      "shared_exact_blocks": [],
+      "covered_lines": 174,
+      "directly_read_lines": 174,
+      "shared_identical_lines": 0
+    },
+    {
+      "bytes": 124668,
+      "lines": 728,
+      "path": "sources/corpus/s03-persona-v3.md",
+      "sha256": "37a5670e9fb4c99e0390575217c953841338d3f00a9706bc256e5a673bce21aa",
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s03-persona-v3.md",
+      "coverage_status": "complete_assigned_scope",
+      "semantic_note": "Full reconciliation of v1/v2: one woman within existing product identity, owner amendments, actual tools, bounded receipts, voluntary scenes, input-modality honesty, source metadata limits. Six supplied Vira URLs are not verified eleven-video acoustic corpus.",
+      "direct_reads": [
+        {
+          "lines": [
+            1,
+            150
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "3d6f2a",
+          "truncated": false
+        },
+        {
+          "lines": [
+            151,
+            300
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "022a44",
+          "truncated": false
+        },
+        {
+          "lines": [
+            301,
+            460
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "779d5e",
+          "truncated": false
+        },
+        {
+          "lines": [
+            461,
+            590
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "7f59b6",
+          "truncated": false
+        },
+        {
+          "lines": [
+            591,
+            728
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "8a7794",
+          "truncated": false
+        }
+      ],
+      "shared_exact_blocks": [],
+      "covered_lines": 728,
+      "directly_read_lines": 728,
+      "shared_identical_lines": 0
+    },
+    {
+      "bytes": 104513,
+      "lines": 443,
+      "path": "sources/corpus/s04-coverage-audit.md",
+      "sha256": "0b20002f379bbbdde5ddb42ac642b7c001225af414aa32140da4639c2ab863e3",
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s04-coverage-audit.md",
+      "coverage_status": "complete_assigned_scope",
+      "semantic_note": "Historical248row audit:147live-untested,27synthetic,65static,7reportedstorage,2unsupported;21samples20scenarios including assisted E-repair. Counts and self-reported store results cannot become current native or acoustic proof.",
+      "direct_reads": [
+        {
+          "lines": [
+            1,
+            100
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "5f10d6",
+          "truncated": false
+        },
+        {
+          "lines": [
+            101,
+            200
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "2bd5b0",
+          "truncated": false
+        },
+        {
+          "lines": [
+            201,
+            300
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "4bd96d",
+          "truncated": false
+        },
+        {
+          "lines": [
+            301,
+            443
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "e68283",
+          "truncated": false
+        }
+      ],
+      "shared_exact_blocks": [],
+      "covered_lines": 443,
+      "directly_read_lines": 443,
+      "shared_identical_lines": 0
+    },
+    {
+      "bytes": 76958,
+      "lines": 434,
+      "path": "sources/corpus/s05-persona-revision-0-8.md",
+      "sha256": "0c52aaf15c253e7714e906dd8d17d7f5380074f84ca7c6418f60eaaf3da0330e",
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s05-persona-revision-0-8.md",
+      "coverage_status": "complete_assigned_scope",
+      "semantic_note": "Earlier accepted owner wishes and later compiled wording kept distinct. Strong literal stop/wait rule has no final acknowledgment. MorningLight naming and accepted warmth predate quartet; old scene costumes/Ann roles not universal. UI Maple field explicitly Codex new chats not established Dot voice.",
+      "direct_reads": [
+        {
+          "lines": [
+            1,
+            100
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "36255c",
+          "truncated": false
+        },
+        {
+          "lines": [
+            101,
+            220
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "efb5b4",
+          "truncated": false
+        },
+        {
+          "lines": [
+            221,
+            330
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "95919d",
+          "truncated": false
+        },
+        {
+          "lines": [
+            331,
+            434
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "a7d836",
+          "truncated": false
+        }
+      ],
+      "shared_exact_blocks": [],
+      "covered_lines": 434,
+      "directly_read_lines": 434,
+      "shared_identical_lines": 0
+    },
+    {
+      "bytes": 30452,
+      "lines": 226,
+      "path": "sources/corpus/s06-v5-dot-wrapper.txt",
+      "sha256": "7cea8902593f21c21c20927dbe5d1a4739074e6a0a4f8ca07c3e20bbe825e987",
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s06-v5-dot-wrapper.txt",
+      "coverage_status": "complete_assigned_scope",
+      "semantic_note": "Distinct Dot delivery wrapper plus full V5 artistic behavioral specification/self-critique. Seven chosen values, source shadows transformed, optional grammar, work receipts and reality boundaries. Its apply-now/history assertions are archived evidence, not current actions.",
+      "direct_reads": [
+        {
+          "lines": [
+            1,
+            115
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "af12b0",
+          "truncated": false
+        },
+        {
+          "lines": [
+            116,
+            226
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "e164d4",
+          "truncated": false
+        }
+      ],
+      "shared_exact_blocks": [],
+      "covered_lines": 226,
+      "directly_read_lines": 226,
+      "shared_identical_lines": 0
+    },
+    {
+      "bytes": 30203,
+      "lines": 225,
+      "path": "sources/corpus/s07-v5-chat-wrapper.txt",
+      "sha256": "326111e29579882e65f62f9e57e04d026779b2f0d4b5a4df84add9815bc9c77b",
+      "snapshot_path": "reviews/02-grok/input-snapshots/9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60/sources/corpus/s07-v5-chat-wrapper.txt",
+      "coverage_status": "complete_assigned_scope",
+      "semantic_note": "Distinct normal-ChatGPT wrapper;221lines byte-identical to S06. Different consumer and historical statement that Dot received update is not independent delivery or installation proof. No double-vote for duplicate V5 body.",
+      "direct_reads": [
+        {
+          "lines": [
+            1,
+            2
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "37b9f8",
+          "truncated": false
+        },
+        {
+          "lines": [
+            224,
+            225
+          ],
+          "reader": "Codex /root/fedora_research",
+          "tool_output_chunk_id": "37b9f8",
+          "truncated": false
+        }
+      ],
+      "shared_exact_blocks": [
+        {
+          "source_lines": [
+            3,
+            223
+          ],
+          "source_byte_start": 862,
+          "source_byte_end_exclusive": 29892,
+          "same_bytes_sha256": "613b391493ae67cda767f80d98303dbf18da4f0a49f8f4791906a1a67e41cec9",
+          "target_path": "sources/corpus/s06-v5-dot-wrapper.txt",
+          "target_lines": [
+            4,
+            224
+          ],
+          "target_file_sha256": "7cea8902593f21c21c20927dbe5d1a4739074e6a0a4f8ca07c3e20bbe825e987",
+          "actual_reader": "Codex /root/fedora_research",
+          "read_evidence": "This ledger S06 full direct reading",
+          "independent_reread_claimed": false
+        }
+      ],
+      "covered_lines": 225,
+      "directly_read_lines": 4,
+      "shared_identical_lines": 221
+    }
+  ],
+  "totals": {
+    "files": 8,
+    "bytes": 615256,
+    "source_lines": 4316,
+    "direct_read_lines": 2246,
+    "shared_identical_lines": 2070
+  },
+  "runtime_tests": "NOT_RUN",
+  "audio_tests": "NOT_RUN",
+  "external_source_freshness": "Historical cited claims were not revalidated by this bounded source-reading task",
+  "source_mutations": false,
+  "findings_artifact": "reviews/02-grok/codex-completion-20261030/review-corpus-a.md"
+}

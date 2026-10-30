@@ -32,3 +32,7 @@ No model API calls are run by the local repository tools or CI. Paid inference, 
 ## Integrated Gemini calibration
 
 Use [the active C01–C19 contrast bank](../design/contrast-bank.md), [G01–G08 exposed development probes](gemini-probes.md), and [the proposed paired measurement protocol](behavioral-delta-protocol.md). These additions have no live results yet. The original Gemini supplements remain immutable input evidence; accepted content lives in these active descendants.
+
+## 30 October acceptance additions
+
+[A01 — standing ASMR/acting](asmr-acting-probe.md) verifies the current private default in fresh text and actual heard delivery. [VFR-01 — voice/action/return](voice-action-return.md) verifies the composed phone/host/artifact/origin/spoken result chain. Both begin NOT_RUN; structure and text fixtures cannot pass their acoustic or transport observations.

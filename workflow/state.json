@@ -22,7 +22,7 @@
     "unit_tests_run": 33,
     "unit_tests_skipped": 1
   },
-  "candidate_fingerprint": "9608bccdd122e04b889ea1b5d809d018253e2629bae7ab7f57ca468eedb3de60",
+  "candidate_fingerprint": "4de78633277647d48e54ff1dac29e7adcc9d8978d96c2a1e99326d93fe2a2bc5",
   "complementary_review_update": {
     "canonical_persona_changed": false,
     "coordinator_self_check_design": "One evidence/coverage self-check and one adversarial consistency self-check per reviewer; finite resource cap",
@@ -76,7 +76,7 @@
     "runtime": "user_attestation",
     "verification": "reviews/01-gemini/coordinator-verification.json"
   },
-  "grok": "NOT_STARTED",
+  "grok": "PARTIAL_HISTORICAL_GROK_PRESERVED_CODEX_COMPLETION_INTEGRATED",
   "grok_input": {
     "base_integration_merge": "35cb48cd3a2cf0522d60a803d505b21bbb8e7c28",
     "core_files": 72,
@@ -89,8 +89,8 @@
   },
   "installation": "NOT_STARTED",
   "last_transition": {
-    "date": "2026-10-28T15:55:13.113559+00:00",
-    "reason": "Actual Gemini contribution merged and read back; all candidate bytes verified; fresh 72-file Grok snapshot and upstream inventory pinned. No Grok review or installation claimed."
+    "date": "2026-10-30",
+    "reason": "Actual full83-input Codex completion under explicit owner-authorized substitution, sources reconciled,21findings dispositioned and scoped implementation checked. Original partial Grok and Gemini records preserved; no native/audio state changed."
   },
   "latest_test_verification": {
     "local_wsl_ubuntu": {
@@ -123,8 +123,8 @@
       "tests_run": 1
     }
   },
-  "next_action": "Owner launches Grok 4.7 using prompts/grok.md on this integrated public main. Grok reads the frozen candidate and genuine Gemini upstream evidence, researches X/primary sources and returns a complete actual review packet.",
-  "phase": "AWAITING_GROK",
+  "next_action": "Coordinator reviews exact public diff and publishes attributable Codex completion; verify remote main/ancestry and publication receipt before supported target installation. Native/voice/Fedora/phone tests remain NOT_RUN.",
+  "phase": "READY_FOR_INSTALL",
   "preparation_verification": {
     "acoustic_behavior": "NOT_RUN",
     "gemini_input": "FROZEN_NOT_REVIEWED",
@@ -230,5 +230,17 @@
     "status": "UNREVIEWED_SUPPLEMENTARY_PROPOSALS"
   },
   "runtime_validation": "NOT_RUN",
-  "schema": 1
+  "schema": 1,
+  "second_review_completion": {
+    "actual_service": "Codex",
+    "actual_model": "gpt-6-astra",
+    "source": "reviews/02-grok/codex-completion-20261030/provenance.json",
+    "report": "reviews/02-grok/codex-completion-20261030/report.md",
+    "core_files_read": 72,
+    "upstream_files_read": 11,
+    "original_grok_completion_attested": false,
+    "publication": "NOT_STARTED",
+    "installation": "NOT_STARTED",
+    "readiness_meaning": "Local reviewed-content integrity only; remote release and real target evidence remain separate prerequisites."
+  }
 }

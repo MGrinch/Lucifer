@@ -3,12 +3,12 @@
   "status": "NOT_STARTED",
   "repository": "MGrinch/Lucifer",
   "private_observed": null,
-  "review_service": "Grok",
+  "review_service": "Codex",
   "review_model_requested": "Grok 4.7",
-  "review_model_observed": null,
+  "review_model_observed": "gpt-6-astra",
   "writer_identity_observed": null,
   "write_route": null,
-  "base_commit": null,
+  "base_commit": "0754096d3f816a45d7f48fe882e1ac7eda88bceb",
   "branch": null,
   "contribution_commit": null,
   "push": {
@@ -25,12 +25,14 @@
   },
   "main_head_verified": null,
   "contribution_is_ancestor_of_main": null,
-  "candidate_fingerprint": null,
-  "report_sha256": null,
-  "integration_sha256": null,
+  "candidate_fingerprint": "4de78633277647d48e54ff1dac29e7adcc9d8978d96c2a1e99326d93fe2a2bc5",
+  "report_sha256": "4abf0876a25f2172d990bd2ff7d8aa7b170adbd47c1bb8c891b086a251f9e147",
+  "integration_sha256": "3555702f82571a64b585029d68a134a492051bcf540c0ef0b2d1609c2003daa3",
   "verification": {
     "checked_at": null,
     "by": null,
     "evidence": []
-  }
+  },
+  "review_service_requested": "Grok",
+  "provenance": "reviews/02-grok/codex-completion-20261030/provenance.json"
 }
