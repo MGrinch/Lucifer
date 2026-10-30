@@ -1,38 +1,50 @@
 {
   "schema": 1,
-  "status": "NOT_STARTED",
+  "status": "PUBLISHED_AND_MERGED",
   "repository": "MGrinch/Lucifer",
-  "private_observed": null,
+  "private_observed": false,
   "review_service": "Codex",
   "review_model_requested": "Grok 4.7",
   "review_model_observed": "gpt-6-astra",
-  "writer_identity_observed": null,
-  "write_route": null,
+  "writer_identity_observed": "Codex coordinating parent performed the authenticated Git HTTPS push; the credential account identity was not independently exposed by that CLI operation.",
+  "write_route": "Existing Git HTTPS remote; normal non-force fast-forward of main",
   "base_commit": "0754096d3f816a45d7f48fe882e1ac7eda88bceb",
-  "branch": null,
-  "contribution_commit": null,
+  "branch": "main",
+  "contribution_commit": "d31af14e020edefe1fda24e5104049945327b258",
   "push": {
-    "observed": false,
-    "remote_commit": null,
-    "evidence": null,
-    "observed_at": null
+    "observed": true,
+    "remote_commit": "d31af14e020edefe1fda24e5104049945327b258",
+    "evidence": "Parent successful push receipt c4cf1d; independent git ls-remote and fetch readback; GitHub connector commit comparison and pinned provenance file.",
+    "observed_at": "2026-10-30T23:41:54Z"
   },
   "merge": {
-    "observed": false,
-    "commit": null,
+    "observed": true,
+    "method": "fast_forward_main",
+    "commit": "d31af14e020edefe1fda24e5104049945327b258",
     "pull_request_url": null,
-    "evidence": null
+    "evidence": "Direct normal main fast-forward from 0754096d3f816a45d7f48fe882e1ac7eda88bceb; GitHub comparison ahead 1 / behind 0; no synthetic PR or merge commit claimed."
   },
-  "main_head_verified": null,
-  "contribution_is_ancestor_of_main": null,
+  "main_head_verified": "d31af14e020edefe1fda24e5104049945327b258",
+  "contribution_is_ancestor_of_main": true,
   "candidate_fingerprint": "4de78633277647d48e54ff1dac29e7adcc9d8978d96c2a1e99326d93fe2a2bc5",
   "report_sha256": "4abf0876a25f2172d990bd2ff7d8aa7b170adbd47c1bb8c891b086a251f9e147",
   "integration_sha256": "3555702f82571a64b585029d68a134a492051bcf540c0ef0b2d1609c2003daa3",
   "verification": {
-    "checked_at": null,
-    "by": null,
-    "evidence": []
+    "checked_at": "2026-10-30T23:41:54Z",
+    "by": "Codex /root/codex_research, independent readback after parent push",
+    "evidence": [
+      "GitHub get_repo: MGrinch/Lucifer, public, default branch main",
+      "GitHub compare_commits 0754096→d31af14: ahead 1, behind 0, total 1; base is merge-base",
+      "Pinned provenance.json fetched by official GitHub connector at d31af14",
+      "Fresh git fetch origin main; merge-base --is-ancestor exits 0 for Gemini contribution c3bb04de8358fc9e60d49d91e062b28f2b46589a, Gemini merge 35cb48cd3a2cf0522d60a803d505b21bbb8e7c28 and Codex contribution d31af14",
+      "Remote persona.md SHA256 8e9fcda0dd2ee3b0cc97b3a5645f24effb54e933f75f478b1d838dd29bff6d8e, report SHA256 4abf0876a25f2172d990bd2ff7d8aa7b170adbd47c1bb8c891b086a251f9e147 and integration SHA256 3555702f82571a64b585029d68a134a492051bcf540c0ef0b2d1609c2003daa3 match local validated bytes"
+    ],
+    "git_readback_tool_chunk": "5882de",
+    "identity_limit": "Git author/committer, current connector permissions and reviewer runtime are not proof of the identity behind an opaque stored Git credential."
   },
   "review_service_requested": "Grok",
-  "provenance": "reviews/02-grok/codex-completion-20261030/provenance.json"
+  "provenance": "reviews/02-grok/codex-completion-20261030/provenance.json",
+  "native_installation": "NOT_STARTED",
+  "native_behavior": "NOT_RUN",
+  "acoustic_validation": "NOT_RUN"
 }

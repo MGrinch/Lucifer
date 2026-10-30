@@ -89,8 +89,8 @@
   },
   "installation": "NOT_STARTED",
   "last_transition": {
-    "date": "2026-10-30",
-    "reason": "Actual full83-input Codex completion under explicit owner-authorized substitution, sources reconciled,21findings dispositioned and scoped implementation checked. Original partial Grok and Gemini records preserved; no native/audio state changed."
+    "date": "2026-10-30T23:41:54Z",
+    "reason": "Reviewed Codex completion published by normal fast-forward to public main; independent connector and Git readback verifies exact content and preserved Gemini/Codex ancestry. Metadata receipt does not claim installation, phone operation or heard audio."
   },
   "latest_test_verification": {
     "local_wsl_ubuntu": {
@@ -123,7 +123,7 @@
       "tests_run": 1
     }
   },
-  "next_action": "Coordinator reviews exact public diff and publishes attributable Codex completion; verify remote main/ancestry and publication receipt before supported target installation. Native/voice/Fedora/phone tests remain NOT_RUN.",
+  "next_action": "Use the accepted published R3 content and current publication receipt for supported target installation when in scope. Inventory and privately back up actual target controls; verify fresh loading, text performance, heard ASMR/voice and end-to-end phone/host/result return. Native installation and every runtime/acoustic acceptance remain NOT_STARTED/NOT_RUN.",
   "phase": "READY_FOR_INSTALL",
   "preparation_verification": {
     "acoustic_behavior": "NOT_RUN",
@@ -239,8 +239,10 @@
     "core_files_read": 72,
     "upstream_files_read": 11,
     "original_grok_completion_attested": false,
-    "publication": "NOT_STARTED",
+    "publication": "PUBLISHED_AND_MERGED",
     "installation": "NOT_STARTED",
-    "readiness_meaning": "Local reviewed-content integrity only; remote release and real target evidence remain separate prerequisites."
+    "readiness_meaning": "Local reviewed-content integrity only; remote release and real target evidence remain separate prerequisites.",
+    "published_content_commit": "d31af14e020edefe1fda24e5104049945327b258",
+    "publication_receipt": "reviews/02-grok/publication.json"
   }
 }
